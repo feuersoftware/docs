@@ -1,123 +1,140 @@
 ---
 seo:
-  title: Write beautiful docs with Markdown
-  description: Ship fast, flexible, and SEO-optimized documentation with beautiful
-    design out of the box. Docus brings together the best of the Nuxt ecosystem.
-    Powered by Nuxt UI.
+  title: Feuersoftware Dokumentation
+  description: Dokumentation für alle Feuersoftware Produkte - EinsatzMonitor, Connect, EinsatzManager, EinsatzApp, PartnerApp, EinsatzTablet, HelferApp und Tools.
 ---
 
 ::u-page-hero
 #title
-Write beautiful docs with Markdown
+Feuersoftware Dokumentation
 
 #description
-Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box.
+Willkommen zur offiziellen Dokumentation für alle Feuersoftware Produkte.
 
-Docus brings the best of the Nuxt ecosystem into one CLI.
+Hier finden Sie Anleitungen, Konfigurationshinweise und Hilfestellungen für unsere gesamte Produktpalette.
 
 #links
   :::u-button
   ---
   color: neutral
   size: xl
-  to: /getting-started/installation
+  to: /einsatzmonitor
   trailing-icon: i-lucide-arrow-right
   ---
-  Get started
+  Zur Dokumentation
   :::
 
   :::u-button
   ---
   color: neutral
-  icon: simple-icons-github
+  icon: i-lucide-book-open
   size: xl
-  to: https://github.com/nuxt-content/docus
+  to: https://feuersoftware.com/doku/
+  target: _blank
   variant: outline
   ---
-  Star on GitHub
+  Legacy Dokumentation
   :::
 ::
 
 ::u-page-section
 #title
-Shipped with many features
+Unsere Produkte
 
 #features
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://nuxt.com
+  icon: i-lucide-monitor
+  to: /einsatzmonitor
   ---
   #title
-  Built with [Nuxt 4]{.text-primary}
+  [EinsatzMonitor]{.text-primary}
   
   #description
-  Optimized by the most famous Vue framework. Docus gives you everything you need to build fast, performant, and SEO-friendly websites.
+  Das zentrale Anzeigesystem für Einsatzinformationen. Visualisieren Sie Alarme und Einsatzdaten in Echtzeit.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://ui.nuxt.com/
+  icon: i-lucide-link
+  to: /connect
   ---
   #title
-  Powered by [Nuxt UI]{.text-primary}
+  [Connect]{.text-primary}
   
   #description
-  Beautiful out of the box, minimal by design but highly customizable. Docus leverages Nuxt UI to give you the best docs writing experience with zero boilerplate, just focus on your content.
+  Verbindung und Kommunikation zwischen den verschiedenen Systemen. Die Schnittstelle für nahtlose Integration.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://content.nuxt.com
+  icon: i-lucide-clipboard-list
+  to: /einsatzmanager
   ---
   #title
-  Enhanced Markdown syntax by [Nuxt Content]{.text-primary}
+  [EinsatzManager]{.text-primary}
   
   #description
-  The only thing you need to take care about is writing your content. Write your pages in Markdown and extend with MDC syntax to embed Nuxt UI or custom Vue components. Structure, routing, and rendering are handled for you.
+  Das zentrale Verwaltungstool für Einsätze. Planen, koordinieren und dokumentieren Sie Ihre Einsätze.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://nuxt.com/docs/guide/directory-structure/app-config
+  icon: i-lucide-smartphone
+  to: /einsatzapp
   ---
   #title
-  Customize with [Nuxt App Config]{.text-primary}
+  [EinsatzApp]{.text-primary}
   
   #description
-  Update colors, social links, header logos and component styles globally using the `app.config.ts`, no direct code modifications required.
+  Die mobile Anwendung für Einsatzkräfte. Erhalten Sie Alarme und Einsatzinformationen direkt auf Ihr Smartphone.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://content.nuxt.com/studio
+  icon: i-lucide-users
+  to: /partnerapp
   ---
   #title
-  Edit in production with [Nuxt Studio]{.text-primary}
+  [PartnerApp]{.text-primary}
   
   #description
-  Edit your content in production with zero Markdown knowledge required. Let your non technical colleagues collaborate on the documentation and integrate Vue components without code skills.
+  Ermöglicht die Zusammenarbeit mit externen Partnern und Organisationen.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://ui.nuxt.com/components/content-search
+  icon: i-lucide-tablet
+  to: /einsatztablet
   ---
   #title
-  Built-in navigation and [full-text search]{.text-primary}
+  [EinsatzTablet]{.text-primary}
   
   #description
-  Only focus on ordering your content, Docus handles the search modal and auto-generates the side navigation for you.
+  Die Tablet-optimierte Anwendung für den Einsatz vor Ort. Alle wichtigen Informationen auf einen Blick.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-hand-helping
+  to: /helferapp
+  ---
+  #title
+  [HelferApp]{.text-primary}
+  
+  #description
+  Die mobile Anwendung für freiwillige Helfer. Koordinieren Sie Helfer schnell und effizient.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-wrench
+  to: /tools
+  ---
+  #title
+  [Tools]{.text-primary}
+  
+  #description
+  Weitere Hilfswerkzeuge und Utilities zur Unterstützung Ihrer täglichen Arbeit.
   :::
 ::

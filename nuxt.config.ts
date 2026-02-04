@@ -1,4 +1,6 @@
 export default defineNuxtConfig({
+  css: ['~/assets/css/main.css'],
+
   studio: {
       repository: {
           provider: 'github',

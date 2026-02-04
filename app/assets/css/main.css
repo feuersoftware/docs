@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  /* Feuersoftware Primary Color #952229 */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e3;
+  --color-primary-200: #fecacc;
+  --color-primary-300: #fca5a9;
+  --color-primary-400: #f87177;
+  --color-primary-500: #952229;
+  --color-primary-600: #832025;
+  --color-primary-700: #6e1b1f;
+  --color-primary-800: #5c191d;
+  --color-primary-900: #4f1a1d;
+  --color-primary-950: #2c090b;
+}
