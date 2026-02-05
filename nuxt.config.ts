@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     modules: ['nuxt-studio'],
     css: ['~/assets/css/main.css'],
     studio: {
-        route: 'admin',
+        route: '/admin',
         repository: {
             provider: 'github',
             owner: 'feuersoftware',
