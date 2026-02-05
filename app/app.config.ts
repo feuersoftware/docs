@@ -1,8 +1,12 @@
 export default defineAppConfig({
+  github: {
+    url: 'https://github.com/feuersoftware/docs',
+    branch: 'main',
+  },
   docus: {
-    name: 'Feuersoftware',
-    description: 'Dokumentation für alle Feuersoftware Produkte',
-    url: 'https://docs.feuersoftware.com'
+    name: 'FeuerSoftware',
+    description: 'Dokumentation für alle FeuerSoftware Produkte',
+    url: 'https://docsv2.feuersoftware.com'
   },
   ui: {
     colors: {

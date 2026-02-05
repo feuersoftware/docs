@@ -1,10 +1,10 @@
 export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
-
+    
   studio: {
       repository: {
           provider: 'github',
-          owner: 'andreaslampe',
+          owner: 'feuersoftware',
           repo: 'https://github.com/feuersoftware/docs',
           branch: 'main'
       }
