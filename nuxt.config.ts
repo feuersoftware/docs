@@ -1,23 +1,24 @@
 export default defineNuxtConfig({
-  css: ['~/assets/css/main.css'],
-    
-  studio: {
-      repository: {
-          provider: 'github',
-          owner: 'feuersoftware',
-          repo: 'https://github.com/feuersoftware/docs',
-          branch: 'main'
-      }
-  },
-
-  nitro: {
-      prerender: {
-          // Pre-render the homepage
-          routes: ['/'],
-          // Then crawl all the links on the page
-          crawlLinks: true
-      }
-  },
-
-  modules: ['nuxt-studio']
+    extends: ['docus'],
+    modules: ['nuxt-studio'],
+    css: ['~/assets/css/main.css'],
+    studio: {
+        repository: {
+            provider: 'github',
+            owner: 'feuersoftware',
+            repo: 'docs',
+            branch: 'main'
+        },
+        i18n: {
+            defaultLocale: 'de'
+        }
+    },
+    nitro: {
+        prerender: {
+            // Pre-render the homepage
+            routes: ['/'],
+            // Then crawl all the links on the page
+            crawlLinks: true
+        }
+    },
 })

@@ -16,7 +16,7 @@ Verfügbare Tools
   :::u-page-feature
   ---
   icon: i-lucide-radio
-  to: /tools/tetracontrol2connect
+  to: /tools
   ---
   #title
   [TetraControl2Connect]{.text-primary}
