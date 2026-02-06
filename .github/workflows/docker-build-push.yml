@@ -68,3 +68,25 @@ jobs:
           resourceGroup: ${{ env.AZURE_RESOURCE_GROUP }}
           containerAppName: ${{ env.AZURE_CONTAINER_APP_NAME }}
           imageToDeploy: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+
+      - name: Cleanup old container images
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            # Get all tags sorted by timestamp, skip the latest 10
+            TAGS_TO_DELETE=$(az acr repository show-manifests \
+              --name ${{ secrets.ACR_NAME }} \
+              --repository ${{ env.IMAGE_NAME }} \
+              --orderby time_asc \
+              --query "[:-10].digest" \
+              --output tsv)
+            
+            # Delete old images
+            for DIGEST in $TAGS_TO_DELETE; do
+              echo "Deleting ${{ env.IMAGE_NAME }}@$DIGEST"
+              az acr repository delete \
+                --name ${{ secrets.ACR_NAME }} \
+                --image "${{ env.IMAGE_NAME }}@$DIGEST" \
+                --yes
+            done
+
