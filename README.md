@@ -1,18 +1,18 @@
-# Feuersoftware Dokumentation
+# FeuerSoftware Dokumentation
 
-> Zentrale Dokumentation für alle Feuersoftware Produkte
+> Zentrale Dokumentation für alle FeuerSoftware Produkte
 
-Diese Repository enthält die offizielle Dokumentation für die gesamte Feuersoftware Produktpalette, einschließlich EinsatzMonitor, Connect, EinsatzManager, EinsatzApp, PartnerApp, EinsatzTablet, HelferApp und Tools.
+Diese Repository enthält die offizielle Dokumentation für die gesamte FeuerSoftware Produktpalette, einschließlich EinsatzMonitor, Connect, EinsatzManager, EinsatzApp, PartnerApp, EinsatzTablet, HelferApp und Tools.
 
 Die live Dokumentation ist verfügbar unter: **[https://docsv2.feuersoftware.com/](https://docsv2.feuersoftware.com/)**
 
 ---
 
-# Feuersoftware Documentation
+# FeuerSoftware Documentation
 
-> Central documentation for all Feuersoftware products
+> Central documentation for all FeuerSoftware products
 
-This repository contains the official documentation for the entire Feuersoftware product range, including EinsatzMonitor, Connect, EinsatzManager, EinsatzApp, PartnerApp, EinsatzTablet, HelferApp, and Tools.
+This repository contains the official documentation for the entire FeuerSoftware product range, including EinsatzMonitor, Connect, EinsatzManager, EinsatzApp, PartnerApp, EinsatzTablet, HelferApp, and Tools.
 
 The live documentation is available at: **[https://docsv2.feuersoftware.com/](https://docsv2.feuersoftware.com/)**
 
@@ -21,10 +21,10 @@ The live documentation is available at: **[https://docsv2.feuersoftware.com/](ht
 ## 🎯 Zweck / Purpose
 
 **Deutsch:**  
-Diese Dokumentationsseite dient als zentrale Anlaufstelle für alle Feuersoftware Produkte. Sie bietet umfassende Anleitungen, Konfigurationshinweise und Hilfestellungen für Nutzer und Entwickler unserer Softwarelösungen für Feuerwehr, Rettungsdienst und Sicherheitsdienste.
+Diese Dokumentationsseite dient als zentrale Anlaufstelle für alle FeuerSoftware Produkte. Sie bietet umfassende Anleitungen, Konfigurationshinweise und Hilfestellungen für Nutzer und Entwickler unserer Softwarelösungen für Feuerwehr, Rettungsdienst und Sicherheitsdienste.
 
 **English:**  
-This documentation site serves as the central hub for all Feuersoftware products. It provides comprehensive guides, configuration instructions, and support for users and developers of our software solutions for fire departments, rescue services, and security services.
+This documentation site serves as the central hub for all FeuerSoftware products. It provides comprehensive guides, configuration instructions, and support for users and developers of our software solutions for fire departments, rescue services, and security services.
 
 ## 🚀 Entwicklung / Development
 
