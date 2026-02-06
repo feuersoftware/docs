@@ -17,7 +17,7 @@ env:
   AZURE_RESOURCE_GROUP: ${{ secrets.AZURE_RESOURCE_GROUP }}
 
 jobs:
-  build-and-push:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,25 +34,20 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
 
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@v5
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          tags: |
-            type=ref,event=branch
-            type=sha,prefix=
-            type=raw,value=latest
+      - name: Get short SHA
+        id: sha
+        run: echo "short=$(echo ${{ github.sha }} | cut -c1-7)" >> $GITHUB_OUTPUT
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.sha.outputs.short }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:buildcache
+          cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:buildcache,mode=max
           build-args: |
             STUDIO_GITHUB_CLIENT_ID=${{ secrets.STUDIO_GITHUB_CLIENT_ID }}
             STUDIO_GITHUB_CLIENT_SECRET=${{ secrets.STUDIO_GITHUB_CLIENT_SECRET }}
@@ -69,7 +64,18 @@ jobs:
             az containerapp update \
               --name ${{ env.AZURE_CONTAINER_APP_NAME }} \
               --resource-group ${{ env.AZURE_RESOURCE_GROUP }} \
-              --image ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+              --image ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.sha.outputs.short }}
+
+  cleanup:
+    runs-on: ubuntu-latest
+    needs: build-and-deploy
+    if: success()
+    
+    steps:
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Cleanup old container images
         uses: azure/cli@v2
@@ -77,13 +83,8 @@ jobs:
           ACR_LOGIN_SERVER: ${{ secrets.ACR_LOGIN_SERVER }}
         with:
           inlineScript: |
-            # Extract ACR name from login server (remove .azurecr.io suffix)
             ACR_NAME="${ACR_LOGIN_SERVER%.azurecr.io}"
             
-            echo "ACR Name: $ACR_NAME"
-            echo "Repository: docs"
-            
-            # Get all tags sorted by timestamp, skip the latest 10
             TAGS_TO_DELETE=$(az acr repository show-manifests \
               --name "$ACR_NAME" \
               --repository "docs" \
@@ -91,7 +92,6 @@ jobs:
               --query "[:-10].digest" \
               --output tsv)
             
-            # Delete old images
             for DIGEST in $TAGS_TO_DELETE; do
               echo "Deleting docs@$DIGEST"
               az acr repository delete \
