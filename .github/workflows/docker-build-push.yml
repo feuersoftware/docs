@@ -71,22 +71,30 @@ jobs:
 
       - name: Cleanup old container images
         uses: azure/cli@v2
+        env:
+          ACR_LOGIN_SERVER: ${{ secrets.ACR_LOGIN_SERVER }}
         with:
           inlineScript: |
+            # Extract ACR name from login server (remove .azurecr.io suffix)
+            ACR_NAME="${ACR_LOGIN_SERVER%.azurecr.io}"
+            
+            echo "ACR Name: $ACR_NAME"
+            echo "Repository: docs"
+            
             # Get all tags sorted by timestamp, skip the latest 10
             TAGS_TO_DELETE=$(az acr repository show-manifests \
-              --name ${{ secrets.ACR_NAME }} \
-              --repository ${{ env.IMAGE_NAME }} \
+              --name "$ACR_NAME" \
+              --repository "docs" \
               --orderby time_asc \
               --query "[:-10].digest" \
               --output tsv)
             
             # Delete old images
             for DIGEST in $TAGS_TO_DELETE; do
-              echo "Deleting ${{ env.IMAGE_NAME }}@$DIGEST"
+              echo "Deleting docs@$DIGEST"
               az acr repository delete \
-                --name ${{ secrets.ACR_NAME }} \
-                --image "${{ env.IMAGE_NAME }}@$DIGEST" \
+                --name "$ACR_NAME" \
+                --image "docs@$DIGEST" \
                 --yes
             done
 
