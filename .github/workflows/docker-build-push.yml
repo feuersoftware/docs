@@ -51,3 +51,6 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          build-args: |
+            STUDIO_GITHUB_CLIENT_ID=${{ secrets.STUDIO_GITHUB_CLIENT_ID }}
+            STUDIO_GITHUB_CLIENT_SECRET=${{ secrets.STUDIO_GITHUB_CLIENT_SECRET }}
