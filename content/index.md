@@ -9,7 +9,7 @@ seo:
 FeuerSoftware Dokumentation
 
 #description
-Willkommen zur offiziellen Dokumentation für alle Feuersoftware Produkte.
+Willkommen zur offiziellen Dokumentation für alle FeuerSoftware Produkte.
 
 Hier finden Sie Anleitungen, Konfigurationshinweise und Hilfestellungen für unsere gesamte Produktpalette.
 
@@ -21,7 +21,7 @@ Hier finden Sie Anleitungen, Konfigurationshinweise und Hilfestellungen für uns
   to: /einsatzmonitor
   trailing-icon: i-lucide-arrow-right
   ---
-  Zur Dokumentation
+  Zur neuen überarbeiteten Dokumentation
   :::
 
   :::u-button
@@ -33,7 +33,7 @@ Hier finden Sie Anleitungen, Konfigurationshinweise und Hilfestellungen für uns
   to: https://feuersoftware.com/doku/
   variant: outline
   ---
-  Legacy Dokumentation
+  Dokumentation
   :::
 ::
 
@@ -99,7 +99,7 @@ Unsere Produkte
   [PartnerApp]{.text-primary}
 
   #description
-  Ermöglicht die Zusammenarbeit mit externen Partnern und Organisationen.
+  Informieren deinen Partner wenn du zum Einsatz fährst.
   :::
 
   :::u-page-feature
@@ -123,7 +123,7 @@ Unsere Produkte
   [HelferApp]{.text-primary}
 
   #description
-  Die mobile Anwendung für freiwillige Helfer. Koordinieren Sie Helfer schnell und effizient.
+  Die mobile Anwendung für Sanitäts- und Brandsicherheitsdienste.
   :::
 
   :::u-page-feature
@@ -135,6 +135,6 @@ Unsere Produkte
   [Tools]{.text-primary}
 
   #description
-  Weitere Hilfswerkzeuge und Utilities zur Unterstützung Ihrer täglichen Arbeit.
+  Weitere Hilfswerkzeuge und Utilities zur Integration verschiedenster Alarmierungswege.
   :::
 ::
