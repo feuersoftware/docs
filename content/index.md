@@ -6,7 +6,7 @@ seo:
 
 ::u-page-hero
 #title
-Feuersoftware Dokumentation
+FeuerSoftware Dokumentation
 
 #description
 Willkommen zur offiziellen Dokumentation für alle Feuersoftware Produkte.
@@ -29,8 +29,8 @@ Hier finden Sie Anleitungen, Konfigurationshinweise und Hilfestellungen für uns
   color: neutral
   icon: i-lucide-book-open
   size: xl
-  to: https://feuersoftware.com/doku/
   target: _blank
+  to: https://feuersoftware.com/doku/
   variant: outline
   ---
   Legacy Dokumentation
@@ -49,7 +49,7 @@ Unsere Produkte
   ---
   #title
   [EinsatzMonitor]{.text-primary}
-  
+
   #description
   Das zentrale Anzeigesystem für Einsatzinformationen. Visualisieren Sie Alarme und Einsatzdaten in Echtzeit.
   :::
@@ -61,7 +61,7 @@ Unsere Produkte
   ---
   #title
   [Connect]{.text-primary}
-  
+
   #description
   Verbindung und Kommunikation zwischen den verschiedenen Systemen. Die Schnittstelle für nahtlose Integration.
   :::
@@ -73,7 +73,7 @@ Unsere Produkte
   ---
   #title
   [EinsatzManager]{.text-primary}
-  
+
   #description
   Das zentrale Verwaltungstool für Einsätze. Planen, koordinieren und dokumentieren Sie Ihre Einsätze.
   :::
@@ -85,7 +85,7 @@ Unsere Produkte
   ---
   #title
   [EinsatzApp]{.text-primary}
-  
+
   #description
   Die mobile Anwendung für Einsatzkräfte. Erhalten Sie Alarme und Einsatzinformationen direkt auf Ihr Smartphone.
   :::
@@ -97,7 +97,7 @@ Unsere Produkte
   ---
   #title
   [PartnerApp]{.text-primary}
-  
+
   #description
   Ermöglicht die Zusammenarbeit mit externen Partnern und Organisationen.
   :::
@@ -109,7 +109,7 @@ Unsere Produkte
   ---
   #title
   [EinsatzTablet]{.text-primary}
-  
+
   #description
   Die Tablet-optimierte Anwendung für den Einsatz vor Ort. Alle wichtigen Informationen auf einen Blick.
   :::
@@ -121,7 +121,7 @@ Unsere Produkte
   ---
   #title
   [HelferApp]{.text-primary}
-  
+
   #description
   Die mobile Anwendung für freiwillige Helfer. Koordinieren Sie Helfer schnell und effizient.
   :::
@@ -133,7 +133,7 @@ Unsere Produkte
   ---
   #title
   [Tools]{.text-primary}
-  
+
   #description
   Weitere Hilfswerkzeuge und Utilities zur Unterstützung Ihrer täglichen Arbeit.
   :::
