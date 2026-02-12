@@ -32,7 +32,6 @@
   background-color: transparent;
     height: .6em;
     width: .6em;
-    /* width: 10px; */
 }
 
 /* Track */
@@ -40,16 +39,12 @@
   border-radius: 5px;
   --tw-bg-opacity: 1;
     background-color: var(--ui-color-neutral-100);
-    /* background: var(--ui-color-neutral-100);
-    border-radius: 5px; */
 }
 
 .dark ::-webkit-scrollbar-track {
   border-radius: 5px;
   --tw-bg-opacity: 1;
     background-color: var(--ui-color-neutral-800);
-    /* background: var(--ui-color-neutral-100);
-    border-radius: 5px; */
 }
 
 /* Handle */
@@ -57,16 +52,12 @@
   border-radius: .6em;
     --tw-bg-opacity: 1;
     background-color: var(--ui-color-neutral-300);
-    /* background: var(--ui-color-neutral-200);
-    border-radius: 5px; */
 }
 
 .dark ::-webkit-scrollbar-thumb {
   border-radius: .6em;
     --tw-bg-opacity: 1;
     background-color: var(--ui-color-neutral-700);
-    /* background: var(--ui-color-neutral-200);
-    border-radius: 5px; */
 }
 
 /* Handle on hover */
