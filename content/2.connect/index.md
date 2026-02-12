@@ -6,7 +6,7 @@ links: []
 
 # Connect
 
-Willkommen zur Dokumentation von Connect.
+Willkommen zur Dokumentation zum Connect-Portal.
 
 ::u-page-card
 #title
