@@ -1,9 +1,9 @@
 ---
 title: EinsatzMonitor
 description: Dokumentation für den EinsatzMonitor - Das zentrale Anzeigesystem für Einsatzinformationen
+source: "https://feuersoftware.com/doku/?top-category=einsatzmonitor"
 ---
 
-# EinsatzMonitor
 
 Willkommen zur Dokumentation des EinsatzMonitors. Der EinsatzMonitor ist das zentrale Anzeigesystem für Einsatzinformationen in Feuerwehrwachen.
 
