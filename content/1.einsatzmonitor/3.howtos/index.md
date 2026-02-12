@@ -7,8 +7,6 @@ title: HowTos
 description: Anleitungen und Tipps für den täglichen Einsatz des EinsatzMonitors
 ---
 
-# HowTos
-
 In diesem Abschnitt finden Sie praktische Anleitungen und Tipps für den täglichen Einsatz des EinsatzMonitors.
 
 ## Anleitungen

@@ -4,8 +4,6 @@ description: Dokumentation für Connect
 links: []
 ---
 
-# Connect
-
 Willkommen zur Dokumentation zum Connect-Portal.
 
 ::u-page-card

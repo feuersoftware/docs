@@ -7,8 +7,6 @@ title: Einstellungen
 description: Konfiguration der verschiedenen Module und Ansichten des EinsatzMonitors
 ---
 
-# Einstellungen
-
 In diesem Abschnitt finden Sie alle Informationen zur Konfiguration der verschiedenen Module des EinsatzMonitors.
 
 ## Zugriff auf die Einstellungen

@@ -4,8 +4,6 @@ description: Dokumentation für die EinsatzApp
 links: []
 ---
 
-# EinsatzApp
-
 Willkommen zur Dokumentation der EinsatzApp.
 
 ::u-page-card

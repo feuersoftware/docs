@@ -4,8 +4,6 @@ description: Dokumentation für die PartnerApp
 links: []
 ---
 
-# PartnerApp
-
 Willkommen zur Dokumentation der PartnerApp.
 
 ::u-page-card

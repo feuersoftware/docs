@@ -4,8 +4,6 @@ description: Dokumentation für die HelferApp
 links: []
 ---
 
-# HelferApp
-
 Willkommen zur Dokumentation der HelferApp.
 
 ::u-page-card

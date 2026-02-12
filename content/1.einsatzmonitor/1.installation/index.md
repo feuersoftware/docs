@@ -7,8 +7,6 @@ title: Installation
 description: Installationsanleitungen und Systemvoraussetzungen für den EinsatzMonitor
 ---
 
-# Installation
-
 In diesem Abschnitt finden Sie alle Informationen zur Installation und Einrichtung des EinsatzMonitors.
 
 ## Artikel in diesem Bereich

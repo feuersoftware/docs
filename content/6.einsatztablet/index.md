@@ -4,8 +4,6 @@ description: Dokumentation für das EinsatzTablet
 links: []
 ---
 
-# EinsatzTablet
-
 Willkommen zur Dokumentation des EinsatzTablets.
 
 ::u-page-card

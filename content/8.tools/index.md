@@ -4,8 +4,6 @@ description: Dokumentation für weitere Tools - TetraControl2Connect, MailAgent 
 links: []
 ---
 
-# Tools
-
 Willkommen zur Dokumentation der zusätzlichen Tools und Hilfsprogramme.
 
 ::u-page-section
