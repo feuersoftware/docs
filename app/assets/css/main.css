@@ -15,3 +15,65 @@
   --color-primary-900: #4f1a1d;
   --color-primary-950: #2c090b;
 }
+
+.bg-theme {
+    background:  #952329;
+    background-color:  #952329;
+    color: var(--ui-color-neutral-100);
+  }
+  .dark {
+    .bg-theme {
+      background:  #952329;
+      background-color:  #952329;
+    }
+  }
+
+  ::-webkit-scrollbar {
+  background-color: transparent;
+    height: .6em;
+    width: .6em;
+    /* width: 10px; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  --tw-bg-opacity: 1;
+    background-color: var(--ui-color-neutral-100);
+    /* background: var(--ui-color-neutral-100);
+    border-radius: 5px; */
+}
+
+.dark ::-webkit-scrollbar-track {
+  border-radius: 5px;
+  --tw-bg-opacity: 1;
+    background-color: var(--ui-color-neutral-800);
+    /* background: var(--ui-color-neutral-100);
+    border-radius: 5px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: .6em;
+    --tw-bg-opacity: 1;
+    background-color: var(--ui-color-neutral-300);
+    /* background: var(--ui-color-neutral-200);
+    border-radius: 5px; */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  border-radius: .6em;
+    --tw-bg-opacity: 1;
+    background-color: var(--ui-color-neutral-700);
+    /* background: var(--ui-color-neutral-200);
+    border-radius: 5px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--ui-color-neutral-400);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: var(--ui-color-neutral-600);
+}

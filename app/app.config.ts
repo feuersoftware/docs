@@ -8,10 +8,18 @@ export default defineAppConfig({
     description: 'Dokumentation für alle FeuerSoftware Produkte',
     url: 'https://docsv2.feuersoftware.com'
   },
+  header: {
+    title: 'FeuerSoftware',
+    logo: {
+      light: '/logo.png',
+      dark: '/logo.png',
+      alt: 'FeuerSoftware'
+    }
+  },
   ui: {
     colors: {
       primary: 'primary',
-      neutral: 'zinc'
+      neutral: 'slate'
     }
   }
 })
