@@ -6,7 +6,8 @@ export default defineAppConfig({
   docus: {
     name: 'FeuerSoftware',
     description: 'Dokumentation für alle FeuerSoftware Produkte',
-    url: 'https://docsv2.feuersoftware.com'
+    url: 'https://docsv2.feuersoftware.com',
+    locale: 'de'
   },
   ui: {
     colors: {
