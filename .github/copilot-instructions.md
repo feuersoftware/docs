@@ -12,12 +12,10 @@ All documentation pages are Markdown files in `content/`. Each file **must** fol
 ---
 title: Page Title
 description: A short description
+source: "https://feuersoftware.com/doku/original-page/"
 ---
 
-<!-- Optional: source reference comment goes AFTER frontmatter, never before -->
-<!--
-Source: https://example.com/original-page/
--->
+![EinsatzMonitor FeatureName](/images/einsatzmonitor/EinsatzMonitor_FeatureName.png)
 
 Content starts here...
 ```
@@ -28,12 +26,9 @@ Content starts here...
 
 2. **Do not add a `# Heading` that duplicates the frontmatter `title`.** Docus automatically renders the `title` from frontmatter as the page heading. Adding a `# Heading` in the body causes the title to appear twice.
 
-3. **Images go directly after the frontmatter** (and optional source comment), before the body text. Follow the existing pattern:
-   ```markdown
-   ![EinsatzMonitor FeatureName](/images/einsatzmonitor/EinsatzMonitor_FeatureName.png)
-   ```
+3. **Source references go in the frontmatter as a `source` field**, not as HTML comments. Nuxt Studio strips HTML comments, so always use the frontmatter field.
 
-4. **Store images in `public/images/`**, organized by product (e.g., `public/images/einsatzmonitor/`).
+4. **Images go directly after the frontmatter**, before the body text. Store images in `public/images/`, organized by product (e.g., `public/images/einsatzmonitor/`).
 
 ## Locale
 

@@ -1,11 +1,8 @@
 ---
 title: Einstellungen
 description: Konfiguration der verschiedenen Module und Ansichten des EinsatzMonitors
+source: "https://feuersoftware.com/doku/ (Category: Einstellungen)"
 ---
-
-<!--
-Source: https://feuersoftware.com/doku/ (Category: Einstellungen)
--->
 
 
 In diesem Abschnitt finden Sie alle Informationen zur Konfiguration der verschiedenen Module des EinsatzMonitors.
