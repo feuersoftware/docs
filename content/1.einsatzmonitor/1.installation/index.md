@@ -1,3 +1,7 @@
+<!--
+Source: https://feuersoftware.com/doku/ (Category: Installation)
+-->
+
 ---
 title: Installation
 description: Installationsanleitungen und Systemvoraussetzungen für den EinsatzMonitor

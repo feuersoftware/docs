@@ -1,3 +1,7 @@
+<!--
+Source: https://feuersoftware.com/doku/ (Category: Einstellungen)
+-->
+
 ---
 title: Einstellungen
 description: Konfiguration der verschiedenen Module und Ansichten des EinsatzMonitors
@@ -25,10 +29,6 @@ Die Einstellungen des EinsatzMonitors erreichen Sie über:
   Anbindung an das Feuersoftware Connect Portal.
   ::
 
-  ::card{title="Ansichten" icon="i-heroicons-rectangle-group" to="/einsatzmonitor/einstellungen/ansichten"}
-  Konfiguration der verschiedenen Anzeigeansichten.
-  ::
-
   ::card{title="Karten" icon="i-heroicons-map" to="/einsatzmonitor/einstellungen/karten"}
   Kartendarstellung und Routenplanung.
   ::
@@ -39,14 +39,6 @@ Die Einstellungen des EinsatzMonitors erreichen Sie über:
 
   ::card{title="Verfügbarkeit" icon="i-heroicons-users" to="/einsatzmonitor/einstellungen/verfuegbarkeit"}
   Anzeige der verfügbaren Einsatzkräfte.
-  ::
-
-  ::card{title="Verkehr" icon="i-heroicons-truck" to="/einsatzmonitor/einstellungen/verkehr"}
-  Verkehrsinformationen und Behinderungen.
-  ::
-
-  ::card{title="TetraControl" icon="i-heroicons-signal" to="/einsatzmonitor/einstellungen/tetracontrol"}
-  Integration mit TetraControl.
   ::
 ::
 

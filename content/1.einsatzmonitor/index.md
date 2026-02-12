@@ -1,3 +1,7 @@
+<!--
+Source: https://feuersoftware.com/doku/?top-category=einsatzmonitor
+-->
+
 ---
 title: EinsatzMonitor
 description: Dokumentation für den EinsatzMonitor - Das zentrale Anzeigesystem für Einsatzinformationen
