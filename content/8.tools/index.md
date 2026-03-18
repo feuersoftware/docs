@@ -14,13 +14,13 @@ Verfügbare Tools
   :::u-page-feature
   ---
   icon: i-lucide-radio
-  to: /tools
+  to: /tools/tetracontrol2connect
   ---
   #title
   [TetraControl2Connect]{.text-primary}
 
   #description
-  Schnittstelle zur Übertragung von TETRA-Alarmierungen an Feuersoftware Connect.
+  Verbindet TetraControl mit mehreren Connect-Standorten – mit Admin-Oberfläche und SQLite-Datenbank.
   :::
 
   :::u-page-feature
