@@ -20,7 +20,7 @@ Verfügbare Tools
   [TetraControl2Connect]{.text-primary}
 
   #description
-  Verbindet TetraControl mit mehreren Connect-Standorten – mit Admin-Oberfläche und SQLite-Datenbank.
+  Schnittstelle zur Übertragung von TETRA-Alarmierungen an Feuersoftware Connect.
   :::
 
   :::u-page-feature
