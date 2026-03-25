@@ -12,6 +12,7 @@ const { data: latestPost } = useAsyncData('blog-teaser', () =>
     </template>
 
     <UBlogPost
+      orientation="horizontal"
       :to="latestPost.path"
       :title="latestPost.title"
       :description="latestPost.description"
@@ -19,6 +20,10 @@ const { data: latestPost } = useAsyncData('blog-teaser', () =>
       :date="latestPost.date"
       :author="latestPost.author"
       :badge="latestPost.minRead ? { label: `${latestPost.minRead} Min. Lesezeit`, color: 'neutral' } : undefined"
+      :ui="{
+        root: 'md:grid md:grid-cols-[200px_1fr] md:gap-6 md:items-start',
+        image: 'md:h-full md:max-h-40 object-cover rounded-lg'
+      }"
     />
 
     <div class="mt-6">
