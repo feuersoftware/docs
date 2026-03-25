@@ -26,12 +26,35 @@ useSeoMeta({
 
 <template>
   <UPage v-if="post">
-    <UPageHeader
-      :title="post.title"
-      :description="post.description"
-    />
-    <UPageBody>
-      <ContentRenderer :value="post" />
-    </UPageBody>
+    <div class="max-w-3xl mx-auto w-full">
+      <div class="pt-6">
+        <UButton
+          to="/blog"
+          variant="ghost"
+          color="neutral"
+          leading-icon="i-lucide-arrow-left"
+          size="sm"
+        >
+          Alle Beiträge
+        </UButton>
+      </div>
+      <UPageHeader
+        :title="post.title"
+        :description="post.description"
+        :ui="{ wrapper: 'py-8' }"
+      >
+        <template #headline>
+          <div class="flex items-center gap-3 text-sm text-muted mb-2">
+            <span v-if="post.author?.name">{{ post.author.name }}</span>
+            <span v-if="post.author?.name && (post.date || post.minRead)" class="text-muted">·</span>
+            <span v-if="post.date">{{ new Date(post.date).toLocaleDateString('de-DE', { year: 'numeric', month: 'long', day: 'numeric' }) }}</span>
+            <span v-if="post.minRead" class="text-muted">· {{ post.minRead }} Min. Lesezeit</span>
+          </div>
+        </template>
+      </UPageHeader>
+      <UPageBody prose>
+        <ContentRenderer :value="post" />
+      </UPageBody>
+    </div>
   </UPage>
 </template>

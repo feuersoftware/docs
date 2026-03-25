@@ -1,12 +1,12 @@
 ---
 title: Neue Admin-Oberfläche für TetraControl2Connect
-description: Mit Version 3.0 von TetraControl2Connect wurde die Konfiguration vollständig in eine moderne, webbasierte Admin-Oberfläche überführt. Wir erklären, was sich geändert hat und wie der Umstieg gelingt.
-date: "2025-03-25"
-image: /images/tools/tetracontrol2connect/dashboard.png
-minRead: 5
 author:
   name: FeuerSoftware Team
   description: Das FeuerSoftware Entwicklungsteam
+date: 2025-03-25
+description: Mit Version 3.0 von TetraControl2Connect wurde die Konfiguration vollständig in eine moderne, webbasierte Admin-Oberfläche überführt. Wir erklären, was sich geändert hat und wie der Umstieg gelingt.
+image: /images/tools/tetracontrol2connect/dashboard.png
+minRead: 5
 navigation: false
 ---
 

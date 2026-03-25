@@ -32,6 +32,24 @@ const links = computed(() =>
     </template>
 
     <template #right>
+      <div class="hidden lg:flex items-center gap-1 mr-1">
+        <UButton
+          to="/"
+          variant="ghost"
+          :ui="{ base: 'text-white hover:bg-white/10 active:bg-white/20 focus-visible:bg-white/10' }"
+        >
+          Dokumentation
+        </UButton>
+        <UButton
+          to="/blog"
+          variant="ghost"
+          :ui="{ base: 'text-white hover:bg-white/10 active:bg-white/20 focus-visible:bg-white/10' }"
+        >
+          Blog
+        </UButton>
+      </div>
+      <USeparator orientation="vertical" class="h-8 hidden lg:block opacity-30 mx-1" />
+
       <UContentSearchButton 
         class="lg:hidden"
         :ui="{

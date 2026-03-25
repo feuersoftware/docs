@@ -139,4 +139,3 @@ Unsere Produkte
   :::
 ::
 
-:blog-teaser
