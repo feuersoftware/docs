@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">HelferApp jetzt im Store verfuegbar</title>
+  <desc id="desc">Branding-Teaserbild fuer den Blogbeitrag zur Veroeffentlichung der HelferApp im Store.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2c090b" />
+      <stop offset="50%" stop-color="#6e1b1f" />
+      <stop offset="100%" stop-color="#952229" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.15" r="0.85">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+  <path d="M0 560C180 480 260 470 420 505C590 542 740 624 1200 500V630H0Z" fill="#4f1a1d" fill-opacity="0.7" />
+
+  <rect x="70" y="64" width="1060" height="502" rx="30" fill="url(#panel)" stroke="#ffffff" stroke-opacity="0.33" />
+
+  <g transform="translate(126 132)">
+    <rect x="0" y="0" width="250" height="364" rx="36" fill="#111827" stroke="#fecacc" stroke-opacity="0.75" stroke-width="4" />
+    <rect x="18" y="24" width="214" height="296" rx="22" fill="#1f2937" />
+    <rect x="52" y="70" width="146" height="20" rx="10" fill="#fca5a9" fill-opacity="0.92" />
+    <rect x="52" y="104" width="146" height="14" rx="7" fill="#e5e7eb" fill-opacity="0.9" />
+    <rect x="52" y="132" width="146" height="14" rx="7" fill="#e5e7eb" fill-opacity="0.76" />
+    <rect x="52" y="160" width="146" height="14" rx="7" fill="#e5e7eb" fill-opacity="0.62" />
+    <path d="M124 258c22-22 37-31 57-43 10 10 16 24 16 40 0 38-31 69-69 69s-69-31-69-69c0-17 7-32 18-44 15 11 24 23 35 36z" fill="#f43f5e" fill-opacity="0.95" />
+    <path d="M124 224v62M93 255h62" stroke="#ffffff" stroke-width="9" stroke-linecap="round" />
+    <circle cx="125" cy="340" r="12" fill="#fecdd3" />
+  </g>
+
+  <g transform="translate(430 164)">
+    <text x="0" y="0" fill="#ffe4e6" font-size="30" font-family="Montserrat, Poppins, Arial, sans-serif" font-weight="700" letter-spacing="1">FEUERSOFTWARE</text>
+    <text x="0" y="84" fill="#ffffff" font-size="78" font-family="Montserrat, Poppins, Arial, sans-serif" font-weight="800">HelferApp</text>
+    <text x="0" y="138" fill="#fee2e2" font-size="36" font-family="Montserrat, Poppins, Arial, sans-serif" font-weight="700">jetzt oeffentlich im Store</text>
+
+    <text x="0" y="228" fill="#fecacc" font-size="30" font-family="Montserrat, Poppins, Arial, sans-serif" font-weight="600">Schnelle Einsatzinfos, Navigation,</text>
+    <text x="0" y="272" fill="#fecacc" font-size="30" font-family="Montserrat, Poppins, Arial, sans-serif" font-weight="600">Triage und digitale Uebersicht</text>
+
+    <rect x="0" y="320" width="430" height="66" rx="33" fill="#fee2e3" />
+    <text x="34" y="362" fill="#6e1b1f" font-size="30" font-family="Montserrat, Poppins, Arial, sans-serif" font-weight="800">Dokumentation: /helferapp</text>
+  </g>
+</svg>
