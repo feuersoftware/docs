@@ -70,11 +70,3 @@ Die WebSocket-Verbindung zum Server wurde unterbrochen. Neue Einsätze und Ände
 
 Es gibt keine technische Begrenzung. In der Einsatzdetailseite wird angezeigt, wie viele Benutzer den Einsatz gerade geöffnet haben.
 
----
-
-## Support
-
-Bei weiteren Fragen oder Problemen:
-
-- **Dokumentation:** https://feuersoftware.com/doku/feuersoftware-einsatzmanager/
-- **Support:** Über das FeuerSoftware-Support-Portal oder den Connect-Administrator

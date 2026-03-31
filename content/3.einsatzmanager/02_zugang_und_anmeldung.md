@@ -34,8 +34,6 @@ Der EinsatzManager verwendet **Single Sign-On (SSO)** über das Connect-Portal. 
 
 Die Zuweisung der Rolle erfolgt ausschließlich über das **Connect-Portal** durch einen Administrator der Organisation. Wende dich bei Fragen zur Rechtevergabe an deinen Connect-Administrator.
 
-> **Ausblick:** In Zukunft werden weitere Login-Möglichkeiten angeboten, um den Anmeldeprozess weiter zu vereinfachen.
-
 ---
 
 ## Abmeldung

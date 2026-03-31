@@ -1,8 +1,6 @@
-# EinsatzManager – Produktübersicht
+# Produktübersicht
 
 Willkommen beim neuen EinsatzManager von Feuersoftware. Dieses Tool dient der zentralen Führung von Einsätzen, der Fahrzeugüberwachung in Echtzeit und der rechtssicheren Dokumentation.
-
-> **Hinweis zur Version:** Der EinsatzManager ist ein ganz neues Produkt, das kontinuierlich um weitere Funktionen erweitert wird – wir freuen uns sehr auf euer Feedback!
 
 Der **FeuerSoftware EinsatzManager** ist ein webbasiertes Einsatzleitsystem für Feuerwehren, Rettungsdienste und das THW. Er bietet eine zentrale Plattform zur Echtzeit-Überwachung von Fahrzeugen und Einheiten sowie zur rechtssicheren Dokumentation aller Einsatzgeschehen.
 
