@@ -9,7 +9,7 @@ Der **FeuerSoftware EinsatzManager** ist ein webbasiertes Einsatzleitsystem für
 Der EinsatzManager ist unter folgender Adresse erreichbar:
 **https://manager.feuersoftware.com**
 
-![Screenshot: Startseite / Login-Bereich](screenshots/01_login.png)
+![Screenshot: Startseite / Login-Bereich](/images/einsatzmanager/01_login.png)
 
 ---
 

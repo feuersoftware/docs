@@ -2,7 +2,7 @@
 
 Die Einsatzdetailseite ist das Herzstück des EinsatzManagers. Sie vereint alle einsatzrelevanten Informationen in einer dreispaltigen Ansicht und aktualisiert sich in Echtzeit.
 
-![Screenshot: Einsatzdetailseite in der Gesamtansicht (dreispaltig)](screenshots/05_details_gesamt.png)
+![Screenshot: Einsatzdetailseite in der Gesamtansicht (dreispaltig)](/images/einsatzmanager/05_details_gesamt.png)
 
 ---
 
@@ -41,7 +41,7 @@ Die interaktive Karte basiert auf OpenStreetMap und zeigt:
 
 Wenn der Mauszeiger über einen Fahrzeug-Pin bewegt wird, erscheinen der Fahrzeugname und der Zeitstempel des letzten Positionsupdates.
 
-![Screenshot: Einsatzkarte mit Fahrzeugmarkierungen](screenshots/05_details_karte.png)
+![Screenshot: Einsatzkarte mit Fahrzeugmarkierungen](/images/einsatzmanager/05_details_karte.png)
 
 ### Kartenebenen
 
@@ -85,7 +85,7 @@ Die Karte kann über ein Steuerelement auf die gesamte Bildschirmfläche vergrö
 
 Das System dokumentiert automatisch alle Statuswechsel und Dispositionen, die von Connect empfangen werden. Zusätzlich können manuelle Einträge ergänzt werden.
 
-![Screenshot: Einsatzprotokoll mit verschiedenen Ereignistypen](screenshots/05_details_protokoll.png)
+![Screenshot: Einsatzprotokoll mit verschiedenen Ereignistypen](/images/einsatzmanager/05_details_protokoll.png)
 
 ### Automatische Protokolleinträge
 
@@ -146,7 +146,7 @@ Aufklappbarer Bereich mit allen beim Anlegen erfassten Feldern:
 
 Dieser Bereich zeigt alle dem Einsatz zugewiesenen Fahrzeuge und Einheiten.
 
-![Screenshot: Bereich „Zugeteilte Einheiten" mit Fahrzeugkarten](screenshots/05_details_einheiten.png)
+![Screenshot: Bereich „Zugeteilte Einheiten" mit Fahrzeugkarten](/images/einsatzmanager/05_details_einheiten.png)
 
 Grundsätzlich werden alle Connect-Fahrzeuge automatisch geladen und stehen zur Verfügung. Für jede zugeteilte Einheit sind sichtbar:
 - Fahrzeugbild

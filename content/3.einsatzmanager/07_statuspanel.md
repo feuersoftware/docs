@@ -4,7 +4,7 @@ Das **Statuspanel** bietet eine permanente Echtzeit-Übersicht aller Fahrzeuge d
 
 Das Statuspanel ist über den Menüpunkt **„Statuspanel"** in der Hauptnavigation erreichbar.
 
-![Screenshot: Statuspanel in der Kachelansicht mit mehreren Standorten](screenshots/07_statuspanel_kacheln.png)
+![Screenshot: Statuspanel in der Kachelansicht mit mehreren Standorten](/images/einsatzmanager/07_statuspanel_kacheln.png)
 
 ---
 
@@ -20,13 +20,13 @@ Jede Fahrzeugkachel zeigt:
 - Aktueller Funkstatus (farblich codiert)
 - Letzter GPS-Zeitstempel
 
-![Screenshot: Einzelne Fahrzeugkachel im Statuspanel](screenshots/07_statuspanel_kachel_detail.png)
+![Screenshot: Einzelne Fahrzeugkachel im Statuspanel](/images/einsatzmanager/07_statuspanel_kachel_detail.png)
 
 ### Kartenansicht
 
 Die Kartenansicht stellt alle Fahrzeuge mit ihren aktuellen GPS-Positionen auf einer Karte dar. Farbige Marker entsprechen dem Funkstatus der Fahrzeuge.
 
-![Screenshot: Statuspanel Kartenansicht mit Fahrzeugmarkierungen](screenshots/07_statuspanel_karte.png)
+![Screenshot: Statuspanel Kartenansicht mit Fahrzeugmarkierungen](/images/einsatzmanager/07_statuspanel_karte.png)
 
 ---
 

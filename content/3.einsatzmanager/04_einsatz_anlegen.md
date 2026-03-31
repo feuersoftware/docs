@@ -10,7 +10,7 @@ In der Regel werden Einsätze **automatisch** über die Leitstelle oder bestehen
 
 Der Bereich „Einsatz anlegen" ist über die Schaltfläche **„+ Einsatz erstellen"** erreichbar.
 
-![Screenshot: Formular „Einsatz anlegen" in der Gesamtansicht](screenshots/04_einsatz_anlegen_gesamt.png)
+![Screenshot: Formular „Einsatz anlegen" in der Gesamtansicht](/images/einsatzmanager/04_einsatz_anlegen_gesamt.png)
 
 ---
 
@@ -55,7 +55,7 @@ Der Kartenmarker kann per Drag-and-Drop auf die exakte Position gezogen werden. 
 
 Über **„Position auf der Karte auswählen"** kann der Marker durch Klick an eine beliebige Stelle der Karte gesetzt werden.
 
-![Screenshot: Kartenbereich beim Anlegen eines Einsatzes mit positioniertem Marker](screenshots/04_einsatz_karte.png)
+![Screenshot: Kartenbereich beim Anlegen eines Einsatzes mit positioniertem Marker](/images/einsatzmanager/04_einsatz_karte.png)
 
 ---
 

@@ -22,7 +22,7 @@ Der EinsatzManager verwendet **Single Sign-On (SSO)** über das Connect-Portal. 
 3. Melde dich mit deinen Connect-Zugangsdaten an.
 4. Nach erfolgreicher Authentifizierung wirst du automatisch zur Einsatzübersicht weitergeleitet.
 
-![Screenshot: Login-Seite mit „Anmelden"-Button](screenshots/02_login_seite.png)
+![Screenshot: Login-Seite mit „Anmelden"-Button](/images/einsatzmanager/02_login_seite.png)
 
 ---
 

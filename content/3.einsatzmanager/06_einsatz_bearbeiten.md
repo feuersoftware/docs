@@ -2,7 +2,7 @@
 
 Die Bearbeitungsseite eines Einsatzes ist über die Schaltfläche **„Bearbeiten"** in der Kopfzeile der Einsatzdetailseite erreichbar.
 
-![Screenshot: Einsatz-Bearbeitungsformular](screenshots/06_einsatz_bearbeiten.png)
+![Screenshot: Einsatz-Bearbeitungsformular](/images/einsatzmanager/06_einsatz_bearbeiten.png)
 
 ---
 

@@ -2,7 +2,7 @@
 
 Nach der Anmeldung gelangt der Benutzer direkt zur **Einsatzübersicht**. Diese ist die zentrale Anlaufstelle des EinsatzManagers und zeigt alle laufenden sowie abgeschlossenen Einsätze der Organisation.
 
-![Screenshot: Dashboard in der Kachelansicht mit mehreren aktiven Einsätzen](screenshots/03_dashboard_kacheln.png)
+![Screenshot: Dashboard in der Kachelansicht mit mehreren aktiven Einsätzen](/images/einsatzmanager/03_dashboard_kacheln.png)
 
 ---
 
@@ -19,19 +19,19 @@ Die Standardansicht zeigt jeden Einsatz als Kachel. Jede Kachel enthält:
 - Zeitstempel (Beginn und Laufzeit)
 - Anzahl alarmierter Einheiten
 
-![Screenshot: Dashboard Kachelansicht – Detailansicht einer Kachel](screenshots/03_dashboard_kachel_detail.png)
+![Screenshot: Dashboard Kachelansicht – Detailansicht einer Kachel](/images/einsatzmanager/03_dashboard_kachel_detail.png)
 
 ### Listenansicht
 
 Die Listenansicht stellt alle Einsätze in einer kompakten Tabelle dar. Eignet sich besonders für Bildschirme mit vielen gleichzeitigen Einsätzen.
 
-![Screenshot: Dashboard Listenansicht](screenshots/03_dashboard_liste.png)
+![Screenshot: Dashboard Listenansicht](/images/einsatzmanager/03_dashboard_liste.png)
 
 ### Kartenansicht
 
 Die Kartenansicht zeigt bis zu 50 Einsätze geografisch auf einer OpenStreetMap-Karte. Einsätze werden als farbige Marker dargestellt; ein Klick öffnet eine Kurzübersicht.
 
-![Screenshot: Dashboard Kartenansicht mit Einsatzmarkierungen](screenshots/03_dashboard_karte.png)
+![Screenshot: Dashboard Kartenansicht mit Einsatzmarkierungen](/images/einsatzmanager/03_dashboard_karte.png)
 
 ---
 
@@ -62,7 +62,7 @@ Das Dashboard empfängt Einsatzmeldungen in Echtzeit über eine WebSocket-Verbin
 - **„Live-Aktualisierungen aktiviert"** (grün) – neue und geänderte Einsätze erscheinen automatisch
 - **„Live-Aktualisierungen deaktiviert"** (rot) – Verbindung unterbrochen, Seite manuell neu laden
 
-![Screenshot: Live-Aktualisierungen Badge grün / rot](screenshots/03_live_badge.png)
+![Screenshot: Live-Aktualisierungen Badge grün / rot](/images/einsatzmanager/03_live_badge.png)
 
 ---
 
