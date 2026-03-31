@@ -68,6 +68,34 @@ Folgende Funktionen können pro Organisation im Connect-Portal aktiviert oder de
 | Fahrzeugzuteilung | Manuelle Fahrzeugzuweisung zu Einsätzen |
 | Helfer-App | Integration mit der mobilen Helfer-App |
 | Schadensberichte | Meldung von Fahrzeugdefekten und Schäden |
+| SDS-Nachrichten | Kurztextnachrichten direkt an Fahrzeuge senden |
+| Eingeschränkter Zugriff auf beendete Einsätze | Beendete Einsätze werden nur noch 2 Stunden nach Abschluss angezeigt (Datenschutz) |
+
+---
+
+## Organisationseinstellungen im Connect-Portal
+
+Die EinsatzManager-spezifischen Einstellungen befinden sich im Connect-Portal unter **Organisationseinstellungen → EinsatzManager**.
+
+### SDS-Nachrichten
+
+Aktiviert die Möglichkeit, über die Fahrzeug-Detailansicht im Statuspanel direkte Kurztextnachrichten (SDS) an Fahrzeuge zu senden. Voraussetzung ist eine entsprechende TETRA-Anbindung.
+
+### Eingeschränkter Zugriff auf beendete Einsätze
+
+Aus Datenschutzgründen kann der Zugriff auf abgeschlossene Einsätze zeitlich eingeschränkt werden. Ist diese Option aktiviert, werden beendete Einsätze standardmäßig nur noch angezeigt, wenn sie **nicht älter als 2 Stunden** sind.
+
+**Gruppen mit Vollzugriff auf beendete Einsätze**
+
+Hier können Benutzergruppen hinterlegt werden, die unabhängig von der Zeitbeschränkung jederzeit alle beendeten Einsätze einsehen können (z. B. Führungsdienstgruppe oder Admins).
+
+### Externe Fahrzeuge
+
+Fahrzeuge externer Organisationen, die nicht über das Connect-Portal verwaltet werden, können manuell als externe Fahrzeuge hinterlegt werden. Sie erscheinen dann im EinsatzManager bei der Fahrzeugzuweisung.
+
+- **Herunterladen** – Exportiert die aktuelle Liste externer Fahrzeuge als Datei
+- **Import** – Importiert externe Fahrzeuge aus einer Datei (Massenimport)
+- **Externes Fahrzeug hinzufügen** – Einzelnes Fahrzeug manuell anlegen
 
 ---
 

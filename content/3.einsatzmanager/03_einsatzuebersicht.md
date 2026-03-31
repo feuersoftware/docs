@@ -8,7 +8,7 @@ Nach der Anmeldung gelangt der Benutzer direkt zur **Einsatzübersicht**. Diese 
 
 ## Anzeigemodi
 
-Die Einsätze können in drei verschiedenen Ansichten dargestellt werden:
+Die Einsätze können in zwei verschiedenen Ansichten dargestellt werden:
 
 ### Kachelansicht
 
@@ -21,15 +21,9 @@ Die Standardansicht zeigt jeden Einsatz als Kachel. Jede Kachel enthält:
 
 ![Screenshot: Dashboard Kachelansicht – Detailansicht einer Kachel](/images/einsatzmanager/03_dashboard_kachel_detail.png)
 
-### Listenansicht
-
-Die Listenansicht stellt alle Einsätze in einer kompakten Tabelle dar. Eignet sich besonders für Bildschirme mit vielen gleichzeitigen Einsätzen.
-
-![Screenshot: Dashboard Listenansicht](/images/einsatzmanager/03_dashboard_liste.png)
-
 ### Kartenansicht
 
-Die Kartenansicht zeigt bis zu 50 Einsätze geografisch auf einer OpenStreetMap-Karte. Einsätze werden als farbige Marker dargestellt; ein Klick öffnet eine Kurzübersicht.
+Die Kartenansicht zeigt bis zu 50 Einsätze geografisch auf einer Geografischen Karte. Einsätze werden als farbige Marker dargestellt; ein Klick öffnet eine Kurzübersicht.
 
 ![Screenshot: Dashboard Kartenansicht mit Einsatzmarkierungen](/images/einsatzmanager/03_dashboard_karte.png)
 
@@ -47,11 +41,13 @@ Auf der linken Seite befinden sich die Schnellfilter (Quick Actions), mit denen 
 | Standort | Auswahl eines Standorts / Wache |
 | Freitextsuche | Durchsucht Stichwort, Sachverhalt und Adresse |
 
-> **Standardfilter:** Beim Aufruf des Dashboards werden automatisch die **aktiven Einsätze** des letzten Jahres angezeigt.
+> **Standardfilter:** Beim Aufruf des Dashboards werden automatisch die **aktiven Einsätze** angezeigt.
 
 Alle Filter lassen sich kombinieren. Die Einstellungen bleiben beim Wechsel des Anzeigemodus erhalten.
 
-> **Hinweis:** Sollten hier viele alte Einsätze angezeigt werden, liegt dies daran, dass diese Einsätze nicht geschlossen wurden bzw. keinen Einsatzende-Zeitstempel besitzen. Alte Einsätze können über das **Connect-Portal** geschlossen werden. Zukünftig wird eine Funktion implementiert, mit der Einsätze automatisch nach einer definierten Zeit geschlossen werden.
+> **Datenschutz – Eingeschränkter Zugriff auf beendete Einsätze:** Ist diese Funktion im Connect-Portal aktiviert, werden abgeschlossene Einsätze standardmäßig nur noch angezeigt, wenn sie **nicht älter als 2 Stunden** sind. Gruppen, die im Connect-Portal als Ausnahme hinterlegt sind, haben weiterhin Vollzugriff auf alle beendeten Einsätze. Die Einstellung kann unter **Organisationseinstellungen → EinsatzManager** konfiguriert werden.
+
+> **Hinweis:** Sollten alte Einsätze als aktiv erscheinen, liegt dies daran, dass diese keinen Einsatzende-Zeitstempel besitzen. Betroffene Einsätze können über das **Connect-Portal** manuell geschlossen werden.
 
 ---
 
