@@ -12,8 +12,6 @@ Nach der Einrichtung gelangen Sie zum **Hauptbildschirm** der App. Die Navigatio
 | **Einsatzliste** | Alle aktiven Einsätze Ihrer Wache |
 | **Karte** | Kartenansicht mit Einsätzen und Fahrzeugpositionen |
 
-![Screenshot: Hauptbildschirm mit Tab-Navigation am unteren Rand](/images/helferapp/06_hauptbildschirm_navigation.png)
-
 ## App-Leiste
 
 Die Leiste oben enthält folgende Schaltflächen:
@@ -24,8 +22,6 @@ Die Leiste oben enthält folgende Schaltflächen:
 | Personen-Symbol | Besatzung wechseln |
 | Info-Symbol | Open-Source-Lizenzen anzeigen |
 | Abmelden-Symbol | Aus der App abmelden |
-
-![Screenshot: App-Leiste mit GPS-, Personen-, Info- und Abmelden-Symbol](/images/helferapp/06_app_leiste.png)
 
 ## Aktionsschaltfläche
 

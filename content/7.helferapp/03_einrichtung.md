@@ -15,9 +15,13 @@ Die HelferApp benötigt Zugriff auf Ihren **Gerätestandort**, um:
 - Ihren Standort für andere Einheiten sichtbar zu machen
 - Beim Erstellen eines neuen Einsatzes den aktuellen Standort automatisch zu ermitteln
 
-![Screenshot: Standortberechtigungs-Dialog des Betriebssystems](/images/helferapp/03_standortberechtigung.png)
+![Screenshot: Standortberechtigungs-Dialog](/images/helferapp/03_standortberechtigung.png)
 
 Tippen Sie auf **Berechtigung erteilen** und bestätigen Sie die Abfrage des Betriebssystems. Ohne Standortberechtigung sind die Ortungsfunktionen der App nicht verfügbar, alle anderen Funktionen bleiben aber nutzbar.
+
+Damit der Standort auch verwendet werden kann, wenn die App geschlossen ist, muss die Berechtigung im Betriebssystem auf **Immer** eingestellt sein.
+
+![Screenshot: Standortberechtigungs-Dialog des Betriebssystems](/images/helferapp/03_standortberechtigung_os.png)
 
 ## Besatzungsauswahl
 

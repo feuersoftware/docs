@@ -14,16 +14,14 @@ Nach dem ersten Start der App erscheint der **Anmeldebildschirm**. Die Zugangsda
 Die schnellste Anmeldemethode ist der QR-Code-Scan:
 
 1. Tippen Sie auf das **QR-Code-Symbol** auf dem Anmeldebildschirm.
-2. Halten Sie die Kamera auf den bereitgestellten QR-Code (z. B. ausgehängt im Fahrzeug oder vom Disponenten bereitgestellt).
+2. Halten Sie die Kamera auf den bereitgestellten QR-Code.
 3. Die App liest die Zugangsdaten automatisch aus und meldet Sie an.
 
-![Screenshot: QR-Code-Scanner in der HelferApp](/images/helferapp/02_qr_scanner.png)
-
-> **Hinweis:** Der QR-Code enthält die Fahrzeug-Zugangsdaten und ist nur für dieses Fahrzeug gültig. Teilen Sie ihn nicht mit Unbefugten.
+> **Hinweis:** Der QR-Code enthält die Zugangsdaten und ist nur für dieses Fahrzeug/Fußtrupp gültig. Teilen Sie ihn nicht mit Unbefugten.
 
 ## Anmeldung per Benutzername und Passwort
 
-Alternativ können Sie sich mit den Fahrzeug-Zugangsdaten manuell anmelden:
+Alternativ können Sie sich mit den Zugangsdaten manuell anmelden:
 
 1. Geben Sie **Benutzername** und **Passwort** in die entsprechenden Felder ein.
 2. Tippen Sie auf **Anmelden**.
