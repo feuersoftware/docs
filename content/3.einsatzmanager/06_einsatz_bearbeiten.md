@@ -1,3 +1,8 @@
+---
+title: Einsatz bearbeiten & abschließen
+description: Anleitung zum Bearbeiten, Aktualisieren und Abschließen eines Einsatzes im EinsatzManager
+---
+
 # Einsatz bearbeiten & abschließen
 
 Die Bearbeitungsseite eines Einsatzes ist über die Schaltfläche **„Bearbeiten"** in der Kopfzeile der Einsatzdetailseite erreichbar.

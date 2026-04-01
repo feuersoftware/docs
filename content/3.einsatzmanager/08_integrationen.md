@@ -1,3 +1,8 @@
+---
+title: Integrationen & Konfiguration
+description: Verfügbare Integrationen und Konfigurationsmöglichkeiten des EinsatzManagers, inkl. Kartenintegrationen und Alarmierung
+---
+
 # Integrationen & Konfiguration
 
 ## Kartenintegrationen

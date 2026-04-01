@@ -1,3 +1,8 @@
+---
+title: Einsatz anlegen
+description: Anleitung zum manuellen Anlegen eines Einsatzes im EinsatzManager
+---
+
 # Einsatz anlegen
 
 ## Leitstellenanbindung

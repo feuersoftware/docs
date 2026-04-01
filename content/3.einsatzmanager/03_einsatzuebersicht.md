@@ -1,3 +1,8 @@
+---
+title: Einsatzübersicht
+description: Das Dashboard des EinsatzManagers mit Übersicht aller laufenden und abgeschlossenen Einsätze
+---
+
 # Einsatzübersicht (Dashboard)
 
 Nach der Anmeldung gelangt der Benutzer direkt zur **Einsatzübersicht**. Diese ist die zentrale Anlaufstelle des EinsatzManagers und zeigt alle laufenden sowie abgeschlossenen Einsätze der Organisation.

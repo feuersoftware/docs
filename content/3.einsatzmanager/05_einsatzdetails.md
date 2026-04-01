@@ -1,3 +1,8 @@
+---
+title: Einsatzdetails
+description: Die Einsatzdetailseite mit Karte, Einheitenverwaltung, Protokoll und Meldungen in Echtzeit
+---
+
 # Einsatzdetails
 
 Die Einsatzdetailseite ist das Herzstück des EinsatzManagers. Sie vereint alle einsatzrelevanten Informationen in einer dreispaltigen Ansicht und aktualisiert sich in Echtzeit.

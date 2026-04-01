@@ -1,3 +1,8 @@
+---
+title: Statuspanel
+description: Echtzeit-Übersicht aller Fahrzeuge der Organisation im EinsatzManager Statuspanel
+---
+
 # Statuspanel
 
 Das **Statuspanel** bietet eine permanente Echtzeit-Übersicht aller Fahrzeuge der Organisation. Es ist besonders für die Leitstelle oder einen dedizierten Bildschirm in der Wache konzipiert.

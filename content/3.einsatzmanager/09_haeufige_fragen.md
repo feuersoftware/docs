@@ -1,3 +1,8 @@
+---
+title: Häufige Fragen (FAQ)
+description: Antworten auf häufige Fragen zur Anmeldung, Bedienung und Konfiguration des EinsatzManagers
+---
+
 # Häufige Fragen (FAQ)
 
 ## Anmeldung & Zugang

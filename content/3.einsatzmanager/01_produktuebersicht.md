@@ -1,3 +1,8 @@
+---
+title: Produktübersicht
+description: Überblick über den FeuerSoftware EinsatzManager und seinen Funktionsumfang für Feuerwehren, Rettungsdienste und THW
+---
+
 # Produktübersicht
 
 Willkommen beim neuen EinsatzManager von Feuersoftware. Dieses Tool dient der zentralen Führung von Einsätzen, der Fahrzeugüberwachung in Echtzeit und der rechtssicheren Dokumentation.
