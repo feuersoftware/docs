@@ -1,3 +1,8 @@
+---
+title: Einrichtung nach der Anmeldung
+description: Erste Einrichtungsschritte in der HelferApp – Standortberechtigung erteilen und Fahrzeugbesatzung auswählen oder wechseln
+---
+
 # Einrichtung nach der Anmeldung
 
 Nach der Anmeldebestätigung führt die App Sie durch zwei kurze Einrichtungsschritte.
@@ -10,6 +15,8 @@ Die HelferApp benötigt Zugriff auf Ihren **Gerätestandort**, um:
 - Ihren Standort für andere Einheiten sichtbar zu machen
 - Beim Erstellen eines neuen Einsatzes den aktuellen Standort automatisch zu ermitteln
 
+![Screenshot: Standortberechtigungs-Dialog des Betriebssystems](/images/helferapp/03_standortberechtigung.png)
+
 Tippen Sie auf **Berechtigung erteilen** und bestätigen Sie die Abfrage des Betriebssystems. Ohne Standortberechtigung sind die Ortungsfunktionen der App nicht verfügbar, alle anderen Funktionen bleiben aber nutzbar.
 
 ## Besatzungsauswahl
@@ -19,6 +26,8 @@ Wählen Sie die aktuelle Fahrzeugbesatzung aus:
 1. Aus der Liste der verfügbaren Personen Ihrer Wache können Sie **Besatzungsmitglieder antippen**, um sie auszuwählen.
 2. Falls eine Person nicht in der Liste erscheint, können Sie sie als **freien Text** (Name eingeben) hinzufügen.
 3. Bestätigen Sie die Auswahl.
+
+![Screenshot: Besatzungsauswahl-Bildschirm mit Personenliste](/images/helferapp/03_besatzungsauswahl.png)
 
 Die gewählte Besatzung wird mit dem Einsatz und den Fahrzeugdaten verknüpft und ist für Disponenten und andere Einheiten sichtbar.
 

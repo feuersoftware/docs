@@ -1,3 +1,8 @@
+---
+title: Häufige Fragen (FAQ)
+description: Antworten auf häufige Fragen zur Anmeldung, Verbindung, Token-Gültigkeit, Kartenanzeige und Triage-Funktion der HelferApp
+---
+
 # Häufige Fragen (FAQ)
 
 **Ich bekomme keine Zugangsdaten – an wen wende ich mich?**

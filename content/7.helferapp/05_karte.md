@@ -1,6 +1,13 @@
+---
+title: Kartenansicht
+description: Interaktive Kartenansicht der HelferApp mit Fahrzeugpositionen in Echtzeit, wechselbaren Kartentypen sowie Löschwasserversorgung und Einsatzmittel-Layer
+---
+
 # Kartenansicht
 
 Der zweite Tab zeigt eine **interaktive Karte** mit allen relevanten Informationen im Überblick.
+
+![Screenshot: Kartenansicht mit Fahrzeugmarkern und Einsatzorten](/images/helferapp/05_karte_uebersicht.png)
 
 ## Kartentypen
 
@@ -14,6 +21,8 @@ Der zweite Tab zeigt eine **interaktive Karte** mit allen relevanten Information
 | **Hybrid** | Satellit mit Straßenbeschriftungen |
 
 Zusätzlich kann der **Verkehrslayer** ein- und ausgeschaltet werden.
+
+![Screenshot: Kartentypen-Auswahl in den Karteneinstellungen](/images/helferapp/05_karte_typen.png)
 
 ## Fahrzeugpositionen
 
@@ -40,5 +49,7 @@ Tippen Sie auf einen Fahrzeug-Marker, um den Rufnamen und weitere Informationen 
 
 - Zeigt Hydranten aus der Wasserkarte-Datenbank (detaillierte Wassernetzinformationen)
 - Tippen Sie auf einen Hydranten für Durchmesser und Kupplungsdetails
+
+![Screenshot: Karte mit aktivierten POI-Layern (Hydranten, Wasserbehälter)](/images/helferapp/05_karte_poi_layer.png)
 
 > **Tipp:** Die Kartenlayer-Einstellungen werden gespeichert und bleiben beim nächsten App-Start erhalten.

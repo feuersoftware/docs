@@ -1,6 +1,13 @@
-# HelferApp – Übersicht
+---
+title: Produktübersicht
+description: Die HelferApp von FeuerSoftware – mobile Einsatz-App für Fahrzeugbesatzungen mit Echtzeit-Einsatzüberblick, Kartenansicht, Kommunikation und optionaler Triage-Erfassung
+---
+
+# Produktübersicht
 
 Die **HelferApp** ist eine mobile Einsatz-App von Feuer Software, entwickelt für Fahrzeugbesatzungen von Rettungs- und Feuerwehreinheiten. Sie ist die mobile Ergänzung zum EinsatzTablet und ermöglicht die Koordination und Kommunikation direkt vom Smartphone aus.
+
+![Screenshot: Hauptbildschirm der HelferApp mit Einsatzliste](/images/helferapp/01_hauptbildschirm.png)
 
 **Die HelferApp unterstützt Einsatzkräfte bei:**
 
@@ -21,6 +28,8 @@ Die HelferApp ist kostenlos in beiden großen App-Stores verfügbar:
 |-----------|------|
 | **Google Play Store** (Android) | [HelferApp im Google Play Store](https://play.google.com/store/apps/details?id=com.feuersoftware.helferapp&hl=gsw) |
 | **Apple App Store** (iOS/iPadOS) | [HelferApp im Apple App Store](https://apps.apple.com/de/app/helferapp/id6730127875) |
+
+![Screenshot: App-Store-Badges für Google Play und Apple App Store](/images/helferapp/01_store_badges.png)
 
 **Systemvoraussetzungen:**
 - Android: Version 8.0 oder höher empfohlen
