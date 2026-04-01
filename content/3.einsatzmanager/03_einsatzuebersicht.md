@@ -24,7 +24,7 @@ Die Standardansicht zeigt jeden Einsatz als Kachel. Jede Kachel enthält:
 - Zeitstempel (Beginn und Laufzeit)
 - Anzahl alarmierter Einheiten
 
-![Screenshot: Dashboard Kachelansicht – Detailansicht einer Kachel](/images/einsatzmanager/03_dashboard_kachel_detail.png)
+![Screenshot: Dashboard in der Kachelansicht mit mehreren aktiven Einsätzen](/images/einsatzmanager/03_dashboard_kacheln.png)
 
 ### Kartenansicht
 
@@ -62,8 +62,6 @@ Das Dashboard empfängt Einsatzmeldungen in Echtzeit über eine WebSocket-Verbin
 
 - **„Live-Aktualisierungen aktiviert"** (grün) – neue und geänderte Einsätze erscheinen automatisch
 - **„Live-Aktualisierungen deaktiviert"** (rot) – Verbindung unterbrochen, Seite manuell neu laden
-
-![Screenshot: Live-Aktualisierungen Badge grün / rot](/images/einsatzmanager/03_live_badge.png)
 
 ---
 
