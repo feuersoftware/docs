@@ -1,25 +1,27 @@
 ---
-title: Defektberichte
-description: Mängelmeldungen erfassen, kommentieren und verwalten im Connect Portal
+title: Mängelmeldungen
+description: Mängelmeldungen zu Fahrzeugen und Ausrüstung erfassen, kommentieren und verwalten im Connect Portal
 ---
 
-# Defektberichte
+# Mängelmeldungen
 
-Defektberichte (auch Mängelmeldungen) ermöglichen es Mitgliedern, Schäden an Fahrzeugen oder Ausrüstung zu melden. Die Funktion ist auf **Standort-Ebene** verfügbar und muss in der Organisation aktiviert sein.
+Mängelmeldungen ermöglichen es Mitgliedern, Schäden oder Defekte an Fahrzeugen und Ausrüstung zu melden. Die Funktion ist auf **Standort-Ebene** verfügbar und muss in der Organisation aktiviert sein.
 
 Meldungen können sowohl über das Connect Portal als auch direkt aus der **EinsatzApp** erstellt werden.
+
+![Screenshot: Mängelmeldungen Übersicht](/images/connect/10_maengelmeldungen_uebersicht.png)
 
 ---
 
 ## Voraussetzungen
 
-Die Defektbericht-Funktion muss für die Organisation freigeschaltet sein. Zusätzlich kann in den [Standort-Einstellungen](./05_standorte) eine **Mailing-Liste** hinterlegt werden, deren Mitglieder bei neuen Meldungen per E-Mail benachrichtigt werden.
+Die Mängelmeldungs-Funktion muss für die Organisation freigeschaltet sein. Zusätzlich kann in den [Standort-Einstellungen](./05_standorte) eine **Mailing-Liste** hinterlegt werden, deren Mitglieder bei neuen Meldungen per E-Mail benachrichtigt werden.
 
 ---
 
 ## Übersicht
 
-**Seitenleiste → Defektberichte**
+**Seitenleiste → Mängelmeldungen**
 
 Die Übersicht zeigt alle Meldungen mit:
 - Titel und Kategorie
@@ -30,17 +32,19 @@ Die Liste kann nach Status gefiltert werden.
 
 ---
 
-## Defektbericht erstellen
+## Mängelmeldung erstellen
 
 ### Im Connect Portal
-1. **„Defektbericht erstellen"** klicken
+1. **„Mängelmeldung erstellen"** klicken
 2. Felder ausfüllen:
-   - **Bezeichnung** (kurze Beschreibung des Defekts)
+   - **Bezeichnung** (kurze Beschreibung des Mangels)
    - **Kategorie** (aus vordefinierten Kategorien wählen)
    - **Betroffenes Fahrzeug** (optional)
    - **Beschreibung** (detaillierte Fehlerbeschreibung)
    - **Verantwortliche Person** (optional)
 3. Speichern
+
+![Screenshot: Mängelmeldung erstellen](/images/connect/10_maengelmeldung_erstellen.png)
 
 ### In der EinsatzApp
 Flammen-Symbol in der Menüleiste → **„Mangel melden"** → Formular ausfüllen → Speichern.
@@ -49,7 +53,7 @@ Flammen-Symbol in der Menüleiste → **„Mangel melden"** → Formular ausfül
 
 ## Kategorien verwalten
 
-**Seitenleiste → Defektbericht-Kategorien**
+**Seitenleiste → Mängelmeldungs-Kategorien**
 
 Kategorien helfen bei der Strukturierung der Meldungen (z. B. „Fahrzeug", „Beladung", „Gebäude", „Atemschutz").
 
@@ -60,16 +64,18 @@ Kategorien helfen bei der Strukturierung der Meldungen (z. B. „Fahrzeug", „B
 
 ---
 
-## Defektbericht bearbeiten und kommentieren
+## Mängelmeldung bearbeiten und kommentieren
 
-Einen Defektbericht in der Übersicht antippen → Detailansicht:
+Eine Mängelmeldung in der Übersicht antippen → Detailansicht:
 
 - **Status ändern** – von Offen auf In Bearbeitung oder Abgeschlossen
 - **Kommentare** – alle Beteiligten können Kommentare hinterlassen (z. B. Rückmeldungen, Fortschrittsinfos)
 - **Kommentare löschen** – mit ausreichenden Berechtigungen
 
+![Screenshot: Mängelmeldung Detailansicht mit Kommentaren](/images/connect/10_maengelmeldung_detail.png)
+
 ---
 
-## Defektbericht löschen
+## Mängelmeldung löschen
 
-In der Detailansicht → **„Löschen"** → Bestätigungsdialog. Gelöschte Berichte können nicht wiederhergestellt werden.
+In der Detailansicht → **„Löschen"** → Bestätigungsdialog. Gelöschte Meldungen können nicht wiederhergestellt werden.

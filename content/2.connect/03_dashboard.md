@@ -7,6 +7,8 @@ description: Startseite des Connect Portals – Schnellübersicht über Einsätz
 
 Das Dashboard ist die Startseite des Connect Portals und gibt auf einen Blick den aktuellen Status der Organisation oder des Standorts wieder.
 
+![Screenshot: Connect Portal Dashboard](/images/connect/03_dashboard.png)
+
 ---
 
 ## Aufbau des Dashboards
@@ -35,7 +37,7 @@ Die Seitenleiste links enthält alle Hauptbereiche des Portals. Sie ist in folge
 - Personal & Zugriff (Benutzer, Gruppen, Rollen)
 - Einsätze
 - Fahrzeuge
-- Defektberichte
+- Mängelmeldungen
 - Alarmierung
 - Schnittstellen
 - Aktivitätsprotokolle

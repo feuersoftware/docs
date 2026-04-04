@@ -107,8 +107,7 @@ Alternativ kann ein manueller Einsatz im Connect Portal erstellt werden, um die 
 
 Prüfe:
 1. **Statische AAO** – ist für das Stichwort eine Regel mit den richtigen Alarmgruppen hinterlegt?
-2. **Leitstellen-Zuordnung** – sind die eingehenden Leitstellen-Einheiten den richtigen FeuerSoftware-Alarmgruppen zugeordnet? (Control Center → Zuordnungen)
-3. **Benutzer in Alarmgruppe** – sind die betreffenden Benutzer der Alarmgruppe zugeordnet?
+2. **Benutzer in Alarmgruppe** – sind die betreffenden Benutzer der Alarmgruppe zugeordnet?
 
 ---
 

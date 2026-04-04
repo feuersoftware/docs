@@ -11,6 +11,8 @@ description: Login, Organisations-Registrierung, Benutzerverifizierung und Zwei-
 
 Das Connect Portal ist unter [connect.feuersoftware.com](https://connect.feuersoftware.com) erreichbar.
 
+![Screenshot: Connect Portal Login](/images/connect/02_login.png)
+
 1. E-Mail-Adresse und Passwort eingeben
 2. **„Anmelden"** klicken
 
@@ -50,6 +52,8 @@ Auf der Login-Seite **„Passwort vergessen"** klicken → E-Mail-Adresse eingeb
 2FA erhöht die Kontosicherheit durch einen zweiten Anmeldeschritt.
 
 ### 2FA einrichten (eigenes Konto)
+
+![Screenshot: 2FA QR-Code einrichten](/images/connect/02_2fa_einrichten.png)
 
 1. Seitenleiste → **Profil**
 2. Abschnitt **„Zwei-Faktor-Authentifizierung"** öffnen

@@ -121,11 +121,11 @@ Funktionen sind Bezeichnungen für Positionen innerhalb der Organisation (z. B. 
 
 **Seitenleiste → Mailing-Listen**
 
-Mailing-Listen sind E-Mail-Verteilerlisten, z. B. für Defektberichte oder Benachrichtigungen.
+Mailing-Listen sind E-Mail-Verteilerlisten, z. B. für Mängelmeldungen oder Benachrichtigungen.
 
 - Listen anlegen und benennen
 - Benutzer oder Gruppen als Empfänger hinterlegen
-- Mailing-Listen können in den Standorteinstellungen als Empfänger für Defektberichte eingetragen werden
+- Mailing-Listen können in den Standorteinstellungen als Empfänger für Mängelmeldungen eingetragen werden
 
 ---
 
@@ -133,11 +133,6 @@ Mailing-Listen sind E-Mail-Verteilerlisten, z. B. für Defektberichte oder Benac
 
 **Seitenleiste → Geräte**
 
-Hier werden speziell konfigurierte Accounts für Geräte verwaltet:
+Hier werden speziell konfigurierte Accounts für den **EinsatzMonitor** verwaltet. Diese Accounts sind für den Dauerbetrieb auf einem festen Anzeigegerät in der Fahrzeughalle vorgesehen und haben eingeschränkte Berechtigungen.
 
-| Typ | Beschreibung |
-|---|---|
-| **EinsatzManager** | Account für den webbasierten EinsatzManager |
-| **EinsatzMonitor** | Account für den Anzeigebildschirm in der Fahrzeughalle |
-
-Diese Accounts sind für den Dauerbetrieb auf einem festen Gerät vorgesehen und haben eingeschränkte Berechtigungen.
+![Screenshot: Geräte-Accounts](/images/connect/04_geraete_accounts.png)

@@ -38,9 +38,8 @@ Der Wechsel zwischen Organisationsansicht und den einzelnen Standorten erfolgt �
 | [Einsätze](./07_einsaetze) | Einsatzübersicht, Details, Protokoll, Kartenansicht |
 | [News & Termine](./08_news_und_termine) | Beiträge erstellen und verwalten, Terminverwaltung |
 | [Infoboard](./09_infoboard) | Informationsaushänge verwalten |
-| [Defektberichte](./10_defektberichte) | Mängelmeldungen erfassen und verwalten |
+| [Mängelmeldungen](./10_defektberichte) | Mängelmeldungen erfassen und verwalten |
 | [Alarmierung](./11_alarmierung) | Stichwörter, Alarmgruppen, AAO, Dynamische Regeln |
 | [Organisationseinstellungen](./12_organisationseinstellungen) | Allgemein, Lizenzen, Einsätze, HelferApp, Datenlöschung |
 | [Schnittstellen](./13_schnittstellen) | Alle Integrationen auf Organisations- und Standort-Ebene |
-| [Leitstellen-Integration](./14_leitstelle) | Control Center – Ressourcen, Geräte, Zuordnungen |
 | [Häufige Fragen (FAQ)](./15_haeufige_fragen) | Schnelle Antworten auf die häufigsten Fragen |

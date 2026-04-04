@@ -13,6 +13,8 @@ Die Alarmierungskonfiguration ist auf **Standort-Ebene** und teilweise auf **Org
 
 **Seitenleiste → Alarmierung → Stichwörter**
 
+![Screenshot: Stichwörter Übersicht](/images/connect/11_stichwoerter.png)
+
 Stichwörter (auch Einsatzstichwörter) beschreiben die Art eines Einsatzes (z. B. „B2 – Brand Mittel", „TH1 – Technische Hilfe Klein").
 
 ### Standort-Ebene
@@ -35,6 +37,8 @@ Stichwörter auf Organisationsebene stehen allen Standorten zur Verfügung.
 
 **Seitenleiste → Alarmierung → Alarmgruppen**
 
+![Screenshot: Alarmgruppe bearbeiten](/images/connect/11_alarmgruppen.png)
+
 Alarmgruppen definieren, welche Mitglieder bei einem Alarm benachrichtigt werden. Sie können aus einzelnen Benutzern oder Gruppen zusammengestellt werden.
 
 ### Alarmgruppe anlegen
@@ -50,6 +54,8 @@ Alarmgruppen werden in der AAO und bei manuell erstellten Einsätzen verwendet.
 ## Statische AAO (Alarm- und Ausrückeordnung)
 
 **Seitenleiste → Alarmierung → Alarm-Regelwerk**
+
+![Screenshot: Statische AAO – Regelwerk](/images/connect/11_aao_statisch.png)
 
 Die statische AAO definiert, welche Alarmgruppen und Fahrzeuge bei einem bestimmten Stichwort automatisch alarmiert werden.
 

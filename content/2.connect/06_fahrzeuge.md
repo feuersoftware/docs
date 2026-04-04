@@ -13,6 +13,8 @@ Die Fahrzeugverwaltung ist auf **Standort-Ebene** verfügbar. Auf **Organisation
 
 **Seitenleiste → Fahrzeuge**
 
+![Screenshot: Fahrzeugübersicht](/images/connect/06_fahrzeuge_uebersicht.png)
+
 Die Übersicht zeigt alle Fahrzeuge des Standorts in einer Tabelle:
 
 - Fahrzeugname und -typ
@@ -60,14 +62,20 @@ Eigene Verfügbarkeitszustände können angelegt und mit Farben versehen werden.
 Zeigt eine Echtzeit-Übersicht des Fahrzeugs mit aktuellem Status, Position und laufenden Einsätzen.
 
 ### Tab: Zusatzinformationen
-Dynamische Felder für fahrzeugspezifische Informationen, z. B.:
-- Beladungsliste
-- Technische Daten
-- Wartungshinweise
+Technische Messwerte und Statusdaten des Fahrzeugs, die automatisch über externe Systeme befüllt werden. Typische Anwendungsfälle sind:
 
-Felder können frei definiert und mit verschiedenen Datentypen (Text, Zahl, Datum, Checkbox) angelegt werden.
+| Beispiel | Quelle |
+|---|---|
+| Batteriespannung | TetraControl CVM-Modul |
+| Ladezustand | UBX-Box |
+| Funkstatus | TetraControl |
+| GPS-Position | MQTT-Telemetrie |
 
-> **Hinweis:** Manuell angelegte Zusatzfelder können durch eingehende Schnittstellenupdates überschrieben werden, wenn der Feldname übereinstimmt. Eindeutige Namen verwenden, um dies zu vermeiden.
+Die Werte werden automatisch über **MQTT** oder die **FeuerSoftware API** aktualisiert und sind schreibgeschützt – sie können nicht manuell bearbeitet werden.
+
+> **Hinweis:** Wenn ein Feldname über die Schnittstelle belegt wird, sollten manuell angelegte Felder mit anderen Namen verwendet werden, um Überschreibungen zu vermeiden.
+
+![Screenshot: Fahrzeug Zusatzinformationen mit technischen Werten](/images/connect/06_fahrzeug_zusatzinformationen.png)
 
 ### Tab: Integrationen
 Fahrzeugspezifische Einstellungen für angebundene Drittsysteme (z. B. Traccar GPS-Tracking).
