@@ -42,4 +42,7 @@ Der Wechsel zwischen Organisationsansicht und den einzelnen Standorten erfolgt �
 | [Alarmierung](./11_alarmierung) | Stichwörter, Alarmgruppen, AAO, Dynamische Regeln |
 | [Organisationseinstellungen](./12_organisationseinstellungen) | Allgemein, Lizenzen, Einsätze, HelferApp, Datenlöschung |
 | [Schnittstellen](./13_schnittstellen) | Alle Integrationen auf Organisations- und Standort-Ebene |
+| [Verfügbarkeiten](./16_verfuegbarkeiten) | Verfügbarkeitsstatus der Einsatzkräfte verwalten und auswerten |
+| [Statistik-Monitor](./17_statistik_monitor) | Verfügbarkeitsstatistiken als öffentliche Webseite darstellen |
+| [Benutzer-Tools](./18_benutzer_tools) | Benutzerdaten exportieren, importieren und per API steuern |
 | [Häufige Fragen (FAQ)](./15_haeufige_fragen) | Schnelle Antworten auf die häufigsten Fragen |

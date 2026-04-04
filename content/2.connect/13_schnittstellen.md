@@ -20,12 +20,12 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 |---|---|
 | **Cobra** | Anbindung an das Cobra-Alarmierungssystem |
 | **DeAlarm** | Integration mit DeAlarm für digitale Alarmierung |
-| **Divera** | Datenaustausch mit Divera 24/7 |
+| **[Divera 24/7](./schnittstellen/divera)** | Einsätze aus Divera 24/7 per Webhook weiterleiten |
 | **FAS** | Anbindung an FAS-Systeme |
 | **Navlog** | Integration mit Navlog für Einsatznavigation |
 | **News-Mail-Eingang** | News-Beiträge per E-Mail erstellen (Mail-to-News) |
 | **Public API** | Zugang zur öffentlichen FeuerSoftware-API auf Organisationsebene |
-| **Wasserkarte** | Integration der Wasserkarte (Hydranten und Wasserentnahmestellen) |
+| **[Wasserkarte](./schnittstellen/wasserkarte)** | Hydranten und Wasserentnahmestellen aus Wasserkarte.info einbinden |
 
 ---
 
@@ -35,14 +35,14 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 
 | Schnittstelle | Beschreibung |
 |---|---|
-| **Elion** | Anbindung an das Elion-System |
+| **[Elion](./schnittstellen/elion)** | Einsatzdaten, Fahrzeugstatus und -positionen an e:LION übermitteln |
 | **Fireboard** | Integration mit Fireboard für Alarmierung und Statusmeldungen |
 | **[Homematic HCU1](./schnittstellen/homematic)** | Alarmweiterleitung von Homematic Rauchwarnmeldern über die HCU1 |
 | **[Lupus Electronics](./schnittstellen/lupus)** | Alarmweiterleitung von Lupus Rauchwarnmeldern über die Lupus Cloud |
 | **Public API** | Zugang zur öffentlichen FeuerSoftware-API auf Standortebene |
 | **RescueTablet** | Anbindung an RescueTablet-Systeme |
+| **[TetraControl CVM](./schnittstellen/tetracontrol)** | Spannungs- und Stromüberwachung per CVM Modul und MQTT |
 | **Webhooks** | Ausgehende Webhooks bei Ereignissen (z. B. neuer Einsatz, Statusänderung) |
-| **TetraControl** | Integration mit TetraControl für Digitalfunk-Status |
 | **[X-Sense](./schnittstellen/xsense)** | Alarmweiterleitung von X-Sense Rauchwarnmeldern über die X-Sense App |
 
 ---
@@ -108,42 +108,3 @@ Die Wasserkarte-Integration blendet Hydranten und Wasserentnahmestellen in der K
 3. Region konfigurieren
 4. Speichern
 
----
-
-## Homematic / Lupus (Smart Home)
-
-Diese Integrationen ermöglichen die automatische Steuerung von Smart-Home-Geräten bei Alarmereignissen (z. B. Licht einschalten, Tor öffnen).
-
-### Einrichten
-1. **Schnittstellen → Homematic** (oder Lupus)
-2. IP-Adresse und Zugangsdaten der Zentrale eingeben
-3. Geräte und Aktionen konfigurieren (welches Gerät bei welchem Ereignis)
-4. Speichern
-
----
-
-## TetraControl
-
-**Schnittstellen → TetraControl**
-
-Integration mit dem TetraControl-System für die Anzeige von Digitalfunk-Fahrzeugstatus im EinsatzManager und EinsatzMonitor.
-
-### Einrichten
-1. **Schnittstellen → TetraControl**
-2. Verbindungsdaten des TetraControl-Servers eingeben
-3. Fahrzeuge und Statusmapping konfigurieren
-4. Speichern
-
----
-
-## Xsense
-
-**Schnittstellen → Xsense**
-
-Integration mit Xsense-Rauchmeldern. Gebäude und Melder können im Portal verwaltet werden. Bei Auslösung eines Melders wird ein Einsatz erstellt.
-
-### Einrichten
-1. **Schnittstellen → Xsense**
-2. Xsense-Account verknüpfen
-3. Gebäude und Melder zuordnen
-4. Speichern

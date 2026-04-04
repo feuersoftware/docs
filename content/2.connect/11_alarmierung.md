@@ -130,6 +130,42 @@ Einsatz-Einheiten sind benannte Gruppen, die in einem Einsatz eingesetzt werden 
 
 ---
 
+## Testalarm versenden
+
+Eine Testbenachrichtigung kann direkt aus dem Connect Portal gesendet werden, um zu prüfen, ob Push-Benachrichtigungen beim gewünschten Gerät ankommen.
+
+### Für einzelne Benutzer
+
+1. Im Connect Portal anmelden
+2. **Seitenleiste → Profil**
+3. Im unteren Bereich sind alle registrierten Geräte des Benutzers aufgelistet
+4. Gewünschtes Gerät auswählen und auf das **Glocken-Symbol** klicken
+
+Die Testbenachrichtigung wird als Push-Nachricht zugestellt mit dem Text: **„Testbenachrichtigung – Dies ist eine Testnachricht"**
+
+Die Nachricht verwendet kritischen Benachrichtigungsstatus – sie wird auch bei stummgeschaltetem Gerät angezeigt, sofern die App-Berechtigungen und das Alarmprofil entsprechend eingestellt sind.
+
+> **Wichtig:** Testalarme erscheinen weder in der Einsatzhistorie noch als aktiver Einsatz – es wird ausschließlich eine Push-Benachrichtigung gesendet.
+
+Nicht mehr genutzte Geräte können über das **Papierkorb-Symbol** entfernt werden.
+
+### Für Administratoren (Gruppentest)
+
+Als Administrator kann eine dedizierte Alarmgruppe für Testzwecke angelegt werden:
+
+1. **Seitenleiste → Alarmierung → Alarmgruppen → „Alarmgruppe anlegen"**
+2. Aussagekräftigen Namen vergeben (z. B. „Alarmgruppe Testbenachrichtigung")
+3. Gewünschte Mitglieder hinzufügen
+4. In der Alarmgruppenübersicht auf das **Glocken-Symbol** klicken
+
+> **Achtung:** Nach dem Klicken auf das Glocken-Symbol erfolgt **keine weitere Bestätigungsabfrage** – die Benachrichtigung wird sofort gesendet.
+
+### Regelmäßige Testalarme
+
+Für wiederkehrende Testalarme kann die öffentliche Connect-Schnittstelle mit dem Einsatz-Upload-Tool und einem geplanten Task (z. B. Windows Task Scheduler) verwendet werden.
+
+---
+
 ## Alert-Regeln
 
 **Seitenleiste → Alert-Regeln** *(nur Organisations-Ebene)*
