@@ -13,7 +13,7 @@ description: Antworten auf die häufigsten Fragen zur EinsatzApp – Alarmierung
 
 Die häufigsten Ursachen:
 
-- **Alarm-Modus ist auf „Lautlos" gestellt** – Flammen-FAB antippen und auf „Immer laut" wechseln.
+- **Alarm-Modus ist auf „Lautlos" gestellt** – Flammen-Symbol in der Menüleiste antippen und auf „Immer laut" wechseln.
 - **iOS:** Kritische Benachrichtigungen nicht aktiviert → [iOS-Systemeinstellungen](/einsatzapp/ios-systemeinstellungen)
 - **Android:** DND-Zugriff nicht erteilt oder Akkuoptimierung aktiv → [Android-Systemeinstellungen](/einsatzapp/android-systemeinstellungen)
 - **Apple Watch verbunden?** Der Alarmton wird dann über die Watch ausgegeben, nicht über das iPhone. Benachrichtigungen in der Watch App für die EinsatzApp deaktivieren.
@@ -44,7 +44,19 @@ Die häufigsten Ursachen:
 | **Normal** | Alarmton, respektiert Stummschaltung |
 | **Immer laut** | Alarmton immer, ignoriert Stummschaltung und „Bitte nicht stören" |
 
-Wechseln über: **Flammen-FAB → Schnellaktionen**
+Wechseln über: **Flammen-Symbol in der Menüleiste → Schnellaktionen**
+
+---
+
+### Bei verbundenem Auto (CarPlay / Bluetooth) kommt kein Alarmton
+
+Wenn das iPhone oder Android-Gerät über CarPlay oder Bluetooth mit einem Fahrzeug verbunden ist, leitet das Betriebssystem Audiosignale an das Fahrzeugsystem weiter. Der Alarmton der EinsatzApp wird dann über das Autosystem ausgegeben — sofern das Fahrzeugsystem das unterstützt.
+
+Falls kein Ton zu hören ist:
+
+- **Lautstärke am Fahrzeugsystem** prüfen (Medienlautstärke, nicht Telefonlautstärke)
+- **Bluetooth-Verbindung trennen** und prüfen, ob der Alarm dann über das Gerät ausgelöst wird
+- Auf **iOS:** Sicherstellen, dass Kritische Benachrichtigungen aktiviert sind – diese können auch bei verbundenem CarPlay den Alarmton erzwingen
 
 ---
 
@@ -86,6 +98,16 @@ Die Anmeldefunktion muss vom Administrator für diesen Termin aktiviert sein. Au
 
 ---
 
+### Ich habe die Kalender-Synchronisation aktiviert, aber es erscheinen keine Termine auf meinem Gerät
+
+Prüfe folgende Punkte:
+
+- **Kalender-Berechtigung erteilt?** Die App benötigt Zugriff auf den Gerätekalender. Prüfe unter Systemeinstellungen → EinsatzApp → Kalender, ob die Berechtigung erteilt ist.
+- **Richtiger Kalender ausgewählt?** Beim Aktivieren der Synchronisation wirst du nach einem Zielkalender gefragt. Prüfe in den App-Einstellungen, ob der gewünschte Kalender ausgewählt ist.
+- **Termine wurden vor der Aktivierung erstellt?** Es werden nur neue oder geänderte Termine synchronisiert. Bereits bestehende Termine können nachträglich manuell exportiert werden (Termin öffnen → Drei-Punkte-Menü → **„Im Kalender speichern"**).
+
+---
+
 ## Konten & Anmeldung
 
 ### Ich kann mich nicht anmelden
@@ -110,16 +132,38 @@ Seitenmenü → ganz unten auf **„Abmelden"** tippen (mit Organisations- und B
 
 ## Verfügbarkeit & Status
 
+### Ich bekomme keine Benachrichtigungen für neue News
+
+Prüfe, ob News-Benachrichtigungen aktiviert sind:
+
+**Seitenmenü → Einstellungen → Benachrichtigungs-Abonnements** → sicherstellen, dass **„Neue News"** aktiviert ist.
+
+Falls die Einstellung bereits aktiv ist, prüfe zusätzlich die Systemberechtigungen:
+- **iOS:** Einstellungen → EinsatzApp → Mitteilungen → Mitteilungen erlauben: Ein
+- **Android:** Einstellungen → Apps → EinsatzApp → Benachrichtigungen → Ein
+
+---
+
 ### Was ist der Unterschied zwischen Verfügbarkeit und Einsatzstatus?
 
-- **Verfügbarkeit** – allgemeiner Bereitschaftsstatus im Dienstalltag (z. B. „Verfügbar", „Nicht verfügbar"). Wird über den Flammen-FAB gesetzt.
+- **Verfügbarkeit** – allgemeiner Bereitschaftsstatus im Dienstalltag (z. B. „Verfügbar", „Nicht verfügbar"). Wird über das Flammen-Symbol in der Menüleiste gesetzt.
 - **Einsatzstatus** – spezifische Rückmeldung zu einem konkreten Einsatz (Komme / Komme später / Komme nicht). Wird in der Einsatzdetailansicht gesetzt.
+
+---
+
+### Meine Verfügbarkeit setzt sich automatisch zurück, obwohl ich das nicht möchte
+
+Wenn du die Verfügbarkeit mit einem **Endzeitpunkt** gesetzt hast, wird sie nach Ablauf dieses Zeitpunkts automatisch zurückgesetzt — das ist das erwartete Verhalten.
+
+Prüfe beim Setzen der Verfügbarkeit, ob ein Endzeitpunkt eingetragen ist: Flammen-Symbol in der Menüleiste antippen → Verfügbarkeits-Button **lang drücken** → im Dialog den Endzeitpunkt prüfen oder entfernen.
+
+Wenn du die Verfügbarkeit **ohne** Endzeitpunkt gesetzt hast und sie sich trotzdem zurücksetzt, wende dich bitte an den Support.
 
 ---
 
 ### Wie setze ich die Verfügbarkeit nur für einen bestimmten Zeitraum?
 
-Flammen-FAB antippen → Verfügbarkeits-Button **lang drücken** → Dialog mit **Endzeitpunkt** und optionalem **Kommentar** öffnet sich.
+Flammen-Symbol in der Menüleiste antippen → Verfügbarkeits-Button **lang drücken** → Dialog mit **Endzeitpunkt** und optionalem **Kommentar** öffnet sich.
 
 ---
 

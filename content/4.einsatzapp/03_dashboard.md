@@ -1,6 +1,6 @@
 ---
 title: Dashboard
-description: Übersicht über den Startbildschirm der EinsatzApp – aktive Einsätze, Termine, Nachrichten und Fahrzeugstatus
+description: Übersicht über den Startbildschirm der EinsatzApp – aktive Einsätze, Termine, News und Fahrzeugstatus
 ---
 
 # Dashboard
@@ -45,9 +45,9 @@ Die nächsten anstehenden Termine (Übungen, Dienstveranstaltungen etc.) werden 
 
 ---
 
-### Neueste Nachrichten
+### Neueste News
 
-Die aktuellsten Nachrichten der Organisation werden als Karten angezeigt. Antippen öffnet den vollständigen Nachrichtenartikel.
+Die aktuellsten News der Organisation werden als Karten angezeigt. Antippen öffnet den vollständigen Artikel.
 
 ---
 
@@ -74,7 +74,7 @@ Am unteren Rand der App befindet sich die **Navigationsleiste** mit vier Hauptbe
 | 📅 | Termine (Kalender) |
 | ☰ | Mehr (Hauptmenü) |
 
-In der **Mitte** der Navigationsleiste befindet sich der zentrale **Flammen-Button (FAB)** für Schnellaktionen. Unterhalb des FAB wird das aktuell eingestellte **Alarm-Modus-Symbol** angezeigt:
+In der **Menüleiste** befindet sich das **Flammen-Symbol** für Schnellaktionen. Unterhalb des Flammen-Symbols wird das aktuell eingestellte **Alarm-Modus-Symbol** angezeigt:
 
 | Symbol | Bedeutung |
 |---|---|

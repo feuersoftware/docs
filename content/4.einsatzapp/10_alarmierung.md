@@ -11,7 +11,7 @@ Damit die EinsatzApp im Ernstfall zuverlässig alarmiert, müssen sowohl die **A
 
 ## Alarm-Modi
 
-Die EinsatzApp kennt drei Alarm-Modi, die du jederzeit über den **Flammen-FAB → Schnellaktionen** wechseln kannst:
+Die EinsatzApp kennt drei Alarm-Modi, die du jederzeit über das **Flammen-Symbol in der Menüleiste → Schnellaktionen** wechseln kannst:
 
 | Modus | Symbol | Verhalten |
 |---|---|---|
@@ -21,7 +21,7 @@ Die EinsatzApp kennt drei Alarm-Modi, die du jederzeit über den **Flammen-FAB �
 
 > **Empfehlung:** Für Einsatzkräfte im aktiven Dienst sollte der Modus **„Immer laut"** gewählt werden, um auch nachts oder bei deaktivierten Tönen sicher alarmiert zu werden.
 
-Der aktuell aktive Modus wird als kleines Symbol **unterhalb des Flammen-FAB** in der Navigationsleiste angezeigt.
+Der aktuell aktive Modus wird als kleines Symbol **unterhalb des Flammen-Symbols** in der Menüleiste angezeigt.
 
 ---
 

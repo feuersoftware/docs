@@ -167,7 +167,7 @@ Wenn der Energiesparmodus aktiv ist, können Hintergrundaktivitäten eingeschrä
 
 ### Kein Ton bei eingehendem Alarm
 
-- ✅ Alarm-Modus in der App auf „Immer laut"? (Flammen-FAB → Schnellaktionen)
+- ✅ Alarm-Modus in der App auf „Immer laut"? (Flammen-Symbol in der Menüleiste → Schnellaktionen)
 - ✅ DND-Zugriff erlaubt? (Schritt 3)
 - ✅ Benachrichtigungskanal „Alarm (Immer laut)" korrekt konfiguriert? (Schritt 2)
 - ✅ Systemlautstärke für Benachrichtigungen erhöht?

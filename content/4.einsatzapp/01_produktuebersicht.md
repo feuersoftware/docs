@@ -23,8 +23,8 @@ Die App ist verfügbar für:
 | **Verfügbarkeit** | Allgemeine Verfügbarkeit im Dienstalltag verwalten |
 | **Termine** | Kalender mit Dienstplan, Übungen und Veranstaltungen; An-/Abmeldung |
 | **Fahrzeuge** | Fahrzeugstatus und Verfügbarkeit einsehen |
-| **Nachrichten** | Organisationsinterne Neuigkeiten lesen |
-| **Infotafel** | Kurzinfos und Aushänge der Organisation |
+| **News** | Organisationsinterne Neuigkeiten lesen |
+| **Infoboard** | Kurzinfos und Aushänge der Organisation |
 | **Karte** | Google Maps mit Fahrzeugen, Hydranten (Wasserkarte) und Geofence |
 | **Unwetterwarnungen** | Aktuelle Warnmeldungen direkt im Dashboard |
 | **Statistiken** | Persönliche Einsatz- und Dienststatistiken |

@@ -74,7 +74,7 @@ Hier kannst du einstellen, welche Push-Benachrichtigungstypen du empfangen möch
 
 - Neue Einsätze (Alarme)
 - Einsatz-Updates
-- Neue Nachrichten
+- Neue News
 - Neue Termine
 - Weitere Kategorien (je nach Organisationskonfiguration)
 

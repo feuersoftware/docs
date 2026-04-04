@@ -109,7 +109,7 @@ Beim iPhone gibt es einen physischen Schalter an der Seite:
 
 **Mit aktivierten Kritischen Benachrichtigungen** kommen Alarme der EinsatzApp auch bei stummgeschaltetem Gerät mit Ton durch.
 
-> Stelle sicher, dass der **Alarm-Modus** in der EinsatzApp auf **„Immer laut"** gestellt ist (Flammen-FAB → Schnellaktionen), damit der Alarmton unabhängig vom Stummschalter abgespielt wird.
+> Stelle sicher, dass der **Alarm-Modus** in der EinsatzApp auf **„Immer laut"** gestellt ist (Flammen-Symbol in der Menüleiste → Schnellaktionen), damit der Alarmton unabhängig vom Stummschalter abgespielt wird.
 
 ---
 
@@ -147,7 +147,7 @@ Ab jetzt kommen alle EinsatzApp-Alarme wieder mit vollem Alarmton über das iPho
 ### Kein Ton bei eingehendem Alarm
 
 - ✅ Kritische Benachrichtigungen aktiviert? (Schritt 2)
-- ✅ Alarm-Modus in der App auf „Immer laut"? (Flammen-FAB → Schnellaktionen)
+- ✅ Alarm-Modus in der App auf „Immer laut"? (Flammen-Symbol in der Menüleiste → Schnellaktionen)
 - ✅ Lautstärke über die Seitentasten am iPhone erhöht?
 - ✅ Apple Watch verbunden? → Benachrichtigungen in der Watch App für EinsatzApp deaktivieren (siehe oben)
 

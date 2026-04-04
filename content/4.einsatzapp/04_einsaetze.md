@@ -121,6 +121,6 @@ Neben dem regulären Einsatz-Alarm gibt es den **Info-Alarm** – eine reine Inf
 
 Berechtigte Benutzer können einen Einsatz direkt aus der App heraus anlegen:
 
-1. Zentralen **Flammen-FAB** antippen.
-2. Im Quick-Actions-Sheet auf **„Einsatz erstellen"** tippen.
+1. **Flammen-Symbol in der Menüleiste** antippen.
+2. Im Schnellaktionen-Sheet auf **„Einsatz erstellen"** tippen.
 3. Stichwort, Adresse und weitere Daten eingeben und speichern.

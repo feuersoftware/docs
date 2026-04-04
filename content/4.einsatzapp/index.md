@@ -21,9 +21,9 @@ Verfügbar für **iOS** (iPhone/iPad) und **Android**.
 | [Dashboard](./03_dashboard) | Startbildschirm, Navigation, Seitenmenü |
 | [Einsätze](./04_einsaetze) | Alarmierung, Statusmeldung, Einsatzdetails |
 | [Termine & Kalender](./05_termine) | Dienstplan, An-/Abmeldung, Termin erstellen |
-| [Schnellaktionen & Verfügbarkeit](./06_schnellaktionen) | FAB, Alarm-Modus, Verfügbarkeit |
+| [Schnellaktionen & Verfügbarkeit](./06_schnellaktionen) | Flammen-Symbol, Alarm-Modus, Verfügbarkeit |
 | [Fahrzeuge & Karte](./07_fahrzeuge_und_karte) | Fahrzeugstatus, Google Maps, Wasserkarte |
-| [Nachrichten & Infotafel](./08_nachrichten_infotafel) | Artikel lesen und erstellen |
+| [News & Infoboard](./08_nachrichten_infotafel) | Artikel lesen und erstellen |
 | [App-Einstellungen](./09_app_einstellungen) | Darstellung, Sprache, Kalender, Geofence |
 | [Alarmierung & Alarmeinstellungen](./10_alarmierung) | Alarm-Modi, Alarmton, Test-Alarm |
 | [iOS-Systemeinstellungen](./11_ios_systemeinstellungen) | Schritt-fuer-Schritt fuer iPhone/iPad |

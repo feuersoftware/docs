@@ -82,8 +82,8 @@ Auf der Dashboard-Karte eines Termins **lang drücken** → direkt das Auswahl-S
 
 Berechtigte Benutzer können Termine anlegen:
 
-1. Zentralen **Flammen-FAB** antippen.
-2. Im Quick-Actions-Sheet auf **„Termin erstellen"** tippen.
+1. **Flammen-Symbol in der Menüleiste** antippen.
+2. Im Schnellaktionen-Sheet auf **„Termin erstellen"** tippen.
 3. Formular ausfüllen:
    - Titel (Pflichtfeld)
    - Kalender / Standort

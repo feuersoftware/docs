@@ -1,11 +1,11 @@
 ---
 title: Schnellaktionen & Verfügbarkeit
-description: Der zentrale Flammen-FAB, Verfügbarkeitsstatus und Alarm-Modus in der EinsatzApp
+description: Das Flammen-Symbol in der Menüleiste, Verfügbarkeitsstatus und Alarm-Modus in der EinsatzApp
 ---
 
 # Schnellaktionen & Verfügbarkeit
 
-Der **zentrale Flammen-Button** in der Mitte der Navigationsleiste öffnet das Schnellaktionen-Sheet. Von hier aus lässt sich die eigene Verfügbarkeit verwalten, der Alarm-Modus wechseln und schnell neue Inhalte erstellen.
+Das **Flammen-Symbol in der Menüleiste** öffnet das Schnellaktionen-Sheet. Von hier aus lässt sich die eigene Verfügbarkeit verwalten, der Alarm-Modus wechseln und schnell neue Inhalte erstellen.
 
 ![Screenshot: Schnellaktionen-Sheet geöffnet](/images/einsatzapp/06_quick_actions.png)
 
@@ -44,7 +44,7 @@ Durch **langes Drücken** auf einen Verfügbarkeits-Button öffnet sich ein erwe
 
 ## Alarm-Modus
 
-Unterhalb des Flammen-FAB wird das aktuelle **Alarm-Modus-Symbol** angezeigt. Es steuert, wie die App bei einem eingehenden Alarm reagiert.
+Unterhalb des Flammen-Symbols wird das aktuelle **Alarm-Modus-Symbol** angezeigt. Es steuert, wie die App bei einem eingehenden Alarm reagiert.
 
 Im Schnellaktionen-Sheet kann der Modus gewechselt werden:
 
@@ -64,7 +64,7 @@ Berechtigte Benutzer können direkt aus dem Schnellaktionen-Sheet neue Inhalte a
 
 | Aktion | Öffnet |
 |---|---|
-| **Nachricht erstellen** | Formular für neuen Nachrichtenartikel |
+| **News erstellen** | Formular für neuen News-Artikel |
 | **Termin erstellen** | Termin-Erstellungsformular |
 | **Mangel melden** | Formular für einen neuen Defektbericht |
 | **Einsatz erstellen** | Formular für manuellen Einsatz |

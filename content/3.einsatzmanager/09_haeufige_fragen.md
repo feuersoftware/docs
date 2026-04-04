@@ -63,11 +63,41 @@ Fahrzeuge werden nur angezeigt, wenn sie im Connect-Portal konfiguriert und dem 
 
 ---
 
+**Kann ich Einsätze automatisch nach einer bestimmten Zeit beenden lassen?**
+
+Nein, eine automatische Beendigung nach einem konfigurierbaren Zeitraum ist aktuell nicht möglich. Einsätze müssen manuell abgeschlossen werden – entweder im EinsatzManager über **„Einsatz bearbeiten" → „Einsatz abschließen"** oder direkt im Connect-Portal.
+
+---
+
+**Wie konfiguriere ich die automatische Fahrzeugzuordnung bei eingehenden Alarmen?**
+
+Die automatische Fahrzeugzuordnung (z. B. bei Status 3) kann im Connect-Portal konfiguriert werden:
+
+**Connect-Portal → Organisationseinstellungen → Einsätze → Fahrzeugzuordnung**
+
+Dort kann eingestellt werden, ob und unter welchen Bedingungen Fahrzeuge automatisch einem eingehenden Einsatz zugeordnet werden.
+
+---
+
+**Manuell angelegte Zusatzfelder werden nach einem Schnittstellenupdate gelöscht. Warum?**
+
+Wenn ein Einsatzupdate über die Connect-Schnittstelle (z. B. von der Leitstelle) hereinkommt, werden die Felder, die über die Schnittstelle befüllt werden, aktualisiert. Dabei können manuell im EinsatzManager angelegte Zusatzfelder überschrieben oder entfernt werden, wenn sie denselben Feldnamen tragen.
+
+**Empfehlung:** Manuell angelegte Felder sollten eindeutige Namen verwenden, die nicht von der Schnittstelle belegt werden.
+
+---
+
 ## Echtzeit & Verbindung
 
 **Das Badge „Live-Aktualisierungen deaktiviert" wird angezeigt. Was bedeutet das?**
 
 Die WebSocket-Verbindung zum Server wurde unterbrochen. Neue Einsätze und Änderungen werden nicht automatisch angezeigt. Lade die Seite neu, um die Verbindung wiederherzustellen. Bei anhaltenden Problemen prüfe die Netzwerkverbindung.
+
+---
+
+**Kann ich den EinsatzManager auf mehreren Arbeitsplätzen gleichzeitig nutzen?**
+
+Ja. Der EinsatzManager ist vollständig webbasiert und unter [manager.feuersoftware.com](https://manager.feuersoftware.com) erreichbar. Er kann gleichzeitig in mehreren Browserfenstern oder auf mehreren Geräten geöffnet werden – eine separate Installation ist nicht notwendig. Alle Benutzer mit der Rolle „Einsatzmanager" können sich gleichzeitig anmelden.
 
 ---
 

@@ -15,13 +15,13 @@ Die EinsatzApp bietet an mehreren Stellen **versteckte Aktionen**, die durch **l
 |---|---|---|
 | **Dashboard** | Terminkarte | Schnelle An-/Abmeldung zum Termin (Zugesagt / Vielleicht / Abgesagt) |
 | **Dashboard** | Schnellstatistik-Zeile | Standortauswahl für die Statistiksicht |
-| **Schnellaktionen (FAB)** | Verfügbarkeits-Button | Verfügbarkeit mit Endzeitpunkt und Kommentar setzen |
+| **Schnellaktionen** | Verfügbarkeits-Button | Verfügbarkeit mit Endzeitpunkt und Kommentar setzen |
 | **Einsatzdetails** | Button „Komme später" | Genaue Ankunftszeit manuell eingeben |
 | **Einsatzdetails** | Adressfeld | Text in Zwischenablage kopieren |
 | **Einsatz – Fahrzeuge** | Fahrzeugeintrag | Detailpopup mit vollständigen Zuweisungsinfos |
 | **Einsatz – Personen** | Personenstatus-Eintrag | Detailpopup mit Statusinformation und Zeitstempel |
 | **Einsatz – Protokoll** | Adress-/Textfeld | Text in Zwischenablage kopieren |
-| **Infotafel** | Infotafel-Eintrag | Text in Zwischenablage kopieren |
+| **Infoboard** | Infoboard-Eintrag | Text in Zwischenablage kopieren |
 
 ---
 
@@ -51,7 +51,7 @@ Die EinsatzApp bietet an mehreren Stellen **versteckte Aktionen**, die durch **l
 
 ### Schnellaktionen – Verfügbarkeits-Button
 
-**Wo:** Flammen-FAB antippen → Schnellaktionen-Sheet → Verfügbarkeits-Button lang drücken  
+**Wo:** Flammen-Symbol in der Menüleiste antippen → Schnellaktionen-Sheet → Verfügbarkeits-Button lang drücken  
 **Aktion:** Öffnet einen erweiterten Dialog mit:
 - **Endzeitpunkt** – bis wann gilt dieser Status?
 - **Kommentar** – Freitext (z. B. „Im Urlaub")
@@ -95,9 +95,9 @@ Die EinsatzApp bietet an mehreren Stellen **versteckte Aktionen**, die durch **l
 
 ---
 
-### Infotafel – Eintrag
+### Infoboard – Eintrag
 
-**Wo:** Infotafel → beliebiger Eintrag  
+**Wo:** Infoboard → beliebiger Eintrag  
 **Aktion:** Kopiert den Textinhalt des Eintrags in die **Zwischenablage**
 
 → Praktisch zum Weitergeben von Adressen, Telefonnummern oder Hinweisen.
@@ -113,4 +113,4 @@ Die EinsatzApp bietet an mehreren Stellen **versteckte Aktionen**, die durch **l
 | „Komme später"-Button | Status direkt melden | Ankunftszeit manuell eingeben |
 | Fahrzeugeintrag im Einsatz | — | Detailpopup öffnen |
 | Personeneintrag im Einsatz | — | Detailpopup öffnen |
-| Infotafel-Eintrag | — | Text kopieren |
+| Infoboard-Eintrag | — | Text kopieren |

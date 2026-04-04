@@ -31,7 +31,7 @@ Die Benutzerliste zeigt alle Mitglieder der Organisation:
 
 Schäden an Fahrzeugen oder Ausrüstung können direkt gemeldet werden:
 
-1. **Flammen-FAB → „Mangel melden"** oder **Hauptmenü → Mangelberichte → Plus**
+1. **Flammen-Symbol in der Menüleiste → „Mangel melden"** oder **Hauptmenü → Mangelberichte → Plus**
 2. Formular ausfüllen: Bezeichnung, Beschreibung, betroffenes Fahrzeug
 3. Speichern → Meldung wird an Verantwortliche weitergeleitet
 
