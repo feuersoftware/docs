@@ -37,13 +37,27 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 |---|---|
 | **Elion** | Anbindung an das Elion-System |
 | **Fireboard** | Integration mit Fireboard für Alarmierung und Statusmeldungen |
-| **Homematic** | Smart-Home-Integration mit Homematic (z. B. Türöffner, Licht) |
-| **Lupus** | Smart-Home-Integration mit Lupus Electronics |
+| **[Homematic CCU3](./schnittstellen/homematic)** | Alarmweiterleitung von Homematic Rauchwarnmeldern über die CCU3 |
+| **[Lupus Electronics](./schnittstellen/lupus)** | Alarmweiterleitung von Lupus Rauchwarnmeldern über die Lupus Cloud |
 | **Public API** | Zugang zur öffentlichen FeuerSoftware-API auf Standortebene |
 | **RescueTablet** | Anbindung an RescueTablet-Systeme |
 | **Webhooks** | Ausgehende Webhooks bei Ereignissen (z. B. neuer Einsatz, Statusänderung) |
 | **TetraControl** | Integration mit TetraControl für Digitalfunk-Status |
-| **Xsense** | Anbindung an Xsense-Rauchmelder mit Gebäudeverwaltung |
+| **[X-Sense](./schnittstellen/xsense)** | Alarmweiterleitung von X-Sense Rauchwarnmeldern über die X-Sense App |
+
+---
+
+## Rauchwarnmelder-Schnittstellen
+
+FeuerSoftware Connect unterstützt die Anbindung von Rauchwarnmeldern verschiedener Hersteller. Bei Auslösung eines Melders wird automatisch ein Einsatz im konfigurierten Standort erstellt.
+
+> **Wichtig:** Alle Rauchwarnmelder-Schnittstellen dienen ausschließlich der **ergänzenden Informationsübermittlung** und sind kein primärer Alarmweg. Pro aktivierter Schnittstelle werden **5 Lizenzen** berechnet.
+
+| Hersteller | Funktionsweise | Anleitung |
+|---|---|---|
+| **X-Sense** | Verbindung über X-Sense Installationsservice; Alarm wird direkt von der X-Sense Cloud an Connect übermittelt | [→ Einrichtung X-Sense](./schnittstellen/xsense) |
+| **Homematic CCU3** | Script auf der CCU3 ruft bei Auslösung die FeuerSoftware Public API auf | [→ Einrichtung Homematic](./schnittstellen/homematic) |
+| **Lupus Electronics** | Alarmweiterleitung über Webhook aus der Lupus Cloud | [→ Einrichtung Lupus](./schnittstellen/lupus) |
 
 ---
 
