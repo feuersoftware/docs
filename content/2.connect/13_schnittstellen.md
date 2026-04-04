@@ -37,7 +37,7 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 |---|---|
 | **Elion** | Anbindung an das Elion-System |
 | **Fireboard** | Integration mit Fireboard für Alarmierung und Statusmeldungen |
-| **[Homematic CCU3](./schnittstellen/homematic)** | Alarmweiterleitung von Homematic Rauchwarnmeldern über die CCU3 |
+| **[Homematic HCU1](./schnittstellen/homematic)** | Alarmweiterleitung von Homematic Rauchwarnmeldern über die HCU1 |
 | **[Lupus Electronics](./schnittstellen/lupus)** | Alarmweiterleitung von Lupus Rauchwarnmeldern über die Lupus Cloud |
 | **Public API** | Zugang zur öffentlichen FeuerSoftware-API auf Standortebene |
 | **RescueTablet** | Anbindung an RescueTablet-Systeme |
@@ -56,7 +56,7 @@ FeuerSoftware Connect unterstützt die Anbindung von Rauchwarnmeldern verschiede
 | Hersteller | Funktionsweise | Anleitung |
 |---|---|---|
 | **X-Sense** | Verbindung über X-Sense Installationsservice; Alarm wird direkt von der X-Sense Cloud an Connect übermittelt | [→ Einrichtung X-Sense](./schnittstellen/xsense) |
-| **Homematic CCU3** | Script auf der CCU3 ruft bei Auslösung die FeuerSoftware Public API auf | [→ Einrichtung Homematic](./schnittstellen/homematic) |
+| **Homematic HCU1** | Plugin auf der HCU1 wertet Alarme aus und leitet sie an Connect weiter | [→ Einrichtung Homematic](./schnittstellen/homematic) |
 | **Lupus Electronics** | Alarmweiterleitung über Webhook aus der Lupus Cloud | [→ Einrichtung Lupus](./schnittstellen/lupus) |
 
 ---

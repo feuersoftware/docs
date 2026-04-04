@@ -1,11 +1,11 @@
 ---
-title: Homematic CCU3 Rauchwarnmelder
-description: Einrichtung der Homematic CCU3 Alarmweiterleitung an FeuerSoftware Connect über die öffentliche API
+title: Homematic HCU1 Rauchwarnmelder
+description: Einrichtung der Homematic IP HCU1 Alarmweiterleitung an FeuerSoftware Connect über das Connect-Plugin
 ---
 
-# Homematic CCU3 Rauchwarnmelder
+# Homematic HCU1 Rauchwarnmelder
 
-Die Homematic-Schnittstelle ermöglicht es, Alarme von Rauchwarnmeldern einer Homematic CCU3 automatisch als Einsatz in FeuerSoftware Connect einzustellen. Die Weiterleitung erfolgt über ein Script auf der CCU3, das die öffentliche FeuerSoftware API aufruft.
+Die Homematic IP Home Control Unit (HmIP-HCU1) unterstützt die Installation eigener Plugins. Ein spezielles FeuerSoftware-Plugin wertet Alarme von Rauchwarnmeldern aus und leitet diese automatisch an Connect weiter. Bei Auslösung eines Melders wird ein Einsatz im konfigurierten Standort erstellt.
 
 > **Hinweis:** Diese Schnittstelle dient ausschließlich der ergänzenden Informationsübermittlung und ist **kein primärer Alarmweg**.
 
@@ -13,107 +13,64 @@ Die Homematic-Schnittstelle ermöglicht es, Alarme von Rauchwarnmeldern einer Ho
 
 ## Voraussetzungen
 
-- Homematic CCU3 mit Internetzugang
-- Rauchwarnmelder in der CCU3 angelernt
+- Homematic IP Home Control Unit (HmIP-HCU1)
+- Rauchwarnmelder in der HCU1 angelernt
+- Zugang zum HCU1-Webinterface (über Hostname oder IP-Adresse)
 - API-Token aus dem Connect Portal (Standort → Schnittstellen → Public API)
+
+**Lizenzen:** Pro angebundener HCU1-Basisstation werden **5 Lizenzen** berechnet. Die Verrechnung erfolgt automatisch bei Aktivierung.
 
 ---
 
 ## Einrichtung
 
-### Schritt 1: CUx-Daemon installieren
+### Schritt 1: Plugin herunterladen
 
-Der CUx-Daemon wird benötigt, da die native Scriptsprache der CCU3 keine HTTP-Requests unterstützt.
+Plugin-Datei herunterladen: [homematic-connect-plugin.zip](https://feuersoftware.com/Download/tools/homematic-connect-plugin.zip)
 
-1. In der CCU3-Weboberfläche navigieren: **Einstellungen → Systemsteuerung → Zusatzsoftware**
-2. CUx-Daemon vom HomeMatic-Inside Forum herunterladen
-3. Die Datei **nicht entpacken**
-4. Datei hochladen und installieren → CCU3 startet automatisch neu
-5. Nach dem Neustart erscheint ein neuer Menüpunkt: **Einstellungen → Systemsteuerung → CUx-Daemon**
+ZIP-Archiv entpacken – es entsteht eine `.tar.gz`-Datei, die für den nächsten Schritt benötigt wird.
 
-![Screenshot: CCU3 – CUx-Daemon installieren](/images/connect/schnittstellen/homematic_01_cuxdaemon.png)
+### Schritt 2: Plugin in der HCU1 installieren
 
-### Schritt 2: CUxD-Gerät anlegen
+1. Im HCU1-Webinterface anmelden (Hostname oder IP-Adresse im Browser aufrufen)
+2. Menüpunkt **„Plugins"** wählen
+3. **Entwicklermodus aktivieren** (Voraussetzung für die Plugin-Installation)
+4. Die `.tar.gz`-Datei hochladen
+5. Installation abwarten – dieser Vorgang kann mehrere Minuten dauern
 
-1. **Einstellungen → Systemsteuerung → CUx-Daemon** öffnen
-2. Auf **„Geräte"** klicken
-3. Neues Gerät vom Typ **„(28) System"** mit Funktion **„Exec"** erstellen
-4. In der CCU3-Weboberfläche navigieren: **Einstellungen → Geräte → Posteingang**
-5. Das neue Gerät **„fertigstellen"**
-6. CCU3 neu starten, damit die `CMD_EXEC`-Funktionalität verfügbar wird
+![Screenshot: HCU1 Webinterface – Plugin hochladen](/images/connect/schnittstellen/homematic_hcu1_01_plugin.png)
 
-![Screenshot: CCU3 – CUxD-Gerät anlegen](/images/connect/schnittstellen/homematic_02_cuxdgeraet.png)
+### Schritt 3: Plugin konfigurieren
 
-### Schritt 3: Programm erstellen
+Nach der Installation auf das **Zahnrad-Symbol** neben dem Plugin klicken und folgende Felder ausfüllen:
 
-1. In der CCU3-Weboberfläche navigieren: **Programme und Verknüpfungen → Programme & Zentralverknüpfungen**
-2. Neues Programm anlegen
-
-**Bedingungen (Wenn-Bereich):**
-- Deinen Rauchwarnmelder auswählen
-- Bedingung setzen: **„Rauchkammer verschmutzt: Ja"**
-
-**Aktivität (Dann-Bereich):**
-- **„Script"** auswählen → Drei-Punkte-Menü → Script-Editor öffnen
-
-![Screenshot: CCU3 – Programm anlegen](/images/connect/schnittstellen/homematic_03_programm.png)
-
-### Schritt 4: Script einfügen und anpassen
-
-Folgendes Script in den Editor einfügen und die markierten Stellen anpassen:
-
-```
-string apiUrl = "https://connectapi.feuersoftware.com/interfaces/public/operation";
-string bearerToken = "APIKEYEINFUEGEN";
-
-string jsonPayload = "{";
-jsonPayload = jsonPayload # "\"Start\":\"" # system.Date("%Y-%m-%dT%H:%M:%S.000%z") # "\",";
-jsonPayload = jsonPayload # "\"Keyword\":\"Interner Rauchwarnmelder\",";
-jsonPayload = jsonPayload # "\"Address\":{\"Street\":\"STRASSEEINFUEGEN\",\"HouseNumber\":\"HAUSNUMMEREINFUEGEN\",\"ZipCode\":\"PLZEINFUEGEN\",\"City\":\"STADTEINFUEGEN\"},";
-jsonPayload = jsonPayload # "\"Facts\":\"Rauchmelder hat ausgeloest\",";
-jsonPayload = jsonPayload # "\"Ric\":\"Homematic RWM\",";
-jsonPayload = jsonPayload # "\"Properties\":[{\"Key\":\"Melder\",\"Value\":\"MELDERNAMEINFUEGEN\"}]}";
-
-string command = "wget --method=POST";
-command = command # " --header=\"Authorization: Bearer " # bearerToken # "\"";
-command = command # " --header=\"Content-Type: application/json\"";
-command = command # " --body-data='" # jsonPayload # "'";
-command = command # " \"" # apiUrl # "\" --server-response -O - --timeout=30 --user-agent=\"Mozilla/5.0\"";
-
-object cuxdExec = dom.GetObject("CUxD.CUX2801001:1.CMD_EXEC");
-if (cuxdExec) {
-    cuxdExec.State(command);
-} else {
-    WriteLine("Fehler: CUxD nicht verfuegbar oder falsch konfiguriert.");
-}
-```
-
-**Anpassungen vornehmen:**
-
-| Platzhalter | Ersetzen durch |
+| Feld | Beschreibung |
 |---|---|
-| `APIKEYEINFUEGEN` | API-Token aus Connect Portal (Standort → Schnittstellen → Public API) |
-| `STRASSEEINFUEGEN` | Straße des Gebäudes |
-| `HAUSNUMMEREINFUEGEN` | Hausnummer |
-| `PLZEINFUEGEN` | Postleitzahl |
-| `STADTEINFUEGEN` | Stadt |
-| `MELDERNAMEINFUEGEN` | Name oder Bezeichnung des Melders (optional) |
-| `CUxD.CUX2801001:1.CMD_EXEC` | Ggf. an ID des in Schritt 2 erstellten Geräts anpassen |
+| **Authentifizierungsschlüssel** | API-Token aus dem Connect Portal (Standort → Schnittstellen → Public API) |
+| **Alarmstichwort** | Stichwort für den erstellten Einsatz, z. B. `Interner Rauchwarnmelder` |
+| **Zusatzinfo für Connect-Einsatz** | Optionaler Hinweistext oder Handlungsanweisung |
 
-> **Wichtig:** Keine Umlaute (ä, ö, ü) oder Sonderzeichen im Script verwenden.
+**„Speichern"** klicken.
 
-### Schritt 5: Script testen und speichern
+![Screenshot: HCU1 Plugin-Konfiguration](/images/connect/schnittstellen/homematic_hcu1_02_konfiguration.png)
 
-1. Im Script-Editor auf **„Ausführen"** klicken
-2. Im Connect Portal prüfen, ob ein Einsatz im konfigurierten Standort erstellt wurde
-3. Script speichern → Programm ist einsatzbereit
+> **Wichtig:** Den API-Token aus dem Connect Portal auf **Standort-Ebene** verwenden – nicht auf Organisationsebene.
 
----
+### Schritt 4: SGTIN im Connect Portal eintragen
 
-## API-Token abrufen
+Nach erfolgreicher Konfiguration zeigt das Plugin die **SGTIN** (Seriennummer der Basisstation) an.
 
-Den benötigten API-Token findest du im Connect Portal:
+1. Im Connect Portal den gewünschten **Standort** wählen
+2. **Seitenleiste → Schnittstellen → Homematic**
+3. Die SGTIN **ohne Bindestriche** eintragen
+4. Speichern
 
-**Standort wählen → Seitenleiste → Schnittstellen → Public API → API-Token erstellen**
+> Die SGTIN ist zwingend erforderlich, damit Alarmereignisse korrekt übertragen werden.
 
-> **Empfehlung:** Lege einen separaten Standort speziell für Rauchmelder-Alarme an, um diese klar von regulären Einsätzen zu trennen.
+![Screenshot: Connect Portal – Homematic SGTIN eintragen](/images/connect/schnittstellen/homematic_hcu1_03_sgtin.png)
+
+### Schritt 5: Verbindung prüfen
+
+Funktionsprüfung mit **Rauchmelder-Testspray** durchführen und anschließend im Connect Portal prüfen, ob ein Einsatz erstellt wurde.
+
+**Seitenleiste → Einsätze** → Ein neuer Einsatz mit dem konfigurierten Stichwort sollte erscheinen.
