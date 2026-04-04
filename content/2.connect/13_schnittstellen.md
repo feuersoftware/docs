@@ -18,7 +18,7 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 
 | Schnittstelle | Beschreibung |
 |---|---|
-| **Cobra** | Anbindung an das Cobra-Alarmierungssystem |
+| **[Cobra / WDX3](./schnittstellen/leitstelle/cobra)** | Leitstellenanbindung über ISE Cobra 4 WDX3 |
 | **DeAlarm** | Integration mit DeAlarm für digitale Alarmierung |
 | **[Divera 24/7](./schnittstellen/divera)** | Einsätze aus Divera 24/7 per Webhook weiterleiten |
 | **FAS** | Anbindung an FAS-Systeme |
