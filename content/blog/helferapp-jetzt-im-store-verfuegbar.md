@@ -30,13 +30,13 @@ Gerade in dynamischen Einsatzlagen hilft die HelferApp dabei, Informationen zent
 Für Einrichtung, Anmeldung und die wichtigsten Funktionen finden Sie alle Details in unserer Dokumentation:
 
 - [HelferApp Dokumentation](/helferapp/01_produktuebersicht)
-- [Einrichtung](/helferapp/einrichtung)
-- [Einsätze](/helferapp/einsaetze)
-- [Karte](/helferapp/karte)
-- [Navigation](/helferapp/navigation)
-- [Triage](/helferapp/triage)
-- [FAQ](/helferapp/faq)
+- [Einrichtung](/helferapp/03_einrichtung)
+- [Einsätze](/helferapp/04_einsaetze)
+- [Karte](/helferapp/05_karte)
+- [Navigation](/helferapp/06_navigation)
+- [Triage](/helferapp/07_triage)
+- [FAQ](/helferapp/08_faq)
 
 ::note
-Tipp: Beginnen Sie mit [Übersicht](/helferapp/01_produktuebersicht) und [Einrichtung](/helferapp/einrichtung), um Ihr Team schnell produktiv zu machen.
+Tipp: Beginnen Sie mit [Übersicht](/helferapp/01_produktuebersicht) und [Einrichtung](/helferapp/03_einrichtung), um Ihr Team schnell produktiv zu machen.
 ::
