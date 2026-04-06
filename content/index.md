@@ -69,7 +69,7 @@ Unsere Produkte
   :::u-page-feature
   ---
   icon: i-lucide-clipboard-list
-  to: /einsatzmanager/produktuebersicht
+  to: /einsatzmanager/01_produktuebersicht
   ---
   #title
   [EinsatzManager]{.text-primary}
@@ -117,7 +117,7 @@ Unsere Produkte
   :::u-page-feature
   ---
   icon: i-lucide-hand-helping
-  to: /helferapp/produktuebersicht
+  to: /helferapp/01_produktuebersicht
   ---
   #title
   [HelferApp]{.text-primary}
