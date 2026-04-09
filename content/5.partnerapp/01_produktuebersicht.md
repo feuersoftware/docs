@@ -74,4 +74,3 @@ Der **Partnermodus** muss in den Connect-Organisationseinstellungen durch einen 
 
 Die Benachrichtigungen werden über **Firebase Cloud Messaging (FCM)** zugestellt und funktionieren auch dann, wenn die App im Hintergrund läuft oder das Gerät gesperrt ist. Ton und Vibration können in den Systemeinstellungen des Geräts angepasst werden.
 
-> **Hinweis für iOS:** Damit Benachrichtigungen auch bei stummgeschaltetem Gerät ankommen, muss in den iOS-Systemeinstellungen für die PartnerApp die Option **„Kritische Benachrichtigungen"** aktiviert sein (sofern vom Gerät unterstützt).
