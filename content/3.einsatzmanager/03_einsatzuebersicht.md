@@ -50,7 +50,15 @@ Auf der linken Seite befinden sich die Schnellfilter (Quick Actions), mit denen 
 
 Alle Filter lassen sich kombinieren. Die Einstellungen bleiben beim Wechsel des Anzeigemodus erhalten.
 
-> **Datenschutz – Eingeschränkter Zugriff auf beendete Einsätze:** Ist diese Funktion im Connect-Portal aktiviert, werden abgeschlossene Einsätze standardmäßig nur noch angezeigt, wenn sie **nicht älter als 2 Stunden** sind. Gruppen, die im Connect-Portal als Ausnahme hinterlegt sind, haben weiterhin Vollzugriff auf alle beendeten Einsätze. Die Einstellung kann unter **Organisationseinstellungen → EinsatzManager** konfiguriert werden.
+::callout{type="warning"}
+**Eingeschränkter Zugriff auf beendete Einsätze**
+
+Ist diese Funktion aktiv, sehen Nutzer des EinsatzManagers abgeschlossene Einsätze nur noch, wenn diese **nicht älter als 2 Stunden** sind. Ältere Einsätze werden ausgeblendet.
+
+**Ausnahmen:** Einzelne Gruppen können im Connect-Portal als Ausnahme hinterlegt werden – deren Mitglieder haben dann weiterhin Vollzugriff auf alle beendeten Einsätze.
+
+**Wo konfigurieren?** Connect-Portal → Organisationseinstellungen → EinsatzManager
+::
 
 > **Hinweis:** Sollten alte Einsätze als aktiv erscheinen, liegt dies daran, dass diese keinen Einsatzende-Zeitstempel besitzen. Betroffene Einsätze können über das **Connect-Portal** manuell geschlossen werden.
 
