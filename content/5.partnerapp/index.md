@@ -1,15 +1,19 @@
 ---
 title: PartnerApp
-description: Dokumentation für die PartnerApp
+description: Dokumentation der FeuerSoftware PartnerApp – Echtzeit-Benachrichtigungen für Partner von Einsatzkräften
 links: []
 ---
 
-Willkommen zur Dokumentation der PartnerApp.
+# PartnerApp
 
-::u-page-card
-#title
-Übersicht
+Die **PartnerApp** benachrichtigt den Partner einer Einsatzkraft in Echtzeit, sobald diese zu einem Einsatz ausrückt – diskret, datenschutzkonform und ohne operative Einsatzdetails.
 
-#description
-Die PartnerApp benachrichtigt deinen Partner oder deine Partnerin, wenn du zum Einsatz gehst.
-::
+---
+
+## Inhaltsverzeichnis
+
+| Seite | Beschreibung |
+|---|---|
+| [Produktübersicht](./01_produktuebersicht) | Funktionsweise, Statusanzeige und Voraussetzungen |
+| [Einrichtung](./02_einrichtung) | Schritt-für-Schritt-Verbindung per QR-Code |
+| [Häufige Fragen](./03_faq) | Antworten auf die häufigsten Fragen |
