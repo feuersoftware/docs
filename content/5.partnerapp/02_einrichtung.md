@@ -26,6 +26,8 @@ Auf dem Gerät der **Einsatzkraft**:
 4. Falls Mitglied mehrerer Organisationen: gewünschte Organisation auswählen
 5. Ein QR-Code wird angezeigt – dieser ist einige Minuten gültig
 
+![Screenshot: QR-Code „Partner verbinden" in der EinsatzApp](/images/partnerapp/02_einrichtung_qr_einsatzapp.png)
+
 > **Hinweis:** Der QR-Code ist an eine Organisation gebunden. Für jede weitere Organisation muss der Vorgang wiederholt werden.
 
 ---
@@ -41,6 +43,8 @@ Auf dem Gerät des **Partners**:
 5. Nach erfolgreichem Scan erscheint eine Bestätigung mit Name und Organisation der Einsatzkraft
 
 Die Einsatzkraft erscheint jetzt in der Übersicht der PartnerApp.
+
+![Screenshot: PartnerApp Übersicht nach erfolgreichem Pairing](/images/partnerapp/02_einrichtung_uebersicht.png)
 
 ---
 

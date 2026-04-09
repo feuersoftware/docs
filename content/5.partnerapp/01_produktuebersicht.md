@@ -34,6 +34,8 @@ Die App zeigt für jeden verbundenen Partner einen der folgenden Statuswerte:
 
 Neben dem Status werden der **Name der Einsatzkraft**, die **Organisation** und der **Zeitstempel** der letzten Statusänderung angezeigt.
 
+![Screenshot: Statusanzeige in der PartnerApp](/images/partnerapp/01_produktuebersicht_status.png)
+
 ---
 
 ## Mehrere Partner und Organisationen
