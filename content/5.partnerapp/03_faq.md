@@ -33,7 +33,7 @@ Ja. Die PartnerApp unterstützt mehrere verbundene Einsatzkräfte gleichzeitig. 
 
 Ja. Ein **Organisations-Administrator** muss den Partnermodus im Connect Portal freischalten:
 
-**Connect Portal → Organisations-Ebene → Einstellungen → Partnermodus aktivieren**
+**Connect Portal → Organisations-Ebene → Organisationseinstellungen → Allgemein → „Partnermodus aktiviert"**
 
 Ohne diese Aktivierung kann kein QR-Code in der EinsatzApp generiert werden.
 

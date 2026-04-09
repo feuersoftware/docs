@@ -50,7 +50,7 @@ Neben dem Status werden der **Name der Einsatzkraft**, die **Organisation** und 
 ### Auf Seite der Organisation
 Der **Partnermodus** muss in den Connect-Organisationseinstellungen durch einen Administrator aktiviert sein:
 
-**Connect Portal → Organisations-Ebene → Einstellungen → HelferApp / Partnermodus**
+**Connect Portal → Organisations-Ebene → Organisationseinstellungen → Allgemein → „Partnermodus aktiviert"**
 
 ### Auf Seite der Einsatzkraft
 - **EinsatzApp** installiert und eingerichtet
