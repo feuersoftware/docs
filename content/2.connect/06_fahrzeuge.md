@@ -87,54 +87,9 @@ Konfiguration für das EinsatzTablet, das in diesem Fahrzeug verbaut ist:
 
 ## GPS-Tracking
 
-GPS-Tracker ermöglichen die Live-Positionsanzeige von Fahrzeugen, Drohnen, Motorrädern oder Fußtrupps auf der Karte – in der EinsatzApp, dem EinsatzTablet und dem EinsatzMonitor. Praktisch für Fahrzeuge ohne verbau­tes EinsatzTablet.
+GPS-Tracker ermöglichen die Live-Positionsanzeige von Fahrzeugen, Drohnen oder Fußtrupps auf der Karte. Um einen GPS-Tracker einem Fahrzeug zuzuweisen, das Fahrzeug öffnen → Tab **„Integrationen"** → GPS-Tracker aktivieren → Gerätemodell und Geräte-ID (IMEI) eintragen.
 
-Das System nutzt die Open-Source-Software **Traccar**. Alle bei [traccar.org/devices](https://www.traccar.org/devices/) gelisteten Geräte werden unterstützt.
-
-### Traccar-App (Smartphone)
-
-Die Traccar-App ist für Android und iOS verfügbar und ermöglicht die Positionsübermittlung per Smartphone.
-
-**Einrichtung:**
-1. App installieren und öffnen
-2. **Gerätekennung** (IMEI empfohlen) eingeben
-3. **Server-URL:** `http://gps.feuersoftware.com:5055`
-4. Tracking aktivieren
-
-**Einstellungen:**
-- **Aktualisierungsintervall:** Standard 300 Sekunden (5 Minuten)
-- **Positionsgenauigkeit:** konfigurierbar
-
-### Hardware-Tracker (z. B. TK104)
-
-Für Fahrzeuge ohne Smartphone eignen sich dedizierte Hardware-Tracker wie der TK104 von Incutex/GPSvision.
-
-**Voraussetzungen:**
-- SIM-Karte mit Datentarif (z. B. Netzclub Prepaid mit kostenlosem 200-MB-Kontingent)
-- SIM-PIN deaktivieren
-- IMEI-Nummer des Geräts notieren
-
-**Konfiguration:**
-- Standard-Passwort: `123456`
-- Modus: GPRS (nicht SMS)
-- Server-IP: `4.184.237.26`
-- Port: je nach Gerätemodell (5001–5194, Modell-Liste auf traccar.org)
-- Tracking-Intervall: mindestens 30 Sekunden
-
-> Für eine Positionsabfrage per Anruf: Tracker-Nummer anrufen → nach 2–5 Klingeln automatische Ablehnung → GPS-Koordinaten werden per SMS gesendet.
-
-### GPS-Tracker in Connect einrichten
-
-1. Im Connect Portal den Standort wählen und das gewünschte Fahrzeug öffnen
-2. Tab **„Integrationen"**
-3. **GPS-Tracker aktivieren**
-4. **Gerätemodell** (z. B. `Traccar`) auswählen
-5. **Geräte-ID** (IMEI) eintragen – muss mit der im Gerät konfigurierten Gerätekennung übereinstimmen
-6. Speichern
-
-Sobald das Gerät Positionsdaten sendet, erscheint das Fahrzeug auf der Karte.
-
-> **Hinweis:** Koordinaten werden gerundet und nur verarbeitet, wenn der Zeitstempel innerhalb der letzten Minute liegt. Positions­updates müssen sich mindestens in der 4. Dezimalstelle unterscheiden, um verarbeitet zu werden.
+Alle Informationen zur Einrichtung von Hardware-Trackern und der Traccar-App sind auf der Seite [GPS Tracker](/connect/21_gps_tracker) beschrieben.
 
 ---
 
@@ -172,7 +127,7 @@ Gib der Regel einen aussagekräftigen Namen und speichere sie.
 Regeln werden auf Standortebene an die Eigenschaften einzelner Fahrzeuge geknüpft:
 
 1. Fahrzeug öffnen → Tab **„Zusatzinformationen"**
-2. Die zu überwachende Eigenschaft suchen und auf den **Stift** klicken
+2. Die zu überwachende Eigenschaft suchen und auf bearbeiten klicken
 3. Eine der zuvor erstellten Regeln auswählen und speichern
 
 Sobald sich der Wert einer Eigenschaft ändert, wird die verknüpfte Regel geprüft. Bei einer Abweichung wird automatisch eine Mängelmeldung erstellt und der entsprechende Eintrag mit einem **Ausrufezeichen** gekennzeichnet.
