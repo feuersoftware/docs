@@ -25,9 +25,7 @@ Die News-Übersicht zeigt alle Beiträge in chronologischer Reihenfolge mit Tite
    - **Adressatengruppen** – welche Gruppen oder Alarmgruppen den Beitrag sehen können
 3. **„Veröffentlichen"** klicken
 
-Der Beitrag erscheint sofort in der EinsatzApp und im Connect-Dashboard. Benutzer mit aktivierten News-Benachrichtigungen erhalten eine Push-Benachrichtigung.
-
-> **Hinweis:** Benutzer mit der Rolle Moderator auf Standortebene können beim Erstellen einer News keine Adressatengruppen auswählen. Diese Funktion erfordert höhere Berechtigungen.
+Der Beitrag erscheint sofort in der EinsatzApp und im Connect-Dashboard. Benutzer mit aktivierten News-Benachrichtigungen erhalten eine Push-Benachrichtigung auf Ihr Mobiltelefon. News werden auch auf dem Einsatzmonitor in der Standby Anzeige angezeigt.
 
 ### News bearbeiten und löschen
 News in der Übersicht antippen → **„Bearbeiten"** oder **„Löschen"**. Das Löschen erfordert eine Bestätigung.
@@ -40,6 +38,10 @@ News in der Übersicht antippen → **„Bearbeiten"** oder **„Löschen"**. Da
 
 ### Übersicht
 Die Terminübersicht zeigt alle anstehenden Termine in einer Liste oder Kalenderansicht mit Titel, Datum, Uhrzeit und Standort.
+
+### Kalender erstellen
+Erstellen Sie zuerst einen neuen Kalender. Sie können hierbei unterscheiden zwischen einem lokalen Connect Kalender oder einem Remote Kalender. Remote Kalender rufen Termine über einen Link z.B. auf Google Kalender, Microsoft Outlook oder ähnlichem ab. 
+Sie können außerdem die Sichtbarkeit festlegen und eine Erinnerung konfigurieren. 
 
 ### Termin erstellen
 1. **„Termin erstellen"** klicken
