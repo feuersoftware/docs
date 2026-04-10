@@ -54,12 +54,11 @@ Definiert die möglichen Verfügbarkeitszustände des Fahrzeugs:
 | **Verfügbar** | Fahrzeug ist einsatzbereit |
 | **Eingeschränkt verfügbar** | Fahrzeug ist mit Einschränkungen verfügbar |
 | **Nicht verfügbar** | Fahrzeug ist außer Betrieb |
-| **Im Einsatz** | Fahrzeug befindet sich in einem laufenden Einsatz |
 
-Eigene Verfügbarkeitszustände können angelegt und mit Farben versehen werden.
+Eigene Verfügbarkeitszustände können nicht angelegt werden.
 
 ### Tab: Dashboard
-Zeigt eine Echtzeit-Übersicht des Fahrzeugs mit aktuellem Status, Position und laufenden Einsätzen.
+Zeigt ein konfigurierbares Dashboard für Fahrzeugdaten z.B. von CVM Modulen (Siehe Zusatzinformationen)
 
 ### Tab: Zusatzinformationen
 Technische Messwerte und Statusdaten des Fahrzeugs, die automatisch über externe Systeme befüllt werden. Typische Anwendungsfälle sind:
@@ -68,8 +67,7 @@ Technische Messwerte und Statusdaten des Fahrzeugs, die automatisch über extern
 |---|---|
 | Batteriespannung | TetraControl CVM-Modul |
 | Ladezustand | UBX-Box |
-| Funkstatus | TetraControl |
-| GPS-Position | MQTT-Telemetrie |
+| CAN Bus Daten | UBX-Box |
 
 Die Werte werden automatisch über **MQTT** oder die **FeuerSoftware API** aktualisiert und sind schreibgeschützt – sie können nicht manuell bearbeitet werden.
 
