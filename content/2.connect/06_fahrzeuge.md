@@ -138,6 +138,49 @@ Sobald das Gerät Positionsdaten sendet, erscheint das Fahrzeug auf der Karte.
 
 ---
 
+## Regeln für Gerätewarnungen
+
+Über Regeln für Gerätewarnungen können individuelle Eigenschaften von Fahrzeugen überwacht werden. Weicht ein Wert vom konfigurierten Normalbereich ab, wird automatisch eine **Mängelmeldung** erstellt.
+
+**Beispiele:**
+- Ein CVM-Modul überwacht die Batteriespannung. Fällt die Spannung unter den Normalbereich, wird eine Mängelmeldung für die Gerätewarte erstellt.
+- Eine UBX-Box liefert den Tankfüllstand. Fällt der Füllstand unter 15 %, wird eine Mängelmeldung erstellt.
+- Ein Temperatursensor im Medikamentenkühlschrank eines RTW schlägt Alarm, wenn die Temperatur einen konfigurierten Grenzwert überschreitet.
+
+### Regeln erstellen
+
+Regeln werden auf **Organisationsebene** angelegt:
+
+**Connect Portal → Organisation → Regeln für Gerätewarnungen → „Neu"**
+
+Es stehen zwei Regeltypen zur Verfügung:
+
+**Numerischer Wertebereich**
+
+Legt einen Min- und Max-Wert fest, zwischen dem der Wert im Normalfall liegen soll. Über- oder unterschreitet der Wert diesen Bereich, wird eine Mängelmeldung erstellt.
+
+Beispiel: Batteriespannung 12V – Normalbereich Min `12,6` / Max `12,8` Volt.
+
+**Numerischer Wert**
+
+Legt einen exakten Sollwert fest. Bei jeder Abweichung wird eine Mängelmeldung erstellt.
+
+Gib der Regel einen aussagekräftigen Namen und speichere sie.
+
+### Regeln mit Fahrzeugeigenschaften verknüpfen
+
+Regeln werden auf Standortebene an die Eigenschaften einzelner Fahrzeuge geknüpft:
+
+1. Fahrzeug öffnen → Tab **„Zusatzinformationen"**
+2. Die zu überwachende Eigenschaft suchen und auf den **Stift** klicken
+3. Eine der zuvor erstellten Regeln auswählen und speichern
+
+Sobald sich der Wert einer Eigenschaft ändert, wird die verknüpfte Regel geprüft. Bei einer Abweichung wird automatisch eine Mängelmeldung erstellt und der entsprechende Eintrag mit einem **Ausrufezeichen** gekennzeichnet.
+
+Ändert sich der Wert wieder in den Normalbereich zurück, wird die Mängelmeldung automatisch auf **„Behoben"** gesetzt.
+
+---
+
 ## Fahrzeug löschen
 
 In der Fahrzeug-Detailansicht → **„Fahrzeug löschen"** → Bestätigungsdialog. Gelöschte Fahrzeuge können nicht wiederhergestellt werden.

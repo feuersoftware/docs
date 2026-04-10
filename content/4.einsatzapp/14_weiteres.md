@@ -41,21 +41,44 @@ In der **Mangelbericht-Liste** (Hauptmenü → Mangelberichte) sind alle offenen
 
 ## Verdienstausfallbescheinigung
 
-Einsatzkräfte, die während der Arbeitszeit zu einem Einsatz ausrücken, können direkt aus der App eine **Verdienstausfallbescheinigung** als PDF generieren.
-
-Das Dokument wird automatisch mit den relevanten Daten befüllt:
-- Einsatznummer und -daten
-- Persönliche Daten der Einsatzkraft
-- Kontaktdaten der zuständigen Gemeinde
-
-Das fertige PDF kann per **E-Mail** verschickt oder – wenn ein Drucker am EinsatzMonitor angeschlossen ist – direkt **in der Wache ausgedruckt** werden.
+Einsatzkräfte, die während der Arbeitszeit zu einem Einsatz ausrücken, können direkt aus der App eine **Verdienstausfallbescheinigung** als PDF generieren. Die Bescheinigung ist bereits mit den wichtigsten Informationen wie Einsatznummer und Personaldaten vorausgefüllt und muss nur noch vom Wehrführer / Kommandanten unterschrieben werden.
 
 > **Wichtig:** Die Verdienstausfallbescheinigung ist nur **mit Unterschrift** gültig.
 
-### Voraussetzung
+### Aktivierung (Administratoren)
 
-Die Funktion muss vom Administrator der Organisation im **Connect-Portal** aktiviert werden:  
-**Connect → Organisation → Verwaltung** → Verdienstausfallbescheinigung konfigurieren (Kontaktdaten Gemeindeamt, Unterzeichner, Zusatztext).
+Die Funktion muss zunächst durch einen **Organisationsadministrator** im Connect Portal aktiviert werden:
+
+**Connect Portal → Standort wählen → Organisation → Verwaltung**
+
+Dort folgende Einstellungen konfigurieren und speichern:
+
+| Feld | Beschreibung |
+|---|---|
+| **Aktiviert** | Checkbox aktivieren um die Funktion global freizuschalten (keine Einschränkung auf einzelne Standorte möglich) |
+| **Ansprechpartner** | Kontaktdaten der zuständigen Gemeinde / Stadt – erscheinen im oberen Bereich der Bescheinigung |
+| **Unterschriftsberechtigte** | Wer die Bescheinigung unterschreiben darf |
+| **Zusätzliche Hinweise** | Freitext z. B. für Rechtstexte oder weitere Hinweise |
+
+### Bescheinigung anfordern
+
+1. Einsatz aus dem Newsfeed oder der Einsatzhistorie öffnen
+2. **3-Punkte-Menü** oben rechts antippen → **„Verdienstausfallbescheinigung"**
+3. Zustellungsart wählen:
+   - **E-Mail** – die Bescheinigung wird als PDF an die hinterlegte E-Mail-Adresse gesendet
+   - **Drucken** – die Bescheinigung wird direkt über den am EinsatzMonitor angeschlossenen Drucker ausgedruckt
+
+### Hinweise zum Drucken
+
+Für den Direktdruck in der Wache sind folgende Voraussetzungen erforderlich:
+
+- EinsatzMonitor muss Connect aktiviert haben
+- **Adobe Acrobat Reader** muss installiert und als Standard-PDF-Programm eingestellt sein
+- Der gewünschte Drucker muss als **Standarddrucker** eingestellt sein
+
+### Vorlage
+
+Die Vorlage der Verdienstausfallbescheinigung ist fest vorgegeben und kann – abgesehen von den konfigurierbaren Freitextfeldern – nicht angepasst werden. Das Einbinden eigener Logos ist nicht möglich.
 
 ---
 

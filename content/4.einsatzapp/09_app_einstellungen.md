@@ -34,7 +34,8 @@ Die Einstellungen der EinsatzApp sind über das **Seitenmenü → Einstellungen*
 | Einstellung | Beschreibung |
 |---|---|
 | **Text-to-Speech für Einsätze** | Liest das Stichwort und die Adresse bei eingehenden Alarmen vor |
-| **Anfahrtszeit automatisch senden** | Berechnet die Anfahrtszeit zum Einsatzort und übermittelt sie automatisch (erfordert Standortberechtigung) |
+| **Einsatzfahrtzeit übermitteln** | Berechnet beim Drücken auf „Ich komme" die aktuelle Entfernung zum Feuerwehrhaus und übermittelt die resultierende Fahrtzeit an den EinsatzMonitor. Die Berechnung erfolgt nur einmalig bei der Einsatzzusage und dient als ungefährer Richtwert – Verkehrsauslastung wird nicht berücksichtigt. Nachts werden automatisch zusätzliche 15 Sekunden hinzugerechnet. Erfordert aktivierte Standortberechtigung. |
+| **Korrekturfaktor Fahrtzeit** | Passt die berechnete Fahrtzeit positiv oder negativ an. Nützlich z. B. wenn das Fahrzeug erst aus der Garage geholt werden muss. |
 
 ### Kalender
 

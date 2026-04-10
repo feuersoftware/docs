@@ -40,8 +40,37 @@ News in der Übersicht antippen → **„Bearbeiten"** oder **„Löschen"**. Da
 Die Terminübersicht zeigt alle anstehenden Termine in einer Liste oder Kalenderansicht mit Titel, Datum, Uhrzeit und Standort.
 
 ### Kalender erstellen
-Erstellen Sie zuerst einen neuen Kalender. Sie können hierbei unterscheiden zwischen einem lokalen Connect Kalender oder einem Remote Kalender. Remote Kalender rufen Termine über einen Link z.B. auf Google Kalender, Microsoft Outlook oder ähnlichem ab. 
-Sie können außerdem die Sichtbarkeit festlegen und eine Erinnerung konfigurieren. 
+
+Bevor Termine angelegt werden können, muss mindestens ein Kalender vorhanden sein. Pro Standort können mehrere Kalender angelegt werden.
+
+**Seitenleiste → Termine → Kalender → „Neu"**
+
+| Feld | Beschreibung |
+|---|---|
+| **Name** *(Pflichtfeld)* | Aussagekräftiger Name des Kalenders, z. B. „Einsatzabteilung" oder „Dienstplan" |
+| **Farbe** *(Pflichtfeld)* | Farbe des Kalenders – Termine werden in der EinsatzApp in dieser Farbe angezeigt, um mehrere Kalender voneinander zu unterscheiden |
+| **URL** | iCal-URL für einen Remote-Kalender (siehe unten). Leer lassen für einen lokalen Connect-Kalender. |
+| **Erinnerung** | Optional: Push-Benachrichtigung an Mitglieder vor einem anstehenden Termin |
+| **Sichtbarkeit eingeschränkt** | Wenn aktiviert, ist der Kalender nur für ausgewählte Benutzergruppen sichtbar |
+| **Gruppen** | Wählbar sobald „Sichtbarkeit eingeschränkt" aktiv ist – legt fest, welche Gruppen den Kalender sehen können |
+
+#### Lokaler Connect-Kalender
+
+Beim lokalen Kalender werden Termine direkt im Connect Portal oder in der EinsatzApp erstellt und gepflegt. Das Feld **URL bleibt leer**.
+
+Sobald ein lokaler Kalender angelegt ist, erscheint im Terminbereich die Schaltfläche **„Termin erstellen"**.
+
+#### Remote-Kalender (iCal)
+
+Beim Remote-Kalender werden Termine aus einem externen System – z. B. Google Kalender, Microsoft Outlook oder einem anderen Kalenderanbieter – über einen **iCal-Link** automatisch importiert. Termine können nicht in Connect bearbeitet werden, sondern nur im Quellsystem.
+
+Hierzu wird die **öffentliche iCal-URL** (endet auf `.ics`) in das Feld **URL** eingetragen.
+
+> **Beispiel Google Kalender:** In den Kalendereinstellungen unter „Öffentliche Adresse im iCal-Format" die URL kopieren. Der Kalender muss auf **„Öffentlich"** gestellt sein.
+
+Connect ruft den Remote-Kalender automatisch ab. Um die Synchronisation sofort auszulösen, auf **„Kalender aktualisieren"** neben dem Kalender klicken.
+
+---
 
 ### Termin erstellen
 1. **„Termin erstellen"** klicken
@@ -69,7 +98,8 @@ Wenn **„Anmeldung aktivieren"** gesetzt ist, können Mitglieder in der Einsatz
 
 Die aktuellen Anmeldungen sind in der Termindetailansicht im Connect Portal einsehbar.
 
-> **Hinweis:** Wenn Termindetails nachträglich geändert werden, gehen bestehende An- und Abmeldungen **nicht** verloren, solange der Termin selbst nicht gelöscht wird.
+> **Hinweis:** Wenn Termindetails nachträglich geändert werden, gehen bestehende An- und Abmeldungen **nicht** verloren, solange der Termin selbst nicht gelöscht wird. 
+**Wenn Datum oder Uhrzeit geändert wird, verfallen die An- und Abmeldungen. Teilnehmer müssen sich dann erneut anmelden.**
 
 ### Termin bearbeiten und löschen
 Termin in der Übersicht antippen → **„Bearbeiten"** oder **„Löschen"**. Das Löschen erfordert eine Bestätigung.
@@ -83,11 +113,9 @@ Mitglieder können in der EinsatzApp-Einstellung **„Termine mit Gerätekalende
 
 Der Orga-Kalender ermöglicht das standortübergreifende Teilen von Terminen innerhalb einer gesamten Connect-Organisation. Mitglieder aller Standorte können auf diesen Kalender zugreifen und sich für Termine anmelden – ohne dass Einträge an jedem Standort separat gepflegt werden müssen.
 
-> **Hinweis:** Das Bearbeiten und Löschen von Terminen und Kalendern aus der App ist derzeit nicht möglich. Standard-Benutzer können den Orga-Kalender aktuell nicht im Connect Portal einsehen (nur in der EinsatzApp).
-
 ### Orga-Kalender erstellen
 
-Erfordert **Organisations-Administrator-Rechte**.
+Erfordert **Organisations-Administrator-Rechte**. Alternativ gibt es Orga Rollen für News- oder Kalenderadministratoren. 
 
 1. Im Connect Portal zur **Organisations-Ebene** wechseln (Standort-Dropdown oben in der Seitenleiste → Organisation)
 2. **Seitenleiste → Termine → Kalender**
