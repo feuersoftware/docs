@@ -73,27 +73,31 @@ In der Benutzer-Detailansicht kann ein Konto deaktiviert oder dauerhaft gelösch
 
 **Seitenleiste → Rollen**
 
-Rollen definieren, welche Bereiche und Aktionen ein Benutzer im Connect Portal nutzen darf.
+Rollen definieren, welche Bereiche und Aktionen ein Benutzer im Connect Portal nutzen darf. Die Rollen sind fest vorgegeben und können nicht verändert oder gelöscht werden. Eigene Rollen können nicht erstellt werden.
 
-### Vordefinierte Rollen
-FeuerSoftware liefert Standardrollen aus (z. B. Administrator, Einsatzmanager, Beobachter). Diese können nicht gelöscht, aber angepasst werden.
+### Rollen auf Organisationsebene
 
-### Eigene Rollen erstellen
-1. **Seitenleiste → Rollen → „Rolle erstellen"**
-2. Name vergeben
-3. Berechtigungen einzeln aktivieren (Lesen / Erstellen / Verwalten pro Bereich)
-4. Speichern
-
-### Berechtigungsebenen
-Jede Berechtigung hat drei Stufen:
-
-| Stufe | Bedeutung |
+| Rolle | Beschreibung |
 |---|---|
-| **Lesen** | Inhalte anzeigen |
-| **Erstellen** | Neue Einträge anlegen |
-| **Verwalten** | Bearbeiten und Löschen |
+| **Organisationsadministrator** | Vollzugriff auf alle Einstellungen der Organisation |
+| **Organisation News-Administrator** | Kann News auf Organisationsebene erstellen und verwalten |
+| **Organisation Kalender-Administrator** | Kann Kalender und Termine auf Organisationsebene verwalten |
+| **Organisation Termin-Administrator** | Kann Termine auf Organisationsebene erstellen und verwalten |
 
-Berechtigungen können separat für Organisations- und Standortebene vergeben werden.
+### Rollen auf Standortebene
+
+| Rolle | Beschreibung |
+|---|---|
+| **Standortadministrator** | Vollzugriff auf alle Einstellungen des Standorts |
+| **Moderator** | Kann News und Termine erstellen sowie Fahrzeugverfügbarkeit bearbeiten |
+| **Gerätewart** | Kann Fahrzeuge und Fahrzeugverfügbarkeit bearbeiten |
+| **Standort News-Administrator** | Kann News auf Standortebene erstellen und verwalten |
+| **Standort Kalender-Administrator** | Kann Kalender und Termine auf Standortebene verwalten |
+| **Standort Termin-Administrator** | Kann Termine auf Standortebene erstellen und verwalten |
+
+Benutzer ohne zugewiesene Rolle haben eingeschränkten Lesezugriff (Standardbenutzer).
+
+Werden mehrere Rollen zugewiesen, werden die Rechte addiert. Eine vollständige Übersicht aller Berechtigungen je Rolle findet sich im [Rechtekonzept](./20_rechtekonzept_connect).
 
 ---
 
