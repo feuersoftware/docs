@@ -52,11 +52,13 @@ Verwaltung von Dokumenten auf Organisationsebene, die allen Mitgliedern zur Verf
 
 **Organisationseinstellungen → HelferApp**
 
-Einstellungen speziell für die HelferApp:
+Die HelferApp kann grundsätzlich ohne gesonderte Freischaltung genutzt werden. Die **Verarbeitung von Patientendaten** ist jedoch nur nach Aktivierung durch den **Feuersoftware Support** möglich. Voraussetzung dafür ist das Vorliegen eines **Auftragsverarbeitungsvertrags (AVV)** nach DSGVO mit der Feuer Software GmbH.
 
-- Aktivierung der HelferApp für die Organisation
-- Konfiguration, welche Inhalte in der HelferApp sichtbar sind
-- Vereinfachte Alarmierungseinstellungen für Helfer
+| Einstellung | Beschreibung |
+|---|---|
+| **Status** | Zeigt an, ob die vollständige HelferApp (inkl. Patientendaten) aktiv ist (Aktivierung durch Support) |
+| **Aktivierung ohne Verarbeitung von Gesundheitsdaten** | Nutzung der HelferApp ohne Patientendatenverarbeitung – kein AVV erforderlich, schränkt den Funktionsumfang ein |
+| **Bezeichnung der Verfahrenstätigkeit** | Bezeichnung der Organisation für den Auftragsverarbeitungsvertrag |
 
 ---
 
@@ -75,13 +77,17 @@ Einstellungen speziell für die HelferApp:
 
 ## EinsatzManager-Einstellungen
 
-**Organisationseinstellungen → Operations Manager**
+**Organisationseinstellungen → EinsatzManager**
 
-Konfiguration für den webbasierten EinsatzManager:
+| Einstellung | Beschreibung |
+|---|---|
+| **SDS-Nachrichten** | Aktiviert den Empfang von SDS-Nachrichten im EinsatzManager |
+| **Eingeschränkter Zugriff auf beendete Einsätze** | Benutzer ohne Vollzugriff können beendete Einsätze nur eingeschränkt einsehen |
+| **Gruppen mit Vollzugriff auf beendete Einsätze** | Benutzergruppen, die auch auf beendete Einsätze vollen Zugriff haben |
 
-- Welche Felder im EinsatzManager angezeigt werden
-- Standard-Ansicht beim Öffnen des Managers
-- Einstellungen zur Einsatz-Sichtbarkeit im Manager (z. B. Beschränkung auf aktive und kürzlich abgeschlossene Einsätze für Benutzer ohne Admin-Rolle)
+### Externe Fahrzeuge
+
+Fahrzeuge externer Organisationen können hier gepflegt werden. Über **„Externes Fahrzeug hinzufügen"** können einzelne Fahrzeuge manuell eingetragen werden. Alternativ können Fahrzeuglisten per **Import** hochgeladen oder per **Herunterladen** exportiert werden.
 
 ---
 
@@ -89,16 +95,35 @@ Konfiguration für den webbasierten EinsatzManager:
 
 **Seitenleiste → Automatisches Datenlöschen**
 
-Definiert, nach welchem Zeitraum bestimmte Daten automatisch gelöscht werden (Data Retention):
+Aus Datenschutzgründen empfehlen wir, die automatische Datenlöschung in Connect einzurichten. Als Organisationsadministrator kann festgelegt werden, wann und welche Daten automatisch gelöscht werden sollen.
 
-| Datentyp | Konfigurierbar |
+Die Datenlöschung läuft automatisiert jede Nacht auf den Servern von Feuersoftware und kann manuell nicht gestartet werden. Gelöschte Daten sind anschließend nicht mehr im Connect Portal, in der EinsatzApp oder am EinsatzMonitor verfügbar.
+
+### Konfigurierbare Zeiträume
+
+Für jeden Datentyp kann ein Löschintervall gewählt werden:
+
+- Nie
+- Nach einem Tag
+- Nach einer Woche
+- Nach einem Monat
+- Nach sechs Monaten
+- Nach einem Jahr
+- Nach zwei Jahren
+
+### Zu löschende Datentypen
+
+| Datentyp | Beschreibung |
 |---|---|
-| Abgeschlossene Einsätze | Ja |
-| Defektberichte | Ja |
-| Aktivitätsprotokolle | Ja |
-| News und Termine | Ja |
+| **Einsatz löschen** | Löscht den kompletten Einsatz mit allen zugehörigen Details. |
+| **Einsatzinformationen löschen** | Löscht im Einsatz alle Felder außer Stichwort, PLZ, Ort, Ortsteil, Einsatznummer und RIC. Datenschutzkritische Felder werden entfernt, die für die Einsatzstatistik relevanten Basisdaten bleiben erhalten. Empfehlung: eine Woche. |
+| **Probealarme** | Löscht alle Einsätze, die der Kategorie Probealarm zugewiesen sind, um die Einsatzstatistik nicht zu verfälschen. |
+| **Abgelaufene Termine** | Löscht alle vergangenen Termine in Kalendern. |
+| **Abgelaufene News** | Löscht alle abgelaufenen Newseinträge. |
+| **Nicht genutzte Geräte** | Löscht Mobiltelefone (EinsatzApp), die von Benutzern einmal angemeldet wurden, aber mittlerweile keinen gültigen Token mehr haben (z. B. nach Gerätewechsel). |
+| **Abgelaufene Fahrzeugverfügbarkeiten** | Löscht Fahrzeugverfügbarkeiten, nachdem der eingetragene Zeitraum abgelaufen ist. |
 
-> **Hinweis:** Gelöschte Daten können nicht wiederhergestellt werden. Die Einstellungen sorgfältig prüfen, bevor sie aktiviert werden.
+> **Wichtig:** Die Daten werden automatisch und unwiederbringlich gelöscht. Die Einstellungen sorgfältig prüfen, bevor sie aktiviert werden.
 
 ---
 

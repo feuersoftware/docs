@@ -31,6 +31,16 @@ Stichwörter auf Organisationsebene stehen allen Standorten zur Verfügung.
    - **Kategorie** (z. B. Brand, Technische Hilfe, Rettungsdienst)
 3. Speichern
 
+> **Hinweis:** Die folgenden Einstellungen sind nur als Organisationsadministrator änderbar.
+
+### Stichwortübersetzung
+
+Über die Stichwortübersetzung können Stichworte in ein besser verständliches Format übersetzt werden. Beispielsweise kann das Stichwort „F Wald 1" zu „Waldbrand" übersetzt werden. Die übersetzte Bezeichnung wird dann in der EinsatzApp und am EinsatzMonitor angezeigt.
+
+### CSV Import / Export
+
+Mehrere Stichworte können als CSV exportiert bzw. eine vorhandene CSV-Datei importiert werden. Verwende dafür die entsprechenden Buttons oberhalb der Stichwort-Tabelle.
+
 ---
 
 ## Alarmgruppen
@@ -94,17 +104,76 @@ Dynamische Regeln werden nach dem Eingang eines Einsatzes ausgewertet und übers
 
 ## Dynamische Zusatzinformationen
 
-**Seitenleiste → Alarmierung → Zusatzinformationen**
+**Seitenleiste → Alarmierung → Dyn. Zusatzinfos**
 
-Zusatzinformationen sind dynamisch befüllte Felder, die bei einem Einsatz angezeigt werden – z. B. Gefahrstoffhinweise, Gebäudedaten oder Anfahrtsbeschreibungen.
+> Mindestvoraussetzung: EinsatzApp Version 2023.03
 
-### Zusatzinformation anlegen
-1. **„Zusatzinformation anlegen"** klicken
-2. Felder konfigurieren:
-   - **Bezeichnung** des Feldes
-   - **Bedingung** – wann soll dieses Feld angezeigt werden (z. B. nur bei bestimmtem Stichwort oder Adressbereich)
-   - **Inhalt** (statischer Text oder dynamisch befüllt über Schnittstelle)
-3. Speichern
+Mit den Dynamischen Zusatzinfos (kurz: Dyn. Zusatzinfos) lassen sich individuelle Regeln erstellen, die unter konfigurierten Kriterien entsprechende Zusatzinfos zu Einsätzen hinzufügen. Regeln prüfen auf bekannte Felder wie Stichwort, Ort, Ortsteil, Straße oder Sachverhalt und fügen entsprechende Zusatzfelder hinzu. Die Zusatzfelder werden dann in den Einsatzdetails im Connect Portal, in der EinsatzApp und am EinsatzMonitor angezeigt.
+
+**Beispiele:**
+
+> **Stadt = Flammenhausen** **UND** **Objekt = Krankenhaus** → Zusatzfeld „Hinweis Gebäudefunk" mit Wert „Gebäudefunk Kanal XYZ"
+>
+> **Stichwort enthält Unwetter** → Zusatzfeld „Hinweis Unwetter" mit Wert „Wassersauger mitnehmen, Lager 1 Regal 3"
+
+### Einrichtung
+
+Dynamische Zusatzinfos können sowohl auf Organisationsebene als auch auf Standortebene eingerichtet werden. **Angelegte Regeln gelten immer für die gesamte Organisation**, auch wenn sie auf Standortebene angelegt werden.
+
+Hierfür wird mindestens das Recht „Standortadministrator" benötigt.
+
+Wähle den Menüpunkt **„Alarm"** und anschließend **„Dyn. Zusatzinfos"**. Klicke auf **„Neu"** um eine neue Regel anzulegen.
+
+### Regel konfigurieren
+
+**Name**
+
+Vergib der Regel einen aussagekräftigen Namen, über den sie eindeutig identifiziert werden kann.
+
+**Bedingungen**
+
+Erstelle Bedingungen, auf die die Regel angewendet werden soll. Zugegriffen werden kann auf allgemeine Felder (z. B. Stadt, Straße, Stichwort, Sachverhalt). Mehrere Bedingungen werden **UND-verknüpft** – alle Bedingungen müssen zutreffen, damit die Regel angewendet wird.
+
+Beispiel:
+- **Stadt / Gemeinde ist gleich „Flammenhausen"** UND **Zusatzfeld „Objekt" ist gleich „Klinikum"**
+
+Zusätzlich kann ein **Zeitfilter** eingerichtet werden, damit die Regel nur zu bestimmten Tageszeiten oder an bestimmten Wochentagen ausgeführt wird (z. B. nur zwischen 07:00 und 16:00 Uhr).
+
+**Zusätzliche Hinweise**
+
+Hier werden die Felder und Inhalte definiert, die hinzugefügt werden, sobald die Regel greift. Folgende Typen stehen zur Verfügung:
+
+| Typ | Beschreibung |
+|---|---|
+| **Text** | Einfacher Text, max. 2000 Zeichen. Z. B. „Funkkanal XYZ schalten". |
+| **Dokument-Referenz** | Pfad zu einem Ordner oder einer Datei in der Nextcloud, z. B. `/Feuerwehrplan/Klinikum`. Setzt eine eingerichtete Nextcloud-Verbindung in der EinsatzApp voraus. |
+| **Weblink** | Eine URL, z. B. `https://www.feuerwehr-flammenhausen.de`. Wird direkt aus der App heraus geöffnet. |
+
+### Anzeige
+
+**Connect Portal**
+
+Die hinzugefügten Zusatzfelder werden unter den Einsatzdetails angezeigt. Unter „Dynamische Zusatzinformationen" erscheinen die Namen der zutreffenden Regeln, unter „Zusätzliche Hinweise" die eigentlichen Informationen.
+
+**EinsatzApp**
+
+Die Dynamischen Zusatzinformationen erscheinen in der Einsatzanzeige unter dem Punkt „Zusätzliche Informationen". Durch Antippen wird der Bereich aufgeklappt. Dokument-Referenzen sind nur sichtbar, wenn auf dem Gerät eine Nextcloud konfiguriert ist. Weblinks öffnen sich direkt im Browser.
+
+**EinsatzMonitor**
+
+Am EinsatzMonitor werden die Zusatzinformationen im unteren Bereich des Einsatzes angezeigt. Es werden ausschließlich Texthinweise angezeigt.
+
+### Berechtigungen
+
+Die Dynamischen Zusatzinformationen können über Benutzergruppen ein- oder ausgeblendet werden. Das entsprechende Recht heißt **„Zusätzliche Informationen"** und kann in den Benutzergruppen-Einstellungen aktiviert oder deaktiviert werden.
+
+### Wichtige Hinweise
+
+**Zeitverzögerung:** Die Regeln werden nicht direkt im Alarmablauf ausgeführt, sondern nachgelagert. Dies bringt eine Verzögerung von wenigen Sekunden, damit der Alarmablauf nicht durch das Regelwerk verlangsamt wird.
+
+**Verhalten bei Einsatzupdate:** Die Regeln werden bei jedem Einsatzupdate erneut durchlaufen. So ist sichergestellt, dass z. B. bei einer Stichwort- oder Adressänderung die entsprechenden Regeln erneut ausgeführt werden.
+
+**Löschen von Regeln:** Beim Löschen einer Regel werden die Informationen auch rückwirkend aus den Einsätzen entfernt. Das gleiche gilt beim Anpassen von Regeln.
 
 ---
 
@@ -112,7 +181,7 @@ Zusatzinformationen sind dynamisch befüllte Felder, die bei einem Einsatz angez
 
 **Seitenleiste → Alarmierung → Einsatz-Kategorien** *(nur Organisations-Ebene)*
 
-Einsatz-Kategorien gruppieren Stichwörter nach Art des Einsatzes (z. B. Brand, Technische Hilfe, Rettungsdienst). Sie dienen der Statistik und Filterung.
+Einsatz-Kategorien gruppieren Stichwörter nach Art des Einsatzes (z. B. „Feuer", „Technische Hilfeleistung"). Jeder Kategorie kann eine Farbe zugewiesen werden. Diese Farbe wird am EinsatzMonitor und in der EinsatzApp entsprechend angezeigt. Anschließend können Einsatzstichworte in Connect eingepflegt und den entsprechenden Kategorien zugewiesen werden.
 
 ---
 
