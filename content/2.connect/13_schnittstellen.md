@@ -41,7 +41,8 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 | **[Lupus Electronics](./schnittstellen/lupus)** | Alarmweiterleitung von Lupus Rauchwarnmeldern über die Lupus Cloud |
 | **Public API** | Zugang zur öffentlichen FeuerSoftware-API auf Standortebene |
 | **RescueTablet** | Anbindung an RescueTablet-Systeme |
-| **[TetraControl CVM](./schnittstellen/tetracontrol)** | Spannungs- und Stromüberwachung per CVM Modul und MQTT |
+| **[TetraControl](./schnittstellen/tetracontrol)** | Fahrzeugstatus, GPS und Rückmeldungen aus dem TETRA-Netz an Connect übermitteln |
+| **[Status3IT – CVM & UBX](./schnittstellen/status3it)** | CVM Spannungs-/Stromsensormodul und UBX Bluetooth-Box für Fahrzeugfunkgeräte |
 | **Webhooks** | Ausgehende Webhooks bei Ereignissen (z. B. neuer Einsatz, Statusänderung) |
 | **[X-Sense](./schnittstellen/xsense)** | Alarmweiterleitung von X-Sense Rauchwarnmeldern über die X-Sense App |
 
@@ -63,16 +64,9 @@ FeuerSoftware Connect unterstützt die Anbindung von Rauchwarnmeldern verschiede
 
 ## Public API
 
-Die Public API ermöglicht die Integration eigener Systeme mit FeuerSoftware. Sie steht auf Organisations- und Standortebene zur Verfügung.
+Die öffentliche Connect API ermöglicht die Integration externer Systeme – z. B. um Einsätze zu erstellen oder Fahrzeugstatus zu übermitteln. Sie steht auf Organisations- und Standortebene zur Verfügung.
 
-### API-Token erstellen
-1. **Schnittstellen → Public API**
-2. **„API-Token erstellen"** klicken
-3. Bezeichnung vergeben (z. B. „Leitstellen-Anbindung")
-4. Berechtigungen für den Token festlegen (Lesen / Schreiben)
-5. Token kopieren und sicher aufbewahren – er wird nur einmal angezeigt
-
-> Die API-Dokumentation ist unter [docs.feuersoftware.com](https://docs.feuersoftware.com) verfügbar.
+Alle Details zur Aktivierung, API-Dokumentation (Swagger) sowie den Tools EinsatzUpload und StatusUpload: [→ Öffentliche Connect API](./schnittstellen/public_api)
 
 ---
 

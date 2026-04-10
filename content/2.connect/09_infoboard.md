@@ -19,9 +19,9 @@ Die Übersicht zeigt alle aktiven Einträge gegliedert nach **Info-Gruppen** (Ka
 
 ---
 
-## Info-Gruppe anlegen
+## Gruppierungen anlegen
 
-Info-Gruppen sind Kategorien, unter denen Einträge zusammengefasst werden (z. B. „Gerätewart", „Atemschutz", „Allgemeines").
+Gruppierungen sind Kategorien, unter denen Einträge zusammengefasst werden (z. B. „Gerätewart", „Atemschutz", „Allgemeines").
 
 1. **„Gruppe anlegen"** klicken
 2. **Name** der Gruppe eingeben

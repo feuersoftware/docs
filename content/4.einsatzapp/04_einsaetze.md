@@ -68,7 +68,9 @@ Direkt in der Detailansicht kannst du deinen Status für diesen Einsatz setzen:
 
 ### Tab: Karte
 
-Zeigt den Einsatzort auf einer Karte (Google Maps). Die Karte kann in den Normal- oder Satellitenmodus gewechselt werden.
+Zeigt den Einsatzort auf einer Karte (Google Maps). Die Karte kann in den Normal- oder Satellitenmodus gewechselt werden. Über den blauen Pfeil kann die Navigation zum Einsatzort gestartet werden. 
+
+> **Hinweis (iOS):** Die Navigation wird über **Apple Karten** gestartet. Ist Apple Karten nicht installiert oder wurde die App entfernt, kann die Navigation nicht gestartet werden – auch wenn eine andere Karten-App als Standard eingestellt ist.
 
 ---
 
