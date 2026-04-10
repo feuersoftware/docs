@@ -157,19 +157,21 @@ Die hinzugefügten Zusatzfelder werden unter den Einsatzdetails angezeigt. Unter
 
 **EinsatzApp**
 
-Die Dynamischen Zusatzinformationen erscheinen in der Einsatzanzeige unter dem Punkt „Zusätzliche Informationen". Durch Antippen wird der Bereich aufgeklappt. Dokument-Referenzen sind nur sichtbar, wenn auf dem Gerät eine Nextcloud konfiguriert ist. Weblinks öffnen sich direkt im Browser.
+Die Dynamischen Zusatzinformationen erscheinen in der Einsatzanzeige und sind teilweise anklickbar. Dokument-Referenzen sind in der EinsatzApp nicht nutzbar.
 
 **EinsatzMonitor**
 
 Am EinsatzMonitor werden die Zusatzinformationen im unteren Bereich des Einsatzes angezeigt. Es werden ausschließlich Texthinweise angezeigt.
+
+**EinsatzManager**
+
+Am EinsatzManager werden die Zusatzinformationen in den Einsatzdetails angezeigt.
 
 ### Berechtigungen
 
 Die Dynamischen Zusatzinformationen können über Benutzergruppen ein- oder ausgeblendet werden. Das entsprechende Recht heißt **„Zusätzliche Informationen"** und kann in den Benutzergruppen-Einstellungen aktiviert oder deaktiviert werden.
 
 ### Wichtige Hinweise
-
-**Zeitverzögerung:** Die Regeln werden nicht direkt im Alarmablauf ausgeführt, sondern nachgelagert. Dies bringt eine Verzögerung von wenigen Sekunden, damit der Alarmablauf nicht durch das Regelwerk verlangsamt wird.
 
 **Verhalten bei Einsatzupdate:** Die Regeln werden bei jedem Einsatzupdate erneut durchlaufen. So ist sichergestellt, dass z. B. bei einer Stichwort- oder Adressänderung die entsprechenden Regeln erneut ausgeführt werden.
 
@@ -225,24 +227,8 @@ Als Administrator kann eine dedizierte Alarmgruppe für Testzwecke angelegt werd
 1. **Seitenleiste → Alarmierung → Alarmgruppen → „Alarmgruppe anlegen"**
 2. Aussagekräftigen Namen vergeben (z. B. „Alarmgruppe Testbenachrichtigung")
 3. Gewünschte Mitglieder hinzufügen
-4. In der Alarmgruppenübersicht auf das **Glocken-Symbol** klicken
-
-> **Achtung:** Nach dem Klicken auf das Glocken-Symbol erfolgt **keine weitere Bestätigungsabfrage** – die Benachrichtigung wird sofort gesendet.
+4. In der Alarmgruppenübersicht auf die drei Punkte klicken und anschließend auf Testbenachrichtigung senden klicken
 
 ### Regelmäßige Testalarme
 
 Für wiederkehrende Testalarme kann die öffentliche Connect-Schnittstelle mit dem Einsatz-Upload-Tool und einem geplanten Task (z. B. Windows Task Scheduler) verwendet werden.
-
----
-
-## Alert-Regeln
-
-**Seitenleiste → Alert-Regeln** *(nur Organisations-Ebene)*
-
-Alert-Regeln definieren automatische Benachrichtigungen für bestimmte Ereignisse – z. B. wenn ein Einsatz mit einem bestimmten Stichwort eingeht oder ein Fahrzeug einen bestimmten Status erreicht.
-
-### Alert-Regel anlegen
-1. **„Alert-Regel anlegen"** klicken
-2. **Auslöser** definieren (Ereignistyp, Bedingungen)
-3. **Empfänger** festlegen (Benutzer, Gruppen, E-Mail)
-4. Speichern
