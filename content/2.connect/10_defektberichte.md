@@ -15,7 +15,7 @@ Meldungen können sowohl über das Connect Portal als auch direkt aus der **Eins
 
 ## Voraussetzungen
 
-Die Mängelmeldungs-Funktion muss für die Organisation freigeschaltet sein. Zusätzlich kann in den [Standort-Einstellungen](./05_standorte) eine **Mailing-Liste** hinterlegt werden, deren Mitglieder bei neuen Meldungen per E-Mail benachrichtigt werden.
+Die Mängelmeldungs-Funktion muss für die Organisation freigeschaltet sein. Zusätzlich kann in den [Standort-Einstellungen](./05_standorte) eine **Mailing-Liste** hinterlegt werden, deren Adressen bei neuen Meldungen per E-Mail benachrichtigt werden. Dies kann z.B. für Sammelpostfächer sinnvoll genutzt werden.
 
 ---
 
