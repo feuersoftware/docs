@@ -40,7 +40,7 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 | **[Homematic HCU1](./schnittstellen/homematic)** | Alarmweiterleitung von Homematic Rauchwarnmeldern über die HCU1 |
 | **[Lupus Electronics](./schnittstellen/lupus)** | Alarmweiterleitung von Lupus Rauchwarnmeldern über die Lupus Cloud |
 | **Public API** | Zugang zur öffentlichen FeuerSoftware-API auf Standortebene |
-| **RescueTablet** | Anbindung an RescueTablet-Systeme |
+| **[rescueTABLET](./schnittstellen/rescuetablet)** | Einsatzdaten an rescueTABLET weiterleiten |
 | **[TetraControl](./schnittstellen/tetracontrol)** | Fahrzeugstatus, GPS und Rückmeldungen aus dem TETRA-Netz an Connect übermitteln |
 | **[Status3IT – CVM & UBX](./schnittstellen/status3it)** | CVM Spannungs-/Stromsensormodul und UBX Bluetooth-Box für Fahrzeugfunkgeräte |
 | **Webhooks** | Ausgehende Webhooks bei Ereignissen (z. B. neuer Einsatz, Statusänderung) |

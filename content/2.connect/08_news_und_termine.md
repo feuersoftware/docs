@@ -128,3 +128,61 @@ Erfordert **Organisations-Administrator-Rechte**. Alternativ gibt es Orga Rollen
 Die Sichtbarkeit eines Orga-Kalenders kann auf bestimmte Gruppen eingeschränkt werden. Es können ausschließlich **Organisations-Gruppen** verwendet werden – Standort-Gruppen sind nicht geeignet.
 
 > **Tipp:** Um den Verwaltungsaufwand zu minimieren, empfiehlt es sich, Gruppen automatisch auf Basis von Benutzerfunktionen zu befüllen (z. B. alle Benutzer mit der Funktion „Gruppenführer").
+
+---
+
+## Termine per CSV importieren
+
+Mehrere Termine können auf einmal per CSV-Datei importiert werden.
+
+**Seitenleiste → Termine → CSV-Import**
+
+### Anforderungen an die CSV-Datei
+
+- Dateiformat: **CSV**
+- Zeichensatz: **UTF-8 empfohlen**
+- Spaltenreihenfolge ist beliebig
+- Spaltennamen müssen **exakt** wie angegeben geschrieben sein
+- Datumsformat: **TT.MM.JJ** (z. B. `06.01.26`)
+- Zeitformat: **HH:MM** (z. B. `19:00`)
+
+### Pflichtfelder
+
+| Spaltenname | Beschreibung |
+|---|---|
+| `Subject` | Titel des Termins |
+| `Start Date` | Startdatum im Format `TT.MM.JJ` |
+| `Start Time` | Startzeit im Format `HH:MM` |
+| `End Date` | Enddatum im Format `TT.MM.JJ` |
+| `End Time` | Endzeit im Format `HH:MM` |
+
+### Optionale Felder
+
+| Spaltenname | Typ | Erlaubte Werte |
+|---|---|---|
+| `All Day Event` | Boolean | `TRUE`, `FALSE` – bei `TRUE` müssen Start-/Endzeit mindestens `00:00` sein |
+| `Description` | Freitext | – |
+| `Location` | Freitext | – |
+| `Registration Enabled` | Boolean | `True`, `False` |
+| `Registration Maximum` | Zahl oder leer | leer = keine Begrenzung, sonst Zahl ≥ 1 |
+| `Registration Reply Option` | Enum | `YesOrNo`, `All` |
+| `Registration Comment Setting` | Enum | `NotRequired`, `RequiredWhenDeclined`, `RequiredWhenDeclinedOrTentative`, `AlwaysRequired` |
+| `Deadline` | Zeitspanne | z. B. `01:00:00` (1 Std.), `1.00:00:00` (1 Tag), `7.00:00:00` (7 Tage) |
+
+### Beispiel-CSV (Pflichtfelder)
+
+```csv
+Subject,Start Date,Start Time,End Date,End Time
+Monatsübung Gruppe A,06.02.26,19:00,06.02.26,21:00
+Atemschutzübung,15.03.26,18:30,15.03.26,21:00
+Dienstbesprechung,02.04.26,20:00,02.04.26,21:30
+```
+
+### Häufige Fehlerquellen
+
+- Spaltenname falsch geschrieben → Datei wird abgelehnt
+- Datumsformat falsch (z. B. `2026-02-06` statt `06.02.26`)
+- `All Day Event = TRUE` → Start- und Endzeit müssen mindestens `00:00` sein
+- `Registration Maximum` → keine `0`, nur leer oder ≥ 1
+
+> **Tipp:** Eine fertige Excel-Vorlage mit allen Validierungen steht ebenfalls zum Download zur Verfügung.

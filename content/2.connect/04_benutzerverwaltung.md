@@ -140,3 +140,33 @@ Mailing-Listen sind E-Mail-Verteilerlisten, z. B. für Mängelmeldungen oder Ben
 Hier werden speziell konfigurierte Accounts für den **EinsatzMonitor** verwaltet. Diese Accounts sind für den Dauerbetrieb auf einem festen Anzeigegerät in der Fahrzeughalle vorgesehen und haben eingeschränkte Berechtigungen.
 
 ![Screenshot: Geräte-Accounts](/images/connect/04_geraete_accounts.png)
+
+---
+
+## Mitgliedschaft in mehreren Standorten oder Organisationen
+
+### Mehrere Standorte innerhalb einer Organisation
+
+Ein Benutzer kann an beliebig vielen Standorten der gleichen Organisation berechtigt werden. Ein Administrator wählt dazu in den Benutzereinstellungen die entsprechenden Standorte aus.
+
+Kalender, Einsatzhistorie und weitere standortspezifische Ansichten werden in der EinsatzApp zusammengefasst. Die Verfügbarkeit gilt für alle Standorte gleich – eine getrennte Verfügbarkeit pro Standort innerhalb derselben Organisation ist nicht möglich.
+
+### Mitglied in mehreren Organisationen (Multi-Orga)
+
+Einsatzkräfte mit Doppelmitgliedschaft in zwei voneinander getrennten Organisationen (z. B. Feuerwehr Offenbach und Feuerwehr Fulda) können in der EinsatzApp beide Accounts gleichzeitig eingeloggt haben.
+
+Der Benutzer muss in beiden Organisationen per E-Mail eingeladen werden.
+
+> **Wichtig:** Eine E-Mail-Adresse kann immer nur einer Organisation zugeordnet sein. Es werden daher **zwei verschiedene E-Mail-Adressen** benötigt.
+
+> **Tipp für Gmail-Nutzer:** Durch Hinzufügen eines Pluszeichens und eines Schlagworts können quasi beliebig viele Adressen mit demselben Account genutzt werden – z. B. `VornameNachname+Feuerwehr1@gmail.com`. Alle E-Mails landen im gleichen Postfach, für die Registrierung in FeuerSoftware gelten sie als unterschiedliche Adressen.
+
+**Zweiten Account in der EinsatzApp hinzufügen:**
+
+1. In der EinsatzApp → **Seitliches Menü öffnen**
+2. **Konto hinzufügen"** klicken
+3. Mit dem zweiten Account anmelden
+
+Nach dem Login werden beide Profile in der Profilübersicht angezeigt.
+
+
