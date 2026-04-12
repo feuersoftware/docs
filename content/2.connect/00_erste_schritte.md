@@ -13,7 +13,7 @@ FeuerSoftware Connect ist ein Cloud-Dienst, der alle FeuerSoftware-Produkte mite
 
 Unter [connect.feuersoftware.com](https://connect.feuersoftware.com/) auf **„Erstellen Sie eine neue Organisation"** klicken, das Formular ausfüllen und AGBs sowie Datenschutzerklärung akzeptieren. Nach der Registrierung mit dem neu erstellten Administrator-Account anmelden.
 
-→ [Anmeldung & Registrierung](/connect/anmeldung)
+→ [Anmeldung & Registrierung](/connect/02_anmeldung)
 
 ---
 
@@ -21,7 +21,7 @@ Unter [connect.feuersoftware.com](https://connect.feuersoftware.com/) auf **„E
 
 Connect ist kostenpflichtig. Nach einem **Testzeitraum von 90 Tagen** wird eine Lizenz benötigt. Lizenzen werden für ein Jahr erworben und verlängern sich nicht automatisch. 90 Tage vor Ablauf wird eine Erinnerung per E-Mail versendet.
 
-→ [Lizenzierung und Lizenzbestellung](/connect/lizenzierung)
+→ [Lizenzierung und Lizenzbestellung](/connect/14_lizenzierung)
 
 ---
 
@@ -31,10 +31,10 @@ Für jede Orts- oder Stadtteilfeuerwehr einen Standort anlegen. Innerhalb des St
 
 Über das Rechtesystem können einzelnen Benutzern verschiedene Rechte zugewiesen werden. Empfehlung: Pro Standort mindestens einen **Standortadministrator** ernennen.
 
-→ [Standorte](/connect/standorte)  
-→ [Benutzerverwaltung](/connect/benutzerverwaltung)  
-→ [Rechtekonzept](/connect/rechtekonzept_connect)  
-→ [CSV Benutzerimport](/connect/benutzer_tools) — mehrere Benutzer auf einmal importieren
+→ [Standorte](/connect/05_standorte)  
+→ [Benutzerverwaltung](/connect/04_benutzerverwaltung)  
+→ [Rechtekonzept](/connect/20_rechtekonzept_connect)  
+→ [CSV Benutzerimport](/connect/18_benutzer_tools) — mehrere Benutzer auf einmal importieren
 
 ---
 
@@ -42,7 +42,7 @@ Für jede Orts- oder Stadtteilfeuerwehr einen Standort anlegen. Innerhalb des St
 
 Pro Standort können beliebig viele Fahrzeuge erstellt werden. Zu jedem Fahrzeug können Zusatzinformationen wie Besatzung oder Telefonnummer hinterlegt werden. Für die Übermittlung von Fahrzeugstatus und GPS-Daten (z. B. über eine Leitstellenanbindung oder TetraControl) muss die **ISSI** des Funkgerätes eingetragen sein.
 
-→ [Fahrzeuge](/connect/fahrzeuge)
+→ [Fahrzeuge](/connect/06_fahrzeuge)
 
 ---
 
@@ -50,8 +50,8 @@ Pro Standort können beliebig viele Fahrzeuge erstellt werden. Zu jedem Fahrzeug
 
 Einsatzdaten können über verschiedene Wege in Connect eingehen. Die Wahl des richtigen Weges sollte gemeinsam mit der zuständigen Leitstelle abgeklärt werden.
 
-→ [Leitstellenanbindungen](/connect/leitstellenanbindungen) — Übersicht aller unterstützten Anbindungen  
-→ [Schnittstellen](/connect/schnittstellen) — alle weiteren Integrationen
+→ [Leitstellenanbindungen](/connect/19_leitstellenanbindungen) — Übersicht aller unterstützten Anbindungen  
+→ [Schnittstellen](/connect/13_schnittstellen) — alle weiteren Integrationen
 
 ### E-Mail Auswertung
 
@@ -91,7 +91,7 @@ Die WDX3-Schnittstelle des Einsatzleitprogramms Cobra 4 ermöglicht die direkte 
 
 Speziell berechtigte Mitglieder können direkt in der EinsatzApp einen Alarm mit Adresse, Stichwort und weiteren Informationen auslösen – unabhängig von der Leitstelle.
 
-→ [Einsätze in der EinsatzApp](/einsatzapp/einsaetze)
+→ [Einsätze in der EinsatzApp](/einsatzapp/04_einsaetze)
 
 ---
 
@@ -102,4 +102,4 @@ Nach der Einrichtung von Standorten, Benutzern und dem Einsatzdateneingang muss 
 - **Alarmgruppen** anlegen (vergleichbar mit Alarmschleifen) und Benutzer zuweisen
 - **AAO-Regeln** definieren – nicht nur anhand des Stichworts, sondern anhand aller Einsatzinformationen; tages- und uhrzeitabhängige Regeln sind möglich
 
-→ [Alarmierung, AAO und Alarmgruppen](/connect/alarmierung)
+→ [Alarmierung, AAO und Alarmgruppen](/connect/11_alarmierung)
