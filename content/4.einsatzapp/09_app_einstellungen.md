@@ -54,7 +54,7 @@ Die Einstellungen der EinsatzApp sind über das **Seitenmenü → Einstellungen*
 
 **Seitenmenü → Einstellungen → Alarmeinstellungen**
 
-Alle Einstellungen zur Alarmtonwiedergabe. Weitere Details sind auf der Seite [Alarmierung & Alarmeinstellungen](/einsatzapp/alarmierung) beschrieben.
+Alle Einstellungen zur Alarmtonwiedergabe. Weitere Details sind auf der Seite [Alarmierung & Alarmeinstellungen](/einsatzapp/10_alarmierung) beschrieben.
 
 | Einstellung | Beschreibung |
 |---|---|
