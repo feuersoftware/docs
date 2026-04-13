@@ -13,8 +13,6 @@ Der Bereich „Einsätze" ist das Herzstück der EinsatzApp. Hier werden eingehe
 
 Wenn ein Einsatz ausgelöst wird, erscheint eine **Push-Benachrichtigung** auf dem Sperrbildschirm und im Benachrichtigungszentrum.
 
-![Screenshot: Eingehende Alarm-Push-Benachrichtigung](/images/einsatzapp/04_alarm_notification.png)
-
 Die Benachrichtigung enthält:
 - Stichwort und Adresse des Einsatzes
 - Zwei Aktionsbuttons direkt in der Benachrichtigung:

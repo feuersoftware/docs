@@ -89,8 +89,6 @@ Fokus-Modi können Benachrichtigungen blockieren. Für jeden aktiven Fokus-Modus
 5. **„EinsatzApp"** suchen und auswählen.
 6. Tippe anschließend auf **„Fertig"**.
 
-![Screenshot: Fokus-Modus App-Ausnahmen](/images/einsatzapp/11_ios_focus_exceptions.png)
-
 > **Tipp:** Wenn du **Kritische Benachrichtigungen** aktiviert hast (Schritt 2), kommen Alarme auch ohne diese Fokus-Ausnahme durch – allerdings ohne Ton bei manchen Fokus-Konfigurationen. Beide Einstellungen zusammen garantieren maximale Zuverlässigkeit.
 
 ### Fokus-Modi und Zeitpläne prüfen

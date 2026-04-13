@@ -95,7 +95,7 @@ Ja. Beim Anlegen eines Kalenders kann eine **Erinnerung** konfiguriert werden. M
 
 ### Kann ich Einsätze automatisch nach einer bestimmten Zeit beenden lassen?
 
-Nein, eine automatische Beendigung nach konfigurierbarer Zeit ist aktuell nicht möglich. Einsätze müssen manuell abgeschlossen werden.
+Ja. Im Connect Portal kann unter **Organisation → Verwaltung → „Automatische Datenlöschung"** konfiguriert werden, nach welcher Zeit abgeschlossene Einsätze automatisch gelöscht werden. Eine automatische *Beendigung* laufender Einsätze ist jedoch nicht möglich – Einsätze müssen manuell abgeschlossen werden.
 
 ---
 
