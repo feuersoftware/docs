@@ -57,6 +57,34 @@ Ja. Benutzer können auf Organisationsebene angelegt und dann mehreren Standorte
 
 ---
 
+## Benutzerverwaltung
+
+### Kann ich einen versehentlich gelöschten Benutzer wiederherstellen?
+
+Nein. Gelöschte Benutzer können nicht wiederhergestellt werden. Der Benutzer muss erneut per E-Mail eingeladen und neu eingerichtet werden.
+
+→ [Benutzer einladen](/connect/04_benutzerverwaltung)
+
+---
+
+## Termine
+
+### Kann ich einen Kalender nur für bestimmte Benutzer sichtbar machen?
+
+Ja. Beim Erstellen oder Bearbeiten eines Kalenders die Option **„Sichtbarkeit eingeschränkt"** aktivieren und die gewünschten Gruppen auswählen. Der Kalender ist dann nur für Mitglieder dieser Gruppen sichtbar.
+
+→ [News & Termine](/connect/08_news_und_termine)
+
+---
+
+### Können Mitglieder per Push über neue Termine benachrichtigt werden?
+
+Ja. Beim Anlegen eines Kalenders kann eine **Erinnerung** konfiguriert werden. Mitglieder erhalten dann eine Push-Benachrichtigung vor jedem Termin in diesem Kalender.
+
+→ [News & Termine](/connect/08_news_und_termine)
+
+---
+
 ## Einsätze
 
 ### Wie schließe ich einen Einsatz ohne Endzeit ab?
@@ -77,27 +105,11 @@ Wenn ein Einsatzupdate über die Leitstellen-Schnittstelle eingeht, können Feld
 
 ---
 
-## Fahrzeuge
-
-### Wie konfiguriere ich die automatische Fahrzeugzuordnung bei Alarmen?
-
-**Seitenleiste (Organisations-Ebene) → Organisationseinstellungen → Einsätze → Fahrzeugzuordnung**
-
-Dort kann eingestellt werden, ob Fahrzeuge bei bestimmten Statusmeldungen (z. B. Status 3) automatisch einem Einsatz zugeordnet werden.
-
----
-
-### Zusatzfelder eines Fahrzeugs werden nach einem Update gelöscht
-
-Dasselbe Verhalten wie bei Einsatzfeldern: Wenn die Schnittstelle ein Feld mit demselben Namen aktualisiert, wird das manuell angelegte Feld überschrieben. Eindeutige Feldnamen verwenden.
-
----
-
 ## Alarmierung
 
 ### Wie kann ich testen, ob die Alarmierung funktioniert?
 
-In der EinsatzApp: **Flammen-Symbol in der Menüleiste → Schnellaktionen → Test-Alarm senden** (erfordert entsprechende Berechtigung in Connect).
+In der EinsatzApp: **Einstellungen → Alarmierungseinstellungen → Test-Alarm senden**.
 
 Alternativ kann ein manueller Einsatz im Connect Portal erstellt werden, um die Alarmierung zu testen.
 
@@ -111,12 +123,19 @@ Prüfe:
 
 ---
 
+### Kann ich einzelne Personen direkt alarmieren, ohne eine Alarmgruppe zu erstellen?
+
+Nein. Die Alarmierung in Connect erfolgt immer über **Alarmgruppen**. Um eine einzelne Person zu alarmieren, kann eine Alarmgruppe mit nur dieser einen Person angelegt werden. 
+
+→ [Alarmierung & AAO](/connect/11_alarmierung)
+
+---
+
 ## Schnittstellen
 
 ### Wie erstelle ich einen API-Token?
 
-**Schnittstellen → Public API → „API-Token erstellen"** → Bezeichnung und Berechtigungen vergeben → Token kopieren (wird nur einmal angezeigt).
-
+**Schnittstellen → Öffentliche Connect-Schnittstelle → „Konfigurieren" -> "Aktivieren"** → Der API Key wird angezeigt
 ---
 
 ### Meine Webhook-URL empfängt keine Daten
@@ -147,3 +166,11 @@ Die WebSocket-Verbindung zum Server wurde unterbrochen. Seite neu laden, um die 
 ### Kann ich das Connect Portal auf mehreren Geräten gleichzeitig nutzen?
 
 Ja. Das Portal ist vollständig webbasiert und kann in beliebig vielen Browserfenstern oder auf verschiedenen Geräten gleichzeitig geöffnet werden.
+
+---
+
+### Verlängert sich die Lizenz automatisch?
+
+Nein. Lizenzen verlängern sich **nicht automatisch**. 90 Tage vor Ablauf wird eine Erinnerungs-E-Mail versendet. Die Verlängerung muss manuell über eine erneute Bestellung im Shop ausgelöst werden.
+
+→ [Lizenzierung](/connect/14_lizenzierung)

@@ -5,77 +5,114 @@ description: Mängelmeldungen zu Fahrzeugen und Ausrüstung erfassen, kommentier
 
 # Mängelmeldungen
 
-Mängelmeldungen ermöglichen es Mitgliedern, Schäden oder Defekte an Fahrzeugen und Ausrüstung zu melden. Die Funktion ist auf **Standort-Ebene** verfügbar und muss in der Organisation aktiviert sein.
+Mit der Funktion „Mängelmeldungen" können Mängel an Fahrzeugen und Geräten einfach und digital erfasst werden. Die Erfassung steht allen Benutzern zur Verfügung. Die Bearbeitung erfolgt durch Gerätewarte und Administratoren.
 
 Meldungen können sowohl über das Connect Portal als auch direkt aus der **EinsatzApp** erstellt werden.
 
-![Screenshot: Mängelmeldungen Übersicht](/images/connect/10_maengelmeldungen_uebersicht.png)
+---
+
+## Aktivieren
+
+Die Funktion kann auf Organisationsebene aktiviert oder deaktiviert werden. Standardmäßig sind Mängelmeldungen aktiviert.
+
+**Organisation → Verwaltung → „Mängelmeldung aktiviert"**
+
+Diese Einstellung gilt für alle Standorte der Organisation. Wenn die Funktion deaktiviert wird, werden die entsprechenden Bereiche auch in der EinsatzApp ausgeblendet.
+
+**Telefonnummer des Meldenden im PDF-Report:** Optional kann die Handynummer des Meldenden auf dem PDF-Report gedruckt werden, um Rückfragen zu erleichtern. Aus Datenschutzgründen kann diese Option deaktiviert werden.
 
 ---
 
-## Voraussetzungen
+## Rechtemanagement
 
-Die Mängelmeldungs-Funktion muss für die Organisation freigeschaltet sein. Zusätzlich kann in den [Standort-Einstellungen](./05_standorte) eine **Mailing-Liste** hinterlegt werden, deren Adressen bei neuen Meldungen per E-Mail benachrichtigt werden. Dies kann z.B. für Sammelpostfächer sinnvoll genutzt werden.
+| Rolle | Rechte |
+|---|---|
+| **Standardbenutzer** | Kann Mängelmeldungen erstellen; sieht nur eigene Meldungen sowie Meldungen, in denen er als verantwortliche Person eingetragen ist |
+| **Standortadministrator / Gerätewart** | Kann Mängelmeldungen erstellen; sieht alle Mängelmeldungen des Standorts |
+| **Organisationsadministrator** | Kann Mängelmeldungen erstellen; sieht alle Mängelmeldungen aller Standorte |
 
 ---
 
-## Übersicht
+## Benachrichtigungen
 
-**Seitenleiste → Mängelmeldungen**
+**Neue Mängelmeldung erstellt:** Benachrichtigung per E-Mail und Push an Orga-Admins, Standort-Admins und Gerätewarte. Der Ersteller erhält keine Benachrichtigung.
 
-Die Übersicht zeigt alle Meldungen mit:
-- Titel und Kategorie
-- Erstellungsdatum und -person
-- Status (Offen / In Bearbeitung / Abgeschlossen)
+**Mängelmeldung aktualisiert (innerhalb der letzten 15 min, von einem Benutzer):** Benachrichtigung an Orga-Admins, Standort-Admins, Gerätewarte und den Ersteller. Der Bearbeiter erhält keine Benachrichtigung.
 
-Die Liste kann nach Status gefiltert werden.
+**Mängelmeldung aktualisiert (innerhalb der letzten 15 min, von mehreren Benutzern):** Benachrichtigung an Orga-Admins, Standort-Admins, Gerätewarte, Ersteller und den Bearbeiter.
+
+---
+
+## Mailverteiler
+
+Alle neu erstellten Mängelmeldungen können zusätzlich an einen Mailverteiler gesendet werden – z. B. an ein Sammelpostfach oder eine bestimmte Gruppe von Personen.
+
+1. Auf Standortebene unter **Benutzer → Mailverteiler** einen Mailverteiler anlegen
+2. In den **Standort-Einstellungen** den Mailverteiler für Mängelmeldungen aktivieren
+
+---
+
+## Kategorien anlegen
+
+Mängelmeldungen können in individuellen Kategorien organisiert werden (z. B. Gebäude, Fahrzeug, Gerät). Beim Erstellen einer Mängelmeldung muss eine Kategorie ausgewählt werden.
+
+Kategorien können auf Organisations- und Standortebene angelegt werden:
+
+**Seitenleiste → Mängelmeldungen → Kategorien → „Neu"**
 
 ---
 
 ## Mängelmeldung erstellen
 
 ### Im Connect Portal
-1. **„Mängelmeldung erstellen"** klicken
-2. Felder ausfüllen:
-   - **Bezeichnung** (kurze Beschreibung des Mangels)
-   - **Kategorie** (aus vordefinierten Kategorien wählen)
-   - **Betroffenes Fahrzeug** (optional)
-   - **Beschreibung** (detaillierte Fehlerbeschreibung)
-   - **Verantwortliche Person** (optional)
-3. Speichern
 
-![Screenshot: Mängelmeldung erstellen](/images/connect/10_maengelmeldung_erstellen.png)
+**Seitenleiste → Mängelmeldungen → „Neu"**
+
+| Feld | Beschreibung |
+|---|---|
+| **Kategorie** | Pflichtfeld – vorher anlegen falls noch nicht vorhanden |
+| **Informationen zur Kategorie** | Zusatzinfos zur gewählten Kategorie |
+| **Kurzbeschreibung** | Knappe Bezeichnung des Mangels |
+| **Detaillierte Beschreibung** | Ausführliche Fehlerbeschreibung |
+| **Status** | Offen / In Bearbeitung / Abgeschlossen |
+| **Verantwortliche Person** | Optional |
+| **Betroffenes Fahrzeug** | Optional |
+| **Kilometerstand / Pumpenbetriebsstunden** | Optional |
+| **Priorität** | Optional |
+| **Anhänge** | Fotos oder Dateien können direkt angehängt werden |
+
+Nach dem Speichern werden Orga-Admins, Standort-Admins und Gerätewarte automatisch benachrichtigt.
 
 ### In der EinsatzApp
-Flammen-Symbol in der Menüleiste → **„Mangel melden"** → Formular ausfüllen → Speichern.
+
+Über den Button **„Mängelmeldungen"** in der App kann eine neue Mängelmeldung erstellt werden. Der Button wird nur angezeigt, wenn die Funktion für die Organisation aktiviert ist.
+
+### Im EinsatzTablet
+
+Die kleine Zahl am Icon zeigt an, wie viele offene Mängel für das eigene Fahrzeug vorliegen. Standardmäßig werden nur Mängelmeldungen für das eigene Fahrzeug angezeigt. Über **„Alle Mängel anzeigen"** lassen sich alle aktiven Mängel des Standorts einblenden.
+
+### Über die API
+
+Mängelmeldungen können auch über die öffentliche Connect API abgerufen und erstellt werden.
+
+→ [Swagger-Dokumentation](https://connectapi.feuersoftware.com/swagger/index.html)
 
 ---
 
-## Kategorien verwalten
+## Mängelmeldung bearbeiten
 
-**Seitenleiste → Mängelmeldungs-Kategorien**
+Mängelmeldung in der Übersicht öffnen → Detailansicht:
 
-Kategorien helfen bei der Strukturierung der Meldungen (z. B. „Fahrzeug", „Beladung", „Gebäude", „Atemschutz").
-
-1. **„Kategorie anlegen"** klicken
-2. Name eingeben
-3. Optional: Verantwortliche Person oder Gruppe für diese Kategorie hinterlegen
-4. Speichern
+- **Status ändern** – Offen / In Bearbeitung / Abgeschlossen
+- **Kommentare** – alle Beteiligten können Kommentare hinterlassen
+- **Anhänge hinzufügen** – Fotos oder Dateien nachträglich anfügen
 
 ---
 
-## Mängelmeldung bearbeiten und kommentieren
+## PDF-Export
 
-Eine Mängelmeldung in der Übersicht antippen → Detailansicht:
+Mängelmeldungen können als PDF heruntergeladen und ausgedruckt werden.
 
-- **Status ändern** – von Offen auf In Bearbeitung oder Abgeschlossen
-- **Kommentare** – alle Beteiligten können Kommentare hinterlassen (z. B. Rückmeldungen, Fortschrittsinfos)
-- **Kommentare löschen** – mit ausreichenden Berechtigungen
+Detailansicht öffnen → **„Bericht"** (oben rechts) → PDF herunterladen.
 
-![Screenshot: Mängelmeldung Detailansicht mit Kommentaren](/images/connect/10_maengelmeldung_detail.png)
-
----
-
-## Mängelmeldung löschen
-
-In der Detailansicht → **„Löschen"** → Bestätigungsdialog. Gelöschte Meldungen können nicht wiederhergestellt werden.
+Der PDF-Export enthält einen QR-Code, über den direkt zur Mängelmeldung im Connect Portal navigiert werden kann.

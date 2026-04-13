@@ -103,13 +103,48 @@ Werden mehrere Rollen zugewiesen, werden die Rechte addiert. Eine vollständige 
 
 ## Gruppen
 
-**Seitenleiste → Gruppen**
+**Seitenleiste → Benutzer → Gruppen**
 
-Gruppen fassen Benutzer zusammen, z. B. für Alarmierung oder Mailing-Listen.
+Gruppen fassen Benutzer zusammen und steuern, welche Einsatzdetails in der EinsatzApp sichtbar sind. Sie können außerdem in Alarmgruppen und Mailing-Listen referenziert werden.
 
-- Gruppen anlegen, umbenennen und löschen
-- Benutzer einer Gruppe zuordnen (direkt hier oder in der Benutzerbearbeitung)
-- Gruppen können in Alarmgruppen und Mailing-Listen referenziert werden
+> **Hinweis:** Gruppen können sowohl auf **Standortebene** als auch auf **Organisationsebene** angelegt werden. Standortgruppen gelten nur für den jeweiligen Standort, Organisationsgruppen stehen organisationsweit zur Verfügung.
+
+### Gruppe erstellen
+
+**„Neu"** klicken und einen aussagekräftigen Namen vergeben. Eine Gruppe hat vier Konfigurationsbereiche:
+
+#### Sichtbarkeit
+
+Legt fest, welche Einsatzdetails Mitglieder dieser Gruppe in der EinsatzApp und im Connect Portal sehen dürfen. Nicht aktivierte Felder werden ausgeblendet.
+
+| Feld | Beschreibung |
+|---|---|
+| **Stichwort** | Einsatzstichwort |
+| **Sachverhalt** | Sachverhaltsfeld in den Einsatzdetails |
+| **Adresse** | Straße, Hausnummer, PLZ, Ort, Koordinaten |
+| **Kategorie** | Einsatzkategorie (z. B. Feuer, Hilfeleistung) inkl. farblicher Markierung |
+| **Zusatzfelder** | Dynamische Zusatzfelder (z. B. Gebäude, Hinweise, Sondersignal) |
+| **Lagemeldungen** | Lagemeldungen zum Einsatz – standardmäßig deaktiviert, empfohlen nur für Führungskräfte |
+| **Meldender** | Name und Telefonnummer des Meldenden – empfohlen einzuschränken (sensible Daten) |
+| **Zusätzliche Informationen** | Inhalte aus Dynamischen Zusatzinfos |
+| **RIC** | RIC-Feld (enthält in der Regel ausrückende Fahrzeuge) |
+| **Einsatzberichte** | Einsatzberichte zum Einsatz |
+
+#### Funktionen
+
+Benutzer werden **dynamisch** anhand ihrer Funktion in die Gruppe aufgenommen (z. B. alle Gruppenführer). Die Mitglieder werden automatisch und fortlaufend aktualisiert, wenn sich Funktionen ändern.
+
+#### Benutzer
+
+Benutzer werden **statisch** und explizit zur Gruppe hinzugefügt. Sinnvoll wenn eine Filterung über Funktionen nicht ausreicht. Wird nichts ausgewählt, werden alle Benutzer der Gruppe zugeordnet.
+
+#### Monitore
+
+Schränkt die Sichtbarkeit auf bestimmte EinsatzMonitore ein – z. B. um Kalender nur auf ausgewählten Monitoren anzuzeigen. Wird nichts ausgewählt, sind alle Monitore eingeschlossen. Monitore werden ohnehin nur Administratoren angezeigt.
+
+---
+
+> **Hinweis:** Die Rechte eines Benutzers sind immer die **Summe aller Gruppen**, in denen er Mitglied ist. Ist ein Benutzer in einer Gruppe ohne Sichtbarkeit für Lagemeldungen und gleichzeitig in einer Gruppe mit voller Sichtbarkeit, kann er alles sehen.
 
 ---
 

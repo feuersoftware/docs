@@ -86,7 +86,7 @@ Einsätze werden automatisch abgeschlossen, wenn die Leitstelle ein Endsignal se
 2. **„Einsatz abschließen"** klicken oder Endzeit manuell eintragen
 3. Speichern
 
-> Ein automatisches Beenden nach einer konfigurierbaren Zeit ist aktuell nicht möglich.
+> Ein automatisches Beenden nach einer konfigurierbaren Zeit ist in den Connect Organisationseinstellungen konfigurierbar.
 
 ---
 

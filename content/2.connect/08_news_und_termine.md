@@ -19,13 +19,20 @@ Die News-Übersicht zeigt alle Beiträge in chronologischer Reihenfolge mit Tite
 ### News erstellen
 1. **„News erstellen"** klicken
 2. Felder ausfüllen:
+   - **Typ** – Mitteilung oder Verkehrsbehinderung (siehe unten)
    - **Titel** (Pflichtfeld)
    - **Inhalt** (Freitext mit Formatierung)
-   - **Titelbild** (optional, Bild hochladen)
    - **Adressatengruppen** – welche Gruppen oder Alarmgruppen den Beitrag sehen können
 3. **„Veröffentlichen"** klicken
 
-Der Beitrag erscheint sofort in der EinsatzApp und im Connect-Dashboard. Benutzer mit aktivierten News-Benachrichtigungen erhalten eine Push-Benachrichtigung auf Ihr Mobiltelefon. News werden auch auf dem Einsatzmonitor in der Standby Anzeige angezeigt.
+Der Beitrag erscheint sofort in der EinsatzApp und im Connect-Dashboard. Benutzer mit aktivierten News-Benachrichtigungen erhalten eine Push-Benachrichtigung auf Ihr Mobiltelefon. News werden auch auf dem EinsatzMonitor in der Standby-Anzeige angezeigt.
+
+### Typen
+
+| Typ | Beschreibung |
+|---|---|
+| **Mitteilung** | Standard-News für allgemeine Informationen |
+| **Verkehrsbehinderung** | Ermöglicht das Einzeichnen von Pfaden auf einer Karte, um Straßensperrungen oder ähnliche Hindernisse darzustellen. Es erfolgt **keine** Änderung am Routing aufgrund einer eingetragenen Verkehrsbehinderung. |
 
 ### News bearbeiten und löschen
 News in der Übersicht antippen → **„Bearbeiten"** oder **„Löschen"**. Das Löschen erfordert eine Bestätigung.
