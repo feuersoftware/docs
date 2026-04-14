@@ -18,6 +18,8 @@ Die News-Übersicht zeigt alle Beiträge in chronologischer Reihenfolge mit Tite
 
 ![Screenshot: News-Übersicht](/images/connect/08_news_liste.png)
 
+![Screenshot: News erstellen](/images/connect/08_news_erstellen.png)
+
 ### News erstellen
 1. **„News erstellen"** klicken
 2. Felder ausfüllen:
@@ -35,6 +37,19 @@ Der Beitrag erscheint sofort in der EinsatzApp und im Connect-Dashboard. Benutze
 |---|---|
 | **Mitteilung** | Standard-News für allgemeine Informationen |
 | **Verkehrsbehinderung** | Ermöglicht das Einzeichnen von Pfaden auf einer Karte, um Straßensperrungen oder ähnliche Hindernisse darzustellen. Es erfolgt **keine** Änderung am Routing aufgrund einer eingetragenen Verkehrsbehinderung. |
+
+#### Verkehrsbehinderung – Pfad einzeichnen
+
+![Screenshot: Verkehrsbehinderung Pfad einzeichnen](/images/connect/08_news_verkehrsbehinderung.png)
+
+Nach Auswahl des Typs **„Verkehrsbehinderung"** erscheint eine interaktive Karte. So wird ein Pfad eingezeichnet:
+
+1. Auf die Karte klicken, um den **ersten Punkt** zu setzen
+2. Weitere Punkte entlang der gesperrten Strecke setzen – jeder Klick fügt einen neuen Wegpunkt hinzu
+3. Mit **Doppelklick** den Pfad abschließen
+4. Der eingezeichnete Pfad wird in der EinsatzApp und am EinsatzMonitor als farbige Linie auf der Karte angezeigt
+
+> Punkte können nach dem Setzen per Drag & Drop verschoben werden. Der Pfad kann über das Papierkorb-Symbol vollständig gelöscht und neu gezeichnet werden.
 
 ### News bearbeiten und löschen
 News in der Übersicht antippen → **„Bearbeiten"** oder **„Löschen"**. Das Löschen erfordert eine Bestätigung.
@@ -54,7 +69,9 @@ Die Terminübersicht zeigt alle anstehenden Termine in einer Liste oder Kalender
 
 Bevor Termine angelegt werden können, muss mindestens ein Kalender vorhanden sein. Pro Standort können mehrere Kalender angelegt werden.
 
-**Seitenleiste → Termine → Kalender → „Neu"**
+**Seitenleiste → Termine → „Kalender verwalten" → „Neu"**
+
+![Screenshot: Kalender verwalten](/images/connect/08_kalender_verwalten.png)
 
 | Feld | Beschreibung |
 |---|---|
@@ -84,6 +101,9 @@ Connect ruft den Remote-Kalender automatisch ab. Um die Synchronisation sofort a
 ---
 
 ### Termin erstellen
+
+![Screenshot: Termin erstellen](/images/connect/08_termin_erstellen.png)
+
 1. **„Termin erstellen"** klicken
 2. Felder ausfüllen:
 
@@ -146,7 +166,9 @@ Die Sichtbarkeit eines Orga-Kalenders kann auf bestimmte Gruppen eingeschränkt 
 
 Mehrere Termine können auf einmal per CSV-Datei importiert werden.
 
-**Seitenleiste → Termine → CSV-Import**
+**Seitenleiste → Termine → „Kalender verwalten" → CSV-Import**
+
+![Screenshot: CSV-Import](/images/connect/08_csv_import.png)
 
 ### Anforderungen an die CSV-Datei
 

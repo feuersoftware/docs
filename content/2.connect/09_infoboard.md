@@ -15,6 +15,8 @@ In der EinsatzApp ist das Infoboard unter dem Menüpunkt **„Infoboard"** errei
 
 **Seitenleiste → Infoboard**
 
+![Screenshot: Infoboard-Übersicht](/images/connect/09_infoboard_uebersicht.png)
+
 Die Übersicht zeigt alle aktiven Einträge gegliedert nach **Info-Gruppen** (Kategorien). Einträge können auf- und zugeklappt werden.
 
 ---
@@ -30,6 +32,8 @@ Gruppierungen sind Kategorien, unter denen Einträge zusammengefasst werden (z. 
 ---
 
 ## Infoboard-Eintrag anlegen
+
+![Screenshot: Infoboard-Eintrag anlegen](/images/connect/09_infoboard_eintrag.png)
 
 1. Info-Gruppe öffnen → **„Eintrag anlegen"**
 2. Felder ausfüllen:

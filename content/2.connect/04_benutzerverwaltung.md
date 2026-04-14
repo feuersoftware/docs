@@ -28,6 +28,8 @@ Die Übersicht zeigt alle Benutzer in einer durchsuchbaren Tabelle:
 
 ## Benutzer einladen
 
+![Screenshot: Benutzer einladen](/images/connect/04_benutzer_einladen.png)
+
 1. **Seitenleiste → Benutzer → „Benutzer einladen"**
 2. E-Mail-Adresse eingeben
 3. Optional: Rolle und Gruppe direkt bei der Einladung zuweisen
@@ -46,23 +48,41 @@ Benutzer in der Liste antippen → **„Bearbeiten"**. Die Detailansicht hat meh
 ![Screenshot: Benutzer bearbeiten](/images/connect/04_benutzer_bearbeiten.png)
 
 ### Tab: Allgemein
+
+![Screenshot: Benutzer – Tab Allgemein](/images/connect/04_benutzer_tab_allgemein.png)
+
 - Name, E-Mail, Profilbild
 - Zwei-Faktor-Authentifizierung zurücksetzen
 
 ### Tab: Geräte
-- Übersicht aller verbundenen Geräte (EinsatzApp, EinsatzTablet etc.)
+
+![Screenshot: Benutzer – Tab Geräte](/images/connect/04_benutzer_tab_geraete.png)
+
+- Übersicht aller verbundenen Geräte (EinsatzApp und PartnerApp)
 - Geräte können hier entfernt werden
 
 ### Tab: Rollen
+
+![Screenshot: Benutzer – Tab Rollen](/images/connect/04_benutzer_tab_rollen.png)
+
 - Rollen auf Organisations- oder Standortebene zuweisen und entziehen
 
 ### Tab: Gruppen
+
+![Screenshot: Benutzer – Tab Gruppen](/images/connect/04_benutzer_tab_gruppen.png)
+
 - Benutzer Gruppen zuordnen oder entfernen
 
 ### Tab: Benachrichtigungen
+
+![Screenshot: Benutzer – Tab Benachrichtigungen](/images/connect/04_benutzer_tab_benachrichtigungen.png)
+
 - Einstellen, welche Push-Benachrichtigungen der Benutzer erhält
 
 ### Tab: Alarmgruppen
+
+![Screenshot: Benutzer – Tab Alarmgruppen](/images/connect/04_benutzer_tab_alarmgruppen.png)
+
 - Benutzer Alarmgruppen zuordnen
 
 ---
@@ -76,6 +96,8 @@ In der Benutzer-Detailansicht kann ein Konto deaktiviert oder dauerhaft gelösch
 ## Rollen
 
 **Seitenleiste → Rollen**
+
+![Screenshot: Rollen-Übersicht](/images/connect/04_rollen.png)
 
 Rollen definieren, welche Bereiche und Aktionen ein Benutzer im Connect Portal nutzen darf. Die Rollen sind fest vorgegeben und können nicht verändert oder gelöscht werden. Eigene Rollen können nicht erstellt werden.
 
@@ -108,6 +130,8 @@ Werden mehrere Rollen zugewiesen, werden die Rechte addiert. Eine vollständige 
 ## Gruppen
 
 **Seitenleiste → Benutzer → Gruppen**
+
+![Screenshot: Gruppen-Übersicht](/images/connect/04_gruppen.png)
 
 Gruppen fassen Benutzer zusammen und steuern, welche Einsatzdetails in der EinsatzApp sichtbar sind. Sie können außerdem in Alarmgruppen und Mailing-Listen referenziert werden.
 
@@ -156,6 +180,8 @@ Schränkt die Sichtbarkeit auf bestimmte EinsatzMonitore ein – z. B. um Kalend
 
 **Seitenleiste → Funktionen** *(nur Organisations-Ebene)*
 
+![Screenshot: Funktionen](/images/connect/04_funktionen.png)
+
 Funktionen sind Bezeichnungen für Positionen innerhalb der Organisation (z. B. Gruppenführer, Atemschutzgeräteträger). Sie können Benutzern zugewiesen werden und dienen der Darstellung im EinsatzManager.
 
 ---
@@ -163,6 +189,8 @@ Funktionen sind Bezeichnungen für Positionen innerhalb der Organisation (z. B. 
 ## Mailing-Listen
 
 **Seitenleiste → Mailing-Listen**
+
+![Screenshot: Mailing-Listen](/images/connect/04_mailing_listen.png)
 
 Mailing-Listen sind E-Mail-Verteilerlisten, z. B. für Mängelmeldungen oder Benachrichtigungen.
 
