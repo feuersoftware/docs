@@ -15,6 +15,8 @@ Die Standortverwaltung ist nur auf **Organisations-Ebene** verfügbar.
 
 **Seitenleiste (Organisations-Ebene) → Standorte**
 
+![Screenshot: Standortübersicht](/images/connect/05_standorte_uebersicht.png)
+
 Die Übersicht zeigt alle Standorte der Organisation mit Name, Adresse und Anzahl der zugeordneten Benutzer und Fahrzeuge.
 
 ---
@@ -35,6 +37,8 @@ Nach dem Anlegen erscheint der neue Standort im Standort-Dropdown und kann indiv
 ## Standort-Einstellungen
 
 **Standort wählen → Seitenleiste → Standort-Einstellungen**
+
+![Screenshot: Standort-Einstellungen](/images/connect/05_standort_einstellungen.png)
 
 ### Allgemein
 - Name des Standorts

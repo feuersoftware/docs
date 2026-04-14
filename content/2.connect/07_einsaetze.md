@@ -13,6 +13,8 @@ Die Einsatzverwaltung ist auf **Standort-Ebene** verfügbar. Auf **Organisations
 
 **Seitenleiste → Einsätze**
 
+![Screenshot: Einsatzübersicht](/images/connect/07_einsatz_liste.png)
+
 Die Übersicht zeigt alle Einsätze des Standorts in einer Tabelle mit:
 
 - Startdatum und -uhrzeit
@@ -50,6 +52,8 @@ Der Einsatz wird sofort in der EinsatzApp, im EinsatzManager und auf dem Einsatz
 ## Einsatz-Detailansicht
 
 Einen Einsatz in der Übersicht antippen → Detailansicht mit mehreren Tabs:
+
+![Screenshot: Einsatz-Detailansicht](/images/connect/07_einsatz_detail.png)
 
 ### Tab: Allgemein
 - Stichwort, Adresse, Start- und Endzeit

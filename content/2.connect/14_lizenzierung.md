@@ -47,6 +47,8 @@ Nach der Bestellung erhältst du eine Bestätigungsmail an die angegebene E-Mail
 
 ## Lizenz der Connect-Organisation zuordnen
 
+![Screenshot: Lizenzübersicht im Connect Portal](/images/connect/14_lizenzen.png)
+
 Nachdem die Lizenz im Shop erworben wurde, muss sie mit der Connect-Organisation verknüpft werden. Dieser Vorgang erfordert **Organisationsadministrator-Rechte**.
 
 1. Im [Connect Portal](https://connect.feuersoftware.com) anmelden

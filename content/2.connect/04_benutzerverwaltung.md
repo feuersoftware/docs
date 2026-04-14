@@ -13,6 +13,8 @@ Die Benutzerverwaltung ist sowohl auf **Organisations-Ebene** als auch auf **Sta
 
 **Seitenleiste → Benutzer**
 
+![Screenshot: Benutzerübersicht](/images/connect/04_benutzer_uebersicht.png)
+
 Die Übersicht zeigt alle Benutzer in einer durchsuchbaren Tabelle:
 
 - Name, E-Mail-Adresse
@@ -40,6 +42,8 @@ Der Benutzer erhält eine E-Mail mit einem Einladungslink. Nach dem Klick auf de
 ## Benutzer bearbeiten
 
 Benutzer in der Liste antippen → **„Bearbeiten"**. Die Detailansicht hat mehrere Tabs:
+
+![Screenshot: Benutzer bearbeiten](/images/connect/04_benutzer_bearbeiten.png)
 
 ### Tab: Allgemein
 - Name, E-Mail, Profilbild

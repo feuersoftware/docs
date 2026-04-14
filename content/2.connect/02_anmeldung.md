@@ -53,8 +53,6 @@ Auf der Login-Seite **„Passwort vergessen"** klicken → E-Mail-Adresse eingeb
 
 ### 2FA einrichten (eigenes Konto)
 
-![Screenshot: 2FA QR-Code einrichten](/images/connect/02_2fa_einrichten.png)
-
 1. Seitenleiste → **Profil**
 2. Abschnitt **„Zwei-Faktor-Authentifizierung"** öffnen
 3. QR-Code mit einer Authenticator-App (z. B. Google Authenticator, Authy) scannen

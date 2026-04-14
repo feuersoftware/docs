@@ -16,6 +16,8 @@ News und Termine sind auf **Standort-Ebene** und **Organisations-Ebene** verfüg
 ### Übersicht
 Die News-Übersicht zeigt alle Beiträge in chronologischer Reihenfolge mit Titel, Datum und Vorschau.
 
+![Screenshot: News-Übersicht](/images/connect/08_news_liste.png)
+
 ### News erstellen
 1. **„News erstellen"** klicken
 2. Felder ausfüllen:
@@ -45,6 +47,8 @@ News in der Übersicht antippen → **„Bearbeiten"** oder **„Löschen"**. Da
 
 ### Übersicht
 Die Terminübersicht zeigt alle anstehenden Termine in einer Liste oder Kalenderansicht mit Titel, Datum, Uhrzeit und Standort.
+
+![Screenshot: Terminübersicht](/images/connect/08_termine_liste.png)
 
 ### Kalender erstellen
 

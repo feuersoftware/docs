@@ -5,6 +5,8 @@ description: Mängelmeldungen zu Fahrzeugen und Ausrüstung erfassen, kommentier
 
 # Mängelmeldungen
 
+![Screenshot: Mängelmeldungen-Übersicht](/images/connect/10_maengel_uebersicht.png)
+
 Mit der Funktion „Mängelmeldungen" können Mängel an Fahrzeugen und Geräten einfach und digital erfasst werden. Die Erfassung steht allen Benutzern zur Verfügung. Die Bearbeitung erfolgt durch Gerätewarte und Administratoren.
 
 Meldungen können sowohl über das Connect Portal als auch direkt aus der **EinsatzApp** erstellt werden.
@@ -67,6 +69,8 @@ Kategorien können auf Organisations- und Standortebene angelegt werden:
 ### Im Connect Portal
 
 **Seitenleiste → Mängelmeldungen → „Neu"**
+
+![Screenshot: Mängelmeldung erstellen](/images/connect/10_maengel_erstellen.png)
 
 | Feld | Beschreibung |
 |---|---|

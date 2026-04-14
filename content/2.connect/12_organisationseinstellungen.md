@@ -9,6 +9,8 @@ Die Organisationseinstellungen sind ausschließlich auf **Organisations-Ebene** 
 
 **Seitenleiste (Organisations-Ebene) → Organisationseinstellungen**
 
+![Screenshot: Organisationseinstellungen](/images/connect/12_org_einstellungen.png)
+
 ---
 
 ## Allgemein
