@@ -37,14 +37,12 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 |---|---|
 | **[Elion](./schnittstellen/elion)** | Einsatzdaten, Fahrzeugstatus und -positionen an e:LION übermitteln |
 | **Fireboard** | Integration mit Fireboard für Alarmierung und Statusmeldungen |
-| **[Lupus Electronics](./schnittstellen/lupus)** | Alarmweiterleitung von Lupus Rauchwarnmeldern über die Lupus Cloud |
 | **Public API** | Zugang zur öffentlichen FeuerSoftware-API auf Standortebene |
 | **[Rauchwarnmelder](./schnittstellen/rauchmelder)** | Übersicht aller Rauchwarnmelder-Integrationen (Homematic HCU1, CCU3, X-Sense, Lupus) |
 | **[rescueTABLET](./schnittstellen/rescuetablet)** | Einsatzdaten an rescueTABLET weiterleiten |
 | **[TetraControl](./schnittstellen/tetracontrol)** | Fahrzeugstatus, GPS und Rückmeldungen aus dem TETRA-Netz an Connect übermitteln |
 | **[Status3IT – CVM & UBX](./schnittstellen/status3it)** | CVM Spannungs-/Stromsensormodul und UBX Bluetooth-Box für Fahrzeugfunkgeräte |
 | **Webhooks** | Ausgehende Webhooks bei Ereignissen (z. B. neuer Einsatz, Statusänderung) |
-| **[X-Sense](./schnittstellen/xsense)** | Alarmweiterleitung von X-Sense Rauchwarnmeldern über die X-Sense App |
 
 ---
 
@@ -56,10 +54,10 @@ FeuerSoftware Connect unterstützt die Anbindung von Rauchwarnmeldern verschiede
 
 | Hersteller | Funktionsweise | Anleitung |
 |---|---|---|
-| **X-Sense** | Verbindung über X-Sense Installationsservice; Alarm wird direkt von der X-Sense Cloud an Connect übermittelt | [→ Einrichtung X-Sense](./schnittstellen/xsense) |
-| **Homematic IP HCU1** | Plugin auf der HCU1 wertet Alarme aus und leitet sie an Connect weiter | [→ Einrichtung Homematic HCU1](./schnittstellen/homematic_hcu1) |
-| **Homematic CCU3** | HomeMatic Script auf der CCU3 leitet Alarme über die öffentliche Connect API weiter | [→ Einrichtung Homematic CCU3](./schnittstellen/homematic_ccu3) |
-| **Lupus Electronics** | Alarmweiterleitung über Webhook aus der Lupus Cloud | [→ Einrichtung Lupus](./schnittstellen/lupus) |
+| **X-Sense** | Verbindung über X-Sense Installationsservice; Alarm wird direkt von der X-Sense Cloud an Connect übermittelt | [→ Einrichtung X-Sense](./schnittstellen/rauchmelder/xsense) |
+| **Homematic IP HCU1** | Plugin auf der HCU1 wertet Alarme aus und leitet sie an Connect weiter | [→ Einrichtung Homematic HCU1](./schnittstellen/rauchmelder/homematic_hcu1) |
+| **Homematic CCU3** | HomeMatic Script auf der CCU3 leitet Alarme über die öffentliche Connect API weiter | [→ Einrichtung Homematic CCU3](./schnittstellen/rauchmelder/homematic_ccu3) |
+| **Lupus Electronics** | Alarmweiterleitung über Webhook aus der Lupus Cloud | [→ Einrichtung Lupus](./schnittstellen/rauchmelder/lupus) |
 
 ---
 
