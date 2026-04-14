@@ -163,3 +163,21 @@ Ab jetzt kommen alle EinsatzApp-Alarme wieder mit vollem Alarmton über das iPho
 
 1. **Seitenmenü → Einstellungen → Alarmeinstellungen → Berechtigungsübersicht** öffnen.
 2. Auf den roten Eintrag tippen – die App öffnet direkt die passenden iOS-Einstellungen.
+
+---
+
+## Alarmierung testen
+
+Um zu prüfen, ob alle Einstellungen korrekt sind, kann direkt aus der App ein Testalarm ausgelöst werden.
+
+**Seitenmenü → Einstellungen → Alarmierungseinstellungen → „Testalarm senden"**
+
+![Screenshot: Alarmierungseinstellungen](/images/einsatzapp/11_alarmierungseinstellungen.png)
+
+Nach dem Tippen auf **„Testalarm senden"** erscheint ein Bestätigungsdialog:
+
+![Screenshot: Testalarm-Dialog](/images/einsatzapp/11_testalarm_dialog.png)
+
+Nach Bestätigung wird eine Push-Benachrichtigung an alle angemeldeten Geräte des Accounts gesendet – mit ca. 10 Sekunden Verzögerung. Die App sollte dazu geschlossen sein.
+
+> **Wichtig:** Es wird kein Einsatz erzeugt. Der Testalarm dient ausschließlich dazu, die Push-Zustellung und den Alarmton zu prüfen.
