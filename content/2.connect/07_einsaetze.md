@@ -35,6 +35,8 @@ Die Übersicht zeigt alle Einsätze des Standorts in einer Tabelle mit:
 
 ## Einsatz anlegen (manuell)
 
+![Screenshot: Einsatz anlegen](/images/connect/07_einsatz_anlegen.png)
+
 1. **Seitenleiste → Einsätze → „Einsatz anlegen"**
 2. Felder ausfüllen:
    - **Stichwort** (aus konfigurierten Stichwörtern wählen oder frei eingeben)

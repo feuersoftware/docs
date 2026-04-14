@@ -46,6 +46,8 @@ Ein Fahrzeug öffnen → mehrere Tabs:
 - Bild des Fahrzeugs hochladen
 - Interne Notizen
 
+![Screenshot: Fahrzeug Tab Allgemein](/images/connect/06_fahrzeug_allgemein.png)
+
 ### Tab: Verfügbarkeit
 Definiert die möglichen Verfügbarkeitszustände des Fahrzeugs:
 
@@ -57,8 +59,12 @@ Definiert die möglichen Verfügbarkeitszustände des Fahrzeugs:
 
 Eigene Verfügbarkeitszustände können nicht angelegt werden.
 
+![Screenshot: Fahrzeug Tab Verfügbarkeit](/images/connect/06_fahrzeug_verfuegbarkeit.png)
+
 ### Tab: Dashboard
 Zeigt ein konfigurierbares Dashboard für Fahrzeugdaten z.B. von CVM Modulen (Siehe Zusatzinformationen)
+
+![Screenshot: Fahrzeug Tab Dashboard](/images/connect/06_fahrzeug_dashboard.png)
 
 ### Tab: Zusatzinformationen
 Technische Messwerte und Statusdaten des Fahrzeugs, die automatisch über externe Systeme befüllt werden. Typische Anwendungsfälle sind:
@@ -78,10 +84,14 @@ Die Werte werden automatisch über **MQTT** oder die **FeuerSoftware API** aktua
 ### Tab: Integrationen
 Fahrzeugspezifische Einstellungen für angebundene Drittsysteme (z. B. Traccar GPS-Tracking).
 
+![Screenshot: Fahrzeug Tab Integrationen](/images/connect/06_fahrzeug_integrationen.png)
+
 ### Tab: Vehicle App (EinsatzTablet)
 Konfiguration für das EinsatzTablet, das in diesem Fahrzeug verbaut ist:
 - Verknüpfung mit einem EinsatzTablet-Account
 - Tablet-spezifische Einstellungen
+
+![Screenshot: Fahrzeug Tab Vehicle App](/images/connect/06_fahrzeug_vehicle_app.png)
 
 ---
 

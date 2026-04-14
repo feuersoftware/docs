@@ -84,6 +84,8 @@ Wenn ein Einsatz mit dem konfigurierten Stichwort eingeht, werden die hinterlegt
 
 **Seitenleiste → Alarmierung → Dynamisches Regelwerk**
 
+![Screenshot: Dynamische AAO](/images/connect/11_aao_dynamisch.png)
+
 Das dynamische Regelwerk erlaubt komplexere Regeln auf Basis mehrerer Bedingungen (z. B. Tageszeit, Wochentag, aktuelle Verfügbarkeit).
 
 ### Dynamische Regel anlegen
@@ -105,6 +107,8 @@ Dynamische Regeln werden nach dem Eingang eines Einsatzes ausgewertet und übers
 ## Dynamische Zusatzinformationen
 
 **Seitenleiste → Alarmierung → Dyn. Zusatzinfos**
+
+![Screenshot: Dynamische Zusatzinformationen](/images/connect/11_dyn_zusatzinfos.png)
 
 > Mindestvoraussetzung: EinsatzApp Version 2023.03
 
@@ -183,6 +187,8 @@ Die Dynamischen Zusatzinformationen können über Benutzergruppen ein- oder ausg
 
 **Seitenleiste → Alarmierung → Einsatz-Kategorien** *(nur Organisations-Ebene)*
 
+![Screenshot: Einsatz-Kategorien](/images/connect/11_einsatz_kategorien.png)
+
 Einsatz-Kategorien gruppieren Stichwörter nach Art des Einsatzes (z. B. „Feuer", „Technische Hilfeleistung"). Jeder Kategorie kann eine Farbe zugewiesen werden. Diese Farbe wird am EinsatzMonitor und in der EinsatzApp entsprechend angezeigt. Anschließend können Einsatzstichworte in Connect eingepflegt und den entsprechenden Kategorien zugewiesen werden.
 
 ---
@@ -190,6 +196,8 @@ Einsatz-Kategorien gruppieren Stichwörter nach Art des Einsatzes (z. B. „Feue
 ## Einsatz-Einheiten
 
 **Seitenleiste → Alarmierung → Einsatz-Einheiten**
+
+![Screenshot: Einsatz-Einheiten](/images/connect/11_einsatz_einheiten.png)
 
 Einsatz-Einheiten sind benannte Gruppen, die in einem Einsatz eingesetzt werden können (z. B. „Gruppe 1", „Angriffstrupp"). Sie werden im EinsatzManager zur Strukturierung der Einsatzkräfte verwendet.
 

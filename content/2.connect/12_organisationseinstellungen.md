@@ -9,11 +9,11 @@ Die Organisationseinstellungen sind ausschließlich auf **Organisations-Ebene** 
 
 **Seitenleiste (Organisations-Ebene) → Organisationseinstellungen**
 
-![Screenshot: Organisationseinstellungen](/images/connect/12_org_einstellungen.png)
-
 ---
 
 ## Allgemein
+
+![Screenshot: Organisationseinstellungen – Allgemein](/images/connect/12_org_allgemein.png)
 
 | Einstellung | Beschreibung |
 |---|---|
@@ -30,6 +30,8 @@ Die Organisationseinstellungen sind ausschließlich auf **Organisations-Ebene** 
 
 ## Lizenzen & Buchungen
 
+![Screenshot: Organisationseinstellungen – Lizenzen](/images/connect/12_org_lizenzen.png)
+
 **Organisationseinstellungen → Lizenzen**
 
 Zeigt die aktuell gebuchten Lizenzen der Organisation:
@@ -44,6 +46,8 @@ Hier können Lizenzen erweitert oder neue gebucht werden.
 
 ## Dokumente
 
+![Screenshot: Organisationseinstellungen – Dokumente](/images/connect/12_org_dokumente.png)
+
 **Organisationseinstellungen → Dokumente**
 
 Verwaltung von Dokumenten auf Organisationsebene, die allen Mitgliedern zur Verfügung stehen.
@@ -51,6 +55,8 @@ Verwaltung von Dokumenten auf Organisationsebene, die allen Mitgliedern zur Verf
 ---
 
 ## HelferApp-Einstellungen
+
+![Screenshot: Organisationseinstellungen – HelferApp](/images/connect/12_org_helferapp.png)
 
 **Organisationseinstellungen → HelferApp**
 
@@ -66,6 +72,8 @@ Die HelferApp kann grundsätzlich ohne gesonderte Freischaltung genutzt werden. 
 
 ## Einsätze
 
+![Screenshot: Organisationseinstellungen – Einsätze](/images/connect/12_org_einsaetze.png)
+
 **Organisationseinstellungen → Einsätze**
 
 | Einstellung | Beschreibung |
@@ -78,6 +86,8 @@ Die HelferApp kann grundsätzlich ohne gesonderte Freischaltung genutzt werden. 
 ---
 
 ## EinsatzManager-Einstellungen
+
+![Screenshot: Organisationseinstellungen – EinsatzManager](/images/connect/12_org_einsatzmanager.png)
 
 **Organisationseinstellungen → EinsatzManager**
 
@@ -94,6 +104,8 @@ Fahrzeuge externer Organisationen können hier gepflegt werden. Über **„Exter
 ---
 
 ## Automatisches Datenlöschen
+
+![Screenshot: Automatisches Datenlöschen](/images/connect/12_org_datenschutz.png)
 
 **Seitenleiste → Automatisches Datenlöschen**
 
