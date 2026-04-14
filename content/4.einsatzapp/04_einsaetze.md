@@ -96,6 +96,8 @@ Listet alle dem Einsatz zugewiesenen Fahrzeuge mit Status.
 
 Chronologisches Protokoll aller Ereignisse im Einsatz (Alarmierung, Statusmeldungen, Anmerkungen).
 
+> **Hinweis:** Der Zugriff auf das Protokoll erfordert gesonderte Rechte, die von einem Administrator vergeben werden müssen. Es handelt sich um sensible Informationen.
+
 **Langpress auf Adress-/Textfeld im Protokoll:** Kopiert den Text in die Zwischenablage.
 
 ---

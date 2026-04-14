@@ -67,4 +67,4 @@ Die EinsatzApp unterstützt mehrere Konten auf einem Gerät. Das ist nützlich, 
 Zugangsdaten werden über das **Connect-Portal** verwaltet:  
 `https://connect.feuersoftware.com`
 
-Dort kann ein Administrator ein neues Passwort vergeben oder die Selbstregistrierung nutzen.
+Dort kann ein Administrator eine E-Mail zum Zurücksetzen des Passworts versenden oder die Selbstregistrierung nutzen.
