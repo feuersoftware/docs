@@ -147,6 +147,7 @@ Ab jetzt kommen alle EinsatzApp-Alarme wieder mit vollem Alarmton über das iPho
 - ✅ Kritische Benachrichtigungen aktiviert? (Schritt 2)
 - ✅ Alarm-Modus in der App auf „Immer laut"? (Flammen-Symbol in der Menüleiste → Schnellaktionen)
 - ✅ Lautstärke über die Seitentasten am iPhone erhöht?
+- ✅ **Einstellungen → Töne & Haptik → „Klingelton und Hinweise"** auf maximale Lautstärke gestellt? Diese Einstellung begrenzt die maximale Alarmtonlautstärke – auch bei aktivierten Kritischen Benachrichtigungen.
 - ✅ Apple Watch verbunden? → Benachrichtigungen in der Watch App für EinsatzApp deaktivieren (siehe oben)
 
 ### Alarm erscheint nicht auf dem Sperrbildschirm
