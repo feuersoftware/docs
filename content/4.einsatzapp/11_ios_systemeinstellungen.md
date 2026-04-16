@@ -123,9 +123,9 @@ Damit die App auch im Hintergrund Daten empfangen kann:
 
 ## Apple Watch
 
-Wenn eine **Apple Watch** mit dem iPhone verbunden ist, wird der Alarmton bei eingehenden Benachrichtigungen **über die Apple Watch ausgegeben – nicht über das iPhone**. Die Watch gibt dabei einen Standard-Hinweiston aus, keinen wählbaren Alarmton.
+Wenn eine **Apple Watch** mit dem iPhone verbunden ist, wird der Alarmton bei eingehenden Benachrichtigungen **über die Apple Watch ausgegeben – nicht über das iPhone**. Die Watch gibt dabei einen Standard-Hinweiston aus; ein eigener Alarmton ist für die Apple Watch nicht wählbar.
 
-> Das bedeutet: Auch bei korrekter App-Konfiguration kein lauter Alarmton am iPhone, solange die Watch verbunden und am Handgelenk ist.
+> **Wichtig:** Dies gilt auch dann, wenn die Funktion **„Stummschaltung umgehen" (Kritische Mitteilungen)** aktiviert ist. Kritische Mitteilungen sorgen zwar dafür, dass das iPhone trotz Stummschaltung alarmiert – ist jedoch eine Apple Watch verbunden, übernimmt diese die Ausgabe mit dem Standard-Hinweiston.
 
 ### Apple Watch-Benachrichtigungen deaktivieren (empfohlen für Einsatzkräfte)
 
