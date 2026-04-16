@@ -11,6 +11,13 @@ Die App ist verfügbar für:
 - **iOS** (iPhone / iPad) – [Im Apple App Store laden](https://apps.apple.com/de/app/feuersoftware-einsatzapp/id6737230606)
 - **Android** – [Im Google Play Store laden](https://play.google.com/store/apps/details?id=com.feuersoftware.einsatzapp)
 
+### Betaversionen
+
+| Plattform | Zugang |
+|---|---|
+| **iOS – TestFlight** | [Beta über TestFlight installieren](https://testflight.apple.com/join/ejxGcjRq) |
+| **Android – Play Store** | Play Store → EinsatzApp → ganz nach unten scrollen → **„Beta-Tester werden"** → **„Mitmachen"** |
+
 ---
 
 ## Funktionsumfang im Überblick
