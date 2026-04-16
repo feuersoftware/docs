@@ -19,9 +19,11 @@ Damit die EinsatzApp auf Android-Smartphones **zuverlässig alarmiert** – auch
 | 1 | Benachrichtigungen aktivieren | Pflicht |
 | 2 | Benachrichtigungskanäle konfigurieren | Pflicht |
 | 3 | „Bitte nicht stören" Zugriff erlauben | Pflicht für „Immer laut" |
-| 4 | Akkuoptimierung deaktivieren | Pflicht |
-| 5 | Autostart erlauben | Empfohlen (Samsung, Xiaomi) |
-| 6 | Hintergrundaktivität erlauben | Empfohlen |
+| 4 | Akkuoptimierung / Hintergrundnutzung | Pflicht |
+| 5 | App-Verhalten bei Nichtnutzung deaktivieren | Pflicht (Android 14+) |
+| 6 | Autostart erlauben | Empfohlen (Samsung, Xiaomi) |
+| 7 | Hintergrundaktivität erlauben | Empfohlen |
+| 8 | Benachrichtigungen auf Sperrbildschirm | Empfohlen |
 
 ---
 
@@ -56,13 +58,17 @@ Die EinsatzApp verwendet drei separate **Benachrichtigungskanäle**. Jeder muss 
 
 1. Auf den Kanal **„Alarm (Immer laut)"** tippen.
 2. Sicherstellen:
-   - **Benachrichtigungen** → Ein
-   - **Ton** → Der gewählte Alarmton ist eingestellt
+   - **Benachrichtigungen anzeigen** → Ein
+   - **Ton** → Der gewählte Alarmton ist eingestellt (nicht „Lautlos")
    - **Vibration** → Ein (empfohlen)
-   - **„Bitte nicht stören" überschreiben** → Ein *(falls sichtbar)*
-   - **Wichtigkeit** / **Priorität** → **Dringend** oder **Hoch**
+   - **Sperrbildschirm** → „Gesamten Inhalt von Benachrichtigungen anzeigen"
+   - **„Bitte nicht stören" ignorieren** → Ein
 
-![Screenshot: Benachrichtigungskanal Einstellungen](/images/einsatzapp/12_android_channel_settings.png)
+![Screenshot: Kanal Immer laut – Einstellungen oben](/images/einsatzapp/12_android_channel_immer_laut_1.png)
+
+![Screenshot: Kanal Immer laut – Einstellungen unten](/images/einsatzapp/12_android_channel_immer_laut_2.png)
+
+![Screenshot: Kanal Immer laut – Sperrbildschirm-Option](/images/einsatzapp/12_android_channel_immer_laut_3.png)
 
 > **Hinweis:** Wenn du in der EinsatzApp den Alarmton wechselst, wird automatisch ein neuer Benachrichtigungskanal erstellt. Alte Kanäle können in diesen Einstellungen gelöscht werden.
 
@@ -97,13 +103,21 @@ In der EinsatzApp unter **Einstellungen → Alarmeinstellungen** auf den Button 
 
 Android schränkt Apps im Hintergrund ein, um Akku zu sparen. Dies kann dazu führen, dass die EinsatzApp keine Push-Nachrichten mehr empfängt. Deswegen muss die Akkuoptimierung für die EinsatzApp **deaktiviert** werden.
 
+### Android 14+ (Google Pixel):
+
+1. **Einstellungen → Apps → EinsatzApp** öffnen.
+2. Auf **„Akkunutzung der App"** tippen.
+3. **„Hintergrundnutzung zulassen"** → **„Uneingeschränkt"** auswählen.
+
+![Screenshot: Akkunutzung der App](/images/einsatzapp/12_android_battery_optimization_1.png)
+
+![Screenshot: Hintergrundnutzung – Uneingeschränkt](/images/einsatzapp/12_android_battery_optimization_2.png)
+
 ### Android (allgemein):
 
 1. **Einstellungen → Apps → EinsatzApp** öffnen.
 2. Auf **„Akku"** tippen.
 3. **„Nicht eingeschränkt"** oder **„Keine Einschränkungen"** auswählen (nicht „Optimiert").
-
-![Screenshot: Akkuoptimierung deaktivieren](/images/einsatzapp/12_android_battery_optimization.png)
 
 ### Alternativ (alle Apps):
 
@@ -119,7 +133,32 @@ Android schränkt Apps im Hintergrund ein, um Akku zu sparen. Dies kann dazu fü
 
 ---
 
-## Schritt 5: Autostart erlauben (Samsung, Xiaomi, Huawei)
+## Schritt 5: App-Verhalten bei Nichtnutzung deaktivieren (Android 14+)
+
+Ab Android 14 kann das System automatisch Berechtigungen entziehen, Benachrichtigungen stoppen und die App archivieren, wenn sie längere Zeit nicht aktiv geöffnet wurde. Diese Option muss für die EinsatzApp **deaktiviert** sein.
+
+### Über App-Berechtigungen:
+
+1. **Einstellungen → Apps → EinsatzApp → Berechtigungen** öffnen.
+2. Ganz nach unten scrollen zu **„Nicht verwendete App-Einstellungen"**.
+3. **„App-Verhalten bei Nichtnutzung verwalten"** → **Aus**.
+
+![Screenshot: App-Berechtigungen – Nichtnutzung 1](/images/einsatzapp/12_android_nichtnutzung_1.png)
+
+![Screenshot: App-Berechtigungen – Nichtnutzung 2](/images/einsatzapp/12_android_nichtnutzung_2.png)
+
+### Alternativ über App-Info:
+
+1. **Einstellungen → Apps → EinsatzApp** öffnen (App-Info Übersicht).
+2. Ganz nach unten scrollen zu **„App bei Nichtnutzung pausieren"** → **Aus**.
+
+![Screenshot: App-Info – App bei Nichtnutzung pausieren](/images/einsatzapp/12_android_nichtnutzung_app_info.png)
+
+> **Warum ist das wichtig?** Wird die EinsatzApp im Einsatzdienst nicht täglich aktiv geöffnet, stuft Android sie als „nicht genutzt" ein und entzieht ihr automatisch die Benachrichtigungsberechtigung – der Alarm käme dann nicht mehr an.
+
+---
+
+## Schritt 6: Autostart erlauben (Samsung, Xiaomi, Huawei)
 
 Einige Hersteller verhindern, dass Apps nach einem Neustart automatisch starten. Für Hintergrundempfang muss die EinsatzApp als Autostart-App eingetragen werden.
 
@@ -142,7 +181,7 @@ Einige Hersteller verhindern, dass Apps nach einem Neustart automatisch starten.
 
 ---
 
-## Schritt 6: Hintergrundaktivität erlauben
+## Schritt 7: Hintergrundaktivität erlauben
 
 ### Android allgemein:
 
@@ -155,7 +194,7 @@ Wenn der Energiesparmodus aktiv ist, können Hintergrundaktivitäten eingeschrä
 
 ---
 
-## Schritt 7: Benachrichtigungen auf dem Sperrbildschirm
+## Schritt 8: Benachrichtigungen auf dem Sperrbildschirm
 
 1. **Einstellungen → Apps → EinsatzApp → Benachrichtigungen** öffnen.
 2. Sicherstellen, dass **„Auf Sperrbildschirm anzeigen"** aktiviert ist.
@@ -175,12 +214,13 @@ Wenn der Energiesparmodus aktiv ist, können Hintergrundaktivitäten eingeschrä
 ### Kein Alarm im Hintergrund / nach längerem Nichtbenutzen
 
 - ✅ Akkuoptimierung deaktiviert? (Schritt 4)
-- ✅ Autostart erlaubt? (Schritt 5, Samsung/Xiaomi)
-- ✅ Hintergrunddaten erlaubt? (Schritt 6)
+- ✅ App-Verhalten bei Nichtnutzung deaktiviert? (Schritt 5, Android 14+)
+- ✅ Autostart erlaubt? (Schritt 6, Samsung/Xiaomi)
+- ✅ Hintergrunddaten erlaubt? (Schritt 7)
 
 ### Alarm erscheint nicht auf dem Sperrbildschirm
 
-- ✅ Sperrbildschirm-Benachrichtigungen aktiviert? (Schritt 7)
+- ✅ Sperrbildschirm-Benachrichtigungen aktiviert? (Schritt 8)
 
 ### Benachrichtigungskanal zeigt falschen Ton
 
