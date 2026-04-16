@@ -78,5 +78,4 @@ Die UBX Box wird mit einem im Fahrzeug verbauten Sepura- oder Motorola-Funkgerä
 Die aktive Funkgruppe wird in der **unteren linken Ecke** des Tablets angezeigt. Eine farbliche Kennzeichnung zeigt an, ob die Gruppe frei oder belegt ist. Ist die UBX nicht verbunden, erscheint ein entsprechender Hinweis.
 
 Weitere Informationen und Bezugsquellen:
-- [Flyer TETRAcontrol UBX (PDF)](https://status3.it/images/Flyer_UBX.pdf)
 - [Shop Status 3 IT](https://shop.status3.it/collections/tetracontrol-ubx)
