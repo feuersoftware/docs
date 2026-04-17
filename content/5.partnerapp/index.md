@@ -14,6 +14,6 @@ Die **PartnerApp** benachrichtigt den Partner einer Einsatzkraft in Echtzeit, so
 
 | Seite | Beschreibung |
 |---|---|
-| [Produktübersicht](./01_produktuebersicht) | Funktionsweise, Statusanzeige und Voraussetzungen |
-| [Einrichtung](./02_einrichtung) | Schritt-für-Schritt-Verbindung per QR-Code |
-| [Häufige Fragen](./03_faq) | Antworten auf die häufigsten Fragen |
+| [Produktübersicht](/partnerapp/01_produktuebersicht) | Funktionsweise, Statusanzeige und Voraussetzungen |
+| [Einrichtung](/partnerapp/02_einrichtung) | Schritt-für-Schritt-Verbindung per QR-Code |
+| [Häufige Fragen](/partnerapp/03_faq) | Antworten auf die häufigsten Fragen |
