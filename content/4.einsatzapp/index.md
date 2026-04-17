@@ -26,8 +26,8 @@ Verfügbar für **iOS** (iPhone/iPad) und **Android**.
 | [News & Infoboard](/einsatzapp/08_nachrichten_infotafel) | Artikel lesen und erstellen |
 | [App-Einstellungen](/einsatzapp/09_app_einstellungen) | Darstellung, Sprache, Kalender, Geofence |
 | [Alarmierung & Alarmeinstellungen](/einsatzapp/10_alarmierung) | Alarm-Modi, Alarmton, Test-Alarm |
-| [iOS-Systemeinstellungen](/einsatzapp/11_ios_systemeinstellungen) | Schritt-fuer-Schritt fuer iPhone/iPad |
-| [Android-Systemeinstellungen](/einsatzapp/12_android_systemeinstellungen) | Schritt-fuer-Schritt fuer Android-Geraete |
-| [Longpress-Aktionen](/einsatzapp/13_longpress_aktionen) | Alle versteckten Funktionen durch langes Druecken |
+| [iOS-Systemeinstellungen](/einsatzapp/11_ios_systemeinstellungen) | Schritt-für-Schritt für iPhone/iPad |
+| [Android-Systemeinstellungen](/einsatzapp/12_android_systemeinstellungen) | Schritt-für-Schritt für Android-Geräte |
+| [Longpress-Aktionen](/einsatzapp/13_longpress_aktionen) | Alle versteckten Funktionen durch langes Drücken |
 | [Weitere Funktionen](/einsatzapp/14_weiteres) | Statistiken, Mangelberichte, Blog, u. v. m. |
 | [Häufige Fragen (FAQ)](/einsatzapp/15_faq) | Schnelle Antworten auf die häufigsten Fragen |
