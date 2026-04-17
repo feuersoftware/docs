@@ -29,21 +29,21 @@ Der Wechsel zwischen Organisationsansicht und den einzelnen Standorten erfolgt �
 
 | Seite | Beschreibung |
 |---|---|
-| [Produktübersicht](./01_produktuebersicht) | Funktionsumfang, Aufbau und technische Grundlage |
-| [Anmeldung & Registrierung](./02_anmeldung) | Login, Organisations-Registrierung, Zwei-Faktor-Authentifizierung |
-| [Dashboard](./03_dashboard) | Startseite, Schnellübersicht, Tastaturkürzel |
-| [Benutzerverwaltung](./04_benutzerverwaltung) | Benutzer, Gruppen, Rollen, Funktionen, Mailing-Listen |
-| [Standorte](./05_standorte) | Standorte anlegen und verwalten |
-| [Fahrzeuge](./06_fahrzeuge) | Fahrzeugverwaltung, Verfügbarkeit, Zusatzinformationen |
-| [Einsätze](./07_einsaetze) | Einsatzübersicht, Details, Protokoll, Kartenansicht |
-| [News & Termine](./08_news_und_termine) | Beiträge erstellen und verwalten, Terminverwaltung |
-| [Infoboard](./09_infoboard) | Informationsaushänge verwalten |
-| [Mängelmeldungen](./10_defektberichte) | Mängelmeldungen erfassen und verwalten |
-| [Alarmierung](./11_alarmierung) | Stichwörter, Alarmgruppen, AAO, Dynamische Regeln |
-| [Organisationseinstellungen](./12_organisationseinstellungen) | Allgemein, Lizenzen, Einsätze, HelferApp, Datenlöschung |
-| [Schnittstellen](./13_schnittstellen) | Alle Integrationen auf Organisations- und Standort-Ebene |
-| [Leitstellenanbindungen](./19_leitstellenanbindungen) | Einsatzdaten von der Leitstelle empfangen – alle verfügbaren Anbindungen |
-| [Verfügbarkeiten](./16_verfuegbarkeiten) | Verfügbarkeitsstatus der Einsatzkräfte verwalten und auswerten |
-| [Statistik-Monitor](./17_statistik_monitor) | Verfügbarkeitsstatistiken als öffentliche Webseite darstellen |
-| [Benutzer-Tools](./18_benutzer_tools) | Benutzerdaten exportieren, importieren und per API steuern |
-| [Häufige Fragen (FAQ)](./15_haeufige_fragen) | Schnelle Antworten auf die häufigsten Fragen |
+| [Produktübersicht](/connect/01_produktuebersicht) | Funktionsumfang, Aufbau und technische Grundlage |
+| [Anmeldung & Registrierung](/connect/02_anmeldung) | Login, Organisations-Registrierung, Zwei-Faktor-Authentifizierung |
+| [Dashboard](/connect/03_dashboard) | Startseite, Schnellübersicht, Tastaturkürzel |
+| [Benutzerverwaltung](/connect/04_benutzerverwaltung) | Benutzer, Gruppen, Rollen, Funktionen, Mailing-Listen |
+| [Standorte](/connect/05_standorte) | Standorte anlegen und verwalten |
+| [Fahrzeuge](/connect/06_fahrzeuge) | Fahrzeugverwaltung, Verfügbarkeit, Zusatzinformationen |
+| [Einsätze](/connect/07_einsaetze) | Einsatzübersicht, Details, Protokoll, Kartenansicht |
+| [News & Termine](/connect/08_news_und_termine) | Beiträge erstellen und verwalten, Terminverwaltung |
+| [Infoboard](/connect/09_infoboard) | Informationsaushänge verwalten |
+| [Mängelmeldungen](/connect/10_defektberichte) | Mängelmeldungen erfassen und verwalten |
+| [Alarmierung](/connect/11_alarmierung) | Stichwörter, Alarmgruppen, AAO, Dynamische Regeln |
+| [Organisationseinstellungen](/connect/12_organisationseinstellungen) | Allgemein, Lizenzen, Einsätze, HelferApp, Datenlöschung |
+| [Schnittstellen](/connect/13_schnittstellen) | Alle Integrationen auf Organisations- und Standort-Ebene |
+| [Leitstellenanbindungen](/connect/19_leitstellenanbindungen) | Einsatzdaten von der Leitstelle empfangen – alle verfügbaren Anbindungen |
+| [Verfügbarkeiten](/connect/16_verfuegbarkeiten) | Verfügbarkeitsstatus der Einsatzkräfte verwalten und auswerten |
+| [Statistik-Monitor](/connect/17_statistik_monitor) | Verfügbarkeitsstatistiken als öffentliche Webseite darstellen |
+| [Benutzer-Tools](/connect/18_benutzer_tools) | Benutzerdaten exportieren, importieren und per API steuern |
+| [Häufige Fragen (FAQ)](/connect/15_haeufige_fragen) | Schnelle Antworten auf die häufigsten Fragen |
