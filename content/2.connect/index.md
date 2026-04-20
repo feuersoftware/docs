@@ -47,3 +47,4 @@ Der Wechsel zwischen Organisationsansicht und den einzelnen Standorten erfolgt �
 | [Statistik-Monitor](/connect/17_statistik_monitor) | Verfügbarkeitsstatistiken als öffentliche Webseite darstellen |
 | [Benutzer-Tools](/connect/18_benutzer_tools) | Benutzerdaten exportieren, importieren und per API steuern |
 | [Häufige Fragen (FAQ)](/connect/15_haeufige_fragen) | Schnelle Antworten auf die häufigsten Fragen |
+| [Datenschutz & DSGVO](/connect/22_datenschutz) | AVV, TOMs und Datenschutzerklärung |
