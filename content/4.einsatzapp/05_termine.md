@@ -57,6 +57,28 @@ Antippen des Buttons oder der Anzahl-Übersicht öffnet den Dialog zur Statusaus
 
 Zeigt eine Liste aller Anmeldungen zu diesem Termin, aufgeteilt nach Status (Zugesagt / Vielleicht / Abgesagt). Administratoren sehen alle Teilnehmer.
 
+#### Rückmeldungen nach Funktionen
+
+Über die farbigen Zähler-Kacheln am unteren Rand des Tabs lassen sich die Rückmeldungen nach Funktionen aufschlüsseln. Antippen einer Kachel öffnet ein Bottom Sheet mit einer detaillierten Übersicht.
+
+![Screenshot: Rückmeldungen nach Funktionen](/images/einsatzapp/05_termin_rueckmeldungen_funktionen.png)
+
+Die Personen werden nach ihren **Funktionen** gruppiert dargestellt. Für jede Funktion wird angezeigt:
+
+- **Funktionskürzel** und vollständiger Funktionsname
+- **Gesamtanzahl** der Personen in dieser Funktion
+- **Liste der Personen** mit individuellem Statussymbol
+
+**Statussymbole:**
+
+| Symbol | Bedeutung |
+|---|---|
+| ✓ Grün | Zugesagt |
+| ⏰ Gelb | Vielleicht |
+| ✗ Rot | Abgesagt |
+
+> Eine Person kann in mehreren Funktionsgruppen erscheinen, wenn ihr mehrere Funktionen zugewiesen sind.
+
 ---
 
 ## An-/Abmeldung
