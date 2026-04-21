@@ -82,6 +82,26 @@ Die HelferApp kann grundsätzlich ohne gesonderte Freischaltung genutzt werden. 
 | **Einsatz-Sharing** | Ob Einsätze zwischen Standorten geteilt werden können |
 | **Einsatz-Reports** | Automatisch generierte Einsatzberichte aktivieren |
 | **Fahrzeugzuordnung** | Automatische Fahrzeugzuordnung bei eingehenden Alarmen (z. B. bei Status 3) |
+| **Einsatzhistorie anhand Alarmgruppen filtern** | Schränkt die sichtbare Einsatzhistorie auf Einsätze ein, bei denen der jeweilige Benutzer einer alarmierten oder informierten Gruppe angehört. Standardmäßig deaktiviert — alle Mitglieder sehen alle Einsätze. Standortverantwortliche und Benutzer mit der Berechtigung „Einsätze verwalten" sind von dieser Filterung ausgenommen und sehen stets alle Einsätze. |
+| **Fahrzeugzuweisungsmodus** | Legt fest, wie Fahrzeuge einem laufenden Einsatz zugeordnet werden: **Automatisch** — Connect weist Fahrzeuge anhand eingehender Funkstatusmeldungen (Status 3/4) selbstständig dem aktuellen Einsatz zu. **Manuell** — Fahrzeuge müssen explizit dem Einsatz hinzugefügt werden; eingehende Statusmeldungen werden nur für bereits manuell zugewiesene Fahrzeuge erfasst. |
+| **Kräfteerfassung einschließlich PA** | Erweitert die Kräfteerfassung um ein separates Feld für Atemschutzgeräteträger (AGT/PA). Ist diese Option aktiviert, kann pro Fahrzeugeinsatz zusätzlich zur Gesamtstärke die Anzahl der eingesetzten PA-Träger erfasst werden. Bei der personenbezogenen Kräfteerfassung wird pro Person hinterlegt, ob sie PA trägt. Die PA-Anzahl erscheint im Einsatzbericht und im Einsatzprotokoll. |
+| **PA automatisch zuweisen anhand Funktion** | Legt fest, welche Funktionen (z. B. AGT) als PA-Träger gelten. Benutzer, denen eine dieser Funktionen zugewiesen ist, werden in der EinsatzApp und der FahrzeugApp bei der Kräfteerfassung automatisch als PA-Träger vorausgewählt. Die Funktionen werden aus den unter **Funktionen** angelegten Einträgen ausgewählt. Voraussetzung: **Kräfteerfassung einschließlich PA** muss aktiviert sein. |
+
+### Einsatz Update Push Nachrichten
+
+Konfiguriert, bei welchen Änderungen an einem laufenden Einsatz eine Push-Benachrichtigung an alle alarmierten Benutzer gesendet wird. Standardmäßig werden Benachrichtigungen für alle Änderungstypen verschickt.
+
+| Änderungstyp | Beschreibung |
+|---|---|
+| **Stichwort** | Das Einsatzstichwort wurde geändert |
+| **Bemerkungen** | Der Freitext-Bemerkungsbereich wurde aktualisiert |
+| **Adresse** | Die Einsatzadresse wurde angepasst |
+| **Position** | Die GPS-Koordinaten der Einsatzstelle haben sich geändert |
+| **RIC** | Der Alarmierungscode (Radio Identification Code) wurde geändert |
+| **Einsatzeigenschaft** | Ein benutzerdefiniertes Einsatzfeld (Custom Property) wurde geändert |
+| **Melder** | Angaben zum Meldenden (Name, Telefon) wurden aktualisiert |
+
+> **Hinweis:** Deaktivierte Typen lösen keine Push-Benachrichtigung aus — die Änderung wird jedoch weiterhin im Einsatz gespeichert und im Einsatzprotokoll vermerkt.
 
 ---
 

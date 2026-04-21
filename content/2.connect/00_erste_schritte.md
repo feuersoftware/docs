@@ -103,3 +103,11 @@ Nach der Einrichtung von Standorten, Benutzern und dem Einsatzdateneingang muss 
 - **AAO-Regeln** definieren – nicht nur anhand des Stichworts, sondern anhand aller Einsatzinformationen; tages- und uhrzeitabhängige Regeln sind möglich
 
 → [Alarmierung, AAO und Alarmgruppen](/connect/11_alarmierung)
+
+---
+
+## 7. Datenschutz & DSGVO
+
+Beim Einsatz von Connect werden personenbezogene Daten verarbeitet. Ein **Auftragsverarbeitungsvertrag (AVV)** mit FeuerSoftware ist datenschutzrechtlich verpflichtend.
+
+→ [Datenschutz & DSGVO](/connect/22_datenschutz) — AVV, TOMs und Datenschutzerklärung
