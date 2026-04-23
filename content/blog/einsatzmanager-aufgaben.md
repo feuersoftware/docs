@@ -4,7 +4,7 @@ author:
   name: FeuerSoftware Team
   description: Das FeuerSoftware Entwicklungsteam
 date: 2026-04-21
-description: Neu im EinsatzManager: Aufgaben direkt im Einsatz erstellen, zuweisen und verfolgen – für mehr Struktur in der Einsatzführung.
+description: "Neu im EinsatzManager: Aufgaben direkt im Einsatz erstellen, zuweisen und verfolgen – für mehr Struktur in der Einsatzführung."
 image: /images/einsatzmanager/10_aufgaben_uebersicht.png
 minRead: 3
 navigation: false
