@@ -27,14 +27,13 @@ Legt das Format und den Umfang der übertragenen Einsatzdaten fest.
 
 | Version | Format | Übertragene Daten |
 |---|---|---|
-| Version 1.00 | XML | Basisdaten: Stichwort, Adresse, Koordinaten, Alarmzeit |
-| Version 1.01 | XML | Erweitert: + Einsatzmittel, Anruferdaten, Custom Properties |
-| Version 1.10 | JSON | Basisdaten (JSON-Format) |
-| Version 1.11 | JSON | Erweitert: + Einsatzmittel, Anruferdaten, Custom Properties |
+| Version 1.0.0 | XML | Basisdaten: Stichwort, Adresse, Koordinaten, Alarmzeit |
+| Version 1.0.1 | XML | Erweitert: + Einsatzmittel, Anruferdaten, Custom Properties |
+| Version 1.0.3 | JSON | Alarmdaten (erweitert) + Einsatzmittelstatus + Positionsdaten |
 
-**Empfehlung:** Version 1.11 bietet den größten Datenumfang im modernen JSON-Format.
+**Empfehlung:** Version 1.0.3 bietet den größten Datenumfang im modernen JSON-Format und überträgt zusätzlich Fahrzeugstatus und Positionsdaten.
 
-> **Wichtig:** Version 1.01 unterstützt **keinen Fahrzeugstatus-Upload**. Wer Fahrzeugstatus übertragen möchte, muss Version 1.00, 1.10 oder 1.11 verwenden.
+> **Wichtig:** Version 1.0.1 unterstützt **keinen Fahrzeugstatus-Upload**. Wer Fahrzeugstatus übertragen möchte, muss Version 1.0.0 oder 1.0.3 verwenden.
 
 ---
 
@@ -97,7 +96,7 @@ Im unteren Bereich der Seite werden alle Übertragungen protokolliert. Die Tabel
 | Problem | Mögliche Ursache | Lösung |
 |---|---|---|
 | Keine Logs sichtbar | Schnittstelle nicht aktiviert oder Auth.-Key fehlt | Aktivieren und Key eintragen |
-| Keine Logs bei Version 1.01 und Fahrzeugstatus | V1.01 unterstützt keinen Status-Upload | Version auf 1.00, 1.10 oder 1.11 wechseln |
+| Keine Logs bei Version 1.0.1 und Fahrzeugstatus | V1.0.1 unterstützt keinen Status-Upload | Version auf 1.0.0 oder 1.0.3 wechseln |
 | Auth.-Key zeigt `Invalid` | Fireboard hat den Key als ungültig zurückgewiesen | Neuen Key von Fireboard einholen und eintragen |
 | Einsätze werden nicht übertragen | Schnittstelle am falschen Standort aktiviert | Schnittstelle am Standort des Einsatzes aktivieren |
 | Fahrzeugstatus wird nicht übertragen | Kein Status-Upload Auth.-Key gesetzt | Status-Key eintragen und speichern |

@@ -67,8 +67,8 @@ Der **Partnermodus** muss in den Connect-Organisationseinstellungen durch einen 
 
 | Plattform | Store |
 |---|---|
-| **iOS** | Apple App Store – „FeuerSoftware PartnerApp" |
-| **Android** | Google Play Store – „FeuerSoftware PartnerApp" |
+| **iOS** | [Im Apple App Store laden](https://apps.apple.com/de/app/feuersoftware-partnerapp/id6692627265) |
+| **Android** | [Im Google Play Store laden](https://play.google.com/store/apps/details?id=com.feuersoftware.partnerapp&hl=de) |
 
 ---
 
