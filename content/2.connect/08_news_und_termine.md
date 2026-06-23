@@ -132,6 +132,14 @@ Die aktuellen Anmeldungen sind in der Termindetailansicht im Connect Portal eins
 > **Hinweis:** Wenn Termindetails nachträglich geändert werden, gehen bestehende An- und Abmeldungen **nicht** verloren, solange der Termin selbst nicht gelöscht wird. 
 **Wenn Datum oder Uhrzeit geändert wird, verfallen die An- und Abmeldungen. Teilnehmer müssen sich dann erneut anmelden.**
 
+### Terminerinnerung manuell auslösen
+
+Bei bevorstehenden Terminen kann eine Push-Benachrichtigung manuell an alle registrierten Benutzer gesendet werden.
+
+**Termin öffnen → „Benachrichtigen"**
+
+Nach einer Bestätigung erhalten alle Benutzer mit registriertem Gerät eine Push-Benachrichtigung über den Termin. Diese Funktion ist nützlich, um kurzfristig auf einen Termin aufmerksam zu machen oder wenn die automatische Erinnerung des Kalenders nicht ausreicht.
+
 ### Termin bearbeiten und löschen
 Termin in der Übersicht antippen → **„Bearbeiten"** oder **„Löschen"**. Das Löschen erfordert eine Bestätigung.
 

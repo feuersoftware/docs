@@ -75,6 +75,28 @@ Das Protokoll kann nach Sichtbarkeit gefiltert werden (öffentlich / intern).
 
 ---
 
+## Einsatzbericht herunterladen
+
+Für abgeschlossene Einsätze kann ein Einsatzbericht als PDF heruntergeladen werden. Vor dem Download können erweiterte Details erfasst werden:
+
+| Feld | Beschreibung |
+|---|---|
+| **Protokollant** | Name der Person, die den Bericht erstellt |
+| **Bemerkungen** | Allgemeine Anmerkungen zum Einsatz |
+| **Lage beim Eintreffen** | Beschreibung der vorgefundenen Situation |
+| **Tätigkeit** | Durchgeführte Maßnahmen |
+| **Eigentümer/Halter** | Angaben zum betroffenen Eigentümer oder Halter |
+| **Geschädigter** | Angaben zur geschädigten Person |
+| **Verursacher** | Angaben zum Verursacher |
+| **Eingesetzte Materialien** | Übersicht der verwendeten Einsatzmittel |
+| **Noch zu erledigen (nach dem Einsatz)** | Offene Nacharbeiten oder Folgemaßnahmen |
+
+**Einsatz öffnen → „Bericht herunterladen"**
+
+Die Felder sind optional – der Bericht kann auch ohne Zusatzangaben heruntergeladen werden.
+
+---
+
 ## Einsatz bearbeiten
 
 In der Detailansicht → **„Bearbeiten"**:

@@ -41,6 +41,47 @@ Der Benutzer erhält eine E-Mail mit einem Einladungslink. Nach dem Klick auf de
 
 ---
 
+## Benutzer per CSV importieren
+
+Mehrere Benutzer können auf einmal per CSV-Datei importiert werden.
+
+**Seitenleiste → Benutzer → „Benutzer importieren"**
+
+### Anforderungen an die CSV-Datei
+
+Die CSV-Datei muss folgende Spalten enthalten:
+
+| Spaltenname | Beschreibung |
+|---|---|
+| `FirstName` | Vorname des Benutzers |
+| `LastName` | Nachname des Benutzers |
+| `Email` | E-Mail-Adresse des Benutzers |
+| `Site` | Standortname *(nur auf Organisationsebene, muss exakt mit dem vorhandenen Standort übereinstimmen)* |
+
+Auf **Standortebene** sind nur `FirstName`, `LastName` und `Email` erforderlich – die Benutzer werden automatisch dem aktuellen Standort zugeordnet. Auf **Organisationsebene** ist zusätzlich `Site` Pflichtfeld.
+
+### Importvorgang
+
+1. CSV-Datei auswählen – das System prüft die Datei vorab und zeigt eventuelle Fehler an
+2. Vorschau bestätigen: Anzahl der zu importierenden Benutzer wird angezeigt
+3. **„Import starten"** klicken
+4. Der Fortschritt wird live angezeigt (verarbeitet / erfolgreich / fehlgeschlagen)
+5. Einzelne fehlgeschlagene Einträge können über **„Wiederholen"** erneut versucht werden
+
+> **Hinweis:** Per CSV importierte Benutzer können ausschließlich das **neue Connect Portal** und die **neue EinsatzApp** verwenden. Ältere App-Versionen werden nicht unterstützt.
+
+---
+
+## Einladungen erneut senden
+
+Benutzer, die ihre Einladungsmail nicht erhalten oder den Link nicht mehr haben, können erneut eingeladen werden.
+
+**Seitenleiste → Benutzer → „Einladungen erneut senden"**
+
+Diese Aktion sendet an alle Benutzer mit dem Status **„Eingeladen"** (d. h. die Einladung wurde noch nicht angenommen) eine neue Einladungsmail. Der Vorgang läuft mit Fortschrittsanzeige und kann pausiert und fortgesetzt werden. Einzelne fehlgeschlagene Einträge können wiederholt werden.
+
+---
+
 ## Benutzer bearbeiten
 
 Benutzer in der Liste antippen → **„Bearbeiten"**. Die Detailansicht hat mehrere Tabs:
@@ -115,7 +156,8 @@ Rollen definieren, welche Bereiche und Aktionen ein Benutzer im Connect Portal n
 | Rolle | Beschreibung |
 |---|---|
 | **Standortadministrator** | Vollzugriff auf alle Einstellungen des Standorts |
-| **Moderator** | Kann News und Termine erstellen sowie Fahrzeugverfügbarkeit bearbeiten |
+| **Moderator** | Kann News, Info-Board und Termine erstellen sowie Fahrzeugverfügbarkeit bearbeiten |
+| **Benutzeradministrator** | Kann Benutzer auf Standortebene verwalten (einladen, importieren, bearbeiten) |
 | **Gerätewart** | Kann Fahrzeuge und Fahrzeugverfügbarkeit bearbeiten |
 | **Standort News-Administrator** | Kann News auf Standortebene erstellen und verwalten |
 | **Standort Kalender-Administrator** | Kann Kalender und Termine auf Standortebene verwalten |

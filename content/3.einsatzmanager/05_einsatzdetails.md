@@ -110,7 +110,25 @@ Das Protokoll kann nach **Kategorien** und **Ereignistypen** gefiltert werden, u
 
 ### Einsatzbericht (PDF-Export)
 
-Über den Button **„Einsatzbericht"** kann das Protokoll als PDF heruntergeladen werden. Dabei lässt sich auswählen, welche Informationen im Ausdruck enthalten sein sollen.
+Über den Button **„Einsatzbericht"** kann das Protokoll als PDF heruntergeladen werden. Vor dem Download öffnet sich ein Dialog, in dem sich sowohl die enthaltenen Protokollkategorien als auch ergänzende Details zum Einsatz konfigurieren lassen.
+
+#### Erweiterte Details
+
+Im Dialog können folgende Felder optional ausgefüllt werden:
+
+| Feld | Beschreibung |
+|---|---|
+| **Protokollant** | Name der Person, die den Bericht erstellt |
+| **Lage beim Eintreffen** | Beschreibung der vorgefundenen Situation |
+| **Tätigkeit** | Durchgeführte Maßnahmen |
+| **Eigentümer/Halter** | Angaben zum betroffenen Eigentümer oder Halter |
+| **Geschädigter** | Angaben zur geschädigten Person |
+| **Verursacher** | Angaben zum Verursacher |
+| **Eingesetzte Materialien** | Übersicht der verwendeten Einsatzmittel |
+| **Noch zu erledigen (nach dem Einsatz)** | Offene Nacharbeiten oder Folgemaßnahmen |
+| **Bemerkungen** | Allgemeine Anmerkungen zum Einsatz |
+
+Alle Felder sind optional – der Bericht kann auch ohne Zusatzangaben heruntergeladen werden. Die eingetragenen Werte werden gespeichert und stehen beim nächsten Öffnen des Dialogs wieder zur Verfügung.
 
 > **Voraussetzung:** Der Einsatzbericht muss zuvor in den **Organisationseinstellungen im Connect-Portal** aktiviert werden. Ohne diese Aktivierung ist der Button nicht verfügbar.
 

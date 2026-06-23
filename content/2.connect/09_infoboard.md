@@ -9,6 +9,8 @@ Das Infoboard enthält kurze, themenbezogene Informationsaushänge für die Mitg
 
 In der EinsatzApp ist das Infoboard unter dem Menüpunkt **„Infoboard"** erreichbar.
 
+> **Neu:** Moderatoren können das Infoboard jetzt selbst verwalten (Einträge erstellen, bearbeiten und löschen). Bisher war das ausschließlich Standortadministratoren vorbehalten. Diese Funktion erfordert ein **App-Update** auf die aktuelle Version.
+
 ---
 
 ## Infoboard-Übersicht

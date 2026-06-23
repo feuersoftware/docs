@@ -40,7 +40,8 @@ Werden einem Benutzer mehrere Rollen zugewiesen, werden die Rechte addiert.
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Standardbenutzer (keine Rolle) | `—` | `—` | `—` | `R` | `R` | `R` | `R` | `R` | `—` | `R` | `R` | `R` | `—` | `—` | `—` |
 | Standortadministrator | `—` | `R/W` | `R/W` | `R/W` | `R/W` | `R/W` | `R/W` | `R/I/W` | `R/W` | `R/W` | `R/W` | `R/W` | `R/W` | `R/W` | `R` |
-| Moderator | `—` | `—` | `—` | `R` | `R/W` | `R` | `R/W` | `R/I` | `—` | `R` | `R` | `R/W` | `—` | `—` | `—` |
+| Moderator | `—` | `—` | `—` | `R/W` | `R/W` | `R` | `R/W` | `R/I` | `—` | `R` | `R` | `R/W` | `—` | `—` | `—` |
+| Benutzeradministrator | `—` | `—` | `—` | `R` | `R` | `R` | `R` | `R/I/W` | `—` | `R` | `R` | `R` | `—` | `—` | `—` |
 | Gerätewart | `—` | `—` | `—` | `R` | `R` | `R` | `R` | `R` | `—` | `R` | `R/W` | `R/W` | `—` | `—` | `—` |
 | Standort News-Administrator | `—` | `—` | `—` | `R` | `R/W` | `R` | `R` | `R` | `—` | `R` | `R` | `R` | `—` | `—` | `—` |
 | Standort Kalender-Administrator | `—` | `—` | `—` | `R` | `R` | `R/W` | `R/W` | `R` | `—` | `R` | `R` | `R` | `—` | `—` | `—` |
@@ -55,7 +56,8 @@ Werden einem Benutzer mehrere Rollen zugewiesen, werden die Rechte addiert.
 | Rolle | Organisations­einstellungen | Standort­einstellungen | Verfügbarkeitsalarm | Info-Board | News | Kalender | Termine | Benutzer | Geräte | Einsätze | Fahrzeuge | Fahrzeug­verfügbarkeit | Alarm | Schnittstellen | Ereignisprotokoll |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Standortadministrator | `—` | `R/W` | `R/W` | `R/W` | `R/W` | `R/W` | `R/W` | `R/I/W` | `R/W` | `R/W` | `R/W` | `R/W` | `R/W` | `R/W` | `R` |
-| Moderator | `—` | `—` | `—` | `R` | `R/W` | `R` | `R/W` | `R/I` | `—` | `R` | `R` | `R/W` | `—` | `—` | `—` |
+| Moderator | `—` | `—` | `—` | `R/W` | `R/W` | `R` | `R/W` | `R/I` | `—` | `R` | `R` | `R/W` | `—` | `—` | `—` |
+| Benutzeradministrator | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `R/I/W` | `—` | `—` | `—` | `—` | `—` | `—` | `—` |
 | Gerätewart | `—` | `—` | `—` | `R` | `—` | `—` | `—` | `—` | `—` | `—` | `R/W` | `R/W` | `—` | `—` | `—` |
 | Standort News-Administrator | `—` | `—` | `—` | `R` | `R/W` | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `—` |
 | Standort Kalender-Administrator | `—` | `—` | `—` | `R` | `—` | `R/W` | `R/W` | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `—` |
