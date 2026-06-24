@@ -37,6 +37,10 @@ Die Einstellungen des EinsatzMonitors erreichen Sie über:
   Anbindung an das Feuersoftware Connect Portal.
   ::
 
+  ::card{title="DME-Auswertung" icon="i-heroicons-signal" to="/einsatzmonitor/einstellungen/dme"}
+  Digitalen Meldeempfänger (POCSAG) anschließen und konfigurieren.
+  ::
+
   ::card{title="Energieoptionen" icon="i-heroicons-bolt" to="/einsatzmonitor/einstellungen/energieoptionen"}
   Energiesparoptionen konfigurieren.
   ::
