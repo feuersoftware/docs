@@ -38,7 +38,7 @@ Feuersoftware behält sich vor, einen API-Token zu sperren, wenn das System eine
 
 Die vollständige API-Dokumentation ist unter folgendem Link verfügbar:
 
-[connectapi.feuersoftware.com/swagger/ui/index#/Public](https://connectapi.feuersoftware.com/swagger/ui/index#/Public)
+[connectapi.feuersoftware.com/swagger/index.html](https://connectapi.feuersoftware.com/swagger/index.html)
 
 ---
 
@@ -435,6 +435,34 @@ Gibt Termine aus allen verfügbaren Kalendern zurück. Unterstützt OData-Filter
 | `DELETE` | `/defectReport/attach/{attachmentId}` | Anhang löschen. |
 | `GET` | `/defectReport/attach/url/{attachmentId}` | Download-URL abrufen. |
 | `GET` | `/defectReport/attach/{attachmentId}` | Direkter Download (302 Redirect). |
+
+---
+
+### Info-Board – `/infoboard`
+
+| Methode | Endpunkt | Beschreibung |
+|---|---|---|
+| `GET` | `/infoboard` | Alle Info-Board-Einträge des Standorts. |
+| `GET` | `/infoboard/{infoId}` | Einzelnen Eintrag abrufen. |
+| `POST` | `/infoboard` | Neuen Eintrag anlegen. |
+| `PUT` | `/infoboard/{infoId}` | Eintrag aktualisieren. |
+| `DELETE` | `/infoboard/{infoId}` | Eintrag löschen. |
+| `GET` | `/infoboard/groups` | Alle Info-Board-Gruppen des Standorts. |
+| `POST` | `/infoboard/groups` | Neue Gruppe anlegen. |
+| `PUT` | `/infoboard/groups/{groupId}` | Gruppe aktualisieren. |
+
+**`CreateSiteInfoModel`** (Request Body für `POST`/`PUT` eines Eintrags):
+
+| Feld | Typ | Pflicht | Beschreibung |
+|---|---|---|---|
+| `InfoGroupId` | int | Ja | ID der zugehörigen Gruppe. |
+| `Description` | string | Ja | Bezeichnung des Eintrags. |
+| `InfoType` | `SiteInfoType` | Ja | `PhoneNumber` (0), `EmailAddress` (1), `WebReference` (2), `DocumentReference` (3), `Text` (4). |
+| `Value` | string | Ja | Wert (z. B. Telefonnummer, E-Mail-Adresse, URL oder Text). |
+
+`SiteInfoModel` (Antwortmodell) erweitert `CreateSiteInfoModel` um `Id`, `SiteId` und `InfoGroupName`.
+
+**Gruppen:** Request Body enthält lediglich `Name` (string, Pflicht). Auf Organisationsebene (`InterfacePublicOrganization`) ist beim Anlegen zusätzlich `SiteId` erforderlich.
 
 ---
 
