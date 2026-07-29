@@ -38,8 +38,6 @@ ZIP-Archiv entpacken – es entsteht eine `.tar.gz`-Datei, die für den nächste
 4. Die `.tar.gz`-Datei hochladen
 5. Installation abwarten – dieser Vorgang kann mehrere Minuten dauern
 
-![Screenshot: HCU1 Webinterface – Plugin hochladen](/images/connect/schnittstellen/homematic_hcu1_01_plugin.png)
-
 ### Schritt 3: Plugin konfigurieren
 
 Nach der Installation auf das **Zahnrad-Symbol** neben dem Plugin klicken und folgende Felder ausfüllen:
@@ -51,8 +49,6 @@ Nach der Installation auf das **Zahnrad-Symbol** neben dem Plugin klicken und fo
 | **Zusatzinfo für Connect-Einsatz** | Optionaler Hinweistext oder Handlungsanweisung |
 
 **„Speichern"** klicken.
-
-![Screenshot: HCU1 Plugin-Konfiguration](/images/connect/schnittstellen/homematic_hcu1_02_konfiguration.png)
 
 > **Wichtig:** Den API-Token aus dem Connect Portal auf **Standort-Ebene** verwenden – nicht auf Organisationsebene.
 

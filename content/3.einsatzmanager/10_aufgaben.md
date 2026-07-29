@@ -96,7 +96,7 @@ Neue Aufgaben können auf zwei Wegen angelegt werden:
 | Feld | Pflichtfeld | Beschreibung |
 |---|---|---|
 | Beschreibung | Ja | Freitext, der den Arbeitsauftrag beschreibt |
-| Zugewiesen an | Nein | Auswahl aus den Benutzern der Organisation |
+| Zugewiesen an | Nein | Auswahl aus den Benutzern der Organisation **oder** den dem Einsatz zugeordneten Fahrzeugen |
 | Status | Nein | Startstatus; Standard ist **„Offen"** |
 
 ---
@@ -131,7 +131,9 @@ Aufgaben mit Status **„Erledigt"** oder **„Abgebrochen"** werden im Sidepane
 
 ## Aufgabe zuweisen
 
-Aufgaben können beim Erstellen oder nachträglich beim Bearbeiten einer Person zugewiesen werden. Im Sidepanel steht zusätzlich die Schaltfläche **„Mir zuweisen"** zur Verfügung: Sie überträgt eine nicht zugewiesene Aufgabe mit einem Klick auf den aktuell angemeldeten Benutzer.
+Aufgaben können beim Erstellen oder nachträglich beim Bearbeiten entweder einer **Person** oder einem dem Einsatz zugeordneten **Fahrzeug** zugewiesen werden – z. B. um eine Erkundung direkt an eine Fahrzeugbesatzung zu delegieren, ohne eine einzelne Person auszuwählen. Im Auswahlfeld „Zugewiesen an" erscheinen Benutzer und Fahrzeuge gemeinsam in einer Liste.
+
+Im Sidepanel steht zusätzlich die Schaltfläche **„Mir zuweisen"** zur Verfügung: Sie überträgt eine nicht zugewiesene Aufgabe mit einem Klick auf den aktuell angemeldeten Benutzer.
 
 ---
 

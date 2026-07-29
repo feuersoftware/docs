@@ -110,14 +110,24 @@ Das Protokoll kann nach **Kategorien** und **Ereignistypen** gefiltert werden, u
 
 ### Einsatzbericht (PDF-Export)
 
-Über den Button **„Einsatzbericht"** kann das Protokoll als PDF heruntergeladen werden. Vor dem Download öffnet sich ein Dialog, in dem sich sowohl die enthaltenen Protokollkategorien als auch ergänzende Details zum Einsatz konfigurieren lassen.
+Über den Reiter **„Bericht"** in der Einsatzdetailseite kann das Protokoll als PDF heruntergeladen werden. Welche Seiten der Bericht enthält (Einsatzdaten, ergänzende Informationen, Fahrzeugbesatzung, Lagemeldungen, Einsatzprotokoll), wird zentral in den **Organisationseinstellungen im Connect-Portal** festgelegt.
 
-#### Erweiterte Details
+#### Vollständigkeits-Check und Assistent
 
-Im Dialog können folgende Felder optional ausgefüllt werden:
+Der Reiter zeigt zunächst eine Statusübersicht: Für jedes berichtsrelevante Feld sowie für jedes zugeordnete Fahrzeug ohne eingetragene Besatzung erscheint eine grüne (vorhanden) oder orange (fehlt) Kachel. Fehlen Pflichtangaben, kann über die Schaltfläche **„Einsatzdaten vervollständigen"** ein Assistent gestartet werden, der Schritt für Schritt durch alle offenen Punkte führt:
+
+1. Enddatum (falls der Einsatz noch offen ist)
+2. Einsatzleiter, Sachverhalt, Melder, Kategorie
+3. Besatzung je Fahrzeug ohne vollständige Stärkeangabe
+4. Protokollant sowie die erweiterten Berichtsfelder aus der Tabelle unten
+
+Jeder Schritt kann übersprungen werden; Eingaben werden sofort gespeichert.
+
+#### Erweiterte Berichtsfelder
 
 | Feld | Beschreibung |
 |---|---|
+| **Einsatzleiter** | Verantwortliche Führungskraft des Einsatzes |
 | **Protokollant** | Name der Person, die den Bericht erstellt |
 | **Lage beim Eintreffen** | Beschreibung der vorgefundenen Situation |
 | **Tätigkeit** | Durchgeführte Maßnahmen |
@@ -128,9 +138,11 @@ Im Dialog können folgende Felder optional ausgefüllt werden:
 | **Noch zu erledigen (nach dem Einsatz)** | Offene Nacharbeiten oder Folgemaßnahmen |
 | **Bemerkungen** | Allgemeine Anmerkungen zum Einsatz |
 
-Alle Felder sind optional – der Bericht kann auch ohne Zusatzangaben heruntergeladen werden. Die eingetragenen Werte werden gespeichert und stehen beim nächsten Öffnen des Dialogs wieder zur Verfügung.
+Alle Felder sind optional – der Bericht kann auch ohne Zusatzangaben heruntergeladen werden. Die eingetragenen Werte werden gespeichert und stehen beim nächsten Öffnen wieder zur Verfügung.
 
-> **Voraussetzung:** Der Einsatzbericht muss zuvor in den **Organisationseinstellungen im Connect-Portal** aktiviert werden. Ohne diese Aktivierung ist der Button nicht verfügbar.
+Details zur Konfiguration der druckbaren Inhalte: [Connect: Organisationseinstellungen – Einsatzberichte](/connect/12_organisationseinstellungen#einsatzberichte).
+
+> **Voraussetzung:** Der Einsatzbericht muss zuvor in den **Organisationseinstellungen im Connect-Portal** aktiviert werden. Ohne diese Aktivierung ist der Reiter nicht nutzbar.
 
 ---
 
@@ -208,6 +220,16 @@ Standardmäßig wird der Einsatz nach der im Connect-Portal hinterlegten **AAO (
 - **Informationen** (ohne Alarmsignal) übermitteln
 
 > **Hinweis:** Diese Funktion befindet sich derzeit noch in Entwicklung und ist noch nicht vollumfänglich aktiv.
+
+---
+
+## Einsatzdaten teilen
+
+Über die Schaltfläche **„Einsatzdaten teilen"** im Kopfbereich der Einsatzdetailseite können Fahrzeuge, Besatzung, Lagemeldungen und Einsatzprotokoll live mit anderen Standorten oder Organisationen ausgetauscht werden – z. B. wenn mehrere Feuerwehren mit derselben Einsatznummer zum gleichen Ereignis alarmiert wurden. Offene eingehende Verbindungsanfragen werden als roter Zähler auf der Schaltfläche angezeigt; eine aktive Freigabe zusätzlich als Badge in der Kopfzeile.
+
+> **Voraussetzung:** Die Schaltfläche ist nur sichtbar, wenn die Funktion **„Einsatzdaten teilen"** zuvor durch den **Feuersoftware Support** für die Organisation freigeschaltet wurde.
+
+Konfiguration, Freigabekriterien (gleiche Einsatznummer, beidseitige Bestätigung) und die automatische Freigabe per Vorlage sind ausführlich beschrieben unter [Connect: Einsätze – Einsatzdaten teilen](/connect/07_einsaetze#einsatzdaten-teilen).
 
 ---
 

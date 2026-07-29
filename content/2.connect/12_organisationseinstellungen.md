@@ -23,8 +23,22 @@ Die Organisationseinstellungen sind ausschließlich auf **Organisations-Ebene** 
 | **Standard-Verfügbarkeit** | Welcher Verfügbarkeitsstatus beim ersten Login eines Nutzers voreingestellt ist |
 | **Unwetterwarnungen-Anbieter** | Anbieter für Unwetterwarnungen (z. B. Deutscher Wetterdienst) |
 | **Unwetterwarnungen-Region** | Geografische Region für die Unwetterwarnung |
-| **Benutzerverifizierung** | Ob neue Benutzer ihre E-Mail-Adresse bestätigen müssen |
 | **Partner-Modus** | Ob die PartnerApp für diese Organisation aktiviert ist |
+| **Dienstausweis aktiviert** | Schaltet den digitalen Dienstausweis für alle Mitglieder der Organisation frei (siehe [Dienstausweis](#dienstausweis) unten) |
+
+---
+
+## Dienstausweis
+
+![Screenshot: Organisationseinstellungen – Dienstausweis](/images/connect/12_org_dienstausweis.png)
+
+**Organisationseinstellungen → Allgemein → Dienstausweis aktiviert**
+
+Der digitale Dienstausweis ermöglicht es Mitgliedern, sich in der **EinsatzApp** per QR-Code als aktive Einsatzkraft der Organisation auszuweisen. Details zur Nutzung in der App: [EinsatzApp: Weitere Funktionen – Dienstausweis](/einsatzapp/14_weiteres#dienstausweis).
+
+> Die Funktion steht aus regulatorischen Gründen nur Organisationen mit einer regulären (bezahlten) Lizenz zur Verfügung. Während der kostenlosen 90-tägigen Teststellung (siehe [Lizenzierung](/connect/14_lizenzierung)) ist die Checkbox deaktiviert und kann nicht aktiviert werden.
+
+Nach der Aktivierung kann jedes Mitglied seinen persönlichen Dienstausweis in der EinsatzApp öffnen. Der angezeigte QR-Code verweist auf eine öffentliche Prüfseite im Connect Portal, die beim Scannen automatisch Name und Organisation der Einsatzkraft anzeigt (oder einen Fehler, falls der Code ungültig oder abgelaufen ist). Ein einzelner QR-Code ist nach dem Erzeugen 15 Minuten gültig.
 
 ---
 
@@ -80,12 +94,29 @@ Die HelferApp kann grundsätzlich ohne gesonderte Freischaltung genutzt werden. 
 |---|---|
 | **Einsatz-Sichtbarkeit** | Wie lange abgeschlossene Einsätze für Mitglieder sichtbar sind |
 | **Einsatz-Sharing** | Ob Einsätze zwischen Standorten geteilt werden können |
-| **Einsatz-Reports** | Automatisch generierte Einsatzberichte aktivieren |
+| **Einsatz-Reports** | Einsatzberichte aktivieren und deren Inhalt festlegen (siehe [Einsatzberichte](#einsatzberichte) unten) |
 | **Fahrzeugzuordnung** | Automatische Fahrzeugzuordnung bei eingehenden Alarmen (z. B. bei Status 3) |
 | **Einsatzhistorie anhand Alarmgruppen filtern** | Schränkt die sichtbare Einsatzhistorie auf Einsätze ein, bei denen der jeweilige Benutzer einer alarmierten oder informierten Gruppe angehört. Standardmäßig deaktiviert — alle Mitglieder sehen alle Einsätze. Standortverantwortliche und Benutzer mit der Berechtigung „Einsätze verwalten" sind von dieser Filterung ausgenommen und sehen stets alle Einsätze. |
 | **Fahrzeugzuweisungsmodus** | Legt fest, wie Fahrzeuge einem laufenden Einsatz zugeordnet werden: **Automatisch** — Connect weist Fahrzeuge anhand eingehender Funkstatusmeldungen (Status 3/4) selbstständig dem aktuellen Einsatz zu. **Manuell** — Fahrzeuge müssen explizit dem Einsatz hinzugefügt werden; eingehende Statusmeldungen werden nur für bereits manuell zugewiesene Fahrzeuge erfasst. |
 | **Kräfteerfassung einschließlich PA** | Erweitert die Kräfteerfassung um ein separates Feld für Atemschutzgeräteträger (AGT/PA). Ist diese Option aktiviert, kann pro Fahrzeugeinsatz zusätzlich zur Gesamtstärke die Anzahl der eingesetzten PA-Träger erfasst werden. Bei der personenbezogenen Kräfteerfassung wird pro Person hinterlegt, ob sie PA trägt. Die PA-Anzahl erscheint im Einsatzbericht und im Einsatzprotokoll. |
 | **PA automatisch zuweisen anhand Funktion** | Legt fest, welche Funktionen (z. B. AGT) als PA-Träger gelten. Benutzer, denen eine dieser Funktionen zugewiesen ist, werden in der EinsatzApp und der FahrzeugApp bei der Kräfteerfassung automatisch als PA-Träger vorausgewählt. Die Funktionen werden aus den unter **Funktionen** angelegten Einträgen ausgewählt. Voraussetzung: **Kräfteerfassung einschließlich PA** muss aktiviert sein. |
+
+### Einsatzberichte
+
+**Organisationseinstellungen → Einsätze → Einsatzberichte**
+
+Legt fest, ob und mit welchem Inhalt der PDF-Einsatzbericht (siehe [Einsätze → Einsatzbericht herunterladen](./07_einsaetze#einsatzbericht-herunterladen)) erzeugt werden kann.
+
+| Feld | Beschreibung |
+|---|---|
+| **Aktiviert** | Schaltet die Einsatzbericht-Funktion für die Organisation frei |
+| **Einsatzdaten drucken** | Nimmt eine Seite mit den Basisdaten (Stichwort, Adresse, Zeiten, Melder …) in den Bericht auf |
+| **Ergänzende Informationen drucken** | Nimmt die erweiterten Berichtsfelder (Lage, Tätigkeit, Schadensinformationen, Materialien, Nachbereitung) auf |
+| **Fahrzeugbesatzung drucken** | Listet die zugeordneten Fahrzeuge inkl. Besatzung im Bericht auf |
+| **Lagemeldungen drucken** | Nimmt alle Lagemeldungen des Einsatzes auf |
+| **Einsatzprotokoll drucken** | Nimmt das Einsatzprotokoll auf; zusätzlich müssen die zu druckenden **Protokoll-Kategorien** ausgewählt werden |
+
+> **Achtung:** Der Bericht wird ggf. per E-Mail versendet, was einen unsicheren Übertragungsweg darstellt. Vor der Aktivierung des Drucks von Lagemeldungen bzw. des Einsatzprotokolls sollte geprüft werden, ob dabei schützenswerte Informationen enthalten sein können.
 
 ### Einsatz Update Push Nachrichten
 
@@ -102,6 +133,27 @@ Konfiguriert, bei welchen Änderungen an einem laufenden Einsatz eine Push-Benac
 | **Melder** | Angaben zum Meldenden (Name, Telefon) wurden aktualisiert |
 
 > **Hinweis:** Deaktivierte Typen lösen keine Push-Benachrichtigung aus — die Änderung wird jedoch weiterhin im Einsatz gespeichert und im Einsatzprotokoll vermerkt.
+
+### Einsatzdaten teilen – Vorlage für die automatische Freigabe
+
+![Screenshot: Organisationseinstellungen – Einsatzdaten teilen](/images/connect/12_org_einsatzdaten_teilen.png)
+
+> **Wichtig:** Dieser Bereich ist nur sichtbar, wenn die Funktion **„Einsatzdaten teilen"** zuvor durch den **Feuersoftware Support** für die Organisation freigeschaltet wurde. Ohne diese Freischaltung fehlt der Abschnitt vollständig – wende dich für eine Aktivierung an [info@feuersoftware.com](mailto:info@feuersoftware.com).
+
+Mit **Einsatzdaten teilen** können Einsatzinformationen (Fahrzeuge, Besatzung, Lagemeldungen, Einsatzprotokoll) live mit anderen Standorten oder Organisationen ausgetauscht werden, sofern zu einem Einsatz die **gleiche Einsatznummer** vorliegt – z. B. wenn eine Leitstelle mehrere Feuerwehren mit derselben Einsatznummer alarmiert. Die vollständige Funktionsweise ist unter [Einsätze → Einsatzdaten teilen](/connect/07_einsaetze#einsatzdaten-teilen) beschrieben.
+
+Hier wird eine **Vorlage** hinterlegt, die automatisch auf jeden neu angelegten Einsatz angewendet wird, sodass die Freigabe nicht für jeden Einsatz einzeln konfiguriert werden muss.
+
+| Feld | Beschreibung |
+|---|---|
+| **Aktiviert** | Schaltet die automatische Freigabe anhand dieser Vorlage ein |
+| **Ebene** | **Organisation** – Daten werden mit den ausgewählten Zielen dieser Organisation geteilt. **Leitstelle** – Daten werden zusätzlich mit allen Organisationen derselben Leitstelle geteilt (nur wählbar, wenn eine Leitstellenanbindung besteht) |
+| **Freigebene Daten** | Welche Datentypen automatisch geteilt werden: Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen), Lagemeldungen, Einsatzprotokoll |
+| **Freigabedauer** | Zeitspanne ab Einsatzbeginn, nach der die Freigabe automatisch endet (1 / 2 / 6 / 12 / 24 Stunden) |
+| **Zielorganisation** | Die Partnerorganisation, mit der automatisch verbunden werden soll |
+| **Zielstandorte** | Alternativ oder ergänzend: einzelne Standorte (z. B. weitere eigene Standorte), mit denen automatisch verbunden werden soll |
+
+> Eine automatische Verbindung zwischen zwei Einsätzen kommt nur zustande, wenn **beide Seiten** eine aktive Vorlage hinterlegt haben, die jeweils auf die andere Organisation bzw. den anderen Standort zeigt. Ein Standort-Template hat Vorrang vor dem Organisations-Template. Fehlt bei einer Seite die passende Vorlage, kann die Freigabe für den betroffenen Einsatz weiterhin manuell in der Einsatz-Detailansicht eingerichtet werden.
 
 ---
 

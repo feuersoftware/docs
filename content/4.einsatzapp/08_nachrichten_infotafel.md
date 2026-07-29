@@ -41,7 +41,8 @@ Das Infoboard enthält kurze, themenbezogene Aushänge und Informationen der Org
 
 ### Infoboard-Einträge
 
-- Kompakte Texteinträge mit Überschrift
+Einträge werden gruppiert nach Kategorie als Karten dargestellt, jeweils mit einem farbigen Icon passend zum Typ des Eintrags (Text, Telefonnummer, E-Mail, Weblink oder Nextcloud-Dokument – siehe [Connect: Infoboard](/connect/09_infoboard#infoboard-eintrag-anlegen)).
+
 - **Longpress auf einen Eintrag:** Kopiert den Text des Eintrags in die **Zwischenablage**
 
 > Die Kopierfunktion ist nützlich, um Informationen (z. B. Adressen, Telefonnummern) schnell weiterzuleiten.

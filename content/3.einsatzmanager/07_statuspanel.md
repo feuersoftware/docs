@@ -25,8 +25,6 @@ Jede Fahrzeugkachel zeigt:
 - Aktueller Funkstatus (farblich codiert)
 - Letzter GPS-Zeitstempel
 
-![Screenshot: Einzelne Fahrzeugkachel im Statuspanel](/images/einsatzmanager/07_statuspanel_kachel_detail.png)
-
 ### Kartenansicht
 
 Die Kartenansicht stellt alle Fahrzeuge mit ihren aktuellen GPS-Positionen auf einer Karte dar. Farbige Marker entsprechen dem Funkstatus der Fahrzeuge.

@@ -11,10 +11,13 @@ Alle weiteren Funktionen der EinsatzApp sind über das **Hauptmenü** (vierter T
 
 ## Statistiken
 
-Zeigt eine persönliche Übersicht der eigenen Einsatz- und Dienststatistiken:
-- Anzahl der Einsätze im Zeitraum
-- Rücklaufquoten und Statusverteilung
-- Vergleich mit vorherigen Zeiträumen (je nach Konfiguration)
+Zeigt Kennzahlen zum Einsatzgeschehen – als eigener Tab je zugänglichem Standort und, mit entsprechender Berechtigung, zusätzlich für die gesamte Organisation. Unter anderem:
+
+- **Einsatzanzahl:** pro Woche, pro Tag, sowie für die letzten 90/180/365 Tage, den laufenden Monat und das laufende Jahr
+- **Nach Tageszeit/Wochentag:** Verteilung der Einsätze (z. B. 7–19 Uhr / 19–7 Uhr, Mo–Fr / Sa–So)
+- **Durchschnittliche Einsatzdauer**, häufigstes Stichwort und häufigste Kategorie
+- **Rückmeldungen:** Anzahl „Komme" / „Komme nicht" / „Komme später" jeweils für die letzten 7, 30, 90, 180 und 365 Tage
+- **Verfügbarkeitsstatistik:** separater Bereich mit der Verfügbarkeitshistorie der Mitglieder je Standort
 
 ---
 
@@ -99,6 +102,38 @@ Ein integrierter Blog-Feed zeigt Neuigkeiten von FeuerSoftware:
 - Tipps und Tricks
 
 Der Blog ist über das Hauptmenü erreichbar und lädt externe RSS-Inhalte.
+
+---
+
+## Dienstausweis
+
+![Screenshot: Dienstausweis in der EinsatzApp](/images/einsatzapp/14_dienstausweis.png)
+
+Der digitale Dienstausweis ermöglicht es Einsatzkräften, sich vor Ort – z. B. gegenüber der Polizei oder anderen Einsatzkräften – als Mitglied der eigenen Organisation auszuweisen.
+
+**Hauptmenü → Dienstausweis**
+
+Die Ansicht zeigt:
+- Profilbild und Name der Einsatzkraft
+- Name der Organisation
+- Einen QR-Code zur Verifizierung
+- Das Ablaufdatum/-uhrzeit des QR-Codes („Code gültig bis")
+
+Damit der QR-Code auch bei Dunkelheit gut gescannt werden kann, stellt die App beim Öffnen der Ansicht automatisch die maximale Bildschirmhelligkeit ein und verhindert, dass der Bildschirm währenddessen ausgeht.
+
+### Ablauf der Prüfung
+
+1. Die Einsatzkraft öffnet den Dienstausweis in der EinsatzApp.
+2. Die prüfende Person scannt den angezeigten QR-Code mit einem beliebigen Smartphone (keine spezielle App nötig).
+3. Es öffnet sich automatisch eine Webseite mit dem Prüfergebnis:
+   - **Grüner Haken:** Vor- und Nachname sowie die zugehörige Organisation der Einsatzkraft werden angezeigt.
+   - **Rotes Kreuz:** Der Code ist ungültig oder abgelaufen.
+
+> **Wichtig:** Der QR-Code ist nach dem Öffnen der Ansicht nur **15 Minuten** gültig. Nach Ablauf muss die Ansicht verlassen und erneut geöffnet werden, um einen neuen Code zu erhalten.
+
+### Voraussetzungen
+
+Der Menüpunkt ist nur nutzbar, wenn ein Organisationsadministrator die Funktion im Connect Portal aktiviert hat (siehe [Connect: Organisationseinstellungen – Dienstausweis](/connect/12_organisationseinstellungen#dienstausweis)) **und** die Organisation über eine reguläre Lizenz verfügt. Ist eine der beiden Voraussetzungen nicht erfüllt, wird der Menüpunkt ausgegraut mit dem Hinweis „Durch Organisation deaktiviert" angezeigt.
 
 ---
 

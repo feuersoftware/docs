@@ -36,6 +36,18 @@ Berechtigte Benutzer können die Verfügbarkeit eines Fahrzeugs eintragen:
 2. Oben rechts auf das Bearbeiten-Symbol tippen
 3. Zeitraum und Status auswählen
 
+### Verfügbarkeitsübersicht aller Fahrzeuge
+
+In der Fahrzeugliste oben rechts über das Symbol **„Alle Verfügbarkeiten im Überblick"** (Kalender-Symbol) gelangt man zu einer nach Tagen gruppierten Übersicht **aller aktuellen und zukünftigen Fahrzeugverfügbarkeiten** der Organisation – ohne jedes Fahrzeug einzeln öffnen zu müssen.
+
+Pro Eintrag werden angezeigt:
+- Fahrzeug (Funkrufname)
+- Status (farblich gekennzeichnet)
+- Grund
+- Zeitraum
+
+Antippen eines Eintrags öffnet die zugehörige Fahrzeug-Detailansicht. Sind aktuell keine Einschränkungen vorhanden, wird ein entsprechender Hinweis angezeigt.
+
 ---
 
 ## Karte

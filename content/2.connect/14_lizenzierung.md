@@ -74,6 +74,16 @@ Die Bestellung der Verlängerung sollte frühestens 90 Tage vor Ablauf erfolgen.
 
 ---
 
+## Unterlizenzierung
+
+Werden mehr Benutzer, EinsatzMonitore oder EinsatzTablets angelegt als Lizenzen vorhanden sind, gilt die Organisation als **unterlizenziert**. Organisations- und Standortadministratoren sehen dann im Connect Portal oben auf der Seite einen gelben Warnhinweis (pro Sitzung einmal schließbar), der auf die fehlenden Lizenzen hinweist.
+
+> Wird die Überschreitung nicht behoben, werden bestimmte Funktionen blockiert – u. a. das Anlegen weiterer Fahrzeuge, die Registrierung neuer EinsatzMonitore/EinsatzTablets sowie die Aktivierung einzelner Rauchwarnmelder-Schnittstellen (X-Sense, Lupus). Betroffene Aktionen zeigen dann die Meldung *„Die Funktion ist derzeit eingeschränkt, da Ihre Organisation unterlizenziert ist."*
+
+Abhilfe schafft das zeitnahe Bestellen zusätzlicher Lizenzen (siehe [Neue Lizenz erwerben](#neue-lizenz-erwerben)) oder das Entfernen nicht mehr benötigter Benutzer/Geräte.
+
+---
+
 ## Lizenzerweiterung
 
 Soll die Lizenz während der Laufzeit auf mehr Benutzer erweitert werden, bitte direkt Kontakt aufnehmen: [info@feuersoftware.com](mailto:info@feuersoftware.com)
