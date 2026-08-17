@@ -108,6 +108,10 @@ Zusätzlich können **freie Protokolleinträge** manuell erfasst werden, z. B. f
 
 Das Protokoll kann nach **Kategorien** und **Ereignistypen** gefiltert werden, um bei umfangreichen Einsätzen die Übersicht zu behalten.
 
+### Herkunft der Protokolleinträge
+
+Protokolleinträge zeigen zusätzlich, aus welcher Anwendung sie stammen: **EinsatzApp**, **ConnectPortal**, **EinsatzTablet** oder **EinsatzManager**. Bei Einträgen aus dem EinsatzManager wird zusätzlich der Benutzername angezeigt.
+
 ### Einsatzbericht (PDF-Export)
 
 Über den Reiter **„Bericht"** in der Einsatzdetailseite kann das Protokoll als PDF heruntergeladen werden. Welche Seiten der Bericht enthält (Einsatzdaten, ergänzende Informationen, Fahrzeugbesatzung, Lagemeldungen, Einsatzprotokoll), wird zentral in den **Organisationseinstellungen im Connect-Portal** festgelegt.
@@ -165,6 +169,15 @@ Jede Meldung enthält Zeitstempel, Ersteller und Übermittlungshistorie.
 ### Aktive Betrachter
 
 Anzeige, wie viele Benutzer die Einsatzseite gerade geöffnet haben. Über ein Modal können die einzelnen Benutzer eingesehen werden.
+
+### Zugriffsprotokoll
+
+Zusätzlich zur Live-Anzeige unter „Aktive Betrachter" lässt sich im **Zugriffsprotokoll** nachvollziehen, wer einen Einsatz **wann** und **wie lange** angesehen hat – auch rückwirkend für bereits beendete Sitzungen. Aufgerufen wird es über einen Link im Dialog „Aktive Betrachter".
+
+- Wird eine Sitzung nicht sauber verlassen (z. B. Browser/Tab geschlossen), endet sie automatisch nach **2 Minuten Inaktivität**.
+- Die Zugriffsdaten werden **90 Tage** aufbewahrt.
+
+> **Voraussetzung:** Einsehbar ist das Zugriffsprotokoll nur für Benutzer mit der Berechtigung **„Einsätze verwalten"** (siehe [Connect: Rollen und Rechtekonzept](/connect/20_rechtekonzept_connect)).
 
 ### Einsatzinformationen
 

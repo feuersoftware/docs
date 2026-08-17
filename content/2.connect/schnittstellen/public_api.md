@@ -410,6 +410,27 @@ Gibt Termine aus allen verfügbaren Kalendern zurück. Unterstützt OData-Filter
 
 > **Tipp:** Für aktuelle und zukünftige Termine OData-Filter verwenden: `?$filter=End ge {heute}`
 
+Jeder Termin enthält zusätzlich das Feld **`Registrations`** mit den An-/Abmeldungen der Mitglieder:
+
+| Feld | Beschreibung |
+|---|---|
+| `UserId` | ID des Benutzers |
+| `Name` | Vor- und Nachname |
+| `Status` | Rückmeldestatus, siehe `RegistrationStatus` |
+| `Comment` | Optionaler Kommentar zur Anmeldung |
+| `Timestamp` | Zeitpunkt der (letzten) Rückmeldung |
+
+Pro Benutzer wird nur der **jeweils aktuellste** Rückmeldestand zurückgegeben.
+
+#### `RegistrationStatus`
+
+| Wert | Int | Bedeutung |
+|---|---|---|
+| `NotSet` | 0 | Noch keine Rückmeldung. |
+| `Accepted` | 1 | Zugesagt. |
+| `Tentiative` | 2 | Unsicher / vorläufig. |
+| `Declined` | 3 | Abgesagt. |
+
 ---
 
 ### Mängelberichte – `/defectReport`

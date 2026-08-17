@@ -47,6 +47,8 @@ Werden einem Benutzer mehrere Rollen zugewiesen, werden die Rechte addiert.
 | Standort Kalender-Administrator | `—` | `—` | `—` | `R` | `R` | `R/W` | `R/W` | `R` | `—` | `R` | `R` | `R` | `—` | `—` | `—` |
 | Standort Termin-Administrator | `—` | `—` | `—` | `R` | `R` | `R` | `R/W` | `R` | `—` | `R` | `R` | `R` | `—` | `—` | `—` |
 
+> Die Berechtigung **„Einsätze verwalten"**, auf die an anderer Stelle verwiesen wird (z. B. beim [Zugriffsprotokoll im EinsatzManager](/einsatzmanager/05_einsatzdetails#zugriffsprotokoll) oder bei [„Einsatzdaten teilen"](/connect/07_einsaetze#einsatzdaten-teilen)), entspricht `R/W` in der Spalte **Einsätze** – also aktuell dem Standortadministrator.
+
 ---
 
 ## Standortebene – Benutzer ist **kein** Mitglied des entsprechenden Standortes
