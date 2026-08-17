@@ -5,6 +5,7 @@ author:
   description: Das FeuerSoftware Entwicklungsteam
 date: 2026-08-17
 description: Der EinsatzManager erhält ein Zugriffsprotokoll und mehr Transparenz im Einsatzprotokoll, und die öffentliche API liefert jetzt Terminanmeldungen.
+image: /images/blog/portal-update-juni-2026.jpeg
 minRead: 3
 navigation: false
 ---
