@@ -191,6 +191,12 @@ Die Dynamischen Zusatzinformationen können über Benutzergruppen ein- oder ausg
 
 Einsatz-Kategorien gruppieren Stichwörter nach Art des Einsatzes (z. B. „Feuer", „Technische Hilfeleistung"). Jeder Kategorie kann eine Farbe zugewiesen werden. Diese Farbe wird am EinsatzMonitor und in der EinsatzApp entsprechend angezeigt. Anschließend können Einsatzstichworte in Connect eingepflegt und den entsprechenden Kategorien zugewiesen werden.
 
+### Auffangkategorie „Unbekannt"
+
+Die Kategorie **„Unbekannt"** dient als Auffangkategorie und kann nicht gelöscht werden. Wird eine andere Kategorie gelöscht, werden ihr zugeordnete Stichwörter automatisch auf „Unbekannt" umgehängt, statt ihre Zuordnung zu verlieren.
+
+> War die gelöschte Kategorie in den Organisationseinstellungen unter [„Automatisches Datenlöschen"](/connect/12_organisationseinstellungen#automatisches-datenlöschen) als Kategorie für Probealarme hinterlegt, wird diese Einstellung dabei automatisch zurückgesetzt.
+
 ---
 
 ## Einsatz-Einheiten

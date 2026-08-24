@@ -110,7 +110,7 @@ Das Protokoll kann nach **Kategorien** und **Ereignistypen** gefiltert werden, u
 
 ### Herkunft der Protokolleinträge
 
-Protokolleinträge zeigen zusätzlich, aus welcher Anwendung sie stammen: **EinsatzApp**, **ConnectPortal**, **EinsatzTablet** oder **EinsatzManager**. Bei Einträgen aus dem EinsatzManager wird zusätzlich der Benutzername angezeigt.
+Protokolleinträge zeigen zusätzlich, aus welcher Anwendung sie stammen: **EinsatzApp**, **ConnectPortal**, **EinsatzTablet**, **EinsatzManager** oder **Öffentliche Schnittstelle** (Änderungen über die öffentliche API, z. B. an der Einsatzdokumentation). Bei Einträgen aus dem EinsatzManager wird zusätzlich der Benutzername angezeigt.
 
 ### Einsatzbericht (PDF-Export)
 

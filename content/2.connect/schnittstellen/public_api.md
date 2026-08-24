@@ -332,6 +332,37 @@ Setzt die Rückmeldung eines Benutzers zu einem Einsatz.
 
 ---
 
+#### `GET /interfaces/public/operation/{operationIdOrNumber}/documentation`
+
+Gibt die Einsatzdokumentation (erweiterte Berichtsfelder) eines Einsatzes zurück.
+
+**Antwort:** `200 OK` → `OperationDocumentationModel` | `404 Not Found`
+
+---
+
+#### `PUT /interfaces/public/operation/{operationIdOrNumber}/documentation`
+
+Aktualisiert die Einsatzdokumentation eines Einsatzes. Erfordert Rolle `InterfacePublic` – mit einem Organisations-Token (`InterfacePublicOrganization`) nicht nutzbar.
+
+| Feld | Beschreibung |
+|---|---|
+| `Leader` | Einsatzleiter |
+| `Recorder` | Protokollant |
+| `SituationOnArrival` | Lage beim Eintreffen |
+| `Activity` | Tätigkeit |
+| `Owner` | Eigentümer/Halter |
+| `Injured` | Geschädigter |
+| `Initiator` | Verursacher |
+| `UsedMaterials` | Eingesetzte Materialien |
+| `ToBeDoneAfterOperation` | Noch zu erledigen (nach dem Einsatz) |
+| `Comments` | Bemerkungen |
+
+Alle Felder sind optional. Über die öffentliche API vorgenommene Änderungen erscheinen im Einsatzprotokoll mit der Quelle **„Öffentliche Schnittstelle"**.
+
+> Die gleichen Felder lassen sich auch manuell pflegen, siehe [EinsatzManager: Erweiterte Berichtsfelder](/einsatzmanager/05_einsatzdetails#erweiterte-berichtsfelder) bzw. [Connect: Erweiterte Berichtsfelder](/connect/07_einsaetze#erweiterte-berichtsfelder).
+
+---
+
 ### Fahrzeuge – `/vehicle`
 
 | Methode | Endpunkt | Beschreibung |

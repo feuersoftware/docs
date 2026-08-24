@@ -48,6 +48,7 @@ Nach Auswahl des Typs **„Verkehrsbehinderung"** erscheint eine interaktive Kar
 2. Weitere Punkte entlang der gesperrten Strecke setzen – jeder Klick fügt einen neuen Wegpunkt hinzu
 3. Mit **Doppelklick** den Pfad abschließen
 4. Der eingezeichnete Pfad wird in der EinsatzApp und am EinsatzMonitor als farbige Linie auf der Karte angezeigt
+5. Über eine Farbauswahl kann dem Pfad eine individuelle Farbe zugewiesen werden – praktisch, um z. B. neben der eigentlichen Sperrung zusätzlich eine empfohlene Umleitungsstrecke einzuzeichnen und farblich von der Sperrung abzugrenzen
 
 > Punkte können nach dem Setzen per Drag & Drop verschoben werden. Der Pfad kann über das Papierkorb-Symbol vollständig gelöscht und neu gezeichnet werden.
 

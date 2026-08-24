@@ -71,7 +71,7 @@ Chronologisches Protokoll aller Ereignisse des Einsatzes:
 - Fahrzeugbewegungen
 - Manuelle Einträge aus dem EinsatzManager
 
-Das Protokoll kann nach Sichtbarkeit gefiltert werden (öffentlich / intern). Jeder Eintrag zeigt zudem seine Herkunft (EinsatzApp, ConnectPortal, EinsatzTablet oder EinsatzManager) – bei Einträgen aus dem EinsatzManager inklusive Benutzername.
+Das Protokoll kann nach Sichtbarkeit gefiltert werden (öffentlich / intern). Jeder Eintrag zeigt zudem seine Herkunft (EinsatzApp, ConnectPortal, EinsatzTablet, EinsatzManager oder Öffentliche Schnittstelle) – bei Einträgen aus dem EinsatzManager inklusive Benutzername.
 
 > Ein detailliertes **Zugriffsprotokoll** (wer den Einsatz wann und wie lange angesehen hat) steht aktuell im [EinsatzManager](/einsatzmanager/05_einsatzdetails#zugriffsprotokoll) zur Verfügung.
 

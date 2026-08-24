@@ -57,6 +57,12 @@ Ja. Benutzer können auf Organisationsebene angelegt und dann mehreren Standorte
 
 ---
 
+### Eine Einladung ist fehlgeschlagen – kann ich es mit derselben E-Mail-Adresse erneut versuchen?
+
+Ja. Schlägt eine Einladung fehl, wird das dabei angelegte Konto automatisch wieder entfernt. Eine erneute Einladung an dieselbe E-Mail-Adresse funktioniert normal – ggf. kurz warten und erneut versuchen, falls die Bereinigung im Hintergrund noch läuft. Existiert bereits ein Benutzer mit dieser E-Mail-Adresse, wird das jetzt als eindeutige Fehlermeldung angezeigt.
+
+---
+
 ## Benutzerverwaltung
 
 ### Kann ich einen versehentlich gelöschten Benutzer wiederherstellen?

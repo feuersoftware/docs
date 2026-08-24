@@ -49,6 +49,8 @@ Werden einem Benutzer mehrere Rollen zugewiesen, werden die Rechte addiert.
 
 > Die Berechtigung **„Einsätze verwalten"**, auf die an anderer Stelle verwiesen wird (z. B. beim [Zugriffsprotokoll im EinsatzManager](/einsatzmanager/05_einsatzdetails#zugriffsprotokoll) oder bei [„Einsatzdaten teilen"](/connect/07_einsaetze#einsatzdaten-teilen)), entspricht `R/W` in der Spalte **Einsätze** – also aktuell dem Standortadministrator.
 
+> **Mailing-Listen** sind in obiger Matrix nicht als eigene Spalte geführt: Organisations-Mailinglisten können Organisationsadministratoren sowie Benutzer mit der Berechtigung „Organisations-News verwalten" einsehen. Standort-Mailinglisten kann jedes Standortmitglied einsehen; Anlegen/Bearbeiten/Löschen erfordert weiterhin eine Rolle mit Benutzerverwaltungs-Berechtigung (`R/I/W` in der Spalte **Benutzer**).
+
 ---
 
 ## Standortebene – Benutzer ist **kein** Mitglied des entsprechenden Standortes

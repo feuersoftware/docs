@@ -240,6 +240,8 @@ Mailing-Listen sind E-Mail-Verteilerlisten, z. B. für Mängelmeldungen oder Ben
 - Benutzer oder Gruppen als Empfänger hinterlegen
 - Mailing-Listen können in den Standorteinstellungen als Empfänger für Mängelmeldungen eingetragen werden
 
+**Sichtbarkeit:** Organisations-Mailinglisten können neben Organisationsadministratoren auch Benutzer mit der Berechtigung **„Organisations-News verwalten"** einsehen. Standort-Mailinglisten sind für alle Mitglieder des Standorts einsehbar; zum Anlegen, Bearbeiten oder Löschen ist weiterhin eine Rolle mit Benutzerverwaltungs-Berechtigung nötig (z. B. Standortadministrator, Benutzeradministrator).
+
 ---
 
 ## Geräte-Accounts
