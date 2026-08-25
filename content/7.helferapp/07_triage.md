@@ -7,6 +7,8 @@ description: Strukturierte Sichtung von Verletzten bei einem Massenanfall (MANV)
 
 > Diese Funktion ist nur verfügbar, wenn sie von Ihrer Organisation aktiviert wurde.
 
+> **Datenschutz:** Da bei der Triage Gesundheitsdaten verarbeitet werden, ist zur Aktivierung dieser Funktion zusätzlich zum allgemeinen AVV ein **gesonderter Auftragsverarbeitungsvertrag** erforderlich. Details und Online-Abschluss: [Datenschutz & DSGVO](/connect/22_datenschutz#zusätzlicher-avv-für-die-helferapp-patientendaten).
+
 Die **Triage-Funktion** ermöglicht die strukturierte Sichtung von Verletzten bei einem Massenanfall (MANV) direkt über die App.
 
 **Triage starten:** Öffnen Sie einen Einsatz → Reiter **Details** → Tippen Sie auf **Triage starten**.

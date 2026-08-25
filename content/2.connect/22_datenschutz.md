@@ -22,6 +22,12 @@ Wir stellen einen vorbereiteten AVV zur Verfügung. Laden Sie diesen herunter, f
 | **Papierversion** (Scan / Post) | [AVV herunterladen (PDF)](https://feuersoftware.com/wp-content/uploads/2023/08/AVV_FeuerSoftware_Connect_signed_2023.pdf) |
 | **Online-Signatur** (e-Sign) | [AVV online unterzeichnen](https://app.dpms-online.de/vertrag-anfordern/642c26eab5517) |
 
+### Zusätzlicher AVV für die HelferApp (Patientendaten)
+
+Zur Aktivierung bestimmter Funktionen der [HelferApp](/helferapp/01_produktuebersicht) – insbesondere der [Triage-Erfassung](/helferapp/07_triage) – werden Gesundheitsdaten von Patientinnen und Patienten verarbeitet (besondere Kategorien personenbezogener Daten nach Art. 9 DSGVO). Dafür ist zusätzlich zum allgemeinen AVV ein **gesonderter Auftragsverarbeitungsvertrag** erforderlich.
+
+[Gesonderten AVV für die HelferApp online abschließen](https://app.dpms-online.de/vertrag-anfordern/67a3bf62e43e5)
+
 ---
 
 ## Technische und Organisatorische Maßnahmen (TOMs)
