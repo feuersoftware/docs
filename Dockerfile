@@ -32,7 +32,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install only the pinned runtime dependencies
-RUN npm ci --omit=dev
+RUN npm ci --omit=dev --ignore-scripts
 
 # Create a non-root user
 RUN addgroup --system --gid 1001 nodejs
