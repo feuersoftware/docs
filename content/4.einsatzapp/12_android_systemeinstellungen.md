@@ -232,6 +232,14 @@ Wenn der Energiesparmodus aktiv ist, können Hintergrundaktivitäten eingeschrä
 1. **Seitenmenü → Einstellungen → Alarmeinstellungen → Berechtigungsübersicht** öffnen.
 2. Auf den roten Eintrag tippen – die App öffnet direkt die entsprechenden Android-Einstellungen.
 
+### Dauerhafte Benachrichtigung „Background Geolocation" / „Tracking location"
+
+Das ist eine System-Benachrichtigung von Android, die erscheint, sobald die App im Hintergrund den Standort abfragt (z. B. für die Geofence-Funktion) – sie lässt sich technisch nicht verhindern, solange GPS im Hintergrund genutzt wird. Die Anzeige kann aber über die Benachrichtigungseinstellungen unterdrückt werden:
+
+1. **Einstellungen → Benachrichtigungen → App-Benachrichtigungen → EinsatzApp** öffnen.
+2. Unter **Benachrichtigungskategorien** den Punkt **„Andere"** aufklappen.
+3. **„BackgroundGeolocation"** ausschalten (ggf. zusätzlich **„TSLocationManager"**).
+
 ---
 
 ## Alarmierung testen

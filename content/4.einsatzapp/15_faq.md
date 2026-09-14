@@ -244,3 +244,9 @@ Seitenmenü → Einstellungen → Alarmeinstellungen → **„Berechtigungsüber
 | Kritische Benachrichtigungen *(iOS)* | Alarm trotz Stummschaltung/Fokus |
 | DND-Zugriff *(Android)* | Alarm trotz „Bitte nicht stören" |
 | Akkuoptimierung deaktiviert *(Android)* | Zuverlässiger Hintergrundempfang |
+
+---
+
+### Unter Android erscheint dauerhaft die Benachrichtigung „Background Geolocation" / „Tracking location"
+
+Das ist eine nicht zu verhindernde System-Benachrichtigung von Android, solange GPS im Hintergrund genutzt wird (z. B. für die Geofence-Funktion). Die Anzeige lässt sich aber über die Systemeinstellungen unterdrücken → [Android-Systemeinstellungen](/einsatzapp/android-systemeinstellungen#dauerhafte-benachrichtigung-background-geolocation--tracking-location)
