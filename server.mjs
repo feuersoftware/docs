@@ -8,13 +8,13 @@ const parsedPort = Number.parseInt(process.env.PORT || '3000', 10)
 const port = Number.isNaN(parsedPort) ? 3000 : parsedPort
 const publicDirectory = join(process.cwd(), 'public')
 
-const resolveRequestPath = ({ pathname, search }) => {
+const resolvePrerenderedPath = (pathname) => {
     if (pathname === '/') {
-        return `/index.html${search}`
+        return '/index.html'
     }
 
     if (extname(pathname) !== '') {
-        return `${pathname}${search}`
+        return pathname
     }
 
     const relativePath = pathname.replace(/^\/+|\/+$/g, '')
@@ -22,20 +22,24 @@ const resolveRequestPath = ({ pathname, search }) => {
     const nestedIndexPath = join(publicDirectory, relativePath, 'index.html')
 
     if (existsSync(htmlPath)) {
-        return `${pathname}.html${search}`
+        return `${pathname}.html`
     }
 
     if (existsSync(nestedIndexPath)) {
-        return `${pathname}/index.html${search}`
+        return `${pathname}/index.html`
     }
 
-    return `${pathname}${search}`
+    return null
 }
 
 createServer((request, response) => {
-    if (request.method === 'GET') {
+    if (request.method === 'GET' || request.method === 'HEAD') {
         const url = new URL(request.url || '/', 'http://localhost')
-        request.url = resolveRequestPath(url)
+        const resolvedPath = resolvePrerenderedPath(url.pathname)
+
+        if (resolvedPath) {
+            request.url = `${resolvedPath}${url.search}`
+        }
     }
 
     return handler(request, response, {
