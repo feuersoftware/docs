@@ -2,6 +2,14 @@ export default defineNuxtConfig({
     extends: ['docus'],
     modules: ['nuxt-studio'],
     css: ['~/assets/css/main.css'],
+    nitro: {
+        prerender: {
+            // OG-Image-Generierung ist speicherintensiv und hat den Build zuletzt
+            // stillschweigend abgebrochen (OOM), sobald genug Seiten gecrawlt wurden.
+            // Diese Routen zur Laufzeit statt beim Build rendern.
+            ignore: ['/_og'],
+        },
+    },
     studio: {
         route: '/admin',
         repository: {
