@@ -17,10 +17,11 @@ const shouldServeIndex = (pathname) => {
 
     return !existsSync(join(publicDirectory, relativePath))
         && !existsSync(join(publicDirectory, `${relativePath}.html`))
+        && !existsSync(join(publicDirectory, relativePath, 'index.html'))
 }
 
 createServer((request, response) => {
-    const url = new URL(request.url || '/', `http://${request.headers.host || 'localhost'}`)
+    const url = new URL(request.url || '/', 'http://localhost')
 
     if (shouldServeIndex(url.pathname)) {
         request.url = '/'
