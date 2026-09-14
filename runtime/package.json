@@ -1,0 +1,8 @@
+{
+  "name": "feuersoftware-docs-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "serve-handler": "6.1.7"
+  }
+}

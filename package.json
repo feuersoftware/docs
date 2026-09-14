@@ -16,7 +16,6 @@
     "docus": "^5.13.0",
     "nuxt": "^4.5.1",
     "nuxt-studio": "^1.4.0",
-    "serve-handler": "6.1.7",
     "tailwindcss": "^4.2.2"
   }
 }

@@ -28,8 +28,9 @@ FROM node:24-alpine AS runner
 
 WORKDIR /app
 
-# Copy package files for a reproducible runtime install
-COPY package*.json ./
+# Copy runtime package files for a reproducible runtime install
+COPY runtime/package.json ./package.json
+COPY runtime/package-lock.json ./package-lock.json
 
 # Install only the pinned runtime dependencies
 RUN npm ci --omit=dev --ignore-scripts
