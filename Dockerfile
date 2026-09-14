@@ -52,6 +52,7 @@ EXPOSE 3000
 ENV HOST=0.0.0.0
 ENV PORT=3000
 ENV NODE_ENV=production
+ENV NO_UPDATE_CHECK=1
 
 # Start the application
 CMD ["./node_modules/.bin/serve", "public", "-l", "3000"]
