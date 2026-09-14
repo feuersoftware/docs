@@ -8,27 +8,36 @@ const parsedPort = Number.parseInt(process.env.PORT || '3000', 10)
 const port = Number.isNaN(parsedPort) ? 3000 : parsedPort
 const publicDirectory = join(process.cwd(), 'public')
 
-const shouldServeIndex = (pathname) => {
-    if (pathname === '/' || extname(pathname) !== '') {
-        return false
+const resolveRequestPath = ({ pathname, search }) => {
+    if (pathname === '/') {
+        return `/index.html${search}`
+    }
+
+    if (extname(pathname) !== '') {
+        return `${pathname}${search}`
     }
 
     const relativePath = pathname.replace(/^\/+|\/+$/g, '')
+    const htmlPath = join(publicDirectory, `${relativePath}.html`)
+    const nestedIndexPath = join(publicDirectory, relativePath, 'index.html')
 
-    return !existsSync(join(publicDirectory, relativePath))
-        && !existsSync(join(publicDirectory, `${relativePath}.html`))
-        && !existsSync(join(publicDirectory, relativePath, 'index.html'))
+    if (existsSync(htmlPath)) {
+        return `${pathname}.html${search}`
+    }
+
+    if (existsSync(nestedIndexPath)) {
+        return `${pathname}/index.html${search}`
+    }
+
+    return `/index.html${search}`
 }
 
 createServer((request, response) => {
     const url = new URL(request.url || '/', 'http://localhost')
-
-    if (shouldServeIndex(url.pathname)) {
-        request.url = '/'
-    }
+    request.url = resolveRequestPath(url)
 
     return handler(request, response, {
         public: 'public',
-        cleanUrls: true
+        cleanUrls: false
     })
 }).listen(port, host)
