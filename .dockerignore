@@ -38,5 +38,6 @@ coverage/
 *.md
 LICENSE
 .github/
+scripts/
 .agents/
 .junie/
