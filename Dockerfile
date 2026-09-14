@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies (cached unless package.json changes)
-RUN npm ci
+RUN npm install
 
 # Copy source files
 COPY . .
@@ -32,8 +32,11 @@ WORKDIR /app
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nuxtjs
 
+# Install a static file server for the prerendered site
+RUN npm install -g serve@14.2.6
+
 # Copy built application
-COPY --from=builder /app/.output /app/.output
+COPY --from=builder /app/.output/public /app/public
 
 # Set ownership
 RUN chown -R nuxtjs:nodejs /app
@@ -48,4 +51,4 @@ ENV PORT=3000
 ENV NODE_ENV=production
 
 # Start the application
-CMD ["node", ".output/server/index.mjs"]
+CMD ["serve", "public", "-l", "3000"]
