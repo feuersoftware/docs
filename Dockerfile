@@ -40,6 +40,7 @@ RUN adduser --system --uid 1001 nuxtjs
 
 # Copy built application
 COPY --from=builder /app/.output/public /app/public
+COPY server.mjs /app/server.mjs
 
 # Set ownership
 RUN chown -R nuxtjs:nodejs /app
@@ -52,7 +53,6 @@ EXPOSE 3000
 ENV HOST=0.0.0.0
 ENV PORT=3000
 ENV NODE_ENV=production
-ENV NO_UPDATE_CHECK=1
 
 # Start the application
-CMD ["sh", "-c", "exec ./node_modules/.bin/serve public -l tcp://${HOST}:${PORT}"]
+CMD ["node", "server.mjs"]
