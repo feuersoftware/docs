@@ -4,10 +4,13 @@ export default defineNuxtConfig({
     css: ['~/assets/css/main.css'],
     nitro: {
         prerender: {
-            // OG-Image-Generierung ist speicherintensiv und hat den Build zuletzt
-            // stillschweigend abgebrochen (OOM), sobald genug Seiten gecrawlt wurden.
-            // Diese Routen zur Laufzeit statt beim Build rendern.
-            ignore: ['/_og'],
+            // Der automatische Link-Crawler (docus setzt crawlLinks:true) hat bei der
+            // inzwischen gewachsenen Seitenzahl den Build-Prozess mangels Arbeitsspeicher
+            // stillschweigend abgebrochen (kein Fehler, .output/server fehlte danach im
+            // Image). Die App läuft als SSR-Server, Seiten werden also auch ohne
+            // Prerendering zur Laufzeit korrekt ausgeliefert - nur eben nicht vorab
+            // statisch gecacht.
+            crawlLinks: false,
         },
     },
     studio: {
