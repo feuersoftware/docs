@@ -29,7 +29,7 @@ const resolveRequestPath = ({ pathname, search }) => {
         return `${pathname}/index.html${search}`
     }
 
-    return `/index.html${search}`
+    return `${pathname}${search}`
 }
 
 createServer((request, response) => {
