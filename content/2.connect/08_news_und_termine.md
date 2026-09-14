@@ -27,6 +27,7 @@ Die News-Übersicht zeigt alle Beiträge in chronologischer Reihenfolge mit Tite
    - **Titel** (Pflichtfeld)
    - **Inhalt** (Freitext mit Formatierung)
    - **Adressatengruppen** – welche Gruppen oder Alarmgruppen den Beitrag sehen können
+   - **Mailinglisten** (optional) – Organisations- oder Standort-Mailinglisten direkt als zusätzlichen Verteiler auswählen
 3. **„Veröffentlichen"** klicken
 
 Der Beitrag erscheint sofort in der EinsatzApp und im Connect-Dashboard. Benutzer mit aktivierten News-Benachrichtigungen erhalten eine Push-Benachrichtigung auf Ihr Mobiltelefon. News werden auch auf dem EinsatzMonitor in der Standby-Anzeige angezeigt.
@@ -49,6 +50,7 @@ Nach Auswahl des Typs **„Verkehrsbehinderung"** erscheint eine interaktive Kar
 3. Mit **Doppelklick** den Pfad abschließen
 4. Der eingezeichnete Pfad wird in der EinsatzApp und am EinsatzMonitor als farbige Linie auf der Karte angezeigt
 5. Über eine Farbauswahl kann dem Pfad eine individuelle Farbe zugewiesen werden – praktisch, um z. B. neben der eigentlichen Sperrung zusätzlich eine empfohlene Umleitungsstrecke einzuzeichnen und farblich von der Sperrung abzugrenzen
+6. Beim Anlegen mehrerer Streckenzüge wird die gerade bearbeitete Strecke zusätzlich durch eine dickere Linie auf der Karte hervorgehoben, um sie von bereits vorhandenen Pfaden zu unterscheiden
 
 > Punkte können nach dem Setzen per Drag & Drop verschoben werden. Der Pfad kann über das Papierkorb-Symbol vollständig gelöscht und neu gezeichnet werden.
 

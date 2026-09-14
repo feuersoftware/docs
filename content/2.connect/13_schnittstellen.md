@@ -21,6 +21,7 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 | **[Cobra / WDX3](/connect/schnittstellen/leitstelle/cobra)** | Leitstellenanbindung über ISE Cobra 4 WDX3 |
 | **[DeAlarm](/connect/schnittstellen/leitstelle/dealarm_3pi)** | Integration mit DeAlarm für digitale Alarmierung |
 | **[Katsys](/connect/schnittstellen/katsys)** | Einsatzalarmierung und Fahrzeugstatus aus dem Katsys-Leitstellensystem |
+| **[MAÜ Rheinland-Pfalz](/connect/schnittstellen/leitstelle/mau_rlp_xml)** | Einsatzdaten aus dem MAÜ-Verfahren (XML per E-Mail) automatisch übernehmen (Beta) |
 | **[Divera 24/7](/connect/schnittstellen/divera)** | Einsätze aus Divera 24/7 per Webhook weiterleiten |
 | **[FAS](/connect/schnittstellen/spekter_fas)** | Anbindung an FAS-Systeme |
 | **[Navlog](/connect/schnittstellen/navlog)** | Integration mit Navlog für Einsatznavigation |

@@ -64,4 +64,16 @@ Werden einem Benutzer mehrere Rollen zugewiesen, werden die Rechte addiert.
 | Benutzeradministrator | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `R/I/W` | `—` | `—` | `—` | `—` | `—` | `—` | `—` |
 | Gerätewart | `—` | `—` | `—` | `R` | `—` | `—` | `—` | `—` | `—` | `—` | `R/W` | `R/W` | `—` | `—` | `—` |
 | Standort News-Administrator | `—` | `—` | `—` | `R` | `R/W` | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `—` |
-| Standort Kalender-Administrator | `—` | `—` | `—` | `R` | `—` | `R/W` | `R/W` | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `—` |
+| Standort Kalender-Administrator | `—` | `—` | `—` | `R` | `—` | `R/W` | `R/W` | `—` | `—` | `—` | `—` | `—` | `—` | `—` |
+
+---
+
+## Leitstellen-Organisationen
+
+Leitstellen (WDX- oder Alamos-Organisationen) sind ein eigener Organisationstyp mit einer zusätzlichen Rolle:
+
+| Rolle | Beschreibung |
+|---|---|
+| **Leitstellenadministrator** | Gibt Mitgliedsorganisationen der Leitstelle eine Teilmenge an WDX-Ressourcen/-Geräten bzw. Alamos-Einheiten frei (siehe [ISE Cobra 4 – WDX3: Ressourcen-Freigabe](/connect/schnittstellen/leitstelle/cobra#ressourcen-freigabe-für-organisationen)). |
+
+Diese Rolle ist unabhängig von den Rollen der oben stehenden Organisations- und Standort-Tabellen und nur innerhalb einer Leitstellen-Organisation zuweisbar. `—` |

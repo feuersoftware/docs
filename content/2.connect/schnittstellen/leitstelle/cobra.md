@@ -44,6 +44,21 @@ Die WDX3-Schnittstelle ermöglicht die Übertragung von Einsatzdaten aus dem Lei
 
 ---
 
+## Ressourcen-Freigabe für Organisationen
+
+Innerhalb einer Leitstellen-Organisation (WDX oder Alamos) lässt sich die Zuordnung von Leitstellen-Ressourcen zweistufig verwalten:
+
+1. **Leitstellenadministrator** (Rolle innerhalb der Leitstellen-Organisation) gibt je Mitgliedsorganisation eine Teilmenge an WDX-Ressourcen/-Geräten bzw. Alamos-Einheiten frei.
+2. **Organisationsadministrator** der Mitgliedsorganisation weist aus dieser freigegebenen Teilmenge eigenständig den einzelnen Standorten zu – ganz ohne Zugang zur Leitstellen-Organisation selbst.
+
+Bestehende Organisationsadministratoren benötigen dafür keine zusätzliche Berechtigung – die entsprechende Berechtigung ist automatisch enthalten.
+
+> Änderungen an den freigegebenen Ressourcen bzw. an den Standort-Zuweisungen werden **gebündelt per E-Mail gemeldet**: Mehrere Änderungen innerhalb von 10 Minuten lösen nur eine gemeinsame Benachrichtigung aus, statt für jede einzelne Änderung eine separate E-Mail zu verschicken.
+
+Siehe auch: [Rollen und Rechtekonzept – Leitstellen-Organisationen](/connect/20_rechtekonzept_connect#leitstellen-organisationen)
+
+---
+
 ## Einrichtung
 
 ### Für die Leitstelle

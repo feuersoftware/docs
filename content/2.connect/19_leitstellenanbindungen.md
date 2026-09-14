@@ -20,7 +20,7 @@ Je nach Leitstelle und Bundesland gibt es unterschiedliche technische Anbindunge
 | **[ISE Cobra 4 – WDX3](./schnittstellen/leitstelle/cobra)** | Deutschland (ISE-Leitstellen) | WDX3-Schnittstelle über ISE-Server |
 | **[Alamos FE2](./schnittstellen/leitstelle/alamos_fe2)** | Deutschland (Eurofunk ELDIS BY) | Einsatzdaten via Alamos FE2 und MQTT |
 | **[Oberösterreich (LFV OÖ)](./schnittstellen/leitstelle/oberoesterreich)** | Österreich – Land Oberösterreich | Direktanbindung via LFV OÖ API |
-| **MAÜ Auswertung Rheinland-Pfalz** | Deutschland – Rheinland-Pfalz | Dokumentation in Vorbereitung |
+| **[MAÜ-Schnittstelle Rheinland-Pfalz](./schnittstellen/leitstelle/mau_rlp_xml)** | Deutschland – Rheinland-Pfalz | Einsatzdaten aus dem MAÜ-Verfahren (XML per E-Mail), Beta |
 
 ---
 

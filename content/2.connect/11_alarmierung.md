@@ -102,6 +102,10 @@ Das dynamische Regelwerk erlaubt komplexere Regeln auf Basis mehrerer Bedingunge
 
 Dynamische Regeln werden nach dem Eingang eines Einsatzes ausgewertet und überschreiben bei Übereinstimmung die statische AAO.
 
+### Dynamische AAO exportieren
+
+Das dynamische Regelwerk lässt sich als CSV-Datei exportieren – z. B. für die eigene Dokumentation oder zur Weitergabe. 
+
 ---
 
 ## Dynamische Zusatzinformationen
