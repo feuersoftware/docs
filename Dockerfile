@@ -55,4 +55,4 @@ ENV NODE_ENV=production
 ENV NO_UPDATE_CHECK=1
 
 # Start the application
-CMD ["./node_modules/.bin/serve", "public", "-l", "3000"]
+CMD ["sh", "-c", "exec ./node_modules/.bin/serve public -l tcp://${HOST}:${PORT}"]
