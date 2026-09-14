@@ -4,6 +4,7 @@ node_modules/
 # Build output
 .output/
 .nuxt/
+.data/
 dist/
 
 # Development
@@ -37,5 +38,6 @@ coverage/
 *.md
 LICENSE
 .github/
+scripts/
 .agents/
 .junie/

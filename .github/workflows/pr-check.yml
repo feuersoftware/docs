@@ -10,21 +10,31 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # Build exactly what the deploy workflow ships (same Dockerfile, same Node
+      # image). A bare `npm run build` on the runner's Node passed on every commit
+      # that produced an unstartable container.
+      - name: Build Docker image
+        uses: docker/build-push-action@v6
         with:
-          node-version: '24'
-          cache: 'npm'
+          context: .
+          load: true
+          push: false
+          tags: docs:pr
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          build-args: |
+            STUDIO_GITHUB_CLIENT_ID=${{ secrets.STUDIO_GITHUB_CLIENT_ID || 'ci-placeholder' }}
+            STUDIO_GITHUB_CLIENT_SECRET=${{ secrets.STUDIO_GITHUB_CLIENT_SECRET || 'ci-placeholder' }}
 
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build application
-        run: npm run build
+      - name: Smoke test image
+        run: bash scripts/smoke-test.sh docs:pr
