@@ -33,7 +33,7 @@ const resolveRequestPath = ({ pathname, search }) => {
 }
 
 createServer((request, response) => {
-    if (request.method === 'GET' || request.method === 'HEAD') {
+    if (request.method === 'GET') {
         const url = new URL(request.url || '/', 'http://localhost')
         request.url = resolveRequestPath(url)
     }
