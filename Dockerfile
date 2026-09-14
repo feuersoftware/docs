@@ -28,12 +28,15 @@ FROM node:24-alpine AS runner
 
 WORKDIR /app
 
+# Copy package files for a reproducible runtime install
+COPY package*.json ./
+
+# Install only the pinned runtime dependencies
+RUN npm ci --omit=dev
+
 # Create a non-root user
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nuxtjs
-
-# Install a static file server for the prerendered site
-RUN npm install -g serve@14.2.6
 
 # Copy built application
 COPY --from=builder /app/.output/public /app/public
@@ -51,4 +54,4 @@ ENV PORT=3000
 ENV NODE_ENV=production
 
 # Start the application
-CMD ["serve", "public", "-l", "3000"]
+CMD ["./node_modules/.bin/serve", "public", "-l", "3000"]
