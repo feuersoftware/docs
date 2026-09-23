@@ -2,6 +2,12 @@ export default defineNuxtConfig({
     extends: ['docus'],
     modules: ['nuxt-studio'],
     css: ['~/assets/css/main.css'],
+    nitro: {
+        prerender: {
+            // Not linked from any page, so the crawler wouldn't find it on its own.
+            routes: ['/blog/feed.json']
+        }
+    },
     // Prerendering (docus: crawlLinks) is intentionally left enabled. The build must
     // run on a Node version without the 24.x prerender bug - see Dockerfile.
     studio: {
