@@ -55,11 +55,11 @@ Der **Partnermodus** muss in den Connect-Organisationseinstellungen durch einen 
 ### Auf Seite der Einsatzkraft
 - **EinsatzApp** installiert und eingerichtet
 - Mitglied einer Organisation, in der der Partnermodus aktiviert ist
+- Berechtigung für Kamerazugriff erteilt (für QR-Code-Scan)
 
 ### Auf Seite des Partners
 - **PartnerApp** installiert (iOS oder Android)
 - Berechtigung für Push-Benachrichtigungen erteilt
-- Berechtigung für Kamerazugriff erteilt (für QR-Code-Scan)
 
 ---
 
