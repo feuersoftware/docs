@@ -12,7 +12,7 @@
     "better-sqlite3": "^12.11.1",
     "docus": "^5.13.0",
     "nuxt": "^4.5.2",
-    "nuxt-studio": "^1.7.0",
+    "nuxt-studio": "^1.8.0",
     "tailwindcss": "^4.3.3"
   }
 }
