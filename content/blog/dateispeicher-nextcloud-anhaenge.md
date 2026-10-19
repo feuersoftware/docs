@@ -10,7 +10,11 @@ minRead: 6
 navigation: false
 ---
 
-Dateien spielen im Feuerwehralltag eine immer größere Rolle: Fotos von der Einsatzstelle, Objektpläne, Dienstpläne, Checklisten. Mit dem neuen **Dateispeicher** bekommt Connect dafür eine gemeinsame Grundlage – und eine ganze Reihe neuer Funktionen im **Connect Portal** und im **EinsatzManager**. Die Integration in **EinsatzApp** und **EinsatzTablet** folgt mit einem der nächsten Updates.
+Dateien spielen im Feuerwehralltag eine immer größere Rolle: Fotos von der Einsatzstelle, Objektpläne, Dienstpläne, Checklisten. Mit dem neuen **Dateispeicher** bekommt Connect dafür eine gemeinsame Grundlage – und eine ganze Reihe neuer Funktionen im **Connect Portal** und im **EinsatzManager**.
+
+::note
+**EinsatzApp und EinsatzTablet:** Die Anpassungen für EinsatzApp und EinsatzTablet sind gerade noch in Arbeit und werden in Kürze per App-Update zur Verfügung gestellt. Bis dahin sind die neuen Funktionen im Connect Portal und im EinsatzManager nutzbar.
+::
 
 Hier der Überblick für alle Administratoren.
 
