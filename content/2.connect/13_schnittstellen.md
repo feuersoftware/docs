@@ -28,6 +28,7 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 | **News-Mail-Eingang** | News-Beiträge per E-Mail erstellen (Mail-to-News) |
 | **[Public API](/connect/schnittstellen/public_api)** | Zugang zur öffentlichen FeuerSoftware-API auf Organisationsebene |
 | **[Wasserkarte](/connect/schnittstellen/wasserkarte)** | Hydranten und Wasserentnahmestellen aus Wasserkarte.info einbinden |
+| **[Connect Storage](/connect/23_dateispeicher#connect-storage)** | Standard-Dateispeicher der Organisation (automatisch aktiv, nicht deinstallierbar) |
 
 ---
 
@@ -39,6 +40,7 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 |---|---|
 | **[Elion](/connect/schnittstellen/elion)** | Einsatzdaten, Fahrzeugstatus und -positionen an e:LION übermitteln |
 | **[Fireboard](/connect/schnittstellen/fireboard)** | Einsatz- und Fahrzeugstatusdaten automatisiert an das Fireboard-Portal übermitteln |
+| **[Nextcloud](/connect/schnittstellen/nextcloud)** | Eigene Nextcloud als Dateispeicher und Dokumentenablage des Standorts anbinden |
 | **[Public API](/connect/schnittstellen/public_api)** | Zugang zur öffentlichen FeuerSoftware-API auf Standortebene |
 | **[Rauchwarnmelder](/connect/schnittstellen/rauchmelder)** | Übersicht aller Rauchwarnmelder-Integrationen (Homematic HCU1, CCU3, X-Sense, Lupus) |
 | **[rescueTABLET](/connect/schnittstellen/rescuetablet)** | Einsatzdaten an rescueTABLET weiterleiten |

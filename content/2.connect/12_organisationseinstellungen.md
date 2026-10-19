@@ -54,7 +54,19 @@ Zeigt die aktuell gebuchten Lizenzen der Organisation:
 - Lizenz-Typ (z. B. Normal, Free)
 - Gültigkeitsdatum
 
-Hier können Lizenzen erweitert oder neue gebucht werden.
+Hier können Lizenzen erweitert oder neue gebucht werden. Gebuchter zusätzlicher Speicher für den Connect Storage erscheint hier ebenfalls (Produkt „Connect Storage").
+
+---
+
+## Connect Storage
+
+![Screenshot: Organisationseinstellungen – Connect Storage](/images/connect/23_connect_storage.png)
+
+**Organisationseinstellungen → Connect Storage**
+
+Übersicht über den Standard-Dateispeicher der Organisation: Speichernutzung (Belegt, Kostenlos enthalten, Gebucht, Gesamtlimit), **„Speicher aufräumen"**, **„Speicher buchen"** sowie die Liste der zusätzlichen Speicherbuchungen.
+
+→ Ausführlich beschrieben unter [Dateispeicher & Anhänge](/connect/23_dateispeicher#connect-storage).
 
 ---
 

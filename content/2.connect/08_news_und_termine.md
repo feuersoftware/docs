@@ -28,6 +28,7 @@ Die News-Übersicht zeigt alle Beiträge in chronologischer Reihenfolge mit Tite
    - **Inhalt** (Freitext mit Formatierung)
    - **Adressatengruppen** – welche Gruppen oder Alarmgruppen den Beitrag sehen können
    - **Mailinglisten** (optional) – Organisations- oder Standort-Mailinglisten direkt als zusätzlichen Verteiler auswählen
+   - **Anhänge** (optional) – Dateien anhängen, siehe [Anhänge](#anhänge)
 3. **„Veröffentlichen"** klicken
 
 Der Beitrag erscheint sofort in der EinsatzApp und im Connect-Dashboard. Benutzer mit aktivierten News-Benachrichtigungen erhalten eine Push-Benachrichtigung auf Ihr Mobiltelefon. News werden auch auf dem EinsatzMonitor in der Standby-Anzeige angezeigt.
@@ -121,6 +122,7 @@ Connect ruft den Remote-Kalender automatisch ab. Um die Synchronisation sofort a
 | **Anmeldeschluss** | Bis wann eine Anmeldung möglich ist |
 | **Beschreibung** | Detailangaben zum Termin |
 | **Adressatengruppen** | Wer den Termin sieht |
+| **Anhänge** | Optional – Dateien anhängen, siehe [Anhänge](#anhänge) |
 
 3. **„Speichern"** klicken
 
@@ -148,6 +150,30 @@ Termin in der Übersicht antippen → **„Bearbeiten"** oder **„Löschen"**. 
 
 ### Gerätekalender-Synchronisation
 Mitglieder können in der EinsatzApp-Einstellung **„Termine mit Gerätekalender synchronisieren"** aktivieren, um alle Organisationstermine automatisch in ihren Gerätekalender zu exportieren.
+
+---
+
+## Anhänge
+
+An **News** und **Termine** können Dateien angehängt werden – z. B. ein Dienstplan als PDF, eine Anfahrtsskizze oder Fotos.
+
+**Beim Erstellen:** Im Formular unter **„Anhänge"** auf **„Anhang hinzufügen"** klicken, Datei wählen und optional eine **Beschreibung** eingeben. Die Dateien werden beim Speichern hochgeladen.
+
+![Screenshot: News mit Anhang in der Detailansicht](/images/connect/08_news_anhaenge.png)
+
+**Nachträglich:** News bzw. Termin öffnen → Bereich **„Anhänge"**. Dort können weitere Dateien hinzugefügt, Beschreibungen bearbeitet, Anhänge heruntergeladen, gemeldet oder gelöscht werden.
+
+- Ein Klick auf einen Anhang öffnet die **Vorschau** (Bilder, PDF, Videos, Office-Dokumente).
+- Im Kalender werden die Anhänge eines Termins in der Termindetailansicht angezeigt und können dort angesehen, heruntergeladen und gemeldet werden.
+
+![Screenshot: Termin mit Anhang in der Kalenderansicht](/images/connect/08_termin_anhaenge.png)
+
+- Hochladen, Bearbeiten und Löschen erfordert das Verwaltungsrecht für News bzw. Termine.
+- Unterstützte Dateitypen: Bilder, PDF, Word, Excel, TXT, CSV und Videos; max. 25 MB (Connect Storage) bzw. 250 MB (Nextcloud).
+
+> Anhänge von News und Terminen eines **Standorts** werden je nach [Speicherzuordnung](/connect/23_dateispeicher#speicherzuordnung) im Connect Storage oder in der Nextcloud des Standorts abgelegt. Anhänge an News und Terminen auf **Organisationsebene** liegen immer im Connect Storage. Wird eine News oder ein Termin gelöscht, werden auch die Anhänge gelöscht.
+
+> **Hinweis:** Die Anzeige von Anhängen in der **EinsatzApp** folgt mit einem späteren App-Update.
 
 ---
 

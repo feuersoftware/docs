@@ -17,9 +17,9 @@ Die Seite ist in drei Bereiche unterteilt:
 
 | Bereich | Inhalt |
 |---|---|
-| Linke Spalte | Einsatzkarte mit Fahrzeugpositionen und Kartenebenen |
+| Linke Spalte | Einsatzkarte mit Fahrzeugpositionen, Kartenebenen und Anhang-Pins; Reiter „Info-Board" und „Dokumente" |
 | Mittlere Spalte | Einsatzprotokoll und Meldungen |
-| Rechte Spalte | Zusammenfassung, Einsatzinformationen, zugeteilte Einheiten |
+| Rechte Spalte | Zusammenfassung, Einsatzinformationen, Anhänge, zugeteilte Einheiten |
 
 Am oberen Rand befinden sich Stichwort, Sachverhalt, Adresse, Laufzeitanzeige sowie der Alarmierungsbereich.
 
@@ -47,6 +47,10 @@ Die interaktive Karte basiert auf OpenStreetMap und zeigt:
 Wenn der Mauszeiger über einen Fahrzeug-Pin bewegt wird, erscheinen der Fahrzeugname und der Zeitstempel des letzten Positionsupdates.
 
 ![Screenshot: Einsatzkarte mit Fahrzeugmarkierungen](/images/einsatzmanager/05_details_karte.png)
+
+### Reiter „Dokumente"
+
+Ist am Standort eine Nextcloud verbunden, erscheint neben „Karte" und „Info-Board" der Reiter **„Dokumente"** mit der Dokumentenablage der Standort-Nextcloud (inkl. Suche und Vorschau). → [Anhänge & Dokumente – Reiter „Dokumente"](/einsatzmanager/11_anhaenge_und_dokumente#reiter-dokumente)
 
 ### Kartenebenen
 
@@ -165,6 +169,12 @@ Jede Meldung enthält Zeitstempel, Ersteller und Übermittlungshistorie.
 ---
 
 ## Zusammenfassung & Einsatzinformationen (rechte Spalte)
+
+### Anhänge
+
+Aufklappbarer Bereich für Einsatzfotos und -dateien inkl. Standort, Vorschau und gespeicherter Einsatzberichte. Anhänge mit Standort erscheinen als orange Pins auf der Einsatzkarte.
+
+→ Ausführlich: [Anhänge & Dokumente](/einsatzmanager/11_anhaenge_und_dokumente)
 
 ### Aktive Betrachter
 

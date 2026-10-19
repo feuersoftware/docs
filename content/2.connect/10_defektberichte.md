@@ -113,6 +113,20 @@ Mängelmeldung in der Übersicht öffnen → Detailansicht:
 
 ---
 
+## Anhänge
+
+An Mängelmeldungen können Fotos und Dateien angehängt werden – beim Erstellen oder später in der Detailansicht im Bereich **„Anhänge"**.
+
+- **Vorschau:** Ein Klick auf einen Anhang öffnet Bilder, PDFs, Videos und Office-Dokumente direkt in der Vorschau.
+- **Aktionen:** Herunterladen, Beschreibung bearbeiten, [Melden](/connect/23_dateispeicher#anhang-melden) und Löschen.
+- **Berechtigung:** Anhänge hinzufügen und löschen dürfen der **Ersteller** der Mängelmeldung, Standortadministratoren und Benutzer mit Verwaltungsrecht für Mängelmeldungen – direkt in der Detailansicht, ohne in den Bearbeitungsmodus wechseln zu müssen.
+- **Speicherort:** Je nach [Speicherzuordnung](/connect/23_dateispeicher#speicherzuordnung) des Standorts im Connect Storage oder in der Nextcloud. Bereits vorhandene Anhänge liegen im Connect Storage und zählen zum Speicherkontingent.
+- Unterstützte Dateitypen: Bilder, PDF, Word, Excel, TXT, CSV und Videos; max. 25 MB (Connect Storage) bzw. 250 MB (Nextcloud).
+
+> Erledigte oder abgelehnte Mängelmeldungen werden beim [Speicher aufräumen](/connect/23_dateispeicher#speicher-aufräumen) als „nicht mehr benötigt" vorgeschlagen.
+
+---
+
 ## PDF-Export
 
 Mängelmeldungen können als PDF heruntergeladen und ausgedruckt werden.

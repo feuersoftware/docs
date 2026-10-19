@@ -9,6 +9,8 @@ Das EinsatzTablet kann mit einer **Nextcloud**-Instanz verbunden werden. Damit s
 
 > **Nextcloud** ist eine kostenlose Open-Source-Software zur Dateiverwaltung, die auf einem eigenen Webserver betrieben wird. Viele Hoster bieten einen 1-Click-Installer an.
 
+
+> **Hinweis:** Künftig wird das EinsatzTablet die zentral im Connect Portal verbundene [Standort-Nextcloud](/connect/schnittstellen/nextcloud) nutzen. Bis dahin erfolgt die Einrichtung wie unten beschrieben direkt am Gerät.
 ---
 
 ## Einrichtung

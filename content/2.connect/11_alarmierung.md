@@ -154,7 +154,7 @@ Hier werden die Felder und Inhalte definiert, die hinzugefügt werden, sobald di
 | Typ | Beschreibung |
 |---|---|
 | **Text** | Einfacher Text, max. 2000 Zeichen. Z. B. „Funkkanal XYZ schalten". |
-| **Dokument-Referenz** | Pfad zu einem Ordner oder einer Datei in der Nextcloud, z. B. `/Feuerwehrplan/Klinikum`. Setzt eine eingerichtete Nextcloud-Verbindung in der EinsatzApp voraus. |
+| **Dokument-Referenz** | Pfad zu einem Ordner oder einer Datei in der Nextcloud, z. B. `/Feuerwehrplan/Klinikum`. Ist am Standort eine [Nextcloud](/connect/schnittstellen/nextcloud) verbunden, kann die Datei über das Ordner-Symbol direkt ausgewählt werden; Connect Portal und EinsatzManager öffnen sie dann in der Vorschau. In der EinsatzApp setzt die Nutzung bis zur Integration der Standort-Nextcloud weiterhin eine in der App eingerichtete Nextcloud-Verbindung voraus. |
 | **Weblink** | Eine URL, z. B. `https://www.feuerwehr-flammenhausen.de`. Wird direkt aus der App heraus geöffnet. |
 
 ### Anzeige

@@ -74,6 +74,14 @@ Die Bestellung der Verlängerung sollte frühestens 90 Tage vor Ablauf erfolgen.
 
 ---
 
+## Connect Storage (Dateispeicher)
+
+Jede Organisation erhält ein kostenloses Speicherkontingent im Connect Storage für Anhänge und Dateien (500 MB + 500 MB je volle 25 lizenzierte Benutzer, in der Testphase 50 MB). Zusätzlicher Speicher kann in Einheiten zu **25 GB für 5 Lizenzpunkte pro Jahr** direkt im Portal gebucht werden und verlängert sich automatisch.
+
+→ Details: [Dateispeicher & Anhänge – Connect Storage](/connect/23_dateispeicher#connect-storage)
+
+---
+
 ## Unterlizenzierung
 
 Werden mehr Benutzer, EinsatzMonitore oder EinsatzTablets angelegt als Lizenzen vorhanden sind, gilt die Organisation als **unterlizenziert**. Organisations- und Standortadministratoren sehen dann im Connect Portal oben auf der Seite einen gelben Warnhinweis (pro Sitzung einmal schließbar), der auf die fehlenden Lizenzen hinweist.

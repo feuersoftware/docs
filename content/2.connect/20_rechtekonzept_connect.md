@@ -66,6 +66,8 @@ Werden einem Benutzer mehrere Rollen zugewiesen, werden die Rechte addiert.
 | Standort News-Administrator | `—` | `—` | `—` | `R` | `R/W` | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `—` | `—` |
 | Standort Kalender-Administrator | `—` | `—` | `—` | `R` | `—` | `R/W` | `R/W` | `—` | `—` | `—` | `—` | `—` | `—` | `—` |
 
+
+> **Dateispeicher & Anhänge:** Nextcloud verbinden und die Speicherzuordnung ändern darf der Standortadministrator; Connect-Storage-Speicher buchen, kündigen und aufräumen der Organisationsadministrator. Einsatzanhänge sehen zusätzlich Gruppen mit der Sichtbarkeit „Einsatzanhänge". Vollständige Übersicht: [Dateispeicher & Anhänge – Berechtigungen](/connect/23_dateispeicher#berechtigungen).
 ---
 
 ## Leitstellen-Organisationen

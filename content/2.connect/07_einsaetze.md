@@ -75,11 +75,36 @@ Das Protokoll kann nach Sichtbarkeit gefiltert werden (öffentlich / intern). Je
 
 > Ein detailliertes **Zugriffsprotokoll** (wer den Einsatz wann und wie lange angesehen hat) steht aktuell im [EinsatzManager](/einsatzmanager/05_einsatzdetails#zugriffsprotokoll) zur Verfügung.
 
+Das Hinzufügen und Löschen von Anhängen wird automatisch protokolliert (**„Anhang hinzugefügt"** / **„Anhang gelöscht"**); über **„Anhang öffnen"** lässt sich der Anhang direkt aus dem Protokoll ansehen.
+
+### Tab: Anhänge
+
+Fotos und Dateien zum Einsatz – z. B. Einsatzfotos, Skizzen oder Dokumente.
+
+![Screenshot: Tab „Anhänge" mit erstelltem Einsatzbericht](/images/connect/07_einsatz_anhaenge.png)
+
+- **Hinzufügen:** Datei wählen, optional Beschreibung und **Standort** angeben. Der Standort wird auf einer Karte gesetzt, per **„Meinen Standort verwenden"** übernommen oder bei Fotos mit GPS-Daten automatisch ausgelesen („Aus Foto").
+- **Verwalten:** Vorschau, Herunterladen, Beschreibung bearbeiten, Standort setzen/bearbeiten, [Melden](/connect/23_dateispeicher#anhang-melden), Löschen.
+- **Geteilte Anhänge** aus verbundenen Einsätzen anderer Standorte/Organisationen (siehe [Einsatzdaten teilen](#einsatzdaten-teilen)) sind mit „Geteilt von {Standort}" gekennzeichnet und nicht veränderbar.
+- **Erstellte Berichte:** Jeder heruntergeladene Einsatzbericht wird automatisch als PDF gespeichert und hier aufgelistet.
+
+**Berechtigungen:** Ansehen dürfen Benutzer mit Verwaltungsrecht für Einsätze sowie Gruppen mit der Sichtbarkeit **„Einsatzanhänge"**. Hochladen und Bearbeiten erfordert das Verwaltungsrecht für Einsätze. Ohne Freigabe erscheint „Die Anhänge dieses Einsatzes sind für dich nicht freigegeben."
+
+Im EinsatzManager werden Anhänge mit Standort zusätzlich auf der Einsatzkarte angezeigt – siehe [EinsatzManager: Anhänge & Dokumente](/einsatzmanager/11_anhaenge_und_dokumente).
+
 ---
 
 ## Einsatzbericht herunterladen
 
 Für abgeschlossene Einsätze kann ein Einsatzbericht als PDF heruntergeladen werden. Welche Seiten/Inhalte der Bericht enthält, wird zentral in den [Organisationseinstellungen](./12_organisationseinstellungen#einsatzberichte) festgelegt.
+
+### Berichtsabschnitte und Bilddokumentation
+
+Im Reiter **„Bericht"** lassen sich über Kacheln die gewünschten **Berichtsabschnitte** ein- oder ausschließen (Einsatzdaten, Zusätzliche Infos, Fahrzeugbesatzung, Lagemeldung, Einsatzprotokoll inkl. Kategorienauswahl, Bilddokumentation).
+
+In der Kachel **„Bilddokumentation"** können über **„Bilder auswählen"** bis zu **10 Fotos** aus den Einsatzanhängen gewählt werden. Sie erscheinen zwei pro Seite am Ende des Berichts; die Reihenfolge der Auswahl bestimmt die Reihenfolge im Bericht.
+
+Jeder heruntergeladene Bericht wird im Tab [Anhänge](#tab-anhänge) unter „Erstellte Berichte" gespeichert.
 
 ### Vollständigkeits-Check
 
@@ -191,7 +216,7 @@ Ohne Einsatznummer ist eine Freigabe nicht möglich.
 |---|---|
 | **Aktiviert** | Schaltet die Freigabe für diesen Einsatz ein |
 | **Ebene** | **Organisation** – nur Standorte der eigenen Organisation kommen als Ziel infrage. **Leitstelle** – zusätzlich alle Organisationen derselben Leitstelle (nur verfügbar, wenn eine Leitstellenanbindung besteht) |
-| **Freigebene Daten** | Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen wählbar), Lagemeldungen, Einsatzprotokoll |
+| **Freigebene Daten** | Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen wählbar), Lagemeldungen, Einsatzprotokoll, Einsatzanhänge |
 | **Freigabedauer** | 1 / 2 / 6 / 12 / 24 Stunden ab Einsatzbeginn – danach endet die Freigabe automatisch |
 | **Zielstandorte** | Auswahl der Standorte bzw. Organisationen, mit denen der Einsatz verbunden werden soll (Vorschlagsliste basiert auf Einsätzen mit gleicher Einsatznummer, siehe unten) |
 

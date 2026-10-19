@@ -49,9 +49,30 @@ Zum **Umbenennen** einer bestehenden Gruppe auf das Stift-Symbol am rechten Rand
 | **Telefonnummer** | Wert wird als anklickbarer Anruf-Link dargestellt |
 | **E-Mail** | Wert wird als anklickbarer E-Mail-Link dargestellt |
 | **Web-Referenz** | Wert wird als externer Link geöffnet (vollständige URL erforderlich) |
-| **Nextcloud-Referenz** | Verweist auf ein in der Nextcloud-Integration hinterlegtes Dokument |
+| **Nextcloud-Referenz** | Verweist auf ein Dokument in der Nextcloud des Standorts (siehe unten) |
 
 Der Eintrag erscheint sofort in der EinsatzApp und im EinsatzTablet unter dem Infoboard.
+
+### Nextcloud-Dokumente verlinken
+
+Mit dem Typ **„Nextcloud-Referenz"** lassen sich Dokumente aus der [Nextcloud des Standorts](/connect/schnittstellen/nextcloud) verlinken – z. B. Objektpläne, Alarm- und Ausrückeordnungen oder Checklisten.
+
+![Screenshot: Infoboard-Eintrag mit Typ „Nextcloud-Referenz" und Ordner-Symbol](/images/connect/09_infoboard_nextcloud_referenz.png)
+
+1. Als Typ **„Nextcloud-Referenz"** wählen
+2. Im Feld **„Wert"** auf das **Ordner-Symbol** („Nextcloud durchsuchen") klicken
+3. Im Dialog **„Datei auswählen"** durch die Ordner navigieren oder über **„Diesen Ordner durchsuchen"** nach dem Dateinamen suchen (ab 2 Zeichen, inkl. Unterordner)
+4. Datei anklicken – der Pfad wird übernommen
+
+Alternativ kann ein Pfad oder ein aus der Nextcloud kopierter Link direkt in das Feld eingefügt werden.
+
+Im Connect Portal und im EinsatzManager erscheint der Eintrag als Button mit dem Dateinamen, der das Dokument direkt in der Vorschau öffnet.
+
+> **Voraussetzungen und Hinweise:**
+> - Der Typ „Nextcloud-Referenz" wird nur angeboten, wenn am Standort eine Nextcloud verbunden ist. Bestehende Einträge bleiben bearbeitbar.
+> - Es können nur Dokumente innerhalb des [Dokumenten-Stammordners](/connect/schnittstellen/nextcloud#dokumenten-stammordner) verlinkt werden. Der Pfad wird relativ zu diesem Ordner gespeichert.
+> - Wird das Dokument in der Nextcloud verschoben, umbenannt oder gelöscht, erscheint beim Öffnen „Das Dokument wurde in der Nextcloud nicht gefunden."
+> - EinsatzApp und EinsatzTablet werden mit einem späteren Update an die Standort-Nextcloud angebunden.
 
 > In der EinsatzApp kann der Textinhalt eines Eintrags durch **langes Drücken** in die Zwischenablage kopiert werden – praktisch für Telefonnummern oder Adressen.
 

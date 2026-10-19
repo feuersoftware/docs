@@ -41,6 +41,7 @@ Der Wechsel zwischen Organisationsansicht und den einzelnen Standorten erfolgt �
 | [Mängelmeldungen](/connect/10_defektberichte) | Mängelmeldungen erfassen und verwalten |
 | [Alarmierung](/connect/11_alarmierung) | Stichwörter, Alarmgruppen, AAO, Dynamische Regeln |
 | [Organisationseinstellungen](/connect/12_organisationseinstellungen) | Allgemein, Lizenzen, Einsätze, HelferApp, Datenlöschung |
+| [Dateispeicher & Anhänge](/connect/23_dateispeicher) | Connect Storage, eigene Nextcloud, Speicherzuordnung und Anhänge |
 | [Schnittstellen](/connect/13_schnittstellen) | Alle Integrationen auf Organisations- und Standort-Ebene |
 | [Leitstellenanbindungen](/connect/19_leitstellenanbindungen) | Einsatzdaten von der Leitstelle empfangen – alle verfügbaren Anbindungen |
 | [Verfügbarkeiten](/connect/16_verfuegbarkeiten) | Verfügbarkeitsstatus der Einsatzkräfte verwalten und auswerten |
