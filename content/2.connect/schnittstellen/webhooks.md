@@ -69,7 +69,55 @@ Typische Einsatzfälle: Tor der Fahrzeughalle öffnen, Licht in der Wache einsch
 
 ### Auslöser
 
-Standort-Webhooks können bei verschiedenen Ereignissen ausgelöst werden, z. B. Einsatz eingegangen oder Einsatz beendet.
+Beim Anlegen wird festgelegt, bei welchem Ereignis der Webhook ausgelöst wird:
+
+| Auslöser | Wird ausgelöst … |
+|---|---|
+| **Bei Einsatz erstellt** | sobald ein Einsatz angelegt wird |
+| **Bei Einsatz alarmiert** | sobald ein Einsatz alarmiert wird |
+| **Bei Einsatz aktualisiert** | bei jeder Aktualisierung eines Einsatzes |
+| **Bei Einsatz abgebrochen** | wenn ein Einsatz abgebrochen wird |
+| **Bei Einsatz beendet** | wenn ein Einsatz beendet wird |
+| **Bei Fahrzeugstatus-Änderung** | wenn ein Fahrzeug des Standorts einen neuen Status meldet |
+| **Bei Fahrzeugposition-Änderung** | wenn ein Fahrzeug des Standorts eine neue Position meldet |
+| **Deaktiviert** | nie – der Webhook bleibt gespeichert, wird aber nicht ausgeführt |
+
+Die oben genannten Einsatz-Variablen stehen nur bei den Einsatz-Auslösern zur Verfügung.
+
+### Fahrzeug-Webhooks (Status und Position)
+
+Mit den Auslösern **„Bei Fahrzeugstatus-Änderung"** und **„Bei Fahrzeugposition-Änderung"** reagiert ein Webhook nicht auf Einsätze, sondern auf Meldungen der Fahrzeuge – unabhängig davon, ob gerade ein Einsatz läuft. Typische Einsatzfälle: Fahrzeugstatus an eine Wachen-Anzeige oder ein Smart-Home-System übergeben, Fahrzeugpositionen an ein externes Lagesystem weiterleiten oder beim Ausrücken (Status 3) automatisch das Hallentor öffnen.
+
+**Verhalten:**
+
+- Ausgelöst wird nur für **Fahrzeuge des Standorts**, an dem der Webhook angelegt ist.
+- **Status:** Der Webhook wird bei jeder gemeldeten Statusänderung ausgeführt.
+- **Position:** Positionsmeldungen kommen sehr häufig. Damit das Zielsystem nicht überlastet wird, wird der Webhook **pro Fahrzeug höchstens alle 30 Sekunden** ausgeführt; dazwischen eingehende Positionen werden übersprungen.
+
+**Verfügbare Variablen:**
+
+| Variable | Beschreibung |
+|---|---|
+| `{Site}` | Connect-Standort des Fahrzeugs |
+| `{VehicleId}` | Connect Fahrzeug-ID |
+| `{CallSign}` | Funkrufname des Fahrzeugs |
+| `{ShortCallSign}` | Kurzer Funkrufname |
+| `{RadioId}` | Funkgerätekennung (ISSI) |
+| `{Status}` | Gemeldeter Fahrzeugstatus (Zahl, z. B. `3`) |
+| `{StatusTimestamp}` | Zeitpunkt der Statusmeldung (z. B. `2026-10-20T13:45:30`) |
+| `{Latitude}` | Breitengrad der Position (Dezimalpunkt, z. B. `50.14494`) |
+| `{Longitude}` | Längengrad der Position (Dezimalpunkt, z. B. `8.39624`) |
+| `{PositionTimestamp}` | Zeitpunkt der Positionsmeldung |
+
+> Die Fahrzeug-Variablen gibt es nur in der hier aufgeführten (englischen) Schreibweise. Ist ein Wert nicht vorhanden – z. B. keine Position bei einer reinen Statusmeldung – bleibt die Variable leer.
+
+**Beispiel:**
+
+```
+https://example.com/fahrzeug?rufname={CallSign}&status={Status}&lat={Latitude}&lng={Longitude}
+```
+
+Standort-Webhooks – auch Fahrzeug-Webhooks – lassen sich zusätzlich über die [öffentliche Connect API](/connect/schnittstellen/public_api) unter `/interfaces/public/webhooks` verwalten.
 
 ### Webhook testen
 
