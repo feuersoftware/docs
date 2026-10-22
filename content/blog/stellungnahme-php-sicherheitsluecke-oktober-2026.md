@@ -37,4 +37,4 @@ Betroffen sind alle PHP-Versionen vor 8.2.35, 8.3.36, 8.4.27 und 8.5.12. Wer sel
 - Sicherheitshinweis des PHP-Projekts zu CVE-2026-109619: [GHSA-6wmf-4rv5-p3rp](https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp)
 - Technische Analyse von Datadog Security Labs: [PHP2Shell – Critical vulnerabilities in PHP](https://securitylabs.datadoghq.com/articles/php2shell-critical-vulnerabilities-in-php/)
 
-Bei Fragen erreichen Sie uns wie gewohnt über den [Support](https://ticket.feuersoftware.com).
+Bei Fragen erreichen Sie uns wie gewohnt über den Support.
