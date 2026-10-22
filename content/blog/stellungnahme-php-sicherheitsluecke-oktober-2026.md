@@ -5,6 +5,7 @@ author:
   description: Das FeuerSoftware Entwicklungsteam
 date: 2026-10-22
 description: "Das BSI warnt vor zwei kritischen Schwachstellen in PHP (CVE-2026-109618 und CVE-2026-109619). Connect, die EinsatzApp und unsere weiteren Systeme zur Alarmierung sind davon nicht betroffen."
+image: /images/blog/stellungnahme-php-sicherheitsluecke-oktober-2026.jpg
 minRead: 2
 navigation: false
 ---
