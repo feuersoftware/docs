@@ -111,6 +111,12 @@ Wenn ein Einsatzupdate über die Leitstellen-Schnittstelle eingeht, können Feld
 
 ---
 
+### Kann ich Einsatzdaten automatisch mit mehreren Organisationen teilen?
+
+Ja. In der Vorlage für „Einsatzdaten teilen" kann als **Zielorganisation** zwar nur eine Organisation gewählt werden, damit sind aber alle ihre Standorte abgedeckt. Weitere Organisationen werden erreicht, indem ihre Standorte zusätzlich unter **Zielstandorte** ausgewählt werden. Bei der Ebene **Leitstelle** müssen die eigenen Standorte ebenfalls unter Zielstandorte ausgewählt werden, wenn sie untereinander Daten austauschen sollen. Die Partnerorganisationen benötigen eine passende Vorlage in Gegenrichtung. Details und ein Beispiel: [Organisationseinstellungen → Einsatzdaten teilen](/connect/12_organisationseinstellungen#zielorganisation-und-zielstandorte-kombinieren).
+
+---
+
 ## Alarmierung
 
 ### Wie kann ich testen, ob die Alarmierung funktioniert?

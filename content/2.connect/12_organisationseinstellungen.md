@@ -160,12 +160,32 @@ Hier wird eine **Vorlage** hinterlegt, die automatisch auf jeden neu angelegten 
 |---|---|
 | **Aktiviert** | Schaltet die automatische Freigabe anhand dieser Vorlage ein |
 | **Ebene** | **Organisation** – Daten werden mit den ausgewählten Zielen dieser Organisation geteilt. **Leitstelle** – Daten werden zusätzlich mit allen Organisationen derselben Leitstelle geteilt (nur wählbar, wenn eine Leitstellenanbindung besteht) |
-| **Freigebene Daten** | Welche Datentypen automatisch geteilt werden: Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen), Lagemeldungen, Einsatzprotokoll |
+| **Freigebene Daten** | Welche Datentypen automatisch geteilt werden: Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen), Lagemeldungen, Einsatzprotokoll, Einsatzanhänge |
 | **Freigabedauer** | Zeitspanne ab Einsatzbeginn, nach der die Freigabe automatisch endet (1 / 2 / 6 / 12 / 24 Stunden) |
-| **Zielorganisation** | Die Partnerorganisation, mit der automatisch verbunden werden soll |
-| **Zielstandorte** | Alternativ oder ergänzend: einzelne Standorte (z. B. weitere eigene Standorte), mit denen automatisch verbunden werden soll |
+| **Zielorganisation** | **Genau eine** Partnerorganisation (Einfachauswahl). Gemeint sind damit **alle Standorte** dieser Organisation, auch solche, die später hinzukommen |
+| **Zielstandorte** | Ergänzend: beliebig viele einzelne Standorte (Mehrfachauswahl), auch aus anderen Organisationen derselben Leitstelle oder aus der eigenen Organisation |
 
 > Eine automatische Verbindung zwischen zwei Einsätzen kommt nur zustande, wenn **beide Seiten** eine aktive Vorlage hinterlegt haben, die jeweils auf die andere Organisation bzw. den anderen Standort zeigt. Ein Standort-Template hat Vorrang vor dem Organisations-Template. Fehlt bei einer Seite die passende Vorlage, kann die Freigabe für den betroffenen Einsatz weiterhin manuell in der Einsatz-Detailansicht eingerichtet werden.
+
+#### Zielorganisation und Zielstandorte kombinieren
+
+Die beiden Felder **ergänzen sich**: Ein Einsatz wird automatisch verbunden, wenn er **zur Zielorganisation gehört ODER an einem der Zielstandorte** angelegt wurde.
+
+- **Mehrere Organisationen:** Als Zielorganisation kann nur eine Organisation gewählt werden. Weitere Organisationen werden erreicht, indem ihre Standorte unter **Zielstandorte** ausgewählt werden.
+- **Eigene Standorte:** Ist bei der Ebene **Leitstelle** eine fremde Organisation als Zielorganisation gewählt, sind die eigenen Standorte **nicht** automatisch enthalten. Sollen auch die eigenen Standorte untereinander Daten austauschen, müssen sie zusätzlich unter Zielstandorte ausgewählt werden.
+- **Auswahlliste:** Bei der Ebene **Leitstelle** erscheinen nur Organisationen, die an derselben Leitstelle angebunden sind und für die „Einsatzdaten teilen" freigeschaltet ist.
+- **Standort-Vorlage ersetzt Organisations-Vorlage:** Hat ein Standort eine eigene Vorlage, gilt für diesen Standort **ausschließlich** dessen Vorlage. Die Ziele der Organisations-Vorlage werden nicht zusätzlich übernommen.
+- **Gleiche Datentypen:** Ein Datentyp wird nur ausgetauscht, wenn ihn beide Seiten unter „Freigebene Daten" ausgewählt haben. Partnerorganisationen sollten ihre Vorlagen daher abstimmen.
+
+**Beispiel:** Eine Feuerwehr möchte Einsatzdaten mit allen Standorten der Gemeinde A und mit der Gemeinde B teilen, die an dieselbe Leitstelle angebunden ist.
+
+| Feld | Einstellung |
+|---|---|
+| **Ebene** | Leitstelle |
+| **Zielorganisation** | Gemeinde A – damit sind alle Standorte von Gemeinde A abgedeckt |
+| **Zielstandorte** | Alle Standorte von Gemeinde B, sowie bei Bedarf die eigenen Standorte |
+
+Gemeinde A und Gemeinde B hinterlegen ihrerseits eine aktive Vorlage, in der die Feuerwehr als Ziel eingetragen ist, und wählen dieselben Datentypen aus.
 
 ---
 

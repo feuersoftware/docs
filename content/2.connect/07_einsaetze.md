@@ -202,9 +202,12 @@ Zwei Einsätze können nur miteinander verbunden werden, wenn sie:
 
 - die **identische Einsatznummer** besitzen (i. d. R. von der Leitstelle vergeben),
 - beide noch **aktiv** sind (nicht abgeschlossen),
+- nicht älter als **30 Tage** sind,
 - jeweils zu einer Organisation gehören, für die **„Einsatzdaten teilen" freigeschaltet** ist.
 
 Ohne Einsatznummer ist eine Freigabe nicht möglich.
+
+> **Welche Daten fließen?** Ein Datentyp (z. B. Lagemeldungen) wird nur übertragen, wenn ihn **beide verbundenen Einsätze** unter „Freigebene Daten" ausgewählt haben. Hat nur eine Seite einen Datentyp angehakt, wird er in keine Richtung ausgetauscht.
 
 ### Freigabe manuell einrichten
 
