@@ -81,7 +81,7 @@ In den Inhalten von Barcode und QR-Code können folgende Platzhalter verwendet w
 
 ### FeuerSoftware-Verifizierung
 
-Mit der Verifizierung können sich Mitglieder vor Ort – z. B. gegenüber der Polizei – als aktive Einsatzkraft der Organisation ausweisen. Der QR-Code verweist auf eine öffentliche Prüfseite im Connect Portal, die beim Scannen Name und Organisation der Einsatzkraft anzeigt (oder einen Fehler, falls der Code ungültig oder abgelaufen ist). Ein einzelner Code ist **15 Minuten** gültig.
+Mit der Verifizierung können sich Mitglieder – z. B. bei örtlichen Einrichtungen wie Schwimmbädern für vergünstigte Eintritte – als aktive Einsatzkraft der Organisation ausweisen. Der QR-Code verweist auf eine öffentliche Prüfseite im Connect Portal, die beim Scannen Name und Organisation der Einsatzkraft anzeigt (oder einen Fehler, falls der Code ungültig oder abgelaufen ist). Ein einzelner Code ist **15 Minuten** gültig.
 
 > Die Verifizierung steht aus regulatorischen Gründen nur Organisationen mit einer regulären (bezahlten) Lizenz zur Verfügung. Während der kostenlosen 90-tägigen Teststellung (siehe [Lizenzierung](/connect/14_lizenzierung)) kann sie nicht aktiviert werden.
 

@@ -109,7 +109,7 @@ Der Blog ist über das Hauptmenü erreichbar und lädt externe RSS-Inhalte.
 
 ![Screenshot: Dienstausweis in der EinsatzApp mit Barcode, QR-Code und „Verifizieren"](/images/einsatzapp/14_dienstausweis.png)
 
-Der digitale Dienstausweis ermöglicht es Einsatzkräften, sich vor Ort – z. B. gegenüber der Polizei oder anderen Einsatzkräften – als Mitglied der eigenen Organisation auszuweisen. Zusätzlich kann er Barcodes oder QR-Codes für andere Systeme enthalten, z. B. für Zutrittskontrollen.
+Der digitale Dienstausweis ermöglicht es Einsatzkräften, sich – z. B. bei örtlichen Einrichtungen wie Schwimmbädern für vergünstigte Eintritte – als Mitglied der eigenen Organisation auszuweisen. Zusätzlich kann er Barcodes oder QR-Codes für andere Systeme enthalten, z. B. für Zutrittskontrollen.
 
 **Hauptmenü → Dienstausweis**
 

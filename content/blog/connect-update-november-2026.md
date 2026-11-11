@@ -65,7 +65,7 @@ Der digitale Dienstausweis hat in den Organisationseinstellungen eine eigene Sei
 - **Profilbild** anzeigen und auf Wunsch verpflichtend machen
 - **Barcode** in neun Formaten (u. a. Code 128, Code 39, EAN-13) – z. B. für Zutrittssysteme, Tankkarten oder Ausleihsysteme
 - **QR-Code** mit frei festgelegtem Inhalt
-- **FeuerSoftware-Verifizierung**, mit der sich Einsatzkräfte z. B. gegenüber der Polizei ausweisen können
+- **FeuerSoftware-Verifizierung**, mit der sich Einsatzkräfte z. B. bei örtlichen Einrichtungen wie Schwimmbädern ausweisen können – etwa für vergünstigte Eintritte
 
 ![Dienstausweis mit Barcode, QR-Code und „Verifizieren" in der EinsatzApp](/images/einsatzapp/14_dienstausweis.png)
 
