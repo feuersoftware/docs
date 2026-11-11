@@ -107,29 +107,36 @@ Der Blog ist über das Hauptmenü erreichbar und lädt externe RSS-Inhalte.
 
 ## Dienstausweis
 
-![Screenshot: Dienstausweis in der EinsatzApp](/images/einsatzapp/14_dienstausweis.png)
+![Screenshot: Dienstausweis in der EinsatzApp mit Barcode, QR-Code und „Verifizieren"](/images/einsatzapp/14_dienstausweis.png)
 
-Der digitale Dienstausweis ermöglicht es Einsatzkräften, sich vor Ort – z. B. gegenüber der Polizei oder anderen Einsatzkräften – als Mitglied der eigenen Organisation auszuweisen.
+Der digitale Dienstausweis ermöglicht es Einsatzkräften, sich vor Ort – z. B. gegenüber der Polizei oder anderen Einsatzkräften – als Mitglied der eigenen Organisation auszuweisen. Zusätzlich kann er Barcodes oder QR-Codes für andere Systeme enthalten, z. B. für Zutrittskontrollen.
 
 **Hauptmenü → Dienstausweis**
 
-Die Ansicht zeigt:
-- Profilbild und Name der Einsatzkraft
-- Name der Organisation
-- Einen QR-Code zur Verifizierung
-- Das Ablaufdatum/-uhrzeit des QR-Codes („Code gültig bis")
+> **Hinweis:** Der neue Dienstausweis mit Profilbild, Barcode, QR-Code und Personalnummer ist aktuell nur in der **Beta-Version der EinsatzApp** enthalten und wird mit dem nächsten regulären Update für alle verfügbar. So kommt ihr an die Beta: [EinsatzApp – Betaversionen](/einsatzapp/01_produktuebersicht#betaversionen)
 
-Damit der QR-Code auch bei Dunkelheit gut gescannt werden kann, stellt die App beim Öffnen der Ansicht automatisch die maximale Bildschirmhelligkeit ein und verhindert, dass der Bildschirm währenddessen ausgeht.
+Je nach Einstellung der Organisation (siehe [Connect: Organisationseinstellungen – Dienstausweis](/connect/12_organisationseinstellungen#dienstausweis)) zeigt der Ausweis:
+- Profilbild, Name und Organisation der Einsatzkraft
+- die Personalnummer (sofern hinterlegt)
+- einen **Barcode** und/oder **QR-Code** mit dem von der Organisation festgelegten Inhalt
+- den Button **„Verifizieren"** für die FeuerSoftware-Verifizierung
 
-### Ablauf der Prüfung
+Damit die Codes auch bei Dunkelheit gut gescannt werden können, stellt die App beim Öffnen der Ansicht automatisch die maximale Bildschirmhelligkeit ein und verhindert, dass der Bildschirm währenddessen ausgeht.
 
-1. Die Einsatzkraft öffnet den Dienstausweis in der EinsatzApp.
-2. Die prüfende Person scannt den angezeigten QR-Code mit einem beliebigen Smartphone (keine spezielle App nötig).
-3. Es öffnet sich automatisch eine Webseite mit dem Prüfergebnis:
+> Der Dienstausweis wird bei jedem Öffnen aktuell vom Server geladen und benötigt daher eine **Internetverbindung**.
+
+**Profilbild erforderlich:** Verlangt die Organisation ein Profilbild und ist keines hinterlegt, erscheint der Hinweis **„Für deinen Dienstausweis wird ein Profilbild benötigt."** Über **„Profilbild hochladen"** lässt sich direkt ein Bild im Profil hinterlegen; danach den Dienstausweis erneut öffnen.
+
+### Ablauf der Prüfung (FeuerSoftware-Verifizierung)
+
+1. Die Einsatzkraft öffnet den Dienstausweis und tippt auf **„Verifizieren"**.
+2. Es erscheint der QR-Code **„FeuerSoftware-Verifizierung"** mit der Angabe „Code gültig bis".
+3. Die prüfende Person scannt den QR-Code mit einem beliebigen Smartphone (keine spezielle App nötig).
+4. Es öffnet sich automatisch eine Webseite mit dem Prüfergebnis:
    - **Grüner Haken:** Vor- und Nachname sowie die zugehörige Organisation der Einsatzkraft werden angezeigt.
    - **Rotes Kreuz:** Der Code ist ungültig oder abgelaufen.
 
-> **Wichtig:** Der QR-Code ist nach dem Öffnen der Ansicht nur **15 Minuten** gültig. Nach Ablauf muss die Ansicht verlassen und erneut geöffnet werden, um einen neuen Code zu erhalten.
+> **Wichtig:** Ein Verifizierungs-Code ist **15 Minuten** gültig. Ist er abgelaufen, lädt die App automatisch einen neuen Code.
 
 ### Voraussetzungen
 

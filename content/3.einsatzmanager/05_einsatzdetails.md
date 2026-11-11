@@ -84,6 +84,53 @@ In der rechten unteren Ecke der Karte befindet sich eine **Legende** zu den Navl
 
 Wenn Fahrzeuge keine Live-Position empfangen, kann die Position manuell gesetzt werden: Klicke auf die gewünschte Position auf der Karte und wähle dann **„Fahrzeug hierher bewegen"**, um das entsprechende Fahrzeug auszuwählen.
 
+### Kartenformen zeichnen
+
+Mit Kartenformen lassen sich Einsatzabschnitte, Bereitstellungsräume, Sperrbereiche oder Wege direkt auf der Einsatzkarte markieren. Die Formen werden in Connect gespeichert und sind für alle Betrachter des Einsatzes **sofort sichtbar** – im EinsatzManager und im [Connect Portal](/connect/07_einsaetze#kartenformen).
+
+![Screenshot: Einsatzkarte mit Kartenformen und geöffnetem Menü „Form zeichnen"](/images/einsatzmanager/05_kartenformen.png)
+
+**Form zeichnen:**
+
+1. Oben rechts auf der Karte auf **„Form zeichnen"** klicken und ein Werkzeug wählen:
+
+| Werkzeug | Bedienung |
+|---|---|
+| **Freihand (wird erkannt)** | Form frei zeichnen – Kreis, Rechteck, Fläche oder Linie wird automatisch erkannt |
+| **Fläche** | Punkte setzen; zum Abschließen auf den ersten Punkt klicken, doppelklicken oder Enter drücken |
+| **Rechteck** | Erste Ecke setzen, dann die gegenüberliegende |
+| **Kreis** | Mittelpunkt setzen, dann einen Punkt auf dem Rand |
+| **Linie** | Punkte setzen; zum Abschließen doppelklicken oder Enter drücken |
+
+2. Im Dialog **„Neue Form"** festlegen:
+   - **Name** (Pflichtfeld, z. B. „Abschnitt Nord") – muss innerhalb des Einsatzes eindeutig sein
+   - **Farbe**
+   - **Fahrzeuge** – markierte Fahrzeuge erhalten den Namen der Form sofort als Tag (siehe unten)
+3. **„Speichern"** – oder **„Speichern und Benutzer informieren"**, um zusätzlich einen Eintrag im Einsatzprotokoll zu erzeugen.
+
+![Screenshot: Dialog „Neue Form" mit Name, Farbe und Fahrzeugen](/images/einsatzmanager/05_neue_form.png)
+
+Der Name wird in der Mitte der Form in ihrer Farbe angezeigt.
+
+> Formen können nur gezeichnet und bearbeitet werden, solange der Einsatz nicht beendet ist.
+
+**Form bearbeiten:** Ein Klick auf eine Form (oder ihren Namen) öffnet ein Menü:
+
+| Aktion | Beschreibung |
+|---|---|
+| **Fahrzeuge zuweisen** | Markierte Fahrzeuge erhalten den Tag dieses Bereichs, nicht markierte verlieren ihn |
+| **Name und Farbe ändern** | Name und Farbe der Form anpassen |
+| **Form ändern** | Eckpunkte ziehen; einen Zwischenpunkt ziehen fügt einen Punkt hinzu, Doppelklick entfernt ihn, der blaue Punkt verschiebt die ganze Form. Mit **„Fertig"** abschließen |
+| **Löschen** | Entfernt die Form von der Karte und den zugehörigen Tag von allen damit markierten Fahrzeugen |
+
+**Tags und Notizen an Fahrzeugen:** In der Detailansicht eines zugeteilten Fahrzeugs gibt es die Felder **„Tags"** und **„Notiz"**. Als Tag kann ein Kartenbereich oder ein eigener Begriff vergeben werden – so ist auf einen Blick sichtbar, welches Fahrzeug in welchem Abschnitt eingesetzt ist. Änderungen an Tags und Notizen sowie neu angelegte Kartenformen werden im Einsatzprotokoll vermerkt.
+
+![Screenshot: Zugewiesene Einheiten mit Tags der Kartenbereiche](/images/einsatzmanager/05_fahrzeug_tags.png)
+
+**Geteilte Kartenformen:** Werden über [Einsatzdaten teilen](#einsatzdaten-teilen) Kartenformen eines anderen Standorts geteilt, erscheinen diese **gestrichelt** und mit dem Standortnamen im Namen. Sie können nicht bearbeitet werden; über **„Zugeordnete Fahrzeuge anzeigen"** ist sichtbar, welche Fahrzeuge dem Bereich zugeordnet sind.
+
+Kartenformen lassen sich außerdem als **Lagekarte** in den Einsatzbericht übernehmen → [Lagekarte im Einsatzbericht](/einsatzmanager/11_anhaenge_und_dokumente#lagekarte-im-einsatzbericht)
+
 ### Vollbildkarte
 
 Die Karte kann über ein Steuerelement auf die gesamte Bildschirmfläche vergrößert werden.
@@ -248,9 +295,11 @@ Standardmäßig wird der Einsatz nach der im Connect-Portal hinterlegten **AAO (
 
 ## Einsatzdaten teilen
 
-Über die Schaltfläche **„Einsatzdaten teilen"** im Kopfbereich der Einsatzdetailseite können Fahrzeuge, Besatzung, Lagemeldungen und Einsatzprotokoll live mit anderen Standorten oder Organisationen ausgetauscht werden – z. B. wenn mehrere Feuerwehren mit derselben Einsatznummer zum gleichen Ereignis alarmiert wurden. Offene eingehende Verbindungsanfragen werden als roter Zähler auf der Schaltfläche angezeigt; eine aktive Freigabe zusätzlich als Badge in der Kopfzeile.
+Über die Schaltfläche **„Einsatzdaten teilen"** im Kopfbereich der Einsatzdetailseite können Fahrzeuge, Besatzung, Lagemeldungen, Einsatzprotokoll, Einsatzanhänge und Kartenformen live mit anderen Standorten oder Organisationen ausgetauscht werden – z. B. wenn mehrere Feuerwehren mit derselben Einsatznummer zum gleichen Ereignis alarmiert wurden. Offene eingehende Verbindungsanfragen werden als roter Zähler auf der Schaltfläche angezeigt; eine aktive Freigabe zusätzlich als Badge in der Kopfzeile.
 
 > **Voraussetzung:** Die Schaltfläche ist nur sichtbar, wenn die Funktion **„Einsatzdaten teilen"** zuvor durch den **Feuersoftware Support** für die Organisation freigeschaltet wurde.
+
+Wird eine Freigabe eingerichtet, angenommen, geändert oder beendet, aktualisiert sich die Seite automatisch – ohne Neuladen – und es erscheint kurz der Hinweis **„Die Einsatz-Freigabe wurde geändert"**. Geteilte Fahrzeuge, Protokolleinträge, Lagemeldungen, Anhänge und Kartenformen erscheinen bzw. verschwinden sofort.
 
 Konfiguration, Freigabekriterien (gleiche Einsatznummer, beidseitige Bestätigung) und die automatische Freigabe per Vorlage sind ausführlich beschrieben unter [Connect: Einsätze – Einsatzdaten teilen](/connect/07_einsaetze#einsatzdaten-teilen).
 
@@ -262,3 +311,5 @@ Alle Bereiche der Einsatzdetailseite werden bei eingehenden Ereignissen automati
 - Neue Protokolleinträge erscheinen sofort
 - Fahrzeugpositionen und -status werden live nachgeführt
 - Zugeteilte Einheiten aktualisieren sich bei Statusänderungen
+- Kartenformen anderer Benutzer erscheinen sofort auf der Karte
+- Änderungen an der Einsatz-Freigabe werden ohne Neuladen übernommen

@@ -93,6 +93,7 @@ Benutzer in der Liste antippen → **„Bearbeiten"**. Die Detailansicht hat meh
 ![Screenshot: Benutzer – Tab Allgemein](/images/connect/04_benutzer_tab_allgemein.png)
 
 - Name, E-Mail, Profilbild
+- **Personalnummer** – z. B. für den [Dienstausweis](/connect/12_organisationseinstellungen#dienstausweis) (Platzhalter `{StaffNumber}`). Ist die Personalnummer bereits bei einem anderen Benutzer der Organisation hinterlegt, erscheint der Hinweis **„Personalnummer bereits vergeben"**; das Speichern ist trotzdem möglich. Die Personalnummer wird auch im eigenen Profil angezeigt, kann dort aber nur von Benutzern mit der Berechtigung zur Benutzerverwaltung geändert werden.
 - Zwei-Faktor-Authentifizierung zurücksetzen
 
 ### Tab: Geräte

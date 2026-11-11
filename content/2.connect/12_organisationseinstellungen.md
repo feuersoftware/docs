@@ -24,21 +24,70 @@ Die Organisationseinstellungen sind ausschließlich auf **Organisations-Ebene** 
 | **Unwetterwarnungen-Anbieter** | Anbieter für Unwetterwarnungen (z. B. Deutscher Wetterdienst) |
 | **Unwetterwarnungen-Region** | Geografische Region für die Unwetterwarnung |
 | **Partner-Modus** | Ob die PartnerApp für diese Organisation aktiviert ist |
-| **Dienstausweis aktiviert** | Schaltet den digitalen Dienstausweis für alle Mitglieder der Organisation frei (siehe [Dienstausweis](#dienstausweis) unten) |
 
 ---
 
 ## Dienstausweis
 
+**Organisationseinstellungen → Dienstausweis**
+
+Der digitale Dienstausweis zeigt den Mitgliedern der Organisation in der **EinsatzApp** einen persönlichen Ausweis – mit Profilbild, Name, Organisation und Personalnummer sowie wahlweise einem Barcode, einem QR-Code und der FeuerSoftware-Verifizierung. Auf dieser Seite legst du fest, welche Angaben und Codes der Ausweis enthält. Details zur Nutzung in der App: [EinsatzApp: Weitere Funktionen – Dienstausweis](/einsatzapp/14_weiteres#dienstausweis).
+
+> **Hinweis:** Der neue Dienstausweis mit Profilbild, Barcode, QR-Code und Personalnummer ist aktuell nur in der **Beta-Version der EinsatzApp** enthalten und wird mit dem nächsten regulären Update für alle verfügbar. So kommt ihr an die Beta: [EinsatzApp – Betaversionen](/einsatzapp/01_produktuebersicht#betaversionen)
+
 ![Screenshot: Organisationseinstellungen – Dienstausweis](/images/connect/12_org_dienstausweis.png)
 
-**Organisationseinstellungen → Allgemein → Dienstausweis aktiviert**
+| Einstellung | Beschreibung |
+|---|---|
+| **Aktiviert** | Schaltet den Dienstausweis für alle Mitglieder der Organisation frei |
+| **Profilbild anzeigen** | Zeigt das Profilbild des Mitglieds auf dem Ausweis |
+| **Profilbild erforderlich** | Nur Benutzer mit Profilbild können den Dienstausweis öffnen. Ohne Profilbild werden sie in der App aufgefordert, eines hochzuladen |
+| **FeuerSoftware-Verifizierung (QR-Code)** | Ein zeitlich begrenzt gültiger QR-Code, über den Dritte die Person und ihre Organisation prüfen können (siehe unten) |
+| **Barcode** | Zeigt zusätzlich einen Barcode, z. B. für Zutrittssysteme, Tankkarten oder Ausleihsysteme |
+| **Barcode-Typ** | Format des Barcodes (siehe Tabelle unten) |
+| **Inhalt des Barcodes** | Inhalt mit Platzhaltern, z. B. `{StaffNumber}`. Ist der Inhalt für einen Benutzer leer oder lässt er sich nicht in den gewählten Barcode umwandeln, wird für ihn kein Barcode angezeigt |
+| **QR-Code** | Zeigt zusätzlich einen QR-Code mit frei festgelegtem Inhalt |
+| **Inhalt des QR-Codes** | Inhalt mit Platzhaltern, z. B. `{FirstName} {LastName} {StaffNumber}` |
 
-Der digitale Dienstausweis ermöglicht es Mitgliedern, sich in der **EinsatzApp** per QR-Code als aktive Einsatzkraft der Organisation auszuweisen. Details zur Nutzung in der App: [EinsatzApp: Weitere Funktionen – Dienstausweis](/einsatzapp/14_weiteres#dienstausweis).
+Änderungen mit **„Änderungen speichern"** übernehmen.
 
-> Die Funktion steht aus regulatorischen Gründen nur Organisationen mit einer regulären (bezahlten) Lizenz zur Verfügung. Während der kostenlosen 90-tägigen Teststellung (siehe [Lizenzierung](/connect/14_lizenzierung)) ist die Checkbox deaktiviert und kann nicht aktiviert werden.
+### Platzhalter
 
-Nach der Aktivierung kann jedes Mitglied seinen persönlichen Dienstausweis in der EinsatzApp öffnen. Der angezeigte QR-Code verweist auf eine öffentliche Prüfseite im Connect Portal, die beim Scannen automatisch Name und Organisation der Einsatzkraft anzeigt (oder einen Fehler, falls der Code ungültig oder abgelaufen ist). Ein einzelner QR-Code ist nach dem Erzeugen 15 Minuten gültig.
+In den Inhalten von Barcode und QR-Code können folgende Platzhalter verwendet werden. Sie werden für jedes Mitglied durch dessen Daten ersetzt:
+
+| Platzhalter | Wird ersetzt durch |
+|---|---|
+| `{FirstName}` | Vorname |
+| `{LastName}` | Nachname |
+| `{StaffNumber}` | Personalnummer (wird in der [Benutzerverwaltung](/connect/04_benutzerverwaltung#tab-allgemein) gepflegt) |
+
+**Beispiel:** Barcode-Typ „Code 128" mit dem Inhalt `FW-{StaffNumber}` ergibt für ein Mitglied mit der Personalnummer 4711 den Barcode „FW-4711".
+
+### Barcode-Typen
+
+| Barcode-Typ | Erlaubter Inhalt |
+|---|---|
+| **Code 128** | Buchstaben, Ziffern und Sonderzeichen – für die meisten Inhalte geeignet |
+| **Code 39** | Großbuchstaben, Ziffern sowie die Zeichen `- . $ / + %` und Leerzeichen |
+| **Interleaved 2 of 5 (I 2/5)** | Nur Ziffern, in gerader Anzahl |
+| **EAN-128 (GS1-128)** | Inhalt im GS1-Format mit Application Identifiers, z. B. `(01)12345678901231` |
+| **EAN-13** | Nur Ziffern: 12 Ziffern (Prüfziffer wird ergänzt) oder 13 Ziffern |
+| **EAN-8** | Nur Ziffern: 7 Ziffern (Prüfziffer wird ergänzt) oder 8 Ziffern |
+| **UPC-A** | Nur Ziffern: 11 Ziffern (Prüfziffer wird ergänzt) oder 12 Ziffern |
+| **UPC-E** | Nur Ziffern: 7 oder 8 Ziffern, beginnend mit 0 oder 1 |
+| **Codabar** | Ziffern und die Zeichen `- $ : / . +`, optional mit den Start-/Stopp-Zeichen A bis D |
+
+> **Tipp:** Welcher Barcode-Typ benötigt wird, gibt in der Regel das System vor, das den Code lesen soll (z. B. Zutrittskontrolle oder Tankstelle).
+
+### FeuerSoftware-Verifizierung
+
+Mit der Verifizierung können sich Mitglieder vor Ort – z. B. gegenüber der Polizei – als aktive Einsatzkraft der Organisation ausweisen. Der QR-Code verweist auf eine öffentliche Prüfseite im Connect Portal, die beim Scannen Name und Organisation der Einsatzkraft anzeigt (oder einen Fehler, falls der Code ungültig oder abgelaufen ist). Ein einzelner Code ist **15 Minuten** gültig.
+
+> Die Verifizierung steht aus regulatorischen Gründen nur Organisationen mit einer regulären (bezahlten) Lizenz zur Verfügung. Während der kostenlosen 90-tägigen Teststellung (siehe [Lizenzierung](/connect/14_lizenzierung)) kann sie nicht aktiviert werden.
+
+### Dienstausweis deaktivieren
+
+Wird **„Aktiviert"** abgewählt, erscheint die Sicherheitsabfrage **„Dienstausweis deaktivieren"**: Beim Deaktivieren werden **alle Einstellungen des Dienstausweises gelöscht**. Bei einer erneuten Aktivierung müssen Barcode, QR-Code usw. neu eingerichtet werden.
 
 ---
 
@@ -160,7 +209,7 @@ Hier wird eine **Vorlage** hinterlegt, die automatisch auf jeden neu angelegten 
 |---|---|
 | **Aktiviert** | Schaltet die automatische Freigabe anhand dieser Vorlage ein |
 | **Ebene** | **Organisation** – Daten werden mit den ausgewählten Zielen dieser Organisation geteilt. **Leitstelle** – Daten werden zusätzlich mit allen Organisationen derselben Leitstelle geteilt (nur wählbar, wenn eine Leitstellenanbindung besteht) |
-| **Freigebene Daten** | Welche Datentypen automatisch geteilt werden: Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen), Lagemeldungen, Einsatzprotokoll, Einsatzanhänge |
+| **Freigegebene Daten** | Welche Datentypen automatisch geteilt werden: Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen), Lagemeldungen, Einsatzprotokoll, Einsatzanhänge, Kartenformen |
 | **Freigabedauer** | Zeitspanne ab Einsatzbeginn, nach der die Freigabe automatisch endet (1 / 2 / 6 / 12 / 24 Stunden) |
 | **Zielorganisation** | **Genau eine** Partnerorganisation (Einfachauswahl). Gemeint sind damit **alle Standorte** dieser Organisation, auch solche, die später hinzukommen |
 | **Zielstandorte** | Ergänzend: beliebig viele einzelne Standorte (Mehrfachauswahl), auch aus anderen Organisationen derselben Leitstelle oder aus der eigenen Organisation |
@@ -175,7 +224,7 @@ Die beiden Felder **ergänzen sich**: Ein Einsatz wird automatisch verbunden, we
 - **Eigene Standorte:** Ist bei der Ebene **Leitstelle** eine fremde Organisation als Zielorganisation gewählt, sind die eigenen Standorte **nicht** automatisch enthalten. Sollen auch die eigenen Standorte untereinander Daten austauschen, müssen sie zusätzlich unter Zielstandorte ausgewählt werden.
 - **Auswahlliste:** Bei der Ebene **Leitstelle** erscheinen nur Organisationen, die an derselben Leitstelle angebunden sind und für die „Einsatzdaten teilen" freigeschaltet ist.
 - **Standort-Vorlage ersetzt Organisations-Vorlage:** Hat ein Standort eine eigene Vorlage, gilt für diesen Standort **ausschließlich** dessen Vorlage. Die Ziele der Organisations-Vorlage werden nicht zusätzlich übernommen.
-- **Gleiche Datentypen:** Ein Datentyp wird nur ausgetauscht, wenn ihn beide Seiten unter „Freigebene Daten" ausgewählt haben. Partnerorganisationen sollten ihre Vorlagen daher abstimmen.
+- **Gleiche Datentypen:** Ein Datentyp wird nur ausgetauscht, wenn ihn beide Seiten unter „Freigegebene Daten" ausgewählt haben. Partnerorganisationen sollten ihre Vorlagen daher abstimmen.
 
 **Beispiel:** Eine Feuerwehr möchte Einsatzdaten mit allen Standorten der Gemeinde A und mit der Gemeinde B teilen, die an dieselbe Leitstelle angebunden ist.
 

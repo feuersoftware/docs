@@ -63,6 +63,15 @@ Einen Einsatz in der Übersicht antippen → Detailansicht mit mehreren Tabs:
 - Personenstatus (wer kommt / wer kommt nicht)
 - Karte mit Einsatzort und Fahrzeugpositionen
 - Zusatzinformationen und Dynamische Felder
+- Kartenformen aus dem EinsatzManager (siehe unten)
+
+### Kartenformen
+
+Im [EinsatzManager](/einsatzmanager/05_einsatzdetails#kartenformen-zeichnen) gezeichnete Kartenformen – z. B. Einsatzabschnitte, Bereitstellungsräume oder Sperrbereiche – werden auch auf der Karte im Tab „Allgemein" angezeigt: als Fläche, Rechteck, Kreis oder Linie in ihrer Farbe und mit ihrem Namen. Formen, die ein anderer Standort über [Einsatzdaten teilen](#einsatzdaten-teilen) bereitstellt, erscheinen **gestrichelt und blasser** und tragen zusätzlich den Namen dieses Standorts.
+
+![Screenshot: Einsatz-Detailansicht mit Kartenformen](/images/connect/07_kartenformen.png)
+
+Im Connect Portal werden die Formen nur angezeigt; gezeichnet und bearbeitet werden sie im EinsatzManager.
 
 ### Tab: Protokoll
 Chronologisches Protokoll aller Ereignisse des Einsatzes:
@@ -98,9 +107,11 @@ Im EinsatzManager werden Anhänge mit Standort zusätzlich auf der Einsatzkarte 
 
 Für abgeschlossene Einsätze kann ein Einsatzbericht als PDF heruntergeladen werden. Welche Seiten/Inhalte der Bericht enthält, wird zentral in den [Organisationseinstellungen](./12_organisationseinstellungen#einsatzberichte) festgelegt.
 
-### Berichtsabschnitte und Bilddokumentation
+### Berichtsabschnitte, Lagekarte und Bilddokumentation
 
-Im Reiter **„Bericht"** lassen sich über Kacheln die gewünschten **Berichtsabschnitte** ein- oder ausschließen (Einsatzdaten, Zusätzliche Infos, Fahrzeugbesatzung, Lagemeldung, Einsatzprotokoll inkl. Kategorienauswahl, Bilddokumentation).
+Im Reiter **„Bericht"** lassen sich über Kacheln die gewünschten **Berichtsabschnitte** ein- oder ausschließen (Einsatzdaten, Zusätzliche Infos, Fahrzeugbesatzung, Lagemeldung, Einsatzprotokoll inkl. Kategorienauswahl, Lagekarte, Bilddokumentation).
+
+In der Kachel **„Lagekarte"** werden die [Kartenformen](#kartenformen) des Einsatzes einzeln oder über **„Alle auswählen"** ausgewählt (standardmäßig keine, maximal 50). Im PDF erscheinen sie auf einer eigenen Seite als **Karte mit Legende** – vor der Bilddokumentation. Details: [EinsatzManager: Lagekarte im Einsatzbericht](/einsatzmanager/11_anhaenge_und_dokumente#lagekarte-im-einsatzbericht)
 
 In der Kachel **„Bilddokumentation"** können über **„Bilder auswählen"** bis zu **10 Fotos** aus den Einsatzanhängen gewählt werden. Sie erscheinen zwei pro Seite am Ende des Berichts; die Reihenfolge der Auswahl bestimmt die Reihenfolge im Bericht.
 
@@ -207,7 +218,7 @@ Zwei Einsätze können nur miteinander verbunden werden, wenn sie:
 
 Ohne Einsatznummer ist eine Freigabe nicht möglich.
 
-> **Welche Daten fließen?** Ein Datentyp (z. B. Lagemeldungen) wird nur übertragen, wenn ihn **beide verbundenen Einsätze** unter „Freigebene Daten" ausgewählt haben. Hat nur eine Seite einen Datentyp angehakt, wird er in keine Richtung ausgetauscht.
+> **Welche Daten fließen?** Ein Datentyp (z. B. Lagemeldungen) wird nur übertragen, wenn ihn **beide verbundenen Einsätze** unter „Freigegebene Daten" ausgewählt haben. Hat nur eine Seite einen Datentyp angehakt, wird er in keine Richtung ausgetauscht.
 
 ### Freigabe manuell einrichten
 
@@ -219,7 +230,7 @@ Ohne Einsatznummer ist eine Freigabe nicht möglich.
 |---|---|
 | **Aktiviert** | Schaltet die Freigabe für diesen Einsatz ein |
 | **Ebene** | **Organisation** – nur Standorte der eigenen Organisation kommen als Ziel infrage. **Leitstelle** – zusätzlich alle Organisationen derselben Leitstelle (nur verfügbar, wenn eine Leitstellenanbindung besteht) |
-| **Freigebene Daten** | Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen wählbar), Lagemeldungen, Einsatzprotokoll, Einsatzanhänge |
+| **Freigegebene Daten** | Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen wählbar), Lagemeldungen, Einsatzprotokoll, Einsatzanhänge, Kartenformen |
 | **Freigabedauer** | 1 / 2 / 6 / 12 / 24 Stunden ab Einsatzbeginn – danach endet die Freigabe automatisch |
 | **Zielstandorte** | Auswahl der Standorte bzw. Organisationen, mit denen der Einsatz verbunden werden soll (Vorschlagsliste basiert auf Einsätzen mit gleicher Einsatznummer, siehe unten) |
 

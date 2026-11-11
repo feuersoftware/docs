@@ -62,11 +62,17 @@ Mit dem Typ **„Nextcloud-Referenz"** lassen sich Dokumente aus der [Nextcloud 
 1. Als Typ **„Nextcloud-Referenz"** wählen
 2. Im Feld **„Wert"** auf das **Ordner-Symbol** („Nextcloud durchsuchen") klicken
 3. Im Dialog **„Datei auswählen"** durch die Ordner navigieren oder über **„Diesen Ordner durchsuchen"** nach dem Dateinamen suchen (ab 2 Zeichen, inkl. Unterordner)
-4. Datei anklicken – der Pfad wird übernommen
+4. Datei anklicken – der Pfad wird übernommen – **oder** einen ganzen Ordner verlinken: in den gewünschten Ordner wechseln und **„Diesen Ordner auswählen"** klicken (im obersten Ordner nicht möglich)
+
+![Screenshot: Dialog „Datei auswählen" mit „Diesen Ordner auswählen"](/images/connect/09_ordner_auswaehlen.png)
 
 Alternativ kann ein Pfad oder ein aus der Nextcloud kopierter Link direkt in das Feld eingefügt werden.
 
 Im Connect Portal und im EinsatzManager erscheint der Eintrag als Button mit dem Dateinamen, der das Dokument direkt in der Vorschau öffnet.
+
+Ein **Ordner-Verweis** wird als Button mit Ordner-Symbol angezeigt. Beim Öffnen zeigt die Vorschau links die **Dateiliste des Ordners** und rechts die ausgewählte Datei; die erste Datei wird automatisch geöffnet. So lassen sich z. B. alle Pläne eines Objekts mit einem einzigen Eintrag bereitstellen – neue Dateien im Ordner erscheinen automatisch.
+
+![Screenshot: Ordner-Verweis mit Dateiliste und Vorschau](/images/connect/09_ordner_verweis.png)
 
 > **Voraussetzungen und Hinweise:**
 > - Der Typ „Nextcloud-Referenz" wird nur angeboten, wenn am Standort eine Nextcloud verbunden ist. Bestehende Einträge bleiben bearbeitbar.

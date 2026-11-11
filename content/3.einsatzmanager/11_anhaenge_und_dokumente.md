@@ -1,6 +1,6 @@
 ---
 title: Anhänge & Dokumente
-description: Einsatzfotos und -dateien im EinsatzManager hochladen, mit Standort auf der Karte verorten, im Einsatzbericht verwenden und Nextcloud-Dokumente im Einsatz aufrufen
+description: Einsatzfotos und -dateien im EinsatzManager hochladen, aus der Nextcloud anhängen, mit Standort auf der Karte verorten, als Bilddokumentation und Lagekarte im Einsatzbericht verwenden und Nextcloud-Dokumente im Einsatz aufrufen
 ---
 
 # Anhänge & Dokumente
@@ -22,13 +22,13 @@ Der Bereich ist standardmäßig zugeklappt und lässt sich per Klick öffnen.
 Es gibt zwei Wege:
 
 - **„+"-Button** im Kopf des Bereichs „Anhänge"
-- **Über die Einsatzkarte:** Rechtsklick (bzw. langes Drücken) auf die gewünschte Stelle → **„Anhang an dieser Position hinzufügen"**. Der Standort ist dann bereits vorbelegt.
+- **Über die Einsatzkarte:** Klick auf die gewünschte Stelle → **„Anhang an dieser Position hinzufügen"**. Der Standort ist dann bereits vorbelegt.
 
 ![Screenshot: Dialog „Anhang hinzufügen" mit Beschreibung und Standort-Karte](/images/einsatzmanager/11_anhang_hinzufuegen.png)
 
 Im Dialog **„Anhang hinzufügen"**:
 
-1. **„Datei auswählen"** – eine Datei auswählen (je Vorgang eine Datei)
+1. **„Datei auswählen"** – eine Datei vom Gerät auswählen (je Vorgang eine Datei) – oder **„Aus Nextcloud"**, siehe unten
 2. **Beschreibung** – optional
 3. **Standort** – optional, siehe unten
 4. **„Hochladen"**
@@ -36,6 +36,19 @@ Im Dialog **„Anhang hinzufügen"**:
 **Unterstützte Dateitypen:** Bilder (JPG, PNG, GIF, WebP, BMP, SVG, HEIC/HEIF), Dokumente (PDF, Word, Excel, TXT, CSV) und Videos (MP4, WebM, MOV). Maximale Größe: 25 MB im Connect Storage, 250 MB bei Ablage in einer Nextcloud.
 
 > Auf Tablets und Smartphones bietet der Dateiauswahl-Dialog des Betriebssystems in der Regel auch direkt die **Kamera** an.
+
+### Datei aus der Nextcloud anhängen
+
+Ist am Standort eine [Nextcloud](/connect/schnittstellen/nextcloud) verbunden, erscheint im Dialog „Anhang hinzufügen" neben „Datei auswählen" der Button **„Aus Nextcloud"**. So lassen sich z. B. Objektpläne oder Fotos, die bereits in der Nextcloud liegen, direkt an den Einsatz hängen.
+
+![Screenshot: Dialog „Datei aus Nextcloud auswählen"](/images/einsatzmanager/11_aus_nextcloud.png)
+
+1. **„Aus Nextcloud"** klicken – es öffnet sich der Dialog **„Datei aus Nextcloud auswählen"**, beginnend beim Ordner „Dokumente".
+2. Durch die Ordner navigieren oder über **„Diesen Ordner durchsuchen"** nach einem Dateinamen suchen. Es werden nur Dateien mit unterstützten Dateitypen angezeigt.
+3. Datei anklicken – der Dateiname wird im Dialog übernommen.
+4. Wie gewohnt Beschreibung und Standort ergänzen und **„Hochladen"**.
+
+Die Datei wird dabei **in den Einsatz kopiert** und ist anschließend ein ganz normaler Einsatzanhang. Spätere Änderungen an der Datei in der Nextcloud wirken sich auf den Anhang nicht aus. Bei Fotos wird der Standort – wie beim normalen Upload – aus den GPS-Daten übernommen.
 
 ### Standort eines Anhangs
 
@@ -55,13 +68,14 @@ Jeder Anhang zeigt Vorschaubild, Dateiname, Beschreibung und Größe. Anhänge m
 | Symbol | Aktion |
 |---|---|
 | ⬇ | **Herunterladen** |
+| ✏️ | **Anhang bearbeiten** – Beschreibung nachträglich ändern |
 | 🚩 | **Melden** – Anhänge mit unangemessenem oder rechtswidrigem Inhalt melden; die Meldung wird von FeuerSoftware geprüft |
 | 📍 | **Standort setzen / bearbeiten** |
 | 🗑 | **Anhang löschen** (mit Sicherheitsabfrage) |
 
 Ein Klick auf den Dateinamen oder das Vorschaubild öffnet die **Vorschau** (Bilder, PDFs, Videos).
 
-> Beschreibung und Dateiname lassen sich nach dem Hochladen nicht mehr ändern – bei Bedarf den Anhang löschen und neu hochladen.
+> Der Dateiname lässt sich nach dem Hochladen nicht mehr ändern – bei Bedarf den Anhang löschen und neu hochladen.
 
 ### Geteilte Anhänge
 
@@ -70,6 +84,8 @@ Ist der Einsatz über [Einsatzdaten teilen](/einsatzmanager/05_einsatzdetails#ei
 ### Aktualisierung
 
 Neue Anhänge anderer Benutzer werden in der Anhang-Liste und auf der Karte nach dem **Neuladen der Seite** angezeigt. Der zugehörige Protokolleintrag erscheint dagegen sofort (siehe unten).
+
+**Geteilte Anhänge** eines verbundenen Einsatzes werden dagegen automatisch nachgeladen: Fügt der Partner einen Anhang hinzu, aktualisiert sich die Liste ohne Neuladen und es erscheint kurz der Hinweis **„Geteilte Anhänge aktualisiert"**.
 
 ---
 
@@ -108,9 +124,29 @@ Es können **bis zu 10 Fotos** gewählt werden; sie erscheinen **zwei pro Seite 
 
 ![Screenshot: Seite „Bilddokumentation" im PDF-Einsatzbericht](/images/einsatzmanager/11_bericht_bilddokumentation_pdf.png)
 
+## Lagekarte im Einsatzbericht
+
+**Einsatzdetailseite → Reiter „Bericht" → Berichtsabschnitte → Kachel „Lagekarte"**
+
+Die auf der Einsatzkarte gezeichneten [Kartenformen](/einsatzmanager/05_einsatzdetails#kartenformen-zeichnen) – z. B. Einsatzabschnitte oder Sperrbereiche – lassen sich als **Lagekarte** in den PDF-Einsatzbericht übernehmen.
+
+![Screenshot: Kachel „Lagekarte" mit ausgewählten Kartenformen](/images/einsatzmanager/11_lagekarte_auswahl.png)
+
+- In der Kachel **„Lagekarte"** erscheint jede Form als Schaltfläche mit Farbe, Formsymbol und Name. Geteilte Formen anderer Standorte sind zusätzlich mit dem Standortnamen gekennzeichnet.
+- Formen per Klick einzeln aus- oder abwählen – oder über **„Alle auswählen"** / **„Keine auswählen"**.
+- Standardmäßig ist **keine Form ausgewählt**. Es können bis zu **50 Formen** gewählt werden.
+- Hat der Einsatz keine Kartenformen, zeigt die Kachel „Dieser Einsatz hat keine Formen auf der Karte".
+
+Im PDF erscheint die Lagekarte als **eigene Seite** – vor der Bilddokumentation. Sie enthält:
+
+- die Karte mit den ausgewählten Formen, ihren Namen, dem **Einsatzort** und einem **Maßstab**
+- eine **Legende** mit Farbe, Bezeichnung, Art (z. B. Fläche, Kreis, Linie) und Größe jeder Form – Flächeninhalt in m², Radius bei Kreisen
+
+![Screenshot: Seite „Lagekarte" im PDF-Einsatzbericht](/images/einsatzmanager/11_bericht_lagekarte_pdf.png)
+
 ### Erstellte Berichte
 
-Jeder heruntergeladene, gedruckte oder per E-Mail versendete Einsatzbericht wird automatisch als PDF gespeichert und erscheint im Bereich „Anhänge" unter **„Erstellte Berichte"** – mit Datum, Größe und einer Zusammenfassung der enthaltenen Abschnitte (z. B. „Eigene Auswahl: Einsatzdaten, Einsatzprotokoll (3 Kategorien), 4 Bilder"). Gespeicherte Berichte können heruntergeladen und gelöscht werden.
+Jeder heruntergeladene, gedruckte oder per E-Mail versendete Einsatzbericht wird automatisch als PDF gespeichert und erscheint im Bereich „Anhänge" unter **„Erstellte Berichte"** – mit Datum, Größe und einer Zusammenfassung der enthaltenen Abschnitte (z. B. „Eigene Auswahl: Einsatzdaten, Einsatzprotokoll (3 Kategorien), Lagekarte (3 Formen), 4 Bilder"). Konnte beim Erstellen keine Hintergrundkarte geladen werden, steht bei der Lagekarte zusätzlich „ohne Hintergrundkarte". Gespeicherte Berichte können heruntergeladen und gelöscht werden.
 
 ---
 
@@ -131,6 +167,10 @@ Der Reiter zeigt die **Dokumentenablage der Standort-Nextcloud** (ab dem eingest
 ### Dokument-Verweise
 
 Verweise auf Nextcloud-Dokumente im **Infoboard** und in den **dynamischen Zusatzinformationen** werden als Button mit dem Dateinamen angezeigt und öffnen das Dokument direkt in der Vorschau. Ist am Standort keine Nextcloud verbunden, werden solche Verweise ausgeblendet.
+
+Ein Verweis kann auch auf einen ganzen **Ordner** zeigen (Button mit Ordner-Symbol). Ein Klick öffnet dann eine größere Vorschau mit der **Dateiliste des Ordners** links und der Vorschau rechts; die erste Datei wird automatisch geöffnet. Unterordner lassen sich öffnen, über den verknüpften Ordner hinaus kann aber nicht navigiert werden. So lassen sich z. B. alle Pläne eines Objekts mit einem einzigen Verweis bereitstellen.
+
+![Screenshot: Ordner-Verweis mit Dateiliste und Vorschau](/images/connect/09_ordner_verweis.png)
 
 ---
 

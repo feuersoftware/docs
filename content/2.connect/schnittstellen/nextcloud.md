@@ -8,7 +8,7 @@ description: Eine eigene Nextcloud an einen Standort anbinden – als Dateispeic
 Über die Nextcloud-Schnittstelle wird eine **eigene, selbst betriebene Nextcloud** an einen Standort angebunden. Sie erfüllt zwei Aufgaben:
 
 1. **Dateispeicher** – Anhänge (z. B. Einsatzfotos, Anhänge an News, Termine und Mängelmeldungen, Monitor-Dateien) können statt im Connect Storage direkt in der Nextcloud abgelegt werden. Sie zählen dann nicht zum Speicherkontingent der Organisation.
-2. **Dokumentenablage** – Vorhandene Dokumente wie Objekt-, Feuerwehr- oder BMA-Pläne werden in Connect durchsuchbar und können im Infoboard, in dynamischen Zusatzinformationen und im EinsatzManager geöffnet werden.
+2. **Dokumentenablage** – Vorhandene Dokumente wie Objekt-, Feuerwehr- oder BMA-Pläne werden in Connect durchsuchbar und können im Infoboard, in dynamischen Zusatzinformationen und im EinsatzManager geöffnet werden. Verlinkt werden können einzelne Dateien oder ganze Ordner (siehe [Infoboard: Nextcloud-Dokumente verlinken](/connect/09_infoboard#nextcloud-dokumente-verlinken)). Im EinsatzManager lassen sich Dateien aus der Nextcloud außerdem direkt [an einen Einsatz anhängen](/einsatzmanager/11_anhaenge_und_dokumente#datei-aus-der-nextcloud-anhängen).
 
 Die Anbindung ist **kostenlos**. Pro Standort kann genau eine Nextcloud verbunden werden.
 
