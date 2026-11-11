@@ -94,6 +94,26 @@ Einsatzupload.exe "f34f3hrewrwed4dc34t4vt3zurewb2b6543c52c525q345wqe5vwev5a5a3" 
 
 > Einige Endpunkte (z. B. `POST /operation`, `PUT /user/{id}`) sind ausschließlich der Rolle `InterfacePublic` vorbehalten.
 
+### Standortangaben
+
+Endpunkte, die einen Standort brauchen, akzeptieren die **Standort-ID**, den **Standortnamen** oder beides:
+
+| Endpunkt | Standort-ID | Standortname |
+|---|---|---|
+| `POST /news` (Standort-Neuigkeit) | `SiteId` | `Site` |
+| `POST /infoboard/groups` | `SiteId` | `SiteName` |
+| `POST /defectReport` | `SiteId` | `SiteName` |
+| `POST /defectReportCategory` | `SiteId` | `SiteName` |
+| `/webhooks` (Query-Parameter) | `siteId` | `siteName` |
+
+- **Token auf Standortebene (`InterfacePublic`):** Die Angaben sind optional. Ohne Angabe gilt der Standort des Tokens. Neuigkeiten und Info-Board-Gruppen werden immer am Standort des Tokens angelegt, eine Standortangabe wird dort ignoriert.
+- **Token auf Organisationsebene (`InterfacePublicOrganization`):** Standort-ID oder Standortname ist erforderlich. Für eine organisationsweite Mängelkategorie genügt stattdessen `OrganizationId`.
+- **ID und Name zusammen** müssen denselben Standort bezeichnen.
+
+Fehlende, widersprüchliche oder unbekannte Standortangaben werden mit `400 Bad Request` abgelehnt. Dasselbe gilt für einen Standort, auf den der Token keinen Zugriff hat (z. B. `A site with id 123 could not be found.`).
+
+Antworten enthalten Standort-ID und Standortname, z. B. `SiteId` und `SiteName` im [`OperationModel`](#operationmodel) sowie `SiteId` und `Site` im [`NewsModel`](#newsmodel).
+
 ---
 
 ### ENUM-Referenz
@@ -420,6 +440,8 @@ Alle Felder sind optional. Über die öffentliche API vorgenommene Änderungen e
 
 > Kategorie `FasNotification` kann nicht erstellt werden – wird mit `403 Forbidden` abgelehnt.
 
+Den Standort einer Standort-Neuigkeit gibt ein Token auf Organisationsebene mit `Site` (Name), `SiteId` oder beidem an, siehe [Standortangaben](#standortangaben).
+
 ---
 
 ### Alarmgruppen – `/alarmgroup`
@@ -477,6 +499,8 @@ Pro Benutzer wird nur der **jeweils aktuellste** Rückmeldestand zurückgegeben.
 | `GET` | `/defectReportCategory` | Alle Kategorien. |
 | `POST/PUT/DELETE` | `/defectReportCategory/{id}` | Kategorie verwalten. |
 
+Beim Anlegen eines Mängelberichts oder einer Standort-Kategorie wird der Standort mit `SiteId`, `SiteName` oder beidem angegeben. Mit einem Token auf Standortebene kann die Angabe entfallen, siehe [Standortangaben](#standortangaben).
+
 **Anhänge:**
 
 | Methode | Endpunkt | Beschreibung |
@@ -514,7 +538,7 @@ Pro Benutzer wird nur der **jeweils aktuellste** Rückmeldestand zurückgegeben.
 
 `SiteInfoModel` (Antwortmodell) erweitert `CreateSiteInfoModel` um `Id`, `SiteId` und `InfoGroupName`.
 
-**Gruppen:** Request Body enthält lediglich `Name` (string, Pflicht). Auf Organisationsebene (`InterfacePublicOrganization`) ist beim Anlegen zusätzlich `SiteId` erforderlich.
+**Gruppen:** Request Body enthält `Name` (string, Pflicht). Auf Organisationsebene (`InterfacePublicOrganization`) ist beim Anlegen zusätzlich der Standort erforderlich: `SiteId`, `SiteName` oder beides, siehe [Standortangaben](#standortangaben). Auf Standortebene wird die Gruppe immer am Standort des Tokens angelegt.
 
 ---
 
@@ -595,6 +619,8 @@ Geocodiert eine Adresse und gibt Koordinaten zurück.
 | `Leader` | string? | Einsatzleiter. |
 | `Properties` | `OperationPropertyModel[]` | Benutzerdefinierte Eigenschaften. |
 | `AdditionalInformation` | `AdditionalInformationModel[]` | Zusätzliche Informationen. |
+| `SiteId` | int | Standort-ID. |
+| `SiteName` | string | Standortname. |
 
 ---
 
@@ -808,6 +834,7 @@ Geocodiert eine Adresse und gibt Koordinaten zurück.
 | `Groups` | string[] | Zielgruppen (leer = alle). |
 | `MailingLists` | string[] | Verteilerlisten. |
 | `Site` | string | Standortname (null bei Organisations-Neuigkeiten). |
+| `SiteId` | int? | Standort-ID (null bei Organisations-Neuigkeiten). |
 | `AdditionalInformation` | `NewsAdditionalInformation`? | Zusätzliche strukturierte Informationen. |
 
 ---
