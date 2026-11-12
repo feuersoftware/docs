@@ -100,7 +100,7 @@ Endpunkte, die einen Standort brauchen, akzeptieren die **Standort-ID**, den **S
 
 | Endpunkt | Standort-ID | Standortname |
 |---|---|---|
-| `POST /news` (Standort-Neuigkeit) | `SiteId` | `Site` |
+| `POST /news` (Standort-Neuigkeit) | `SiteId` | `SiteName` (veraltet: `Site`) |
 | `POST /infoboard/groups` | `SiteId` | `SiteName` |
 | `POST /defectReport` | `SiteId` | `SiteName` |
 | `POST /defectReportCategory` | `SiteId` | `SiteName` |
@@ -112,7 +112,22 @@ Endpunkte, die einen Standort brauchen, akzeptieren die **Standort-ID**, den **S
 
 Fehlende, widersprüchliche oder unbekannte Standortangaben werden mit `400 Bad Request` abgelehnt. Dasselbe gilt für einen Standort, auf den der Token keinen Zugriff hat (z. B. `A site with id 123 could not be found.`).
 
-Antworten enthalten Standort-ID und Standortname, z. B. `SiteId` und `SiteName` im [`OperationModel`](#operationmodel) sowie `SiteId` und `Site` im [`NewsModel`](#newsmodel).
+Antworten enthalten Standort-ID und Standortname als `SiteId` und `SiteName`, z. B. im [`OperationModel`](#operationmodel), im [`NewsModel`](#newsmodel), bei Alarmgruppen und Fahrzeugen.
+
+#### Veraltete Felder `Site` (Ablaufdatum 1. Juli 2027)
+
+Die Felder `Site` werden durch `SiteId` und `SiteName` ersetzt. Bis zum 30. Juni 2027 bleiben sie unverändert erhalten; ab dem **1. Juli 2027** können sie entfallen. Bitte stellen Sie Ihre Integration bis dahin auf `SiteId` und `SiteName` um.
+
+| Wo | Veraltetes Feld | Ersatz |
+|---|---|---|
+| `POST /news` (Anfrage) | `Site` (Standortname) | `SiteName` |
+| [`NewsModel`](#newsmodel) | `Site` (Standortname) | `SiteName` |
+| Alarmgruppen (`/alarmgroup`) | `Site` (`SiteBriefModel`) | `SiteId`, `SiteName` |
+| Fahrzeuge ([`SharedVehicleExtendedModel`](#sharedvehicleextendedmodel), auch in Fahrzeugzuweisungen und der Abrechnung) | `Site` (`SiteBriefModel`) | `SiteId`, `SiteName` |
+
+Beim Anlegen einer Neuigkeit wird `Site` bis dahin weiter als Standortname angenommen. Werden `Site` und `SiteName` zusammen angegeben, müssen sie übereinstimmen.
+
+Im Swagger-Dokument sind die Felder `Site` der Neuigkeiten als `deprecated` mit `x-sunset: 2027-07-01` gekennzeichnet. Bei Alarmgruppen und Fahrzeugen ist `Site` ein Objekt, das OpenAPI nicht so kennzeichnen kann; dort steht der Hinweis in der Beschreibung, und es gilt dasselbe Datum.
 
 ---
 
@@ -440,7 +455,7 @@ Alle Felder sind optional. Über die öffentliche API vorgenommene Änderungen e
 
 > Kategorie `FasNotification` kann nicht erstellt werden – wird mit `403 Forbidden` abgelehnt.
 
-Den Standort einer Standort-Neuigkeit gibt ein Token auf Organisationsebene mit `Site` (Name), `SiteId` oder beidem an, siehe [Standortangaben](#standortangaben).
+Den Standort einer Standort-Neuigkeit gibt ein Token auf Organisationsebene mit `SiteName`, `SiteId` oder beidem an, siehe [Standortangaben](#standortangaben). Das bisherige Feld `Site` (Name) ist veraltet und kann ab dem 1. Juli 2027 entfallen.
 
 ---
 
@@ -452,6 +467,8 @@ Den Standort einer Standort-Neuigkeit gibt ein Token auf Organisationsebene mit 
 | `PUT` | `/alarmgroup/{id}` | Mitglieder einer Gruppe vollständig ersetzen. |
 
 Benutzer werden anhand von `Id`, `UserName` oder `PagerIssi` identifiziert.
+
+Den Standort einer Alarmgruppe enthalten `SiteId` und `SiteName` (beim Aktualisieren ignoriert). Das Objekt `Site` ist veraltet und kann ab dem 1. Juli 2027 entfallen.
 
 ---
 
@@ -709,7 +726,9 @@ Geocodiert eine Adresse und gibt Koordinaten zurück.
 | `Description` | string | Beschreibung. |
 | `Crew` | int | Aktuelle Besatzungsstärke. |
 | `Phone` | string? | Telefonnummer. |
-| `Site` | `SiteBriefModel` | Zugehöriger Standort. |
+| `SiteId` | int | Standort-ID. |
+| `SiteName` | string | Standortname. |
+| `Site` | `SiteBriefModel` | Veraltet, kann ab dem 1. Juli 2027 entfallen: zugehöriger Standort, stattdessen `SiteId` und `SiteName`. |
 | `Status` | `SharedVehicleStatusModel` | Aktueller Status. |
 | `Availability` | `VehicleAvailabilityModel`? | Aktuelle Verfügbarkeit. |
 
@@ -833,8 +852,9 @@ Geocodiert eine Adresse und gibt Koordinaten zurück.
 | `End` | DateTime | Enddatum. |
 | `Groups` | string[] | Zielgruppen (leer = alle). |
 | `MailingLists` | string[] | Verteilerlisten. |
-| `Site` | string | Standortname (null bei Organisations-Neuigkeiten). |
 | `SiteId` | int? | Standort-ID (null bei Organisations-Neuigkeiten). |
+| `SiteName` | string? | Standortname (null bei Organisations-Neuigkeiten). |
+| `Site` | string? | Veraltet, kann ab dem 1. Juli 2027 entfallen: Standortname wie `SiteName`. |
 | `AdditionalInformation` | `NewsAdditionalInformation`? | Zusätzliche strukturierte Informationen. |
 
 ---
