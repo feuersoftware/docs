@@ -106,7 +106,7 @@ Endpunkte, die einen Standort brauchen, akzeptieren die **Standort-ID**, den **S
 | `POST /defectReportCategory` | `SiteId` | `SiteName` |
 | `/webhooks` (Query-Parameter) | `siteId` | `siteName` |
 
-- **Token auf Standortebene (`InterfacePublic`):** Die Angaben sind optional. Ohne Angabe gilt der Standort des Tokens. Neuigkeiten und Info-Board-Gruppen werden immer am Standort des Tokens angelegt, eine Standortangabe wird dort ignoriert.
+- **Token auf Standortebene (`InterfacePublic`):** Die Angaben sind optional. Ohne Angabe gilt der Standort des Tokens. Neuigkeiten und Info-Board-Gruppen werden immer am Standort des Tokens angelegt, eine Standortangabe wird dort ignoriert. Webhooks akzeptieren nur den Standort des Tokens. Mängelberichte und Mängelkategorien können auch an einem anderen Standort angelegt werden, auf den der Token Zugriff hat.
 - **Token auf Organisationsebene (`InterfacePublicOrganization`):** Standort-ID oder Standortname ist erforderlich. Für eine organisationsweite Mängelkategorie genügt stattdessen `OrganizationId`.
 - **ID und Name zusammen** müssen denselben Standort bezeichnen.
 
@@ -127,7 +127,7 @@ Die Felder `Site` werden durch `SiteId` und `SiteName` ersetzt. Bis zum 30. Juni
 
 Beim Anlegen einer Neuigkeit wird `Site` bis dahin weiter als Standortname angenommen. Werden `Site` und `SiteName` zusammen angegeben, müssen sie übereinstimmen.
 
-Im Swagger-Dokument sind die Felder `Site` der Neuigkeiten als `deprecated` mit `x-sunset: 2027-07-01` gekennzeichnet. Bei Alarmgruppen und Fahrzeugen ist `Site` ein Objekt, das OpenAPI nicht so kennzeichnen kann; dort steht der Hinweis in der Beschreibung, und es gilt dasselbe Datum.
+Im Swagger-Dokument sind die Felder `Site` der Neuigkeiten als `deprecated` mit `x-sunset: 2027-07-01` gekennzeichnet. Bei Alarmgruppen und Fahrzeugen ist `Site` ein Objekt, das OpenAPI nicht so kennzeichnen kann. Dort steht der Hinweis bei Alarmgruppen in den Beschreibungen von `SiteId` und `SiteName`, bei Fahrzeugen in der Beschreibung von `GET /vehicle`; für Fahrzeuge in Fahrzeugzuweisungen und in der Abrechnung gilt diese Seite. Es gilt überall dasselbe Datum.
 
 ---
 
