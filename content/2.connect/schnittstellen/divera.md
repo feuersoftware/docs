@@ -5,7 +5,7 @@ description: Einsätze aus Divera 24/7 per Webhook an FeuerSoftware Connect weit
 
 # Divera 24/7
 
-Über die Divera-Schnittstelle können Einsatzdaten aus Divera 24/7 per Webhook an FeuerSoftware Connect weitergeleitet werden.
+Über die Divera-Schnittstelle können Einsatzdaten aus Divera 24/7 an FeuerSoftware Connect weitergeleitet werden. Dazu wird im Divera-Portal ein Webhook angelegt, der die Einsätze an FeuerSoftware sendet. In Connect ordnen Auswertungsregeln die eingehenden Einsätze anschließend den richtigen Connect-Standorten zu.
 
 > **Voraussetzung:** Ein kostenpflichtiger **Divera 24/7 Alarm Account** ist zwingend erforderlich. In der kostenlosen Version ist die Webhook-Funktion vollständig deaktiviert.
 
@@ -15,28 +15,38 @@ description: Einsätze aus Divera 24/7 per Webhook an FeuerSoftware Connect weit
 
 ## Einrichtung
 
+Die Schnittstelle wird auf Organisationsebene aktiviert und eingerichtet. Dazu sind **Orga-Admin-Rechte** erforderlich.
+
 ### Schritt 1: Schnittstelle in Connect aktivieren
 
 1. Im Connect Portal zur **Organisations-Ebene** wechseln
-2. **Seitenleiste → Schnittstellen → Divera 24/7**
-3. Checkbox **„Einsätze von Divera empfangen"** aktivieren
-4. Die generierte **Webhook-URL** kopieren
+2. **Organisation → Schnittstellen → Divera 24/7** öffnen
+3. Den Schalter **„Einsätze vom Divera empfangen"** aktivieren
+4. Die angezeigte **Webhook-Url** in die Zwischenablage kopieren
 
-### Schritt 2: Webhook in Divera konfigurieren
+### Schritt 2: Webhook in Divera anlegen
 
-1. Im **Divera 24/7 Portal** anmelden
-2. **Administration → Schnittstellen → Datentransfer**
-3. Im Bereich **Webhooks** auf das Einstellungs-Symbol klicken
-4. Folgenden Webhook anlegen:
+1. In der **Divera 24/7 Administrationsoberfläche** anmelden. Unter Umständen fragt Divera zur Verifizierung das Passwort Ihres Divera-Accounts ab.
+2. Im Bereich **Webhooks** auf das Einstellungs-Symbol klicken, um einen neuen Webhook anzulegen
+
+3. Folgende Werte eintragen:
 
 | Feld | Wert |
 |---|---|
-| **URL / Ziel** | Generierte FeuerSoftware-URL einfügen |
+| **URL / Ziel des Requests** | Die in Connect angezeigte Webhook-Url einfügen |
 | **Format** | POST application/json |
-| **Inhalt** | „Vollständiges Objekt (inkl. Empfängernamen)" auswählen |
+| **Inhalt** | „Vollständiges Objekt (inkl. Empfänger-Namen)" auswählen |
 
-5. Speichern
+![Divera 24/7: Webhook-Formular mit URL, Format und Inhalt](/images/connect/schnittstellen/divera_02_webhook_formular.png)
 
-### Schritt 3: Regeln in Connect anlegen
+4. Oben auf **Speichern** klicken
 
-Nach der Webhook-Konfiguration können in Connect **Zuordnungsregeln** erstellt werden, die eingehende Divera-Einsätze dem richtigen Connect-Standort zuweisen. Regeln können auf Divera-Gruppen, -Einheiten und -Fahrzeugen basieren.
+### Schritt 3: Auswertungsregeln in Connect anlegen
+
+Wechseln Sie zurück ins Connect Portal zu **Organisation → Schnittstellen → Divera 24/7**. Unter **Auswertungsregeln** legen Sie fest, in welchem Connect-Standort ein eingehender Divera-Einsatz angelegt wird.
+
+| Feld | Beschreibung |
+|---|---|
+| **Divera-Feld** | Das Divera-Feld, das geprüft wird: **Alarmierte Divera-Einheiten**, **Alarmierte Divera-Fahrzeuge** oder **Alarmierte Divera-Gruppen** |
+| **Vergleichswert** | Die Einheit, das Fahrzeug oder die Gruppe, wie Sie sie in Divera verwenden |
+| **Standort** | Der Connect-Standort, in dem der Einsatz angelegt werden soll |

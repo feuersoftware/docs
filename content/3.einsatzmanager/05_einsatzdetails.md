@@ -76,7 +76,7 @@ Auf Basis von OpenStreetMap-Daten können folgende Objekte eingeblendet werden, 
 
 NavLog stellt speziell für Feuerwehren detaillierte Wald- und Forstwegekarten bereit. Einsatzkräfte können damit auch abseits öffentlicher Straßen zuverlässig navigieren und geeignete Zufahrtswege für Einsatzfahrzeuge identifizieren. Besonders bei Waldbränden, Unwettereinsätzen oder vermissten Personen bietet NavLog einen entscheidenden Lage- und Zeitvorteil.
 
-In der rechten unteren Ecke der Karte befindet sich eine **Legende** zu den Navlog-Kartensymbolen.
+In der Karte wird eine **Legende** zu den Navlog-Kartensymbolen eingeblendet.
 
 > Voraussetzung: Die Navlog-Schnittstelle muss im Connect-Portal aktiviert und die Zugangsdaten hinterlegt sein.
 

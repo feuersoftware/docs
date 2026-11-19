@@ -19,6 +19,8 @@ Im Connect Portal als Standort- oder Organisationsadministrator anmelden, den en
 
 Eine MissionGroup ist eine Einheit, für die der Einsatz gilt – das kann eine ganze Stadt, eine Einheit, ein einzelnes Fahrzeug oder eine einzelne Person sein. In der Regel wird pro Orts- bzw. Stadtteilwehr eine MissionGroup verwendet.
 
+> **Hinweis:** API-Key und Group-ID finden Sie im **rescueTABLET-Datenportal**. Wenn Sie die Daten dort nicht einsehen können, wenden Sie sich bitte an den rescueTABLET-Support.
+
 ---
 
 ## Funktionsumfang
@@ -39,3 +41,9 @@ Connect überträgt an rescueTABLET folgende Daten:
 |---|---|
 | `403 Forbidden` | Group-ID falsch, oder API-Key hat keine Schreibrechte in der gewählten Gruppe |
 | `401 Unauthorized` | Authentifizierungsschlüssel falsch |
+
+---
+
+## Kontakt rescueTABLET
+
+Bei Fragen zu Zugangsdaten oder zum Datenportal: [Kontaktseite von rescueTABLET](https://www.rescuetablet.de/index.php/kontakt)

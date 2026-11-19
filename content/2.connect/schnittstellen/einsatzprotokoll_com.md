@@ -7,6 +7,8 @@ description: Einsatzberichte über die Webhook-Funktion von Feuersoftware Connec
 
 [Einsatzprotokoll.com](https://einsatzprotokoll.com/) bietet Hilfsorganisationen ein kostenloses Presseportal, das auf der eigenen Website verlinkt oder eingebunden werden kann. Einsatzberichte können über die Webhook-Funktion von Feuersoftware Connect automatisch angelegt werden – als Entwurf mit vorausgefüllten Einsatzdaten. Der Pressesprecher muss den Bericht anschließend nur noch mit Inhalt ergänzen und veröffentlichen.
 
+![Einsatzprotokoll.com: Presseportal mit veröffentlichten Einsatzberichten](/images/connect/schnittstellen/einsatzprotokoll_01_presseportal.png)
+
 > **Kostenlos für das Ehrenamt:** Der Dienst ist für ehrenamtliche Organisationen aus dem BOS-Bereich kostenlos (Feuerwehr, Rettungsdienst, THW u. a.).
 
 ---
@@ -56,6 +58,10 @@ https://xxxxx.einsatzprotokoll.com/rest/v1/bericht/create/feuersoftware?access=T
 | `start` | Einsatzbeginn |
 | `ende` | Einsatzende |
 | `anzeige` | `hidden` = als Entwurf anlegen, `visible` = direkt veröffentlichen |
+
+Ein über den Webhook angelegter Bericht erscheint in Einsatzprotokoll.com als Entwurf und kann dort ergänzt und anschließend veröffentlicht werden:
+
+![Einsatzprotokoll.com: Automatisch angelegter Einsatzbericht als Entwurf](/images/connect/schnittstellen/einsatzprotokoll_02_berichtsentwurf.png)
 
 Die vollständige API-Dokumentation von Einsatzprotokoll.com: [api.int.einsatzprotokoll.com](https://api.int.einsatzprotokoll.com/#api-Webhook-feuersoftware)
 

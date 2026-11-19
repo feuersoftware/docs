@@ -5,7 +5,9 @@ description: Einrichtung der Homematic IP HCU1 Alarmweiterleitung an FeuerSoftwa
 
 # Homematic HCU1 Rauchwarnmelder
 
-Die Homematic IP Home Control Unit (HmIP-HCU1) unterstützt die Installation eigener Plugins. Ein spezielles FeuerSoftware-Plugin wertet Alarme von Rauchwarnmeldern aus und leitet diese automatisch an Connect weiter. Bei Auslösung eines Melders wird ein Einsatz im konfigurierten Standort erstellt.
+Die Homematic IP Home Control Unit (HmIP-HCU1) unterstützt die Installation eigener Plugins. Ein spezielles FeuerSoftware-Plugin wertet Alarme von Rauchwarnmeldern aus und leitet diese automatisch an Connect weiter. Bei Auslösung eines Melders wird über die öffentliche Schnittstelle (API) ein Einsatz im konfigurierten Standort erstellt.
+
+Für Homematic wird ausschließlich die **HCU1** über dieses Plugin unterstützt.
 
 > **Hinweis:** Diese Schnittstelle dient ausschließlich der ergänzenden Informationsübermittlung und ist **kein primärer Alarmweg**.
 
@@ -32,15 +34,26 @@ ZIP-Archiv entpacken – es entsteht eine `.tar.gz`-Datei, die für den nächste
 
 ### Schritt 2: Plugin in der HCU1 installieren
 
-1. Im HCU1-Webinterface anmelden (Hostname oder IP-Adresse im Browser aufrufen)
+1. Im HCU1-Webinterface anmelden (Hostname oder IP-Adresse im Browser aufrufen; alternativ finden Sie einen Link zum Webinterface in der Homematic IP App). Das Kennwort für den Login steht auf der Unterseite der Basisstation.
 2. Menüpunkt **„Plugins"** wählen
 3. **Entwicklermodus aktivieren** (Voraussetzung für die Plugin-Installation)
+
+![HCU1-Webinterface: Menüpunkt Plugins mit Entwicklermodus](/images/connect/schnittstellen/homematic_hcu1_01_plugins.png)
+
 4. Die `.tar.gz`-Datei hochladen
 5. Installation abwarten – dieser Vorgang kann mehrere Minuten dauern
+
+![HCU1-Webinterface: Plugin-Datei (.tar.gz) hochladen](/images/connect/schnittstellen/homematic_hcu1_02_plugin_upload.png)
+
+Nach der erfolgreichen Installation zeigt die Statusseite des Plugins an, dass eine Konfiguration erforderlich ist.
+
+![HCU1-Webinterface: Plugin-Statusseite mit Hinweis „Konfiguration erforderlich"](/images/connect/schnittstellen/homematic_hcu1_04_konfiguration_erforderlich.png)
 
 ### Schritt 3: Plugin konfigurieren
 
 Nach der Installation auf das **Zahnrad-Symbol** neben dem Plugin klicken und folgende Felder ausfüllen:
+
+![HCU1-Webinterface: Konfigurationsdialog des Plugins](/images/connect/schnittstellen/homematic_hcu1_05_konfiguration.png)
 
 | Feld | Beschreibung |
 |---|---|
@@ -54,12 +67,15 @@ Nach der Installation auf das **Zahnrad-Symbol** neben dem Plugin klicken und fo
 
 ### Schritt 4: SGTIN im Connect Portal eintragen
 
-Nach erfolgreicher Konfiguration zeigt das Plugin die **SGTIN** (Seriennummer der Basisstation) an.
+Nach erfolgreicher Konfiguration zeigt das Plugin die **SGTIN** (Seriennummer der Basisstation) an. Die SGTIN steht außerdem auf der Unterseite der Basisstation.
+
+![HCU1-Webinterface: Erfolgsmeldung mit Anzeige der SGTIN](/images/connect/schnittstellen/homematic_hcu1_06_erfolgreich.png)
 
 1. Im Connect Portal den gewünschten **Standort** wählen
-2. **Seitenleiste → Schnittstellen → Homematic**
+2. **Seitenleiste → Schnittstellen** öffnen und die **Homematic**-Schnittstelle hinzufügen
 3. Die SGTIN **ohne Bindestriche** eintragen
-4. Speichern
+4. Optional eine **Beschreibung** hinzufügen, um die Basisstation einfacher zu identifizieren
+5. Speichern
 
 > Die SGTIN ist zwingend erforderlich, damit Alarmereignisse korrekt übertragen werden.
 

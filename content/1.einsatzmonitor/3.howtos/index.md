@@ -21,9 +21,5 @@ In diesem Abschnitt finden Sie praktische Anleitungen und Tipps für den täglic
   ::card{title="Drucken mit dem EinsatzMonitor" icon="i-heroicons-printer" to="/einsatzmonitor/howtos/drucken"}
   Einsatzaufträge und Karten drucken.
   ::
-
-  ::card{title="Karte mit Live-Position" icon="i-heroicons-map-pin" to="/einsatzmonitor/howtos/karte-live-position"}
-  Fahrzeugpositionen in Echtzeit auf der Karte anzeigen.
-  ::
 ::
 
