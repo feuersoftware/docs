@@ -25,7 +25,7 @@ Der EinsatzManager ist unter folgender Adresse erreichbar:
 | Einsatzdetails | Karte, Einheitenverwaltung, Protokoll und Meldungen in einer Ansicht |
 | Statuspanel | Echtzeit-Übersicht aller Fahrzeuge und deren Funkmelderstatus |
 | Alarmierung | Alarmierung von Einheiten direkt aus dem Einsatz |
-| Einsatzprotokoll | Automatisches und manuelles Protokoll aller Einsatzereignisse |
+| Protokoll | Automatisches und manuelles Protokoll aller Einsatzereignisse |
 | Aufgaben | Strukturierte Aufgabenverwaltung mit Zuweisung, Status und Änderungsverlauf |
 
 ---

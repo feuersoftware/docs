@@ -109,7 +109,7 @@ Für abgeschlossene Einsätze kann ein Einsatzbericht als PDF heruntergeladen we
 
 ### Berichtsabschnitte, Lagekarte und Bilddokumentation
 
-Im Reiter **„Bericht"** lassen sich über Kacheln die gewünschten **Berichtsabschnitte** ein- oder ausschließen (Einsatzdaten, Zusätzliche Infos, Fahrzeugbesatzung, Lagemeldung, Einsatzprotokoll inkl. Kategorienauswahl, Lagekarte, Bilddokumentation).
+Im Reiter **„Bericht"** lassen sich über Kacheln die gewünschten **Berichtsabschnitte** ein- oder ausschließen (Einsatzdaten, Zusätzliche Infos, Fahrzeugbesatzung, Lagemeldung, Protokoll inkl. Kategorienauswahl, Lagekarte, Bilddokumentation).
 
 In der Kachel **„Lagekarte"** werden die [Kartenformen](#kartenformen) des Einsatzes einzeln oder über **„Alle auswählen"** ausgewählt (standardmäßig keine, maximal 50). Im PDF erscheinen sie auf einer eigenen Seite als **Karte mit Legende** – vor der Bilddokumentation. Details: [EinsatzManager: Lagekarte im Einsatzbericht](/einsatzmanager/11_anhaenge_und_dokumente#lagekarte-im-einsatzbericht)
 
@@ -230,7 +230,7 @@ Ohne Einsatznummer ist eine Freigabe nicht möglich.
 |---|---|
 | **Aktiviert** | Schaltet die Freigabe für diesen Einsatz ein |
 | **Ebene** | **Organisation** – nur Standorte der eigenen Organisation kommen als Ziel infrage. **Leitstelle** – zusätzlich alle Organisationen derselben Leitstelle (nur verfügbar, wenn eine Leitstellenanbindung besteht) |
-| **Freigegebene Daten** | Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen wählbar), Lagemeldungen, Einsatzprotokoll, Einsatzanhänge, Kartenformen |
+| **Freigegebene Daten** | Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen wählbar), Lagemeldungen, Protokoll, Einsatzanhänge, Kartenformen |
 | **Freigabedauer** | 1 / 2 / 6 / 12 / 24 Stunden ab Einsatzbeginn – danach endet die Freigabe automatisch |
 | **Zielstandorte** | Auswahl der Standorte bzw. Organisationen, mit denen der Einsatz verbunden werden soll (Vorschlagsliste basiert auf Einsätzen mit gleicher Einsatznummer, siehe unten) |
 
