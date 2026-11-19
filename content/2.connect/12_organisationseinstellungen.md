@@ -170,7 +170,7 @@ Legt fest, ob und mit welchem Inhalt der PDF-Einsatzbericht (siehe [Einsätze �
 
 | Feld | Beschreibung |
 |---|---|
-| **Aktiviert** | Schaltet die Einsatzbericht-Funktion für die Organisation frei |
+| **Aktiviert** | Schaltet die Einsatzbericht-Funktion für die Organisation frei. Ist sie deaktiviert, wird im EinsatzManager auch die Einsatzdokumentation (Dokumentations-Reiter, Berichtsseite, „In Feld kopieren“ im Protokoll) ausgeblendet |
 | **Einsatzdaten drucken** | Nimmt eine Seite mit den Basisdaten (Stichwort, Adresse, Zeiten, Melder …) in den Bericht auf |
 | **Ergänzende Informationen drucken** | Nimmt die erweiterten Berichtsfelder (Lage, Tätigkeit, Schadensinformationen, Materialien, Nachbereitung) auf |
 | **Fahrzeugbesatzung drucken** | Listet die zugeordneten Fahrzeuge inkl. Besatzung im Bericht auf |

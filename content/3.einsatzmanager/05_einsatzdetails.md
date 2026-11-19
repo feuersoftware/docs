@@ -197,7 +197,7 @@ Alle Felder sind optional – der Bericht kann auch ohne Zusatzangaben herunterg
 
 Details zur Konfiguration der druckbaren Inhalte: [Connect: Organisationseinstellungen – Einsatzberichte](/connect/12_organisationseinstellungen#einsatzberichte).
 
-> **Voraussetzung:** Der Einsatzbericht muss zuvor in den **Organisationseinstellungen im Connect-Portal** aktiviert werden. Ohne diese Aktivierung ist der Reiter nicht nutzbar.
+> **Voraussetzung:** Der Einsatzbericht muss zuvor in den **Organisationseinstellungen im Connect-Portal** aktiviert werden. Ohne diese Aktivierung ist der Reiter nicht nutzbar. Außerdem wird die Einsatzdokumentation ausgeblendet: Auf der Bearbeiten-Seite entfällt der Dokumentations-Reiter, die Berichtsseite leitet auf die Einsatzseite um, und im Protokoll-Kontextmenü entfällt „In Feld kopieren“ („Ganze Nachricht kopieren“ bleibt verfügbar).
 
 ---
 
