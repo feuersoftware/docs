@@ -1,11 +1,11 @@
 ---
-title: Benutzer API
+title: Benutzer-API
 description: Persönlichen API-Schlüssel in Connect erstellen und damit Einsatzrückmeldungen oder Verfügbarkeiten über HTTP-Requests aus externen Systemen übermitteln
 ---
 
-# Benutzer API
+# Benutzer-API
 
-Die Connect Benutzer API ermöglicht API-Anfragen im Kontext des eigenen Benutzers. Im Unterschied zur [öffentlichen Connect API](./public_api) – die Zugriff auf alle Daten eines Standorts oder einer Organisation gewährt – können über die Benutzer API ausschließlich Daten des eigenen Benutzerkontos abgerufen und geändert werden. Die Benutzer API kann daher von **jedem Connect Benutzer** selbst aktiviert werden.
+Die Connect Benutzer-API ermöglicht API-Anfragen im Kontext des eigenen Benutzers. Im Unterschied zur [öffentlichen Connect API](./public_api) – die Zugriff auf alle Daten eines Standorts oder einer Organisation gewährt – können über die Benutzer-API ausschließlich Daten des eigenen Benutzerkontos abgerufen und geändert werden. Die Benutzer-API kann daher von **jedem Connect Benutzer** selbst aktiviert werden.
 
 Die vollständige API-Dokumentation ist auf Swagger verfügbar: [connectapi.feuersoftware.com/swagger/index.html](https://connectapi.feuersoftware.com/swagger/index.html)
 
@@ -13,7 +13,7 @@ Die vollständige API-Dokumentation ist auf Swagger verfügbar: [connectapi.feue
 
 ## API-Schlüssel erstellen
 
-**Connect Portal → Smart Home → Benutzer API → „Neu"**
+**Connect Portal → Smart Home → Benutzer-API → „Neu"**
 
 1. Beschreibung für den Schlüssel eingeben (z. B. „Rückmelder Wohnung", „Smart Home")
 2. **Verwendungszweck** auswählen (siehe unten)

@@ -190,7 +190,7 @@ Ein Klick auf einen Anhang öffnet die **Vorschau**. Direkt angezeigt werden Bil
 | Einsatzanhänge ansehen | wie oben, zusätzlich Gruppen mit der Sichtbarkeit **„Einsatzanhänge"** |
 | Nextcloud-Dokumente durchsuchen und öffnen | alle Benutzer mit Lesezugriff auf das Infoboard |
 
-> Die Sichtbarkeit **„Einsatzanhänge"** wird in den Gruppeneinstellungen vergeben. Gruppen, die bereits Einsatznachrichten und Einsatzprotokoll sehen durften, haben sie automatisch erhalten.
+> Die Sichtbarkeit **„Einsatzanhänge"** wird in den Gruppeneinstellungen vergeben. Gruppen, die bereits Einsatznachrichten und Protokoll sehen durften, haben sie automatisch erhalten.
 
 ---
 

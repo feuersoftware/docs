@@ -83,7 +83,7 @@ Neue Aufgaben können auf zwei Wegen angelegt werden:
 2. Oben rechts **„+ Aufgabe erstellen"** klicken
 3. Formular ausfüllen und bestätigen
 
-**Methode 2 – Einsatzprotokoll:**
+**Methode 2 – Protokoll:**
 1. In der mittleren Spalte der Einsatzdetailseite das Eingabefeld auf den Modus **„Aufgabe"** umschalten
 2. Beschreibung eingeben
 3. Optional: Person für die Zuweisung auswählen

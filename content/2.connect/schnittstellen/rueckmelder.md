@@ -26,13 +26,13 @@ Der Rückmelder wird von einem Partnerunternehmen produziert und vertrieben: [ru
 
 Der Rückmelder benötigt einen persönlichen API-Schlüssel aus dem Connect Portal:
 
-**Connect Portal → Smart Home → Benutzer API → „Neu"**
+**Connect Portal → Smart Home → Benutzer-API → „Neu"**
 
 - Beschreibung eingeben, z. B. „Rückmelder Wohnung"
 - Verwendungszweck: **Einsatzrückmeldung User-API**
 - Speichern und den angezeigten Schlüssel kopieren
 
-Weitere Infos zur Benutzer API: [→ Benutzer API](./benutzer_api)
+Weitere Infos zur Benutzer-API: [→ Benutzer-API](./benutzer_api)
 
 ---
 

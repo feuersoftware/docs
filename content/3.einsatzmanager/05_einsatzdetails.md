@@ -18,7 +18,7 @@ Die Seite ist in drei Bereiche unterteilt:
 | Bereich | Inhalt |
 |---|---|
 | Linke Spalte | Einsatzkarte mit Fahrzeugpositionen, Kartenebenen und Anhang-Pins; Reiter „Info-Board" und „Dokumente" |
-| Mittlere Spalte | Einsatzprotokoll und Meldungen |
+| Mittlere Spalte | Protokoll und Meldungen |
 | Rechte Spalte | Zusammenfassung, Einsatzinformationen, Anhänge, zugeteilte Einheiten |
 
 Am oberen Rand befinden sich Stichwort, Sachverhalt, Adresse, Laufzeitanzeige sowie der Alarmierungsbereich.
@@ -106,7 +106,7 @@ Mit Kartenformen lassen sich Einsatzabschnitte, Bereitstellungsräume, Sperrbere
    - **Name** (Pflichtfeld, z. B. „Abschnitt Nord") – muss innerhalb des Einsatzes eindeutig sein
    - **Farbe**
    - **Fahrzeuge** – markierte Fahrzeuge erhalten den Namen der Form sofort als Tag (siehe unten)
-3. **„Speichern"** – oder **„Speichern und Benutzer informieren"**, um zusätzlich einen Eintrag im Einsatzprotokoll zu erzeugen.
+3. **„Speichern"** – oder **„Speichern und Benutzer informieren"**, um zusätzlich einen Eintrag im Protokoll zu erzeugen.
 
 ![Screenshot: Dialog „Neue Form" mit Name, Farbe und Fahrzeugen](/images/einsatzmanager/05_neue_form.png)
 
@@ -137,11 +137,11 @@ Die Karte kann über ein Steuerelement auf die gesamte Bildschirmfläche vergrö
 
 ---
 
-## Einsatzprotokoll (mittlere Spalte)
+## Protokoll (mittlere Spalte)
 
 Das System dokumentiert automatisch alle Statuswechsel und Dispositionen, die von Connect empfangen werden. Zusätzlich können manuelle Einträge ergänzt werden.
 
-![Screenshot: Einsatzprotokoll mit verschiedenen Ereignistypen](/images/einsatzmanager/05_details_protokoll.png)
+![Screenshot: Protokoll mit verschiedenen Ereignistypen](/images/einsatzmanager/05_details_protokoll.png)
 
 ### Automatische Protokolleinträge
 
@@ -165,7 +165,7 @@ Protokolleinträge zeigen zusätzlich, aus welcher Anwendung sie stammen: **Eins
 
 ### Einsatzbericht (PDF-Export)
 
-Über den Reiter **„Bericht"** in der Einsatzdetailseite kann das Protokoll als PDF heruntergeladen werden. Welche Seiten der Bericht enthält (Einsatzdaten, ergänzende Informationen, Fahrzeugbesatzung, Lagemeldungen, Einsatzprotokoll), wird zentral in den **Organisationseinstellungen im Connect-Portal** festgelegt.
+Über den Reiter **„Bericht"** in der Einsatzdetailseite kann das Protokoll als PDF heruntergeladen werden. Welche Seiten der Bericht enthält (Einsatzdaten, ergänzende Informationen, Fahrzeugbesatzung, Lagemeldungen, Protokoll), wird zentral in den **Organisationseinstellungen im Connect-Portal** festgelegt.
 
 #### Vollständigkeits-Check und Assistent
 
@@ -274,9 +274,9 @@ Die Stärke (z. B. 1/8 4 AGT) wird im Einsatz hinterlegt und ist für alle Betei
 
 > **Hinweis:** Die Stärke kann für jedes am Einsatz beteiligte Fahrzeug festgelegt werden. Die namentliche Besatzung kann jedoch nur für Fahrzeuge des **eigenen Standortes** eingetragen werden. Geplant ist außerdem, dass die Stärkemeldung künftig direkt durch das Fahrzeug am EinsatzTablet eingegeben werden kann.
 
-### Einheit als abgerückt markieren
+### Einheit beenden
 
-Wenn eine Einheit den Einsatz beendet hat, kann sie als abgerückt markiert werden. Dabei wird ein Zeitstempel gesetzt.
+Wenn eine Einheit den Einsatz beendet hat, kann sie über **„Einheit beenden"** als beendet markiert werden. Dabei wird ein Zeitstempel gesetzt. Mit **„Beenden rückgängig machen"** lässt sich das wieder zurücknehmen.
 
 ---
 
@@ -295,7 +295,7 @@ Standardmäßig wird der Einsatz nach der im Connect-Portal hinterlegten **AAO (
 
 ## Einsatzdaten teilen
 
-Über die Schaltfläche **„Einsatzdaten teilen"** im Kopfbereich der Einsatzdetailseite können Fahrzeuge, Besatzung, Lagemeldungen, Einsatzprotokoll, Einsatzanhänge und Kartenformen live mit anderen Standorten oder Organisationen ausgetauscht werden – z. B. wenn mehrere Feuerwehren mit derselben Einsatznummer zum gleichen Ereignis alarmiert wurden. Offene eingehende Verbindungsanfragen werden als roter Zähler auf der Schaltfläche angezeigt; eine aktive Freigabe zusätzlich als Badge in der Kopfzeile.
+Über die Schaltfläche **„Einsatzdaten teilen"** im Kopfbereich der Einsatzdetailseite können Fahrzeuge, Besatzung, Lagemeldungen, Protokoll, Einsatzanhänge und Kartenformen live mit anderen Standorten oder Organisationen ausgetauscht werden – z. B. wenn mehrere Feuerwehren mit derselben Einsatznummer zum gleichen Ereignis alarmiert wurden. Offene eingehende Verbindungsanfragen werden als roter Zähler auf der Schaltfläche angezeigt; eine aktive Freigabe zusätzlich als Badge in der Kopfzeile.
 
 > **Voraussetzung:** Die Schaltfläche ist nur sichtbar, wenn die Funktion **„Einsatzdaten teilen"** zuvor durch den **Feuersoftware Support** für die Organisation freigeschaltet wurde.
 

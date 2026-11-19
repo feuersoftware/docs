@@ -175,7 +175,7 @@ Legt fest, ob und mit welchem Inhalt der PDF-Einsatzbericht (siehe [Einsätze �
 | **Ergänzende Informationen drucken** | Nimmt die erweiterten Berichtsfelder (Lage, Tätigkeit, Schadensinformationen, Materialien, Nachbereitung) auf |
 | **Fahrzeugbesatzung drucken** | Listet die zugeordneten Fahrzeuge inkl. Besatzung im Bericht auf |
 | **Lagemeldungen drucken** | Nimmt alle Lagemeldungen des Einsatzes auf |
-| **Einsatzprotokoll drucken** | Nimmt das Einsatzprotokoll auf; zusätzlich müssen die zu druckenden **Protokoll-Kategorien** ausgewählt werden |
+| **Protokoll drucken** | Nimmt das Protokoll auf; zusätzlich müssen die zu druckenden **Protokoll-Kategorien** ausgewählt werden |
 
 > **Achtung:** Der Bericht wird ggf. per E-Mail versendet, was einen unsicheren Übertragungsweg darstellt. Vor der Aktivierung des Drucks von Lagemeldungen bzw. des Einsatzprotokolls sollte geprüft werden, ob dabei schützenswerte Informationen enthalten sein können.
 
@@ -201,7 +201,7 @@ Konfiguriert, bei welchen Änderungen an einem laufenden Einsatz eine Push-Benac
 
 > **Wichtig:** Dieser Bereich ist nur sichtbar, wenn die Funktion **„Einsatzdaten teilen"** zuvor durch den **Feuersoftware Support** für die Organisation freigeschaltet wurde. Ohne diese Freischaltung fehlt der Abschnitt vollständig – wende dich für eine Aktivierung an [info@feuersoftware.com](mailto:info@feuersoftware.com).
 
-Mit **Einsatzdaten teilen** können Einsatzinformationen (Fahrzeuge, Besatzung, Lagemeldungen, Einsatzprotokoll) live mit anderen Standorten oder Organisationen ausgetauscht werden, sofern zu einem Einsatz die **gleiche Einsatznummer** vorliegt – z. B. wenn eine Leitstelle mehrere Feuerwehren mit derselben Einsatznummer alarmiert. Die vollständige Funktionsweise ist unter [Einsätze → Einsatzdaten teilen](/connect/07_einsaetze#einsatzdaten-teilen) beschrieben.
+Mit **Einsatzdaten teilen** können Einsatzinformationen (Fahrzeuge, Besatzung, Lagemeldungen, Protokoll) live mit anderen Standorten oder Organisationen ausgetauscht werden, sofern zu einem Einsatz die **gleiche Einsatznummer** vorliegt – z. B. wenn eine Leitstelle mehrere Feuerwehren mit derselben Einsatznummer alarmiert. Die vollständige Funktionsweise ist unter [Einsätze → Einsatzdaten teilen](/connect/07_einsaetze#einsatzdaten-teilen) beschrieben.
 
 Hier wird eine **Vorlage** hinterlegt, die automatisch auf jeden neu angelegten Einsatz angewendet wird, sodass die Freigabe nicht für jeden Einsatz einzeln konfiguriert werden muss.
 
@@ -209,7 +209,7 @@ Hier wird eine **Vorlage** hinterlegt, die automatisch auf jeden neu angelegten 
 |---|---|
 | **Aktiviert** | Schaltet die automatische Freigabe anhand dieser Vorlage ein |
 | **Ebene** | **Organisation** – Daten werden mit den ausgewählten Zielen dieser Organisation geteilt. **Leitstelle** – Daten werden zusätzlich mit allen Organisationen derselben Leitstelle geteilt (nur wählbar, wenn eine Leitstellenanbindung besteht) |
-| **Freigegebene Daten** | Welche Datentypen automatisch geteilt werden: Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen), Lagemeldungen, Einsatzprotokoll, Einsatzanhänge, Kartenformen |
+| **Freigegebene Daten** | Welche Datentypen automatisch geteilt werden: Zugewiesene Fahrzeuge, Besatzung (nur zusammen mit Fahrzeugen), Lagemeldungen, Protokoll, Einsatzanhänge, Kartenformen |
 | **Freigabedauer** | Zeitspanne ab Einsatzbeginn, nach der die Freigabe automatisch endet (1 / 2 / 6 / 12 / 24 Stunden) |
 | **Zielorganisation** | **Genau eine** Partnerorganisation (Einfachauswahl). Gemeint sind damit **alle Standorte** dieser Organisation, auch solche, die später hinzukommen |
 | **Zielstandorte** | Ergänzend: beliebig viele einzelne Standorte (Mehrfachauswahl), auch aus anderen Organisationen derselben Leitstelle oder aus der eigenen Organisation |

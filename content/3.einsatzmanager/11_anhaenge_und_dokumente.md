@@ -100,9 +100,9 @@ Anhänge mit Standort erscheinen auf der Einsatzkarte (kleine Karte und Vollbild
 
 ---
 
-## Anhänge im Einsatzprotokoll
+## Anhänge im Protokoll
 
-Jedes Hinzufügen und Löschen eines Anhangs wird automatisch im **Einsatzprotokoll** vermerkt. Der Eintrag **„Einsatzanhang hinzugefügt"** nennt den Dateinamen und – falls vorhanden – die Koordinaten (z. B. *Anhang "Vorne.jpeg" wurde hinzugefügt (Ort: 50.14494, 8.39624)*) und zeigt ein Vorschaubild mit dem Link **„Anhang ansehen"** – so ist die Bilddokumentation direkt im zeitlichen Ablauf des Einsatzes nachvollziehbar.
+Jedes Hinzufügen und Löschen eines Anhangs wird automatisch im **Protokoll** vermerkt. Der Eintrag **„Einsatzanhang hinzugefügt"** nennt den Dateinamen und – falls vorhanden – die Koordinaten (z. B. *Anhang "Vorne.jpeg" wurde hinzugefügt (Ort: 50.14494, 8.39624)*) und zeigt ein Vorschaubild mit dem Link **„Anhang ansehen"** – so ist die Bilddokumentation direkt im zeitlichen Ablauf des Einsatzes nachvollziehbar.
 
 Die neuen Ereignisse („Anhang hinzugefügt" / „Anhang gelöscht") sind im Protokollfilter standardmäßig eingeschlossen und können dort bei Bedarf ausgeblendet werden.
 
