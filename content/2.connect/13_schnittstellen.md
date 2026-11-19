@@ -42,7 +42,7 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 | **[Fireboard](/connect/schnittstellen/fireboard)** | Einsatz- und Fahrzeugstatusdaten automatisiert an das Fireboard-Portal übermitteln |
 | **[Nextcloud](/connect/schnittstellen/nextcloud)** | Eigene Nextcloud als Dateispeicher und Dokumentenablage des Standorts anbinden |
 | **[Public API](/connect/schnittstellen/public_api)** | Zugang zur öffentlichen FeuerSoftware-API auf Standortebene |
-| **[Rauchwarnmelder](/connect/schnittstellen/rauchmelder)** | Übersicht aller Rauchwarnmelder-Integrationen (Homematic HCU1, CCU3, X-Sense, Lupus) |
+| **[Rauchwarnmelder](/connect/schnittstellen/rauchmelder)** | Übersicht aller Rauchwarnmelder-Integrationen (Homematic HCU1, X-Sense, Lupus) |
 | **[rescueTABLET](/connect/schnittstellen/rescuetablet)** | Einsatzdaten an rescueTABLET weiterleiten |
 | **[TetraControl](/connect/schnittstellen/tetracontrol)** | Fahrzeugstatus, GPS und Rückmeldungen aus dem TETRA-Netz an Connect übermitteln |
 | **[Status3IT – CVM & UBX](/connect/schnittstellen/status3it)** | CVM Spannungs-/Stromsensormodul und UBX Bluetooth-Box für Fahrzeugfunkgeräte |
@@ -60,7 +60,6 @@ FeuerSoftware Connect unterstützt die Anbindung von Rauchwarnmeldern verschiede
 |---|---|---|
 | **X-Sense** | Verbindung über X-Sense Installationsservice; Alarm wird direkt von der X-Sense Cloud an Connect übermittelt | [→ Einrichtung X-Sense](/connect/schnittstellen/rauchmelder/xsense) |
 | **Homematic IP HCU1** | Plugin auf der HCU1 wertet Alarme aus und leitet sie an Connect weiter | [→ Einrichtung Homematic HCU1](/connect/schnittstellen/rauchmelder/homematic_hcu1) |
-| **Homematic CCU3** | HomeMatic Script auf der CCU3 leitet Alarme über die öffentliche Connect API weiter | [→ Einrichtung Homematic CCU3](/connect/schnittstellen/rauchmelder/homematic_ccu3) |
 | **Lupus Electronics** | Alarmweiterleitung über Webhook aus der Lupus Cloud | [→ Einrichtung Lupus](/connect/schnittstellen/rauchmelder/lupus) |
 
 ---

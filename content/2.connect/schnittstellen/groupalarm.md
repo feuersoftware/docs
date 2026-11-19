@@ -19,9 +19,13 @@ Für Organisationen, die Groupalarm nutzen oder deren Leitstelle eine Schnittste
 
 ## Einrichtung
 
+![Groupalarm: Übersicht des Flows](/images/connect/schnittstellen/groupalarm_01_flow_uebersicht.png)
+
 Im [Groupalarm Webinterface](https://app.groupalarm.com/login) anmelden und einen neuen Flow anlegen:
 
 **Admin → Flows → „Flow anlegen"**
+
+![Groupalarm: Admin → Flows mit Schaltfläche „Flow anlegen"](/images/connect/schnittstellen/groupalarm_02_flow_anlegen.png)
 
 Der Flow besteht aus drei Elementen in dieser Reihenfolge:
 
@@ -29,11 +33,17 @@ Der Flow besteht aus drei Elementen in dieser Reihenfolge:
 2. **JSON Parser**
 3. **HTTP Client**
 
+![Groupalarm: Fertiger Flow mit den Elementen Alarm ausgelöst, JSON Parser und HTTP Client](/images/connect/schnittstellen/groupalarm_03_flow_fertig.png)
+
+![Groupalarm: Detailansicht der Flow-Elemente](/images/connect/schnittstellen/groupalarm_04_flow_elemente.png)
+
 ---
 
 ### Flow Element 1: Alarm ausgelöst
 
 Einen Namen für diesen Schritt vergeben, z. B. „Alarm ausgelöst". Weitere Konfiguration ist nicht erforderlich.
+
+![Groupalarm: Flow-Element „Alarm ausgelöst"](/images/connect/schnittstellen/groupalarm_05_alarm_ausgeloest.png)
 
 ---
 
@@ -57,6 +67,8 @@ Neue Variable hinzufügen:
 ```
 
 Mit „Fertig" speichern.
+
+![Groupalarm: Flow-Element „JSON Parser" mit Variable json](/images/connect/schnittstellen/groupalarm_06_json_parser.png)
 
 ---
 

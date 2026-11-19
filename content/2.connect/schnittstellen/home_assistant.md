@@ -35,17 +35,17 @@ Nun legen wir einen Webhook Trigger an, welcher über unsere Connect Plattform a
 
 Klicken Sie in Home Assistant auf **Einstellungen** -> **Automationen & Szenen** und klicken Sie auf **Automation erstellen**. Nun kann eine neue Automation erstellt werden.
 
-![](https://feuersoftware.com/wp-content/uploads/2025/01/Bildschirmfoto-2025-01-27-um-17.11.37-1024x664.png)
+![Home Assistant: Neue Automation erstellen](/images/connect/schnittstellen/home_assistant_01_automation_erstellen.png)
 
 ### Auslöser
 
 Fügen Sie einen Auslöser hinzu indem Sie auf **"Auslöser hinzufügen"** klicken. Suchen Sie nach Webhook und wählen Sie Webhook aus. Home Assistant fügt nun einen neuen Auslöser vom Typ Webhook hinzu. Sie bekommen nun eine **Webhook-ID** angezeigt. Diese wird später noch benötigt.
 
-![](https://feuersoftware.com/wp-content/uploads/2025/01/Bildschirmfoto-2025-01-27-um-17.13.40-1024x310.png)
+![Home Assistant: Auslöser vom Typ Webhook mit Webhook-ID](/images/connect/schnittstellen/home_assistant_02_webhook_ausloeser.png)
 
 Klicken Sie nun auf das Zahnrad neben der ID und entfernen Sie den Haken bei "**Nur über das lokales Netzwerk zugänglich**" und aktivieren Sie den Haken bei "**GET**". Da unsere Webhooks als GET Request gesendet werden, ist dies erforderlich.
 
-![](https://feuersoftware.com/wp-content/uploads/2025/01/Bildschirmfoto-2025-01-27-um-17.15.32-1024x546.png)
+![Home Assistant: Webhook-Optionen mit aktivierter GET-Methode](/images/connect/schnittstellen/home_assistant_03_webhook_optionen.png)
 
 ### Wenn Bedingungen (optional)
 
@@ -55,13 +55,13 @@ Die Wenn Bedingungen sind optional und müssen für den ersten Schritt nicht ein
 
 Nun definieren wir, welche Aktionen ausgeführt werden sollen wenn der Webhook ausgeführt wird. Hierzu klicken wir auf **"Aktion hinzufügen"** und wählen z.B. ein Gerät aus, welche wir schalten wollen. Jedes Gerät hat Abhängig seiner Fähigkeiten verschiedene Optionen. Wir schalten hier Beispielsweise eine Philips Hue Lampe, welche auch die Regulierung der Helligkeit und Blinken zulässt.
 
-![](https://feuersoftware.com/wp-content/uploads/2025/01/Bildschirmfoto-2025-01-27-um-17.25.41-1024x564.png)
+![Home Assistant: Aktion zum Einschalten einer Lampe](/images/connect/schnittstellen/home_assistant_04_aktion_licht.png)
 
 Da wir die Lampe nach einer kurzen Zeit auch wieder Ausschalten wollen, fügen wir eine weitere Aktion hinzu. Wählen Sie nun "**Bausteine**" und anschließend "**Eine Zeit warten (Verzögerung)**". Tragen Sie nun eine Zeit ein, wie lange die Lampe eingeschaltet bleiben soll.
 
 Anschließend fügen wir eine weitere Aktion hinzu. Hier wählen wir das gleiche Gerät wie im vorherigen Schritt aus und wählen nun bei Aktion Ausschalten aus.
 
-![](https://feuersoftware.com/wp-content/uploads/2025/01/Bildschirmfoto-2025-01-27-um-17.32.32-1024x271.png)
+![Home Assistant: Verzögerung und Aktion zum Ausschalten der Lampe](/images/connect/schnittstellen/home_assistant_05_aktion_ausschalten.png)
 
 Nun ist unsere erste Aktion angelegt und kann getestet werden. Hierzu rufen wir den Webhook über seine die URL auf. Die URL setzt sich wie folgt zusammen:
 
@@ -73,7 +73,7 @@ https://IHREDOMAIN.de/api/webhook/IHREWEBHOOKID
 
 Sie können die URL nun in einem beliebigen Browser in die Adresszeile eingeben und aufrufen. Ihre Aktion sollte nun ausgeführt werden.
 
-Sollte dies erfolgreich sein, können Sie die URL Ihres Webhooks in Connect konfigurieren. Wie dies funktioniert lesen Sie hier: [Link](https://feuersoftware.com/doku/connect-heimautomatisierung-mit-webhooks/)
+Sollte dies erfolgreich sein, können Sie die URL Ihres Webhooks in Connect konfigurieren. Wie dies funktioniert, lesen Sie unter [Webhooks](/connect/schnittstellen/webhooks).
 
 ## Webhook um Daten ergänzen
 
@@ -81,7 +81,7 @@ Sollte dies bis hier erfolgreich gewesen sein, können wir die Webhooks auch um 
 
 Ein Anwendungsfall hierfür könnte z.B. sein, eine Aktion nur auszuführen wenn in den alarmierten Fahrzeugen das Fahrzeug 1-30-1 enthalten ist.
 
-Hierfür müssen wir die URL anpassen und Variablen aus Feuersoftware Connect übergeben. Wir übergeben in diesem Beispiel die Variablen Stichwortübersetzung, Adresse, Sachverhalt und Fahrzeuge. Beachten Sie das nur Standort Webhooks die Adresse übergeben können. Benutzerwebhooks können auf diese Variable nicht zugreifen. Weitere Infos dazu finden Sie hier: [Link](https://feuersoftware.com/doku/connect-heimautomatisierung-mit-webhooks/)
+Hierfür müssen wir die URL anpassen und Variablen aus Feuersoftware Connect übergeben. Wir übergeben in diesem Beispiel die Variablen Stichwortübersetzung, Adresse, Sachverhalt und Fahrzeuge. Beachten Sie das nur Standort Webhooks die Adresse übergeben können. Benutzerwebhooks können auf diese Variable nicht zugreifen. Weitere Infos dazu finden Sie unter [Webhooks](/connect/schnittstellen/webhooks).
 
 Die URL muss nun wie folgt angepasst werden:
 
@@ -101,7 +101,7 @@ Home Assistant kann nun auf die einzelnen Parameter der URL zugreifen. Der Zugri
 
 Den Auslöser konfigurieren wir identisch wie oben beschrieben. Hier ist keine weitere Anpassung erforderlich.
 
-![](https://feuersoftware.com/wp-content/uploads/2025/01/Bildschirmfoto-2025-01-27-um-17.13.40-1024x310.png)
+![Home Assistant: Auslöser vom Typ Webhook mit Webhook-ID](/images/connect/schnittstellen/home_assistant_02_webhook_ausloeser.png)
 
 ### Aktionen
 
@@ -117,13 +117,13 @@ Im Feld Wert-Template fügen Sie nun folgende Zeile hinzu:
 {{ "1-30-1" in trigger.query.get('vehicles', '') }}
 ```
 
-![](https://feuersoftware.com/wp-content/uploads/2025/01/Bildschirmfoto-2025-01-27-um-17.53.21-1024x456.png)
+![Home Assistant: Wenn-dann-Baustein mit Template-Bedingung](/images/connect/schnittstellen/home_assistant_06_template_bedingung.png)
 
 Der `trigger.query` enthält die übergebenen Query-Parameter als Dictionary. Mit `.get('parameter_name', '')` wird der Parameter abgefragt. Wenn der Parameter fehlt, wird ein leerer String als Standardwert zurückgegeben.
 
 Nun erfolgt die Aktion welche ausgeführt werden soll, wenn der String "1-30-1" in der Liste der Fahrzeuge enthalten ist. Hierzu fügen wir im Bereich "Dann" eine Aktion hinzu. Hier kann z.B. eine Pushnachricht an ein Mobiltelefon gesendet werden. Als Inhalt der Nachricht soll stehen "Drehleiter rückt aus!".  
 Hier ist aber auch jede andere Aktion möglich.
 
-![](https://feuersoftware.com/wp-content/uploads/2025/01/Bildschirmfoto-2025-01-27-um-18.04.09-1024x401.png)
+![Home Assistant: Dann-Aktion mit Pushnachricht](/images/connect/schnittstellen/home_assistant_07_dann_aktion.png)
 
 Sie können die Aktion jetzt beliebig oft kopieren und für jedes Fahrzeug eine andere Aktion ausführen lassen.

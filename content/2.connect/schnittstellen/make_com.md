@@ -20,7 +20,7 @@ Zur Ansteuerung von Make.com aus Connect heraus werden **Webhooks** verwendet. B
 
 Die Einrichtung der Webhooks erfolgt im Connect Portal unter **Smart Home → Benutzer-Webhook** (für einzelne Benutzer) oder **Schnittstellen → Standort-Webhook** (für den gesamten Standort).
 
-Alle Details zu Webhook-Einrichtung und verfügbaren Variablen: [→ Webhooks (Smart Home)](./webhooks)
+Alle Details zu Webhook-Einrichtung und verfügbaren Variablen: [→ Webhooks (Smart Home)](/connect/schnittstellen/webhooks)
 
 ---
 
@@ -32,9 +32,15 @@ Externe Systeme wie Shellys oder Rauchwarnmelder können Webhooks auslösen. Mak
 
 Im Make.com-Szenario einen **Webhook** als Auslöser anlegen. Die generierte Webhook-URL kann von einem beliebigen externen System aufgerufen werden.
 
+![Make.com: Szenario mit Webhook als Auslöser](/images/connect/schnittstellen/make_com_01_webhook_modul.png)
+
 ### Schritt 2: HTTP Request hinzufügen
 
-Als nächsten Schritt im Szenario einen **HTTP-Request** hinzufügen mit folgender Konfiguration:
+Als nächsten Schritt im Szenario einen **HTTP-Request** hinzufügen:
+
+![Make.com: HTTP-Request-Modul zum Szenario hinzufügen](/images/connect/schnittstellen/make_com_02_http_modul.png)
+
+Das HTTP-Modul mit folgender Konfiguration einrichten:
 
 **URL:** `https://connectapi.feuersoftware.com/interfaces/public/operation`
 
@@ -68,5 +74,9 @@ Als nächsten Schritt im Szenario einen **HTTP-Request** hinzufügen mit folgend
 Der Inhalt kann frei angepasst werden – der JSON-Aufbau muss jedoch beibehalten werden.
 
 Den API-Key des Connect-Standorts findest du im Connect Portal unter **Standort → Schnittstellen → Öffentliche Connect Schnittstelle**.
+
+Am Ende sollte das HTTP-Modul so aussehen:
+
+![Make.com: Fertig konfiguriertes HTTP-Modul mit URL, Headern und Request Content](/images/connect/schnittstellen/make_com_03_http_konfiguration.png)
 
 Nach erfolgreicher Auslösung des Webhooks wird in Connect ein Alarm mit den angegebenen Parametern angelegt.

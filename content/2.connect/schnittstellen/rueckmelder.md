@@ -5,6 +5,8 @@ description: Den Hardware-Rückmeldebutton rueckmelder.de mit Feuersoftware Conn
 
 # Rückmelder (Hardware)
 
+![Der Rückmelder – Hardware-Button zur Einsatzrückmeldung](/images/connect/schnittstellen/rueckmelder_01_produkt.jpg)
+
 Der Rückmelder ist ein batteriebetriebener Hardware-Button für zuhause, mit dem per Knopfdruck eine Einsatzrückmeldung „**Komme**" an Connect gesendet werden kann. Die Rückmeldung erscheint sofort in allen verbundenen Apps und am EinsatzMonitor. Die erfolgreiche Übertragung wird durch eine grüne LED am Gerät quittiert.
 
 Der Rückmelder wird von einem Partnerunternehmen produziert und vertrieben: [rueckmelder.de](https://www.rueckmelder.de/)
@@ -32,7 +34,7 @@ Der Rückmelder benötigt einen persönlichen API-Schlüssel aus dem Connect Por
 - Verwendungszweck: **Einsatzrückmeldung User-API**
 - Speichern und den angezeigten Schlüssel kopieren
 
-Weitere Infos zur Benutzer-API: [→ Benutzer-API](./benutzer_api)
+Weitere Infos zur Benutzer-API: [→ Benutzer-API](/connect/schnittstellen/benutzer_api)
 
 ---
 
@@ -60,9 +62,13 @@ Falls sich der Browser nicht automatisch öffnet, folgende Adresse aufrufen: **`
 
 Heimnetz-Name (SSID) und Passwort in der Konfigurationsseite eintragen.
 
+![Konfigurationsseite des Rückmelders mit WLAN-Zugangsdaten](/images/connect/schnittstellen/rueckmelder_02_wlan.png)
+
 ### Schritt 5 – App auswählen und API-Key eintragen
 
 Alarm-App **„FeuerSoftware [USER-KEY]"** auswählen und den zuvor erstellten API-Key in das Feld **„Persönliche URL oder API-Key"** eintragen.
+
+![Konfigurationsseite des Rückmelders mit Alarm-App „FeuerSoftware [USER-KEY]" und API-Key-Feld](/images/connect/schnittstellen/rueckmelder_03_api_key.png)
 
 > **Hinweis (ab Firmware 7.5.2):** Die Fahrtzeit in Sekunden kann zusätzlich mit einem Semikolon an den API-Key angehangen werden: `API-KEY;Fahrzeit_in_Sekunden`
 
@@ -93,7 +99,16 @@ Geht das Gerät ohne grünes Blinken aus, wurde kein aktiver Einsatz gefunden �
 
 ---
 
+## Fehlerbehebung
+
+- **Rückmelder blinkt nach der Einrichtung weiter orange** (erst schnell, dann langsam): Es ist keine Verbindung mit dem Heimnetz möglich. Bei Schritt 2 neu beginnen und die WLAN-Zugangsdaten prüfen.
+- **Rückmelder blinkt abwechselnd orange und grün und geht dann aus:** Die eingetragenen Zugangsdaten (API-Key/URL) sind falsch. Bei Schritt 2 neu beginnen und die Zugangsdaten prüfen.
+
+---
+
 ## Firmware-Update
+
+Durch Firmware-Updates werden Fehler behoben und teilweise neue Funktionen bzw. Anbieter ergänzt. Wir empfehlen, immer die neueste Firmware einzusetzen.
 
 Aktuelle Firmware: [rueckmelder.de/downloads](https://www.rueckmelder.de/downloads)
 

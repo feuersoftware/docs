@@ -107,6 +107,10 @@ Alle Informationen zur Einrichtung von Hardware-Trackern und der Traccar-App sin
 
 Über Regeln für Gerätewarnungen können individuelle Eigenschaften von Fahrzeugen überwacht werden. Weicht ein Wert vom konfigurierten Normalbereich ab, wird automatisch eine **Mängelmeldung** erstellt.
 
+Die Einrichtung erfolgt in zwei Schritten:
+1. Die Regeln werden **einmal auf Organisationsebene** angelegt und konfiguriert.
+2. Anschließend werden sie unter **Fahrzeuge → Tab „Zusatzinformationen"** den zu überwachenden Werten der einzelnen Fahrzeuge zugewiesen.
+
 **Beispiele:**
 - Ein CVM-Modul überwacht die Batteriespannung. Fällt die Spannung unter den Normalbereich, wird eine Mängelmeldung für die Gerätewarte erstellt.
 - Eine UBX-Box liefert den Tankfüllstand. Fällt der Füllstand unter 15 %, wird eine Mängelmeldung erstellt.
@@ -134,9 +138,9 @@ Gib der Regel einen aussagekräftigen Namen und speichere sie.
 
 ### Regeln mit Fahrzeugeigenschaften verknüpfen
 
-Regeln werden auf Standortebene an die Eigenschaften einzelner Fahrzeuge geknüpft:
+Die auf Organisationsebene angelegten Regeln werden anschließend den Werten einzelner Fahrzeuge zugewiesen:
 
-1. Fahrzeug öffnen → Tab **„Zusatzinformationen"**
+1. **Fahrzeuge** → Fahrzeug öffnen → Tab **„Zusatzinformationen"**
 2. Die zu überwachende Eigenschaft suchen und auf bearbeiten klicken
 3. Eine der zuvor erstellten Regeln auswählen und speichern
 

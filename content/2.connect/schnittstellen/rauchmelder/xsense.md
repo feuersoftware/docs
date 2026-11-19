@@ -5,9 +5,11 @@ description: Einrichtung der X-Sense Alarmweiterleitung an FeuerSoftware Connect
 
 # X-Sense Rauchwarnmelder
 
-Die X-Sense-Schnittstelle ermöglicht die Auswertung von Alarmen aus X-Sense Rauchwarnmeldern und deren automatische Weiterleitung an FeuerSoftware Connect. Bei Auslösung eines Melders wird automatisch ein Einsatz im konfigurierten Standort erstellt.
+Die X-Sense-Schnittstelle ermöglicht die Auswertung von Alarmen aus X-Sense Rauchwarnmeldern und deren automatische Weiterleitung an FeuerSoftware Connect. Bei Auslösung eines Melders wird über die öffentliche Schnittstelle (API) automatisch ein Einsatz im konfigurierten Standort erstellt.
 
-> **Hinweis:** Diese Schnittstelle dient ausschließlich der ergänzenden Informationsübermittlung und ist **kein primärer Alarmweg**. Es kann nicht gewährleistet werden, dass die Alarmübertragung jederzeit zuverlässig und unterbrechungsfrei erfolgt. Nutzung auf eigene Verantwortung.
+> **Hinweis:** Diese Schnittstelle dient ausschließlich der ergänzenden Informationsübermittlung und ist **kein primärer Alarmweg**. Es kann nicht gewährleistet werden, dass die Alarmübertragung jederzeit zuverlässig und unterbrechungsfrei erfolgt. Nutzung auf eigene Verantwortung. Für Schäden, die durch eine verzögerte, fehlerhafte oder ausbleibende Alarmübermittlung über Connect entstehen, wird keine Haftung übernommen.
+>
+> Bitte stellen Sie sicher, dass ein zugelassener und sicherer **primärer Alarmweg** gemäß den geltenden Vorschriften und Sicherheitsstandards eingerichtet und betrieben wird.
 
 ---
 
@@ -17,7 +19,7 @@ Die X-Sense-Schnittstelle ermöglicht die Auswertung von Alarmen aus X-Sense Rau
 |---|---|
 | **Basisstation** | X-Sense SBS50 |
 | **Unterstützte Melder** | Rauchwarnmelder XS01-M, CO-Melder, Wasserleckmelder |
-| **Lizenzen** | Pro aktivierter Schnittstelle an einem Standort werden **5 Lizenzen** berechnet (unabhängig von der Anzahl der Melder) |
+| **Lizenzen** | Pro aktivierter Schnittstelle an einem Standort werden **5 Lizenzen** berechnet (unabhängig von der Anzahl der Melder). Die Verrechnung erfolgt automatisch mit der Aktivierung der Schnittstelle im Connect Portal. |
 
 ---
 
@@ -29,6 +31,8 @@ Die X-Sense-Schnittstelle ermöglicht die Auswertung von Alarmen aus X-Sense Rau
 2. **Konto → Installationsservice → Installateur einladen** tippen
 3. Bedingungen des Installationsdienstes lesen und bestätigen
 4. X-Sense Datenschutzbestimmungen akzeptieren
+
+> **Hinweis:** Nur der **Kontoinhaber** des X-Sense-Kontos kann einen Installateur einladen.
 
 ![Screenshot: X-Sense App – Installateur einladen](/images/connect/schnittstellen/xsense_01_einladen.png)
 
@@ -68,6 +72,6 @@ Nach der Aktivierung können die Alarmstichwörter für jeden Meldertyp individu
 
 ## Hinweise
 
-- Die Schnittstelle kann nur für **einen Standort** gleichzeitig aktiviert werden
+- Einsätze können **nicht in mehreren Standorten gleichzeitig** angelegt und **nicht in andere Standorte weitergeleitet** werden
 - Die Leitstelle wird **nicht** automatisch informiert – der Alarm wird nur im FeuerSoftware-System verarbeitet
 - **Regelmäßige Funktionsprüfung** mit Rauchmelder-Testspray empfohlen

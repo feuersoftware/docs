@@ -28,6 +28,10 @@ Der EinsatzMonitor bietet folgende Hauptfunktionen:
   Konfiguration der verschiedenen Module und Ansichten.
   ::
 
+  ::card{title="Einsatzdaten-Auswertung" icon="i-heroicons-funnel" to="/einsatzmonitor/auswertung"}
+  Eingangswege (E-Mail, Datei/Fax, DME, TETRA-SDS) und Pattern-Auswertung.
+  ::
+
   ::card{title="HowTos" icon="i-heroicons-book-open" to="/einsatzmonitor/howtos"}
   Anleitungen und Tipps für den täglichen Einsatz.
   ::

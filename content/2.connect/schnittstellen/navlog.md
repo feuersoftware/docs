@@ -21,6 +21,14 @@ Die Kunden-ID ist Bestandteil der NavLog-URL und befindet sich im Parameter `kid
 https://gdw.navlog.de/data/navlog/wms?kid=<KUNDENID>&
 ```
 
+oder:
+
+```
+https://gdw.navlog.de/data/navlog/wms?kid=<KUNDENID>&Request=GetCapabilities&Service=WMS
+```
+
+Der relevante Teil ist in beiden Fällen der Parameter `kid`.
+
 **Nur der Wert des `kid`-Parameters** (ohne `kid=` und ohne weitere URL-Bestandteile) muss im Connect Portal eingetragen werden.
 
 ---
@@ -35,7 +43,7 @@ Die Anbindung erfolgt zentral auf **Organisationsebene**:
 4. **Kunden-ID** eintragen
 5. Speichern
 
-Nach dem Speichern ist NavLog aktiv und steht allen Modulen der Organisation zur Verfügung.
+Nach dem Speichern ist NavLog aktiv und steht allen Modulen der Organisation zur Verfügung. Eine zusätzliche Konfiguration auf Einsatz- oder Geräteebene ist nicht notwendig.
 
 ---
 
@@ -43,7 +51,7 @@ Nach dem Speichern ist NavLog aktiv und steht allen Modulen der Organisation zur
 
 ### EinsatzManager
 
-Im EinsatzManager kann die NavLog-Karte über das Symbol oben rechts aktiviert werden. Die Legende ist unten links zu finden.
+Im EinsatzManager kann die NavLog-Karte über das Symbol oben rechts aktiviert werden. Eine Legende zu den NavLog-Kartensymbolen wird in der Karte eingeblendet.
 
 ### EinsatzTablet
 

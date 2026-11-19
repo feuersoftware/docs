@@ -43,7 +43,7 @@ Folgende Voraussetzungen müssen vor dem Betrieb erfüllt sein:
 
 ::warning
 **Wichtige Hinweise**
-- Wenn Fahrzeuge oder Benutzer in Connect neu angelegt oder geändert werden, ist ein **Neustart der Anwendung** erforderlich.
+- Neue oder geänderte **Fahrzeuge** werden spätestens nach **6 Stunden**, neue oder geänderte **Benutzer** spätestens nach **12 Stunden** automatisch übernommen. Für eine sofortige Übernahme TetraControl2Connect neu starten. Ein Neustart ist außerdem erforderlich, wenn ein **neuer Connect-Standort** hinzugefügt wird.
 - Die WebSocket-Verbindung zu TetraControl ist **unverschlüsselt**. TetraControl sollte deshalb möglichst lokal oder in einem vertrauenswürdigen Netz betrieben werden.
 - Ab Version 2.8.0 sind ausschließlich **Standort-API-Schlüssel** (nicht mehr Organisations-Schlüssel) zulässig.
 ::

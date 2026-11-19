@@ -11,14 +11,13 @@ In diesem Abschnitt finden Sie alle Informationen zur Konfiguration der verschie
 
 Die Einstellungen des EinsatzMonitors erreichen Sie über:
 
-1. Klick auf das **Zahnrad-Symbol** in der oberen rechten Ecke
-2. Oder über die Tastenkombination **F10**
+- Klick auf das **Zahnrad-Symbol** in der Startleiste („Einstellungen“)
 
 ## Verfügbare Einstellungsbereiche
 
 ::card-group
-  ::card{title="Allgemeine Einstellungen" icon="i-heroicons-cog-6-tooth" to="/einsatzmonitor/einstellungen/allgemein"}
-  Grundlegende Konfiguration des EinsatzMonitors.
+  ::card{title="Einsatz" icon="i-heroicons-cog-6-tooth" to="/einsatzmonitor/einstellungen/allgemein"}
+  Einstellungen für die Einsatzansicht.
   ::
 
   ::card{title="Alarmablauf" icon="i-heroicons-bolt" to="/einsatzmonitor/einstellungen/alarmablauf"}
@@ -91,10 +90,6 @@ Die Einstellungen des EinsatzMonitors erreichen Sie über:
 
   ::card{title="Systemüberwachung" icon="i-heroicons-computer-desktop" to="/einsatzmonitor/einstellungen/systemueberwachung"}
   Überwachung der Systemfunktionen.
-  ::
-
-  ::card{title="Telegram" icon="i-heroicons-chat-bubble-left-right" to="/einsatzmonitor/einstellungen/telegram"}
-  Telegram-Integration für Alarmierungen.
   ::
 
   ::card{title="TetraControl" icon="i-heroicons-signal" to="/einsatzmonitor/einstellungen/tetracontrol"}

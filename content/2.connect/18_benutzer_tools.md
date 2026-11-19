@@ -19,60 +19,9 @@ Die Datei enthält alle Benutzer des Standorts oder der Organisation mit ihren S
 
 ---
 
-## CSV-Benutzerimport (Massenimport)
+## CSV-Import
 
-Das **CSV User Importer**-Tool ermöglicht den Massenimport von Benutzern in Connect über die öffentliche Schnittstelle. Nützlich bei der Ersteinrichtung einer Organisation oder nach Mitgliederwechseln.
-
-### Download
-
-[CSV User Importer herunterladen](https://feuersoftware.com/Download/tools/UserImporter.zip)
-
-### Unterstützte Datenquellen
-
-| Quelle | Beschreibung |
-|---|---|
-| **Allgemeine CSV-Datei** | Eigene CSV mit definiertem Aufbau |
-| **Drägerware.ZMS Florix Hessen** | Erreichbarkeits-Report als CSV |
-| **Fox112** | Excel-Liste aus dem Listengenerator |
-
-### CSV-Dateiformat
-
-- **Trennzeichen:** Komma (`,`)
-- **Header** in der ersten Zeile erforderlich
-- Reihenfolge der Spalten beliebig
-
-**Unterstützte Felder:**
-
-| Feldname | Beschreibung | Pflicht |
-|---|---|---|
-| `EMail` | E-Mail-Adresse | Ja |
-| `FirstName` | Vorname | Nein |
-| `LastName` | Nachname | Nein |
-| `Street` | Straße | Nein |
-| `HouseNumber` | Hausnummer | Nein |
-| `ZipCode` | Postleitzahl | Nein |
-| `City` | Stadt | Nein |
-| `District` | Ortsteil | Nein |
-| `PhoneNumber` | Mobiltelefon | Nein |
-| `LandlineNumber` | Festnetz | Nein |
-| `PagerIssi` | Pager-ISSI | Nein |
-| `DeactivateAvailability` | Verfügbarkeit deaktivieren (`true`/`false`) | Nein |
-
-Eine Beispieldatei `Beispiel.csv` liegt im Anwendungsverzeichnis.
-
-### Importvorgang
-
-1. Tool starten
-2. CSV-Datei (oder Florix/Fox112-Export) laden
-3. Daten in der Tabelle prüfen und ggf. anpassen
-4. **Standort-Schlüssel** der öffentlichen Connect-Schnittstelle eintragen
-   > **Wichtig:** Den Schlüssel des **Standorts** verwenden, nicht den der Organisation – sonst erscheint eine Fehlermeldung.
-5. Import starten
-
-**Hinweise:**
-- Import-Geschwindigkeit: max. 1 Benutzer pro Sekunde (API-Limit)
-- Eingeladene Benutzer erhalten eine E-Mail zur Kontoaktivierung – erst danach ist der Account aktiv
-- Eine Protokolldatei `log.txt` im Anwendungsverzeichnis enthält Fehlerdetails
+Mehrere Benutzer können direkt im Connect Portal unter **Benutzer** über **„Benutzer importieren“** per CSV-Datei importiert werden. Wie das funktioniert und welche Spalten die Datei enthalten muss, steht unter [Benutzer per CSV importieren](/connect/04_benutzerverwaltung#benutzer-per-csv-importieren).
 
 ---
 
