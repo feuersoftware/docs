@@ -105,6 +105,7 @@ Endpunkte, die einen Standort brauchen, akzeptieren die **Standort-ID**, den **S
 | `POST /defectReport` | `SiteId` | `SiteName` |
 | `POST /defectReportCategory` | `SiteId` | `SiteName` |
 | `/webhooks` (Query-Parameter) | `siteId` | `siteName` |
+| `GET /user/userstatus` (Query-Parameter, Token-Link) | `siteId` | `siteName` |
 
 - **Token auf Standortebene (`InterfacePublic`):** Die Angaben sind optional. Ohne Angabe gilt der Standort des Tokens. Neuigkeiten und Info-Board-Gruppen werden immer am Standort des Tokens angelegt, eine Standortangabe wird dort ignoriert. Webhooks akzeptieren nur den Standort des Tokens. Mängelberichte und Mängelkategorien können auch an einem anderen Standort angelegt werden, auf den der Token Zugriff hat.
 - **Token auf Organisationsebene (`InterfacePublicOrganization`):** Standort-ID oder Standortname ist erforderlich. Für eine organisationsweite Mängelkategorie genügt stattdessen `OrganizationId`.
@@ -112,7 +113,9 @@ Endpunkte, die einen Standort brauchen, akzeptieren die **Standort-ID**, den **S
 
 Fehlende, widersprüchliche oder unbekannte Standortangaben werden mit `400 Bad Request` abgelehnt. Dasselbe gilt für einen Standort, auf den der Token keinen Zugriff hat (z. B. `A site with id 123 could not be found.`).
 
-Antworten enthalten Standort-ID und Standortname als `SiteId` und `SiteName`, z. B. im [`OperationModel`](#operationmodel), im [`NewsModel`](#newsmodel), bei Alarmgruppen und Fahrzeugen.
+Bei `GET /user/userstatus` muss der Standort einer sein, auf den der Benutzer des Token-Links Zugriff hat; ohne Angabe gilt wie bisher der neueste Einsatz seiner Standorte.
+
+Antworten enthalten Standort-ID und Standortname als `SiteId` und `SiteName`: im [`OperationModel`](#operationmodel), im [`NewsModel`](#newsmodel), bei Alarmgruppen, Fahrzeugen, Info-Board-Einträgen und -Gruppen, Verteilerlisten (`/mailinglists`; bei Verteilerlisten der Organisation leer), Webhook-Protokollen (`/webhooks/logs`) und den Standort-Mitgliedschaften der Abrechnung (`/billing/account`).
 
 #### Veraltete Felder `Site` (Ablaufdatum 1. Juli 2027)
 
@@ -432,7 +435,7 @@ Alle Felder sind optional. Über die öffentliche API vorgenommene Änderungen e
 | `PUT` | `/user/{idOrPagerNumber}/availability/current` | Aktuelle Verfügbarkeit setzen. |
 | `GET` | `/user/{id}/profilepicture` | Profilbild als PNG. |
 | `GET` | `/user/useravailability` | Verfügbarkeit per signiertem Token-Link setzen *(anonym)*. |
-| `GET` | `/user/userstatus` | Einsatz-Rückmeldestatus per signiertem Token-Link setzen *(anonym)*. |
+| `GET` | `/user/userstatus` | Einsatz-Rückmeldestatus per signiertem Token-Link setzen *(anonym)*. Optional mit `siteId` oder `siteName`, siehe [Standortangaben](#standortangaben). |
 
 **Beispiel PATCH-Body:**
 ```json
@@ -553,9 +556,9 @@ Beim Anlegen eines Mängelberichts oder einer Standort-Kategorie wird der Stando
 | `InfoType` | `SiteInfoType` | Ja | `PhoneNumber` (0), `EmailAddress` (1), `WebReference` (2), `DocumentReference` (3), `Text` (4). |
 | `Value` | string | Ja | Wert (z. B. Telefonnummer, E-Mail-Adresse, URL oder Text). |
 
-`SiteInfoModel` (Antwortmodell) erweitert `CreateSiteInfoModel` um `Id`, `SiteId` und `InfoGroupName`.
+`SiteInfoModel` (Antwortmodell) erweitert `CreateSiteInfoModel` um `Id`, `SiteId`, `SiteName` und `InfoGroupName`.
 
-**Gruppen:** Request Body enthält `Name` (string, Pflicht). Auf Organisationsebene (`InterfacePublicOrganization`) ist beim Anlegen zusätzlich der Standort erforderlich: `SiteId`, `SiteName` oder beides, siehe [Standortangaben](#standortangaben). Auf Standortebene wird die Gruppe immer am Standort des Tokens angelegt.
+**Gruppen:** Request Body enthält `Name` (string, Pflicht). Auf Organisationsebene (`InterfacePublicOrganization`) ist beim Anlegen zusätzlich der Standort erforderlich: `SiteId`, `SiteName` oder beides, siehe [Standortangaben](#standortangaben). Auf Standortebene wird die Gruppe immer am Standort des Tokens angelegt. Die Antwort (`SiteInfoGroupModel`) enthält `Id`, `Name`, `SiteId`, `SiteName` und die Einträge (`Infos`).
 
 ---
 
