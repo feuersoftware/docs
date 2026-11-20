@@ -86,10 +86,8 @@ Fahrzeugspezifische Einstellungen für angebundene Drittsysteme (z. B. Traccar G
 
 ![Screenshot: Fahrzeug Tab Integrationen](/images/connect/06_fahrzeug_integrationen.png)
 
-### Tab: Vehicle App (EinsatzTablet)
-Konfiguration für das EinsatzTablet, das in diesem Fahrzeug verbaut ist:
-- Verknüpfung mit einem EinsatzTablet-Account
-- Tablet-spezifische Einstellungen
+### Tab: EinsatzTablet
+Aktivierung des Fahrzeug-Zugangs für das [EinsatzTablet](/einsatztablet), das in diesem Fahrzeug verbaut ist (erfordert eine zusätzliche Lizenz). Nach der Aktivierung werden Zugangsdaten und ein QR-Code für die Anmeldung per E-Mail versendet – siehe [EinsatzTablet: Installation & Anmeldung](/einsatztablet/02_installation_und_anmeldung).
 
 ![Screenshot: Fahrzeug Tab Vehicle App](/images/connect/06_fahrzeug_vehicle_app.png)
 

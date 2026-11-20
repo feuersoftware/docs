@@ -5,6 +5,10 @@ description: Aufbau der Einsatzansicht im EinsatzTablet – Einsatzdetails, Fahr
 
 # Einsatzansicht
 
+::warning
+**End of Life:** Diese Seite beschreibt das **bisherige EinsatzTablet** (.NET MAUI). Die App wird nicht mehr weiterentwickelt und durch das [neue EinsatzTablet](/einsatztablet) ersetzt. Hinweise zum Wechsel: [Umstieg vom alten EinsatzTablet](/einsatztablet/17_umstieg)
+::
+
 Die Einsatzansicht ist die zentrale Ansicht des EinsatzTablets. Sie zeigt alle relevanten Informationen eines aktiven Einsatzes sowie den Fahrzeugstatus der gesamten Organisation.
 
 ---

@@ -40,7 +40,7 @@ Damit der Umstieg gelingt, brauchen wir euch: Je mehr Wehren die neue App jetzt 
 2. Mit dem Google-Konto des Tablets anmelden und **„Tester werden"** wählen.
 3. Nach ein paar Minuten die App über den Play Store installieren.
 
-Die Anmeldung erfolgt wie gewohnt mit den **Fahrzeug-Zugangsdaten**, die ihr im Connect Portal unter **Fahrzeuge** erzeugen könnt – per Benutzername und Passwort oder ganz bequem per **QR-Code**. Wie das geht, steht in der Anleitung [Anmeldung](/einsatztablet/02_anmeldung).
+Die Anmeldung erfolgt wie gewohnt mit den **Fahrzeug-Zugangsdaten**, die ihr im Connect Portal unter **Fahrzeuge** erzeugen könnt – per Benutzername und Passwort oder ganz bequem per **QR-Code**. Wie das geht, steht in der Anleitung [Installation & Anmeldung](/einsatztablet/02_installation_und_anmeldung).
 
 ---
 

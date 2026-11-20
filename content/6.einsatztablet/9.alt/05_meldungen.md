@@ -5,6 +5,10 @@ description: Lagemeldungen und Nachrichten zu einem Einsatz am EinsatzTablet anz
 
 # Meldungen
 
+::warning
+**End of Life:** Diese Seite beschreibt das **bisherige EinsatzTablet** (.NET MAUI). Die App wird nicht mehr weiterentwickelt und durch das [neue EinsatzTablet](/einsatztablet) ersetzt. Hinweise zum Wechsel: [Umstieg vom alten EinsatzTablet](/einsatztablet/17_umstieg)
+::
+
 Das EinsatzTablet zeigt Lagemeldungen und Nachrichten, die in Connect zu einem Einsatz erfasst wurden. Bei einer aktiven Leitstellenanbindung (z. B. ISE WDX3) können Lagemeldungen direkt aus dem Einsatzleitprogramm übertragen werden.
 
 ---

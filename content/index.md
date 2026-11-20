@@ -111,7 +111,7 @@ Unsere Produkte
   [EinsatzTablet]{.text-primary}
 
   #description
-  Die Tablet-optimierte Anwendung für den Einsatz vor Ort. Alle wichtigen Informationen auf einen Blick.
+  Die Fahrzeug-App für iPad und Android-Tablets – komplett neu entwickelt: Einsatz, Anfahrt, Karte, Protokoll und Stärkemeldung direkt im Fahrzeug.
   :::
 
   :::u-page-feature

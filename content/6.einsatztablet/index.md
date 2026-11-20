@@ -1,14 +1,14 @@
 ---
 title: EinsatzTablet
-description: Dokumentation der FeuerSoftware EinsatzTablet-App – Installation, Anmeldung, Einsatzansicht und Integrationen
+description: Dokumentation des neuen FeuerSoftware EinsatzTablet für iPad und Android-Tablets – Installation, Bedienung, Einsatzansichten, Besatzung, Karte und Einstellungen
 links: []
 ---
 
 # EinsatzTablet
 
-Das **EinsatzTablet** ist die tablet-optimierte Anwendung von FeuerSoftware für den Einsatzbetrieb direkt im Fahrzeug. Es zeigt Einsatzdetails, Fahrzeugstatus, Karte und Rückmeldungen in Echtzeit an und ist speziell für die Nutzung als fahrzeuggebundenes Informationssystem konzipiert.
+Das **EinsatzTablet** ist die Fahrzeug-App von FeuerSoftware für iPad und Android-Tablets. Es empfängt Alarmierungen, zeigt Einsatzdaten, Karte, Protokoll und die beteiligten Einsatzmittel und ermöglicht vom Fahrzeug aus Stärkemeldungen, Lagemeldungen, Fotos und Mängelmeldungen – alles live verbunden mit Connect und dem EinsatzManager.
 
-Verfügbar für **iPadOS** und **Android**.
+Das EinsatzTablet wurde **komplett neu entwickelt** und ersetzt die bisherige App. Die Dokumentation der bisherigen App findest du unter [EinsatzTablet (alt)](/einsatztablet/alt); Hinweise zum Wechsel unter [Umstieg vom alten EinsatzTablet](/einsatztablet/17_umstieg).
 
 ---
 
@@ -16,11 +16,20 @@ Verfügbar für **iPadOS** und **Android**.
 
 | Seite | Beschreibung |
 |---|---|
-| [Produktübersicht](/einsatztablet/01_produktuebersicht) | Funktionsumfang, Download-Links und Betaversionen |
-| [Anmeldung](/einsatztablet/02_anmeldung) | Fahrzeug-Account aktivieren und QR-Code-Login |
-| [Einsatzansicht](/einsatztablet/03_einsatzansicht) | Einsatzdetails, Fahrzeugstatus, Karte und Kräfteübersicht |
-| [Rückmeldungen](/einsatztablet/04_rueckmeldungen) | Rückmeldungen der Einsatzkräfte und Personalabsendung |
-| [Meldungen](/einsatztablet/05_meldungen) | Lagemeldungen und Nachrichten zum Einsatz |
-| [Hydrantenkarte](/einsatztablet/06_hydrantenkarte) | Wasserentnahmestellen und Rettungspunkte auf der Karte |
-| [Dokumente & Nextcloud](/einsatztablet/07_dokumente_nextcloud) | Einsatzpläne, Fotos und Nextcloud-Anbindung |
-| [Integrationen](/einsatztablet/08_integrationen) | iKAT, Moditech CRS, TETRAcontrol UBX |
+| [Produktübersicht](/einsatztablet/01_produktuebersicht) | Funktionsumfang, Plattformen und Download |
+| [Installation & Anmeldung](/einsatztablet/02_installation_und_anmeldung) | Fahrzeug-Zugang, Berechtigungen und Anmeldung |
+| [Aufbau & Bedienung](/einsatztablet/03_aufbau_und_bedienung) | Navigation, Kopfzeile, Einsatzliste, Karte, Fahrzeuge und Schnellaktionen |
+| [Alarmierung](/einsatztablet/04_alarmierung) | Alarmempfang, Einsatzwechsel und automatisches Verhalten |
+| [Übersicht](/einsatztablet/05_uebersicht) | Einsatzort, Sachverhalt, Rückmeldungen und Einsatzdaten |
+| [Anfahrt](/einsatztablet/06_anfahrt) | Navigation, Funkstatus, Stärke und Einsatzmittel |
+| [Karte](/einsatztablet/07_karte) | Kartentypen, Wasserversorgung, Waldwege und Einsatzort |
+| [Protokoll](/einsatztablet/08_protokoll) | Protokolleinträge und Lagemeldungen |
+| [Besatzung](/einsatztablet/09_besatzung) | Stärkemeldung und namentliche Besatzung |
+| [Aufgaben](/einsatztablet/10_aufgaben) | Einsatzaufgaben übernehmen und bearbeiten |
+| [Bericht & Anhänge](/einsatztablet/11_bericht_und_anhaenge) | Einsatzdokumentation, Fotos und Einsatzbericht |
+| [Alarmieren](/einsatztablet/12_alarmieren) | Nachalarmierung vom Tablet aus |
+| [Fahrzeug & Mängel](/einsatztablet/13_fahrzeug_und_maengel) | Fahrzeugstatus, Fahrzeugwerte und Mängelmeldungen |
+| [Infoboard & Dateien](/einsatztablet/14_infoboard_und_dateien) | Infoboard und Dokumente aus dem Online-Speicher |
+| [Setup](/einsatztablet/15_setup) | Alle Einstellungen des Tablets |
+| [Offline & Fehlerbehebung](/einsatztablet/16_offline_und_fehlerbehebung) | Verhalten ohne Netz, Diagnose und Fehler melden |
+| [Umstieg vom alten EinsatzTablet](/einsatztablet/17_umstieg) | Was neu ist, was sich geändert hat und was noch folgt |

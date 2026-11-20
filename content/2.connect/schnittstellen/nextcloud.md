@@ -12,7 +12,7 @@ description: Eine eigene Nextcloud an einen Standort anbinden – als Dateispeic
 
 Die Anbindung ist **kostenlos**. Pro Standort kann genau eine Nextcloud verbunden werden.
 
-> **Hinweis:** Aktuell nutzen das **Connect Portal** und der **EinsatzManager** die Standort-Nextcloud. Die Integration in **EinsatzApp** und **EinsatzTablet** folgt – bis dahin wird die Nextcloud dort weiterhin direkt in der App eingerichtet (siehe [EinsatzTablet: Dokumente & Nextcloud](/einsatztablet/07_dokumente_nextcloud)).
+> **Hinweis:** Die Standort-Nextcloud nutzen das **Connect Portal**, der **EinsatzManager** und das [neue EinsatzTablet](/einsatztablet/14_infoboard_und_dateien#dateien). Die Integration in die **EinsatzApp** folgt. Im [bisherigen EinsatzTablet](/einsatztablet/alt/07_dokumente_nextcloud) wird die Nextcloud weiterhin direkt in der App eingerichtet.
 
 ---
 

@@ -5,6 +5,10 @@ description: Nextcloud-Anbindung am EinsatzTablet für Einsatzpläne, BMA-Pläne
 
 # Dokumente & Nextcloud
 
+::warning
+**End of Life:** Diese Seite beschreibt das **bisherige EinsatzTablet** (.NET MAUI). Die App wird nicht mehr weiterentwickelt und durch das [neue EinsatzTablet](/einsatztablet) ersetzt. Hinweise zum Wechsel: [Umstieg vom alten EinsatzTablet](/einsatztablet/17_umstieg)
+::
+
 Das EinsatzTablet kann mit einer **Nextcloud**-Instanz verbunden werden. Damit stehen im Einsatz Dokumente wie BMA-Pläne, Waldbrandkonzepte oder Feuerwehrpläne direkt auf dem Tablet zur Verfügung. Außerdem können Fotos zur Einsatzdokumentation direkt in die Nextcloud hochgeladen werden.
 
 > **Nextcloud** ist eine kostenlose Open-Source-Software zur Dateiverwaltung, die auf einem eigenen Webserver betrieben wird. Viele Hoster bieten einen 1-Click-Installer an.

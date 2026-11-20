@@ -5,6 +5,10 @@ description: Fahrzeug-Account für das EinsatzTablet aktivieren und per QR-Code 
 
 # Anmeldung
 
+::warning
+**End of Life:** Diese Seite beschreibt das **bisherige EinsatzTablet** (.NET MAUI). Die App wird nicht mehr weiterentwickelt und durch das [neue EinsatzTablet](/einsatztablet) ersetzt. Hinweise zum Wechsel: [Umstieg vom alten EinsatzTablet](/einsatztablet/17_umstieg)
+::
+
 Das EinsatzTablet meldet sich nicht mit einem persönlichen Benutzerkonto an, sondern mit einem **Fahrzeug-Account**. Dieser ist an ein bestimmtes Fahrzeug in Connect gebunden und muss dort zuerst aktiviert werden.
 
 ---
