@@ -1,16 +1,16 @@
 ---
 title: Nextcloud
-description: Eine eigene Nextcloud an einen Standort anbinden – als Dateispeicher für Anhänge und um vorhandene Dokumente in Connect durchsuchbar zu machen
+description: Eine eigene Nextcloud an einen Standort oder die Organisation anbinden – als Dateispeicher für Anhänge und um vorhandene Dokumente in Connect durchsuchbar zu machen
 ---
 
 # Nextcloud
 
-Über die Nextcloud-Schnittstelle wird eine **eigene, selbst betriebene Nextcloud** an einen Standort angebunden. Sie erfüllt zwei Aufgaben:
+Über die Nextcloud-Schnittstelle wird eine **eigene, selbst betriebene Nextcloud** an einen Standort – und zusätzlich an die [Organisation](#nextcloud-der-organisation) – angebunden. Sie erfüllt zwei Aufgaben:
 
 1. **Dateispeicher** – Anhänge (z. B. Einsatzfotos, Anhänge an News, Termine und Mängelmeldungen, Monitor-Dateien) können statt im Connect Storage direkt in der Nextcloud abgelegt werden. Sie zählen dann nicht zum Speicherkontingent der Organisation.
 2. **Dokumentenablage** – Vorhandene Dokumente wie Objekt-, Feuerwehr- oder BMA-Pläne werden in Connect durchsuchbar und können im Infoboard, in dynamischen Zusatzinformationen und im EinsatzManager geöffnet werden. Verlinkt werden können einzelne Dateien oder ganze Ordner (siehe [Infoboard: Nextcloud-Dokumente verlinken](/connect/09_infoboard#nextcloud-dokumente-verlinken)). Im EinsatzManager lassen sich Dateien aus der Nextcloud außerdem direkt [an einen Einsatz anhängen](/einsatzmanager/11_anhaenge_und_dokumente#datei-aus-der-nextcloud-anhängen).
 
-Die Anbindung ist **kostenlos**. Pro Standort kann genau eine Nextcloud verbunden werden.
+Die Anbindung ist **kostenlos**. Pro Standort kann genau eine Nextcloud verbunden werden, dazu eine für die Organisation.
 
 > **Hinweis:** Die Standort-Nextcloud nutzen das **Connect Portal**, der **EinsatzManager** und das [neue EinsatzTablet](/einsatztablet/14_infoboard_und_dateien#dateien). Die Integration in die **EinsatzApp** folgt. Im [bisherigen EinsatzTablet](/einsatztablet/alt/07_dokumente_nextcloud) wird die Nextcloud weiterhin direkt in der App eingerichtet.
 
@@ -20,7 +20,7 @@ Die Anbindung ist **kostenlos**. Pro Standort kann genau eine Nextcloud verbunde
 
 - Eine Nextcloud, die **aus dem Internet über `https://` erreichbar** ist. Server, die nur im lokalen Netz erreichbar sind (z. B. `192.168.x.x`), oder unverschlüsseltes `http://` werden aus Sicherheitsgründen nicht unterstützt.
 - Ein Nextcloud-Benutzer, über den Connect auf die Dateien zugreift. Empfehlung: einen **eigenen Benutzer** für Connect anlegen und nur die benötigten Ordner für ihn freigeben.
-- Die Rolle **Standortadministrator** im Connect Portal.
+- Die Rolle **Standortadministrator** im Connect Portal (für die Nextcloud der Organisation: **Organisationsadministrator**).
 
 ---
 
@@ -105,6 +105,38 @@ Beim Trennen passiert Folgendes:
 
 ---
 
+## Nextcloud der Organisation
+
+**Organisations-Ebene → Seitenleiste → Schnittstellen → Nextcloud**
+
+Zusätzlich zu den Standorten kann auch die **Organisation** eine Nextcloud verbinden. Die Nextcloud der Organisation ist ein eigenes, **kostenloses Add-in** und wird für zwei Dinge genutzt:
+
+- **Dokumentverweise in [dynamischen Zusatzinformationen](/connect/11_alarmierung#dynamische-zusatzinformationen)** werden darin aufgelöst – an **allen Standorten** der Organisation. Ohne Nextcloud der Organisation sucht Connect den Verweis in der Nextcloud des Standorts, zu dem der Einsatz gehört.
+- **Anhänge von Organisations-News und -Terminen** können dort abgelegt werden.
+
+Die Einrichtung erfordert die Rolle **Organisationsadministrator**.
+
+### Verbinden oder Verbindung übernehmen
+
+Es gibt zwei Wege:
+
+- **Neu verbinden** – wie beim Standort über Server-URL und Anmeldung im neuen Tab (siehe [Nextcloud verbinden](#nextcloud-verbinden)).
+- **„Verbindung übernehmen"** – nutzen Standorte der Organisation bereits eine Nextcloud, werden sie hier aufgelistet. Mit einem Klick übernimmt die Organisation deren Server, Konto und Dokumenten-Stammordner, ohne sich erneut anzumelden. **Bestehende Dokumentverweise bleiben dann gültig.**
+
+Mit dem Verbinden wird das Add-in automatisch installiert; wird es deinstalliert, wird die Verbindung getrennt.
+
+### Einstellungen
+
+Nach dem Verbinden stehen zur Verfügung:
+
+- **Dokumenten-Stammordner** – wie beim Standort. Alle Mitglieder und Geräte der Organisation können die Dokumente unterhalb dieses Ordners lesen.
+- **Speicherzuordnung** – legt fest, ob Anhänge von **Organisations-News und -Terminen** im Connect Storage oder in der Nextcloud der Organisation abgelegt werden.
+- **„Verweise prüfen"** – prüft alle Dokumentverweise der dynamischen Zusatzinformationen gegen die Nextcloud der Organisation und zeigt je Verweis *Gefunden* oder *Nicht gefunden* – z. B. nach dem Wechsel auf eine andere Nextcloud. Nicht gefundene Verweise werden in den dynamischen Zusatzinformationen angepasst.
+
+Schlägt die nächtliche Verbindungsprüfung fehl, erhalten die **Organisationsadministratoren** die E-Mail „Nextcloud-Verbindung fehlgeschlagen".
+
+---
+
 ## Häufige Fragen
 
 ### Die Verbindung schlägt direkt beim Verbinden fehl
@@ -119,4 +151,4 @@ Die Datei wurde in der Nextcloud manuell verschoben, umbenannt oder gelöscht, o
 
 ### Kann ich eine Nextcloud für mehrere Standorte nutzen?
 
-Ja. Die Verbindung wird zwar pro Standort eingerichtet, es kann aber an mehreren Standorten dieselbe Nextcloud (mit demselben oder unterschiedlichen Benutzern) verbunden werden.
+Ja. Die Verbindung wird zwar pro Standort eingerichtet, es kann aber an mehreren Standorten dieselbe Nextcloud (mit demselben oder unterschiedlichen Benutzern) verbunden werden. Für Dokumentverweise in dynamischen Zusatzinformationen empfiehlt sich zusätzlich die [Nextcloud der Organisation](#nextcloud-der-organisation) – sie lässt sich von einem Standort übernehmen.

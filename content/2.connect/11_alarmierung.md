@@ -126,11 +126,13 @@ Mit den Dynamischen Zusatzinfos (kurz: Dyn. Zusatzinfos) lassen sich individuell
 
 ### Einrichtung
 
-Dynamische Zusatzinfos können sowohl auf Organisationsebene als auch auf Standortebene eingerichtet werden. **Angelegte Regeln gelten immer für die gesamte Organisation**, auch wenn sie auf Standortebene angelegt werden.
+Dynamische Zusatzinfos gelten **immer für die gesamte Organisation**. Sie werden deshalb nur auf **Organisationsebene** angelegt und bearbeitet – dafür wird das Recht **„Organisationsadministrator"** benötigt.
 
-Hierfür wird mindestens das Recht „Standortadministrator" benötigt.
+Im Connect Portal zur **Organisations-Ebene** wechseln, den Menüpunkt **„Alarm"** und anschließend **„Dyn. Zusatzinfos"** wählen. Mit **„Neu"** wird eine neue Regel angelegt.
 
-Wähle den Menüpunkt **„Alarm"** und anschließend **„Dyn. Zusatzinfos"**. Klicke auf **„Neu"** um eine neue Regel anzulegen.
+::warning
+**Geänderte Rechte:** Standortadministratoren können Dynamische Zusatzinfos nicht mehr anlegen oder bearbeiten. Auf Standortebene sind die Regeln nur noch **lesend** sichtbar („Dynamische Zusatzinformationen gelten für die ganze Organisation. Bearbeiten kannst du sie nur auf Organisationsebene, hier siehst du sie lesend."). Änderungen nimmt ein Organisationsadministrator vor.
+::
 
 ### Regel konfigurieren
 
@@ -154,7 +156,7 @@ Hier werden die Felder und Inhalte definiert, die hinzugefügt werden, sobald di
 | Typ | Beschreibung |
 |---|---|
 | **Text** | Einfacher Text, max. 2000 Zeichen. Z. B. „Funkkanal XYZ schalten". |
-| **Dokument-Referenz** | Pfad zu einem Ordner oder einer Datei in der Nextcloud, z. B. `/Feuerwehrplan/Klinikum`. Ist am Standort eine [Nextcloud](/connect/schnittstellen/nextcloud) verbunden, kann die Datei über das Ordner-Symbol direkt ausgewählt werden; Connect Portal und EinsatzManager öffnen sie dann in der Vorschau. In der EinsatzApp setzt die Nutzung bis zur Integration der Standort-Nextcloud weiterhin eine in der App eingerichtete Nextcloud-Verbindung voraus. |
+| **Dokument-Referenz** | Pfad zu einem Ordner oder einer Datei in der Nextcloud, z. B. `/Feuerwehrplan/Klinikum`. Ist eine [Nextcloud der Organisation](/connect/schnittstellen/nextcloud#nextcloud-der-organisation) verbunden, kann die Datei über das Ordner-Symbol direkt ausgewählt werden; Connect Portal und EinsatzManager öffnen den Verweis dann bei Einsätzen **aller Standorte** in der Vorschau. Ohne Nextcloud der Organisation wird der Verweis in der Nextcloud des Einsatz-Standorts gesucht. In der EinsatzApp setzt die Nutzung bis zur Integration der Nextcloud weiterhin eine in der App eingerichtete Nextcloud-Verbindung voraus. |
 | **Weblink** | Eine URL, z. B. `https://www.feuerwehr-flammenhausen.de`. Wird direkt aus der App heraus geöffnet. |
 
 ### Anzeige

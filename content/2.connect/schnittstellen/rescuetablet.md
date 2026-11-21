@@ -44,6 +44,21 @@ Connect überträgt an rescueTABLET folgende Daten:
 
 ---
 
+## Automatische Deaktivierung
+
+Scheitern die Aufrufe an rescueTABLET dauerhaft, deaktiviert Connect die Schnittstelle automatisch – allerdings nur, wenn rescueTABLET die Aufrufe mit `401 Unauthorized` oder `403 Forbidden` ablehnt (siehe [Fehlermeldungen](#fehlermeldungen)). Andere Fehler, etwa eine kurzzeitige Nichterreichbarkeit, führen nicht zur Deaktivierung. Deaktiviert wird erst, wenn
+
+- seit **mindestens 3 Tagen** kein einziger Aufruf erfolgreich war **und**
+- die Fehler an **mindestens 3 verschiedenen Tagen** aufgetreten sind.
+
+Ein einzelner erfolgreicher Aufruf oder das Speichern der Einstellungen setzt die Prüfung zurück. Die Prüfung läuft täglich um 08:00 Uhr.
+
+Nach der Deaktivierung erhalten die **Organisations- und Standortadministratoren** eine E-Mail „rescueTABLET-Schnittstelle automatisch deaktiviert" mit der letzten Fehlermeldung. Bis die Schnittstelle wieder aktiv ist, sendet Connect keine Daten mehr an rescueTABLET.
+
+**Wieder einschalten:** Ursache anhand der Fehlermeldung beheben (stimmen Authentifizierungsschlüssel und Group-ID?), die Schnittstelle in den Einstellungen wieder **aktivieren und speichern**. Scheitern die Aufrufe weiterhin, wird sie nach einigen Tagen erneut deaktiviert.
+
+---
+
 ## Kontakt rescueTABLET
 
 Bei Fragen zu Zugangsdaten oder zum Datenportal: [Kontaktseite von rescueTABLET](https://www.rescuetablet.de/index.php/kontakt)

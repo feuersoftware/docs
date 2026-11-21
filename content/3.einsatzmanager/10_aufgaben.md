@@ -1,6 +1,6 @@
 ---
 title: Aufgaben
-description: Einsatzaufgaben erstellen, zuweisen und verwalten – die integrierte Aufgabenverwaltung im EinsatzManager
+description: Aufgaben erstellen, zuweisen und verwalten – die integrierte Aufgabenverwaltung im EinsatzManager
 ---
 
 # Aufgaben

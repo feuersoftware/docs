@@ -38,7 +38,8 @@ https://connectapi.feuersoftware.com/interfaces/public/user/userstatus
 |---|---|---|
 | `token` | Ja | Authentifizierungsschlüssel aus dem Connect Portal |
 | `status` | Ja | `coming` / `notComing` / `comingLater` |
-| `siteID` | Nein | ID des Standorts – schränkt die Zusage auf Einsätze dieses Standorts ein |
+| `siteID` | Nein | ID des Standorts – schränkt die Zusage auf Einsätze dieses Standorts ein. Es sind nur Standorte erlaubt, auf die der Benutzer Zugriff hat |
+| `siteName` | Nein | Name des Standorts – alternativ zu `siteID`. Werden beide angegeben, müssen sie denselben Standort bezeichnen |
 | `driveTimeSeconds` | Nein | Voraussichtliche Fahrtzeit in Sekunden bis zum Feuerwehrhaus |
 
 **Beispielaufruf:**
@@ -51,6 +52,7 @@ https://connectapi.feuersoftware.com/interfaces/public/user/userstatus?token=<TO
 | HTTP Status | Beschreibung |
 |---|---|
 | `204 No Content` | Rückmeldung erfolgreich übermittelt |
+| `400 Bad Request` | Ungültige Parameter, z. B. ein unbekannter Standort, ein Standort, auf den der Benutzer keinen Zugriff hat, oder `siteID` und `siteName` passen nicht zusammen |
 | `401 Unauthorized` | Token ungültig |
 | `404 Not Found` | Benutzer zum Token nicht gefunden |
 

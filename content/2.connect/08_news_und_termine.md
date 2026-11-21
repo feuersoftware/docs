@@ -171,7 +171,7 @@ An **News** und **Termine** können Dateien angehängt werden – z. B. ein Dien
 - Hochladen, Bearbeiten und Löschen erfordert das Verwaltungsrecht für News bzw. Termine.
 - Unterstützte Dateitypen: Bilder, PDF, Word, Excel, TXT, CSV und Videos; max. 25 MB (Connect Storage) bzw. 250 MB (Nextcloud).
 
-> Anhänge von News und Terminen eines **Standorts** werden je nach [Speicherzuordnung](/connect/23_dateispeicher#speicherzuordnung) im Connect Storage oder in der Nextcloud des Standorts abgelegt. Anhänge an News und Terminen auf **Organisationsebene** liegen immer im Connect Storage. Wird eine News oder ein Termin gelöscht, werden auch die Anhänge gelöscht.
+> Anhänge von News und Terminen eines **Standorts** werden je nach [Speicherzuordnung](/connect/23_dateispeicher#speicherzuordnung) im Connect Storage oder in der Nextcloud des Standorts abgelegt. Anhänge an News und Terminen auf **Organisationsebene** liegen im Connect Storage oder – wenn eingestellt – in der [Nextcloud der Organisation](/connect/schnittstellen/nextcloud#nextcloud-der-organisation). Wird eine News oder ein Termin gelöscht, werden auch die Anhänge gelöscht.
 
 > **Hinweis:** Die Anzeige von Anhängen in der **EinsatzApp** folgt mit einem späteren App-Update.
 

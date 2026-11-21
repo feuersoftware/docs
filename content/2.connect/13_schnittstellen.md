@@ -25,6 +25,7 @@ Das Connect Portal bietet zahlreiche Schnittstellen zu externen Systemen. Diese 
 | **[Divera 24/7](/connect/schnittstellen/divera)** | Einsätze aus Divera 24/7 per Webhook weiterleiten |
 | **[FAS](/connect/schnittstellen/spekter_fas)** | Anbindung an FAS-Systeme |
 | **[Navlog](/connect/schnittstellen/navlog)** | Integration mit Navlog für Einsatznavigation |
+| **[Nextcloud](/connect/schnittstellen/nextcloud#nextcloud-der-organisation)** | Nextcloud der Organisation für Dokumentverweise in dynamischen Zusatzinformationen sowie Anhänge von Organisations-News und -Terminen (kostenlos) |
 | **News-Mail-Eingang** | News-Beiträge per E-Mail erstellen (Mail-to-News) |
 | **[Public API](/connect/schnittstellen/public_api)** | Zugang zur öffentlichen FeuerSoftware-API auf Organisationsebene |
 | **[Wasserkarte](/connect/schnittstellen/wasserkarte)** | Hydranten und Wasserentnahmestellen aus Wasserkarte.info einbinden |

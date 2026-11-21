@@ -20,7 +20,7 @@ Die Übersicht zeigt alle Benutzer in einer durchsuchbaren Tabelle:
 - Name, E-Mail-Adresse
 - Zugewiesene Rollen
 - Zugehörige Gruppen
-- Gerätestatus
+- Gerätestatus und Spalte **„Geräte"** mit der Anzahl der registrierten Alarmgeräte
 
 Über die Suche können Benutzer nach Name oder E-Mail gefiltert werden.
 

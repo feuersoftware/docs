@@ -10,9 +10,9 @@ description: Wo Connect Dateien ablegt – Connect Storage, eigene Nextcloud, Sp
 | Speicher | Beschreibung | Ebene |
 |---|---|---|
 | **Connect Storage** | Der Standard-Dateispeicher von Connect, betrieben von FeuerSoftware. Für jede Organisation automatisch aktiv. Ein Grundkontingent ist enthalten, zusätzlicher Speicher kann gebucht werden. | Organisation |
-| **Nextcloud** | Eine eigene, selbst betriebene Nextcloud wird an einen Standort angebunden. Dateien landen dann direkt dort und belasten das Connect-Kontingent nicht. | Standort |
+| **Nextcloud** | Eine eigene, selbst betriebene Nextcloud wird an einen Standort oder an die Organisation angebunden. Dateien landen dann direkt dort und belasten das Connect-Kontingent nicht. | Standort / Organisation |
 
-Pro Standort lässt sich je Dateikategorie festlegen, welcher Speicher verwendet wird (→ [Speicherzuordnung](#speicherzuordnung)). Ohne weitere Einrichtung landet alles im Connect Storage.
+Pro Standort lässt sich je Dateikategorie festlegen, welcher Speicher verwendet wird (→ [Speicherzuordnung](#speicherzuordnung)). Für Anhänge von Organisations-News und -Terminen geschieht das in der [Nextcloud der Organisation](/connect/schnittstellen/nextcloud#nextcloud-der-organisation). Ohne weitere Einrichtung landet alles im Connect Storage.
 
 > **Hinweis:** Die Funktionen sind aktuell im **Connect Portal** und im **EinsatzManager** verfügbar. Die Integration in **EinsatzApp** und **EinsatzTablet** folgt.
 
@@ -112,7 +112,7 @@ Jede Stufe lässt sich aufklappen, einzelne Dateien können ab- oder angewählt 
 
 ## Nextcloud anbinden
 
-Eine eigene Nextcloud wird pro Standort unter **Standort → Schnittstellen → Nextcloud** verbunden. Die Anbindung ist kostenlos.
+Eine eigene Nextcloud wird pro Standort unter **Standort → Schnittstellen → Nextcloud** verbunden. Zusätzlich kann die Organisation unter **Organisations-Ebene → Schnittstellen → Nextcloud** eine eigene Nextcloud verbinden oder die Verbindung eines Standorts übernehmen. Die Anbindung ist kostenlos.
 
 > **Voraussetzung:** Die Nextcloud muss **aus dem Internet über `https://` erreichbar** sein. Server, die nur im lokalen Netz oder per VPN erreichbar sind, sowie unverschlüsseltes `http://` werden aus Sicherheitsgründen nicht unterstützt.
 
