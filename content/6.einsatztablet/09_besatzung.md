@@ -58,7 +58,7 @@ Wurde die Besatzung, während die Meldung unterwegs war, an anderer Stelle geän
 
 ---
 
-Die Besatzung lässt sich unter [Setup → Anzeige & Filter → „Absenden von Stärkemeldungen erlauben"](/einsatztablet/15_setup#anzeige-filter) ausblenden.
+Die Besatzung lässt sich unter [Setup → Anzeige & Filter → „Stärkemeldungen absenden erlauben"](/einsatztablet/15_setup#anzeige-filter) ausblenden.
 
 ::note
 Sollen Stärkemeldungen auch mit **anderen Standorten oder Organisationen** im selben Einsatz ausgetauscht werden, muss [„Einsatzdaten teilen"](/connect/07_einsaetze#einsatzdaten-teilen) in Connect eingerichtet sein.

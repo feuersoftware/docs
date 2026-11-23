@@ -28,7 +28,7 @@ description: Fahrzeugstatus setzen, Fahrzeugwerte und Warnregeln anzeigen sowie 
 
 Status 3 führt – wenn eingestellt – automatisch zur [Anfahrt](/einsatztablet/04_alarmierung#status-3-automatisch-zur-anfahrt). Ohne Netz wird der Status nachgesendet („Keine Verbindung – Status wird nachgesendet"); ist er bis dahin veraltet, verwirft die App ihn und weist darauf hin, den Status über Funk zu melden.
 
-Ob der Status am Tablet gesetzt werden darf, wird unter [Setup → Anzeige & Filter → „Manuelles Setzen des Funkstatus"](/einsatztablet/15_setup#anzeige-filter) festgelegt (Nie / Immer).
+Ob der Status am Tablet gesetzt werden darf, wird unter [Setup → Anzeige & Filter → „Funkstatus manuell setzen erlauben"](/einsatztablet/15_setup#anzeige-filter) festgelegt (Standard: aus).
 
 ### Fahrzeugwerte
 
@@ -36,6 +36,8 @@ Ist das Fahrzeug mit einem Bordsystem verbunden, zeigt die Seite dessen Werte �
 
 - **„Warnregeln"** zeigt die in Connect hinterlegten [Regeln für Gerätewarnungen](/connect/06_fahrzeuge#regeln-für-gerätewarnungen) – liegt ein Wert außerhalb des Normalbereichs, wird automatisch eine Mängelmeldung erzeugt
 - **„Fahrzeugdaten neu laden"** aktualisiert die Anzeige
+
+Die Fahrzeugdaten lassen sich unter [Setup → Anzeige & Filter → „Fahrzeugdaten anzeigen"](/einsatztablet/15_setup#anzeige-filter) ausblenden. Damit entfällt auch das Tastenfeld „Fahrzeugstatus setzen" außerhalb eines Einsatzes – im Einsatz bleibt der Funkstatus in der [Anfahrt](/einsatztablet/06_anfahrt#funkstatus) setzbar.
 
 ---
 

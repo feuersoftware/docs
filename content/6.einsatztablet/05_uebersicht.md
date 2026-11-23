@@ -31,6 +31,8 @@ Meldebild bzw. Lage und darunter die laufenden Einträge aus dem [Protokoll](/ei
 
 Die Rückmeldungen der Einsatzkräfte aus der EinsatzApp: **Komme**, **Komme später**, **Komme nicht** – jeweils mit Anzahl. Ein Tipp auf eine Kachel zeigt die Namen.
 
+Wer keine Rückmeldungen nutzt – z. B. eine Berufsfeuerwehr –, blendet sie unter [Setup → Anzeige & Filter → „Rückmeldungen in der Übersicht anzeigen"](/einsatztablet/15_setup#anzeige-filter) aus.
+
 ### Bekannte Mängel
 
 Sind für das eigene Fahrzeug offene [Mängelmeldungen](/einsatztablet/13_fahrzeug_und_maengel#mängel) vorhanden, erscheint ein roter Hinweis („1 bekannter Mangel" bzw. „… bekannte Mängel") mit dem ersten Mangel. Ein Tipp öffnet die Mängelliste.
@@ -89,4 +91,4 @@ Fotos und Dateien des Einsatzes mit Vorschau. Hinzufügen und Verwalten: [Berich
 
 **Einsatz bearbeiten:** In der Übersicht auf **„Bearbeiten"** tippen. Zusätzlich änderbar: Einsatzende, Meldender, Telefon und Einsatznummer.
 
-Anlegen und Bearbeiten lassen sich unter [Setup → Anzeige & Filter](/einsatztablet/15_setup#anzeige-filter) abschalten („Neue Einsätze anlegen", „Vorhandene Einsätze bearbeiten").
+Anlegen und Bearbeiten lassen sich unter [Setup → Anzeige & Filter](/einsatztablet/15_setup#anzeige-filter) abschalten („Einsätze anlegen erlauben", „Einsätze bearbeiten erlauben").

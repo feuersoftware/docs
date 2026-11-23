@@ -28,7 +28,7 @@ Zusätzlich kann unter [Setup → Darstellung](/einsatztablet/15_setup#darstellu
 
 ## Kartenebenen und Legende
 
-Über **„Kartenebenen"** bzw. die **„Legende"** werden einzelne Ebenen ein- und ausgeblendet; **„Alles an"** schaltet alle ein.
+Über **„Kartenebenen"** bzw. die **„Legende"** werden einzelne Ebenen ein- und ausgeblendet. **„Alles an"** schaltet alle ein, **„Alles aus"** schaltet alle wieder aus – bis auf die Ebenen des Einsatzes (Einsatzort, Einsatzmittel, Fotos). So ist die Karte z. B. nach „Hydrant finden" mit einem Tipp wieder aufgeräumt.
 
 ![Screenshot: Einsatzkarte mit Legende, Hydranten und Waldwege-Overlay](/images/einsatztablet/12_karte.png)
 

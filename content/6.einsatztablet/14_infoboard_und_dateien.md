@@ -15,7 +15,7 @@ Zeigt die Einträge des [Infoboards](/connect/09_infoboard) des eigenen Standort
 
 ![Screenshot: Infoboard des Standorts](/images/einsatztablet/26_infoboard.png)
 
-Ausblendbar unter [Setup → Anzeige & Filter → „Infoboard anzeigen"](/einsatztablet/15_setup#anzeige-filter).
+Ausblendbar unter [Setup → Anzeige & Filter → „Infoboard-Tab anzeigen"](/einsatztablet/15_setup#anzeige-filter).
 
 ---
 

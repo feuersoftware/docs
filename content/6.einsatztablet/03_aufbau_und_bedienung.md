@@ -19,7 +19,7 @@ Die Navigationsleiste liegt standardmäßig am rechten Bildschirmrand (umstellba
 
 Ohne geöffneten Einsatz zeigt der Bereich „Einsatz" stattdessen **Einsatzliste**, **Karte** und **Fahrzeuge**.
 
-Einzelne Einträge lassen sich unter [Setup → Anzeige & Filter](/einsatztablet/15_setup#anzeige-filter) ausblenden, z. B. Aufgaben, Besatzung, Bericht, Alarmieren, Infoboard, Dateien oder Mängel. Ungelesene Protokolleinträge werden als Zähler am Eintrag **Protokoll** angezeigt.
+Einzelne Einträge lassen sich unter [Setup → Anzeige & Filter](/einsatztablet/15_setup#anzeige-filter) ausblenden, z. B. Aufgaben, Besatzung, Bericht, Alarmieren, Infoboard, Dateien, Foto, Fahrzeugdaten oder Mängel. Setup und „Fehler melden" bleiben immer sichtbar. Ungelesene Protokolleinträge werden als Zähler am Eintrag **Protokoll** angezeigt.
 
 > Auf schmalen Bildschirmen (z. B. im Hochformat oder bei geteiltem Bildschirm) erscheint die Navigation als Leiste am unteren Rand; weitere Bereiche sind dort über **„Mehr"** erreichbar.
 
@@ -46,7 +46,7 @@ Welche Ansicht ohne geöffneten Einsatz erscheint, wird unter **Setup → Anzeig
 - Unter **„Laufend"** stehen alle laufenden Einsätze; **„Geschlossene Einsätze anzeigen"** lädt zusätzlich die abgeschlossenen (einschaltbar unter Setup → Anzeige & Filter)
 - Jede Karte zeigt Stichwort, Adresse, Status („Aktiv" / „Geschlossen"), Einheiten, Personal und die zugewiesenen Einheiten
 - **„Nach Standort filtern"** – nur verfügbar, wenn das Fahrzeug die Einsätze aller Standorte der Organisation sehen darf
-- **„Neuer Einsatz"** – legt einen Einsatz direkt am Tablet an (Modus „Einfach" oder „Detailliert", mit **„Aktueller Standort"** als Einsatzadresse). Abschaltbar über die Einstellung „Neue Einsätze anlegen"
+- **„Neuer Einsatz"** – legt einen Einsatz direkt am Tablet an (Modus „Einfach" oder „Detailliert", mit **„Aktueller Standort"** als Einsatzadresse). Abschaltbar über die Einstellung „Einsätze anlegen erlauben"
 
 Ein Tipp auf einen Einsatz öffnet ihn – je nach Einstellung in der Übersicht, der Anfahrt, der Karte, dem Protokoll oder der Besatzung.
 

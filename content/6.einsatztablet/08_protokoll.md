@@ -46,7 +46,7 @@ Der Eintrag erscheint sofort im Protokoll und im EinsatzManager. Lagemeldungen s
 
 > Schneller geht es über die Schnellaktion **„Meldung erstellen"** – von jeder Seite aus.
 
-Das Schreiben lässt sich unter [Setup → Anzeige & Filter → „Protokolleinträge & Lagemeldungen erstellen"](/einsatztablet/15_setup#anzeige-filter) abschalten.
+Das Schreiben lässt sich unter [Setup → Anzeige & Filter → „Protokolleinträge & Lagemeldungen erlauben"](/einsatztablet/15_setup#anzeige-filter) abschalten.
 
 ---
 

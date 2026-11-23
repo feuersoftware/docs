@@ -17,7 +17,9 @@ Die Anfahrt bündelt alles, was auf dem Weg zum Einsatzort wichtig ist. Bei **St
 
 Die Karte zeigt Einsatzort, eigene Position und die Positionen der beteiligten Fahrzeuge. Darunter stehen Adresse und die Zusatzfelder der Leitstelle.
 
-Der Navigations-Button (Pfeil-Symbol) neben der Adresse – bzw. **„Navigation starten"** auf der Karte – öffnet die Route zum Einsatzort in **Google Maps**. Fehlen Koordinaten, meldet die App „Keine Koordinaten für die Navigation vorhanden."
+Der Navigations-Button (Pfeil-Symbol) neben der Adresse – bzw. **„Navigation starten"** auf der Karte – öffnet die Route zum Einsatzort in der Navi-App, die unter [Setup → Darstellung → „Navigationstyp"](/einsatztablet/15_setup#darstellung) gewählt ist: standardmäßig **Google Maps** auf Android-Tablets und **Apple Karten** auf dem iPad. Die Route wird für das **Auto** berechnet. Ist die gewählte App nicht installiert, öffnet sich die Route im Browser.
+
+Fehlen die Koordinaten des Einsatzorts, wird die Adresse an die Navi-App übergeben.
 
 ---
 
@@ -31,7 +33,7 @@ Die neuesten Lagemeldungen aus Protokoll, EinsatzManager und von anderen Fahrzeu
 
 Über das Tastenfeld **„Funkstatus"** oberhalb der Stärke setzt die Besatzung den Status des eigenen Fahrzeugs (1–6). Ohne Netz wird der Status nachgesendet (siehe [Offline & Fehlerbehebung](/einsatztablet/16_offline_und_fehlerbehebung)).
 
-Das Tastenfeld erscheint nur, wenn der Status am Tablet gesetzt werden darf – das wird unter [Setup → Anzeige & Filter → „Manuelles Setzen des Funkstatus"](/einsatztablet/15_setup#anzeige-filter) festgelegt.
+Das Tastenfeld erscheint nur, wenn der Status am Tablet gesetzt werden darf – das wird unter [Setup → Anzeige & Filter → „Funkstatus manuell setzen erlauben"](/einsatztablet/15_setup#anzeige-filter) festgelegt.
 
 ---
 

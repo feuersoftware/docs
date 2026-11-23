@@ -29,6 +29,7 @@ Die Dokumentation der bisherigen App bleibt vorerst unter [EinsatzTablet (alt)](
 - **Protokoll** – Protokolleinträge und Lagemeldungen lesen und schreiben
 - **Aufgaben**, **Bericht** (Einsatzdokumentation und PDF) und **Alarmieren**
 - **Karte** mit Google Maps, Verkehrslage, Waldwegen (Navlog), Straßensperrungen, Fotos und „Einsatzort verschieben"
+- **Navigation** wahlweise mit Google Maps, Apple Karten, Waze oder einer anderen Navi-App ([Setup → Darstellung](/einsatztablet/15_setup#darstellung))
 - **HomeResQ**-Objektinformationen und **Datenfreigabe** mit anderen Standorten
 - **Sprachausgabe** über Tablet, Bluetooth, Apple CarPlay oder Android Auto
 - **Arbeiten ohne Netz** – Meldungen, Status, Besatzung und Fotos werden zwischengespeichert und nachgesendet
