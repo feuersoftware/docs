@@ -40,6 +40,8 @@ Unter **„Automatisch vorlesen"** wird festgelegt, was angesagt wird:
 | Neue Aufgabe im offenen Einsatz | Keine / Kurz / Mit Beschreibung |
 | Statusänderungen des eigenen Fahrzeugs | ein / aus |
 | Statusänderungen der anderen Einsatzmittel | ein / aus |
+| Neue Bereichszuordnung für das eigene Fahrzeug | ein / aus (Standard: ein) – „Neuer Bereich für …", wenn das eigene Fahrzeug einer [Kartenform](/einsatztablet/07_karte#kartenformen) zugeordnet wird |
+| Neue Bereichszuordnung für ein anderes Fahrzeug | ein / aus (Standard: aus) |
 | Stärkemeldungen der anderen Einsatzmittel | ein / aus |
 | Fahrzeug zugewiesen | ein / aus |
 | Fahrzeug im Einsatz beendet | ein / aus |
@@ -63,8 +65,11 @@ Unter **„Automatisch vorlesen"** wird festgelegt, was angesagt wird:
 | **Verkehr auf Google Maps** | Zeigt die Verkehrslage auf den Google-Karten |
 | **iKAT-Schnellzugriff** | Button auf der Karte, um iKAT mit der Einsatzposition zu öffnen |
 | **ModiTech CRS (Rettungsdatenblätter)** | Button auf der Karte, um die CRS-App zu öffnen (muss installiert sein) |
+| **Navigationstyp** | Die App, mit der eine Navigation gestartet wird – iPad: **Apple Karten** (Standard) / Google Maps / Waze; Android: **Google Maps** (Standard) / Waze / Andere App. Gilt für [„Navigation starten"](/einsatztablet/06_anfahrt#karte-und-navigation) und die Navigation zu [Kartenformen](/einsatztablet/07_karte#kartenformen) |
 
-Eine Auswahl direkt auf der Karte gilt nur bis zum nächsten Einsatz.
+Eine Auswahl von Kartentyp oder Karten-Design direkt auf der Karte gilt nur bis zum nächsten Einsatz.
+
+![Screenshot: Setup – Darstellung mit der Auswahl „Navigationstyp"](/images/einsatztablet/37_setup_navigationstyp.png)
 
 ---
 
@@ -100,45 +105,59 @@ Eine Auswahl direkt auf der Karte gilt nur bis zum nächsten Einsatz.
 
 ![Screenshot: Setup – Anzeige & Filter](/images/einsatztablet/29_setup_anzeige.png)
 
-### Allgemein
+Die Einstellungen sind nach den Bereichen der App sortiert.
+
+### Tabs
 
 | Einstellung | Beschreibung |
 |---|---|
 | **Startansicht ohne Einsatz** | Einsatzliste / Karte / Fahrzeuge |
 | **Startansicht beim Öffnen eines Einsatzes** | Übersicht / Anfahrt / Karte / Protokoll / Besatzung |
-| **Alarmieren über die App erlauben** | Blendet [Alarmieren](/einsatztablet/12_alarmieren) ein (Standard: **aus**) |
-| **Geschlossene Einsätze anzeigen** | Button „Geschlossene Einsätze anzeigen" in der Einsatzliste (Standard: aus) |
-| **Infoboard anzeigen** | Bereich [Infoboard](/einsatztablet/14_infoboard_und_dateien) |
-| **Neue Einsätze anlegen** | Button „Neuer Einsatz" in der Einsatzliste |
-| **Vorhandene Einsätze bearbeiten** | Einsatzdaten in der Übersicht bearbeiten |
-| **Einsatzberichtspflege über die App erlauben** | Bereich [Bericht](/einsatztablet/11_bericht_und_anhaenge) |
-| **Protokolleinträge & Lagemeldungen erstellen** | Schreiben im [Protokoll](/einsatztablet/08_protokoll) |
-| **Einsatz Aufgaben verwalten** | Bereich [Aufgaben](/einsatztablet/10_aufgaben) |
-| **Standort in der Einsatzliste** | Nur Einsätze eines bestimmten Standorts anzeigen oder „Alle Standorte" – erscheint nur, wenn das Fahrzeug die Einsätze mehrerer Standorte sehen darf |
+| **Infoboard-Tab anzeigen** | Bereich [Infoboard](/einsatztablet/14_infoboard_und_dateien) |
+| **Dateien-Tab anzeigen** | Bereich [Dateien](/einsatztablet/14_infoboard_und_dateien#dateien) |
+| **Alarmieren erlauben** | Blendet [Alarmieren](/einsatztablet/12_alarmieren) ein (Standard: **aus**) |
 
-### Dateien & Anhänge
+### Einsatzliste
 
 | Einstellung | Beschreibung |
 |---|---|
-| **Dateien-Tab anzeigen** | Bereich [Dateien](/einsatztablet/14_infoboard_und_dateien#dateien) |
-| **Einsatz-Anhänge anzeigen** | Anhänge in Übersicht und Bericht |
-| **Löschen von Dateien erlauben** | Anhänge am Tablet löschen |
-| **Hinzufügen von Anhängen erlauben** | Fotos und Dateien hochladen (auch Navigationspunkt „Foto") |
-| **Benutzerdefinierte Bildqualität beim Hochladen von Fotos** | Eigene **„Bildqualität hochgeladener Fotos"** festlegen (Standard 80 %), z. B. um mobile Daten zu sparen |
+| **Geschlossene Einsätze anzeigen** | Button „Geschlossene Einsätze anzeigen" in der Einsatzliste (Standard: aus) |
+| **Einsätze anlegen erlauben** | Button „Neuer Einsatz" in der Einsatzliste |
+| **Standort** | Nur Einsätze eines bestimmten Standorts anzeigen oder „Alle Standorte" – erscheint nur, wenn das Fahrzeug die Einsätze mehrerer Standorte sehen darf |
+
+### Im Einsatz
+
+| Einstellung | Beschreibung |
+|---|---|
+| **Rückmeldungen in der Übersicht anzeigen** | Karte [„Rückmeldungen"](/einsatztablet/05_uebersicht) (Komme / Komme später / Komme nicht) in der Übersicht – z. B. ausschalten, wenn die Rückmeldungen der Einsatzkräfte im Fahrzeug nicht angezeigt werden sollen |
+| **Einsätze bearbeiten erlauben** | Einsatzdaten in der Übersicht bearbeiten |
+| **Protokolleinträge & Lagemeldungen erlauben** | Schreiben im [Protokoll](/einsatztablet/08_protokoll) |
+| **Aufgaben verwalten erlauben** | Bereich [Aufgaben](/einsatztablet/10_aufgaben) |
+| **Einsatzberichte schreiben erlauben** | Bereich [Bericht](/einsatztablet/11_bericht_und_anhaenge) |
 
 ### Einsatzdaten
 
 „Welche Einsatzdaten auf der Übersicht angezeigt werden": Priorität, Kategorie, Zusatzfelder der Leitstelle (Sonderrechte, Objekt, Bemerkung, …), Zusatzinformationen (inkl. Dokumente), Meldenden, Zeitpunkt der letzten Aktualisierung, Alarmzeit, Einsatzende, Einsatznummer, Quelle, Koordinaten, RIC – jeweils einzeln ein- und ausschaltbar.
 
+### Dateien & Anhänge
+
+| Einstellung | Beschreibung |
+|---|---|
+| **Einsatz-Anhänge anzeigen** | Anhänge in Übersicht und Bericht |
+| **Anhänge hinzufügen erlauben** | Fotos und Dateien hochladen (auch Navigationspunkt „Foto") |
+| **Dateien löschen erlauben** | Anhänge am Tablet löschen |
+| **Bildqualität beim Hochladen festlegen** | Eigene **„Bildqualität hochgeladener Fotos"** festlegen (Standard 80 %), z. B. um mobile Daten zu sparen |
+
 ### Fahrzeuge
 
 | Einstellung | Beschreibung |
 |---|---|
-| **Manuelles Setzen des Funkstatus** | Nie / Immer – ob am Tablet der Funkstatus gesetzt werden darf |
-| **Nach letztem Status-Update filtern** | Blendet Fahrzeuge aus, die länger keinen Status gemeldet haben („Ausblenden nach X Std. ohne Update", Standard 12) |
-| **Eigenes Fahrzeug in Listen immer oben** | Das eigene Fahrzeug steht in allen Listen an erster Stelle |
+| **Fahrzeugdaten anzeigen** | Bereich [Fahrzeugdaten](/einsatztablet/13_fahrzeug_und_maengel#fahrzeugdaten) – z. B. ausschalten, wenn das Fahrzeug kein Bordsystem hat |
 | **Mängelmeldungen anzeigen** | Bereich [Mängel](/einsatztablet/13_fahrzeug_und_maengel#mängel) |
-| **Absenden von Stärkemeldungen erlauben** | Bereich [Besatzung](/einsatztablet/09_besatzung) |
+| **Eigenes Fahrzeug in Listen oben anzeigen** | Das eigene Fahrzeug steht in allen Listen an erster Stelle |
+| **Stärkemeldungen absenden erlauben** | Bereich [Besatzung](/einsatztablet/09_besatzung) |
+| **Funkstatus manuell setzen erlauben** | Ob am Tablet der Funkstatus gesetzt werden darf – über den [Funkstatus in der Kopfzeile](/einsatztablet/03_aufbau_und_bedienung#funkstatus-in-der-kopfzeile) und in der [Anfahrt](/einsatztablet/06_anfahrt#funkstatus) |
+| **Nach letztem Status-Update filtern** | Blendet Fahrzeuge aus, die länger keinen Status gemeldet haben („Ausblenden nach X Std. ohne Update", Standard 12) |
 
 ---
 

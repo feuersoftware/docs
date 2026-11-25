@@ -15,9 +15,18 @@ Die Anfahrt bündelt alles, was auf dem Weg zum Einsatzort wichtig ist. Bei **St
 
 ## Karte und Navigation
 
-Die Karte zeigt Einsatzort, eigene Position und die Positionen der beteiligten Fahrzeuge. Darunter stehen Adresse und die Zusatzfelder der Leitstelle.
+Die Karte zeigt Einsatzort, eigene Position, die Positionen der beteiligten Fahrzeuge und die [Kartenformen](/einsatztablet/07_karte#kartenformen) des Einsatzes – so ist schon auf der Anfahrt zu sehen, wo z. B. der Bereitstellungsraum oder die Wasserentnahme liegt. Darunter stehen Adresse und die Zusatzfelder der Leitstelle.
 
-Der Navigations-Button (Pfeil-Symbol) neben der Adresse – bzw. **„Navigation starten"** auf der Karte – öffnet die Route zum Einsatzort in **Google Maps**. Fehlen Koordinaten, meldet die App „Keine Koordinaten für die Navigation vorhanden."
+![Screenshot: Anfahrt mit der Kartenform „Wasserentnahme" auf der Karte](/images/einsatztablet/36_anfahrt_kartenformen.png)
+
+Der Navigations-Button (Pfeil-Symbol) neben der Adresse – bzw. **„Navigation starten"** auf der Karte – öffnet die Route zum Einsatzort in der Navigations-App, die unter [Setup → Darstellung → „Navigationstyp"](/einsatztablet/15_setup#darstellung) gewählt ist:
+
+| Plattform | Auswahl | Standard |
+|---|---|---|
+| **iPad** | Apple Karten, Google Maps, Waze | Apple Karten |
+| **Android** | Google Maps, Waze, Andere App | Google Maps |
+
+Die Route wird immer **mit dem Auto** berechnet. Ist die gewählte App nicht installiert, öffnet sich die Route im Browser. Bei **„Andere App"** fragt Android beim ersten Mal, welche App die Route öffnen soll. Fehlen Koordinaten, wird die Adresse als Ziel übergeben; fehlt auch sie, meldet die App „Keine Koordinaten für die Navigation vorhanden."
 
 ---
 
@@ -31,7 +40,7 @@ Die neuesten Lagemeldungen aus Protokoll, EinsatzManager und von anderen Fahrzeu
 
 Über das Tastenfeld **„Funkstatus"** oberhalb der Stärke setzt die Besatzung den Status des eigenen Fahrzeugs (1–6). Ohne Netz wird der Status nachgesendet (siehe [Offline & Fehlerbehebung](/einsatztablet/16_offline_und_fehlerbehebung)).
 
-Das Tastenfeld erscheint nur, wenn der Status am Tablet gesetzt werden darf – das wird unter [Setup → Anzeige & Filter → „Manuelles Setzen des Funkstatus"](/einsatztablet/15_setup#anzeige-filter) festgelegt.
+Das Tastenfeld erscheint nur, wenn der Status am Tablet gesetzt werden darf – das wird unter [Setup → Anzeige & Filter → „Funkstatus manuell setzen erlauben"](/einsatztablet/15_setup#anzeige-filter) festgelegt.
 
 ---
 

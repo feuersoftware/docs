@@ -66,4 +66,4 @@ Der Einsatzbericht muss für die Organisation in Connect aktiviert sein; andernf
 
 ---
 
-Der Bereich lässt sich unter [Setup → Anzeige & Filter](/einsatztablet/15_setup#anzeige-filter) einschränken: „Einsatzberichtspflege über die App erlauben", „Einsatz-Anhänge anzeigen", „Hinzufügen von Anhängen erlauben", „Löschen von Dateien erlauben".
+Der Bereich lässt sich unter [Setup → Anzeige & Filter](/einsatztablet/15_setup#anzeige-filter) einschränken: „Einsatzberichte schreiben erlauben", „Einsatz-Anhänge anzeigen", „Anhänge hinzufügen erlauben", „Dateien löschen erlauben".

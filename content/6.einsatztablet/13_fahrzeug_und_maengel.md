@@ -1,6 +1,6 @@
 ---
 title: Fahrzeug & Mängel
-description: Fahrzeugstatus setzen, Fahrzeugwerte und Warnregeln anzeigen sowie Mängelmeldungen mit Fotos im EinsatzTablet erfassen und verfolgen
+description: Fahrzeugwerte und Warnregeln anzeigen sowie Mängelmeldungen mit Fotos im EinsatzTablet erfassen und verfolgen
 ---
 
 # Fahrzeug & Mängel
@@ -11,24 +11,9 @@ description: Fahrzeugstatus setzen, Fahrzeugwerte und Warnregeln anzeigen sowie 
 
 **Fahrzeug → Fahrzeugdaten** (Seitentitel „Fahrzeugzustand")
 
-![Screenshot: Fahrzeugdaten mit Fahrzeugwerten und „Fahrzeugstatus setzen"](/images/einsatztablet/23_fahrzeugdaten.png)
+![Screenshot: Fahrzeugdaten mit den Werten des Bordsystems](/images/einsatztablet/23_fahrzeugdaten.png)
 
-### Fahrzeugstatus setzen
-
-Über das Tastenfeld **„Fahrzeugstatus setzen"** meldet die Besatzung den Funkstatus des Fahrzeugs – auch ohne geöffneten Einsatz:
-
-| Status | Bedeutung |
-|---|---|
-| 1 | frei Funk |
-| 2 | frei Wache |
-| 3 | Anfahrt |
-| 4 | an E-Stelle |
-| 5 | Sprechwunsch |
-| 6 | nicht bereit |
-
-Status 3 führt – wenn eingestellt – automatisch zur [Anfahrt](/einsatztablet/04_alarmierung#status-3-automatisch-zur-anfahrt). Ohne Netz wird der Status nachgesendet („Keine Verbindung – Status wird nachgesendet"); ist er bis dahin veraltet, verwirft die App ihn und weist darauf hin, den Status über Funk zu melden.
-
-Ob der Status am Tablet gesetzt werden darf, wird unter [Setup → Anzeige & Filter → „Manuelles Setzen des Funkstatus"](/einsatztablet/15_setup#anzeige-filter) festgelegt (Nie / Immer).
+> Der **Funkstatus** wird nicht mehr hier, sondern über den Status in der [Kopfzeile](/einsatztablet/03_aufbau_und_bedienung#funkstatus-in-der-kopfzeile) gesetzt – von jeder Ansicht aus. Dort stehen auch die letzten Statusänderungen des Fahrzeugs.
 
 ### Fahrzeugwerte
 

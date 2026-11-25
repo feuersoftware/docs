@@ -10,7 +10,7 @@ description: Nachalarmierung vom EinsatzTablet aus – nach AAO oder gezielt an 
 „Einsatzkräfte, Fahrzeuge und Monitore zu diesem Einsatz alarmieren." – z. B. für eine Nachalarmierung direkt aus dem Fahrzeug.
 
 ::warning
-Der Bereich ist **standardmäßig ausgeblendet**. Er wird unter [Setup → Anzeige & Filter → „Alarmieren über die App erlauben"](/einsatztablet/15_setup#anzeige-filter) eingeschaltet – am besten zusammen mit dem [Passwortschutz](/einsatztablet/15_setup#sicherheit) für das Setup.
+Der Bereich ist **standardmäßig ausgeblendet**. Er wird unter [Setup → Anzeige & Filter → „Alarmieren erlauben"](/einsatztablet/15_setup#anzeige-filter) eingeschaltet – am besten zusammen mit dem [Passwortschutz](/einsatztablet/15_setup#sicherheit) für das Setup.
 ::
 
 ---

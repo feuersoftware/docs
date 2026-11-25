@@ -15,7 +15,7 @@ Zeigt die Einträge des [Infoboards](/connect/09_infoboard) des eigenen Standort
 
 ![Screenshot: Infoboard des Standorts](/images/einsatztablet/26_infoboard.png)
 
-Ausblendbar unter [Setup → Anzeige & Filter → „Infoboard anzeigen"](/einsatztablet/15_setup#anzeige-filter).
+Ausblendbar unter [Setup → Anzeige & Filter → „Infoboard-Tab anzeigen"](/einsatztablet/15_setup#anzeige-filter).
 
 ---
 
@@ -39,6 +39,8 @@ Das Tablet greift **über Connect** auf den Online-Speicher zu – auf dem Table
 - [Nextcloud anbinden](/connect/schnittstellen/nextcloud)
 
 Ist kein Online-Speicher verbunden, zeigt die App: „Für diesen Standort ist kein Online-Speicher verbunden. Bitte einen Administrator, ihn im Connect-Portal zu verbinden."
+
+> Infoboard und Dateien-Tab zeigen immer den Speicher des **eigenen Standorts**. Dokumente, die über die Zusatzinformationen mit einem Einsatz verknüpft sind, können dagegen auch aus der [Nextcloud der Organisation](/connect/schnittstellen/nextcloud#nextcloud-der-organisation) kommen – siehe [Übersicht → Dokumente](/einsatztablet/05_uebersicht#dokumente).
 
 > Im bisherigen EinsatzTablet wurde die Nextcloud direkt in der App mit eigenen Zugangsdaten eingerichtet. Das ist im neuen EinsatzTablet nicht mehr nötig.
 

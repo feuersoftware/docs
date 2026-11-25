@@ -1,6 +1,6 @@
 ---
 title: Aufbau & Bedienung
-description: Navigationsleiste, Kopfzeile, Einsatzliste, Übersichtskarte, Fahrzeugübersicht, Schnellaktionen und Bildschirmschoner des EinsatzTablet
+description: Navigationsleiste, Kopfzeile mit Funkstatus, Einsatzliste, Übersichtskarte, Fahrzeugübersicht, Schnellaktionen und Bildschirmschoner des EinsatzTablet
 ---
 
 # Aufbau & Bedienung
@@ -29,9 +29,21 @@ Einzelne Einträge lassen sich unter [Setup → Anzeige & Filter](/einsatztablet
 
 - **„‹ Einsatzliste"** – verlässt den geöffneten Einsatz und führt zurück zur Startansicht
 - **Funkrufname** des angemeldeten Fahrzeugs
+- **Funkstatus** des eigenen Fahrzeugs – siehe [Funkstatus in der Kopfzeile](#funkstatus-in-der-kopfzeile)
 - **Verbindungspunkt** – grün: mit dem Server verbunden, orange: Verbindung wird aufgebaut, rot: keine Verbindung (siehe [Offline & Fehlerbehebung](/einsatztablet/16_offline_und_fehlerbehebung))
 - **Sprachausgabe** – zeigt, über welchen Weg Ansagen ausgegeben werden (Tablet-Lautsprecher, Bluetooth oder Auto). Antippen erklärt die aktuelle Einstellung, z. B. wenn die Medienlautstärke auf 0 % steht
 - **Bildschirmschoner** – startet den Bildschirmschoner sofort
+
+### Funkstatus in der Kopfzeile
+
+Neben dem Funkrufnamen zeigt die Kopfzeile ständig den aktuellen **Funkstatus des eigenen Fahrzeugs** als farbige Zahl. Ein Tipp darauf öffnet den Dialog **„Funkstatus"** – in jeder Ansicht, mit und ohne geöffneten Einsatz:
+
+![Screenshot: Dialog „Funkstatus" mit Statustasten und den letzten Statusänderungen](/images/einsatztablet/31_funkstatus_dialog.png)
+
+- **Statustasten 1–6** (frei Funk, frei Wache, Anfahrt, an E-Stelle, Sprechwunsch, nicht bereit) – setzen den Status des eigenen Fahrzeugs. Sie erscheinen nur, wenn [„Funkstatus manuell setzen erlauben"](/einsatztablet/15_setup#anzeige-filter) eingeschaltet ist; darunter steht der aktuelle Status („Aktuell: …")
+- **„Letzte Statusänderungen"** – die fünf letzten Statuswechsel des Fahrzeugs mit Uhrzeit und Dauer. Beim aktuellen Status steht, wie lange er schon gilt („seit …")
+
+Status 3 führt – wenn eingestellt – automatisch zur [Anfahrt](/einsatztablet/04_alarmierung#status-3-automatisch-zur-anfahrt). Ohne Netz wird der Status nachgesendet (siehe [Offline & Fehlerbehebung](/einsatztablet/16_offline_und_fehlerbehebung)).
 
 ---
 
@@ -46,7 +58,7 @@ Welche Ansicht ohne geöffneten Einsatz erscheint, wird unter **Setup → Anzeig
 - Unter **„Laufend"** stehen alle laufenden Einsätze; **„Geschlossene Einsätze anzeigen"** lädt zusätzlich die abgeschlossenen (einschaltbar unter Setup → Anzeige & Filter)
 - Jede Karte zeigt Stichwort, Adresse, Status („Aktiv" / „Geschlossen"), Einheiten, Personal und die zugewiesenen Einheiten
 - **„Nach Standort filtern"** – nur verfügbar, wenn das Fahrzeug die Einsätze aller Standorte der Organisation sehen darf
-- **„Neuer Einsatz"** – legt einen Einsatz direkt am Tablet an (Modus „Einfach" oder „Detailliert", mit **„Aktueller Standort"** als Einsatzadresse). Abschaltbar über die Einstellung „Neue Einsätze anlegen"
+- **„Neuer Einsatz"** – legt einen Einsatz direkt am Tablet an (Modus „Einfach" oder „Detailliert", mit **„Aktueller Standort"** als Einsatzadresse). Darf das Fahrzeug die Einsätze aller Standorte der Organisation sehen, wird beim Anlegen auch der **Standort** des Einsatzes gewählt. Abschaltbar über die Einstellung „Einsätze anlegen erlauben"
 
 Ein Tipp auf einen Einsatz öffnet ihn – je nach Einstellung in der Übersicht, der Anfahrt, der Karte, dem Protokoll oder der Besatzung.
 
