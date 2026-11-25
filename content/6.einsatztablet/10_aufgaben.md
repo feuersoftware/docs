@@ -46,4 +46,4 @@ Neue Aufgaben können zusätzlich über die [Sprachausgabe](/einsatztablet/15_se
 
 ---
 
-Aufgaben lassen sich unter [Setup → Anzeige & Filter → „Einsatz Aufgaben verwalten"](/einsatztablet/15_setup#anzeige-filter) ausblenden.
+Aufgaben lassen sich unter [Setup → Anzeige & Filter → „Aufgaben verwalten erlauben"](/einsatztablet/15_setup#anzeige-filter) ausblenden.

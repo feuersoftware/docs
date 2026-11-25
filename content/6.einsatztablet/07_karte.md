@@ -1,6 +1,6 @@
 ---
 title: Karte
-description: Die Einsatzkarte im EinsatzTablet – Kartentypen, Kartenebenen und Legende, Wasserversorgung, Waldwege (Navlog), Einsatzort verschieben, what3words, iKAT und Rettungsdatenblätter
+description: Die Einsatzkarte im EinsatzTablet – Kartentypen, Kartenebenen und Legende, Kartenformen und Bereiche, Wasserversorgung, Waldwege (Navlog), Einsatzort verschieben, what3words, iKAT und Rettungsdatenblätter
 ---
 
 # Karte
@@ -28,16 +28,16 @@ Zusätzlich kann unter [Setup → Darstellung](/einsatztablet/15_setup#darstellu
 
 ## Kartenebenen und Legende
 
-Über **„Kartenebenen"** bzw. die **„Legende"** werden einzelne Ebenen ein- und ausgeblendet; **„Alles an"** schaltet alle ein.
+Über **„Kartenebenen"** bzw. die **„Legende"** werden einzelne Ebenen ein- und ausgeblendet; **„Alles an"** schaltet alle ein, **„Alles aus"** blendet alle wieder aus.
 
 ![Screenshot: Einsatzkarte mit Legende, Hydranten und Waldwege-Overlay](/images/einsatztablet/12_karte.png)
 
 | Gruppe | Inhalte |
 |---|---|
-| **Einsatz** | Einsatzort, Einsatzmittel (mit Funkstatus), eigene Position, Standort (Wache) |
+| **Einsatz** | Einsatzort, Einsatzmittel (mit Funkstatus), [Kartenformen](#kartenformen), Fotos, eigene Position, Standort (Wache) |
 | **Wasserversorgung** | Hydrant, Löschwasserteich, Löschwasserbehälter/Zisterne, Saugstelle – aus **OpenStreetMap** und, falls eingerichtet, aus **wasserkarte.info**. Über „Einzelne Typen anzeigen" lassen sich die Typen getrennt schalten |
 | **Verkehr & Wege** | Straßensperrung, Verkehr (frei / zäh / Stau) |
-| **Weitere Punkte** | Rettungspunkt, Hubschrauber-LS/LP, Feuerwache, Fotos aus dem Einsatz |
+| **Weitere Punkte** | Rettungspunkt, Hubschrauber-LS/LP, Feuerwache |
 
 Ein Tipp auf eine Wasserentnahmestelle zeigt Details wie Typ und Nennweite.
 
@@ -50,6 +50,67 @@ Ein Tipp auf eine Wasserentnahmestelle zeigt Details wie Typ und Nennweite.
 ### Waldwege (Navlog)
 
 Das **„Waldwege-Overlay (Navlog)"** zeigt Wald- und Forstwege mit ihrer Befahrbarkeit, z. B. „LKW, mit Wendemöglichkeit", „LKW, enge Kurven", „nur PKW" oder „Rückeweg, nicht befahrbar". Die **„Navlog-Legende"** erklärt alle Wegeklassen und Symbole.
+
+---
+
+## Kartenformen
+
+Mit Kartenformen wird die Einsatzstelle in **Bereiche** gegliedert – z. B. Einsatzabschnitte, Bereitstellungsräume, eine Wasserentnahme oder eine Absperrung. Formen, die im [EinsatzManager](/einsatzmanager/05_einsatzdetails#kartenformen-zeichnen) gezeichnet wurden, erscheinen automatisch auf der Karte – und umgekehrt. Jede Form trägt ihren Namen in der gewählten Farbe.
+
+![Screenshot: Einsatzkarte mit Kartenformen „Einsatzstelle", „BR" und „Wasserentnahme"](/images/einsatztablet/32_kartenformen.png)
+
+Kartenformen werden auch auf der Karte der [Anfahrt](/einsatztablet/06_anfahrt) angezeigt. Über die [Legende](#kartenebenen-und-legende) lassen sich alle Formen mit dem Schalter **„Kartenformen"** ausblenden.
+
+### Form zeichnen
+
+1. Auf der Einsatzkarte **„Form zeichnen"** antippen und die Art wählen:
+
+   ![Screenshot: Auswahl der Formart unter „Form zeichnen"](/images/einsatztablet/34_form_zeichnen.png)
+
+   | Art | So wird gezeichnet |
+   |---|---|
+   | **Freihand (wird erkannt)** | Form mit dem Finger frei zeichnen – die App erkennt daraus Kreis, Rechteck, Fläche oder Linie |
+   | **Fläche** | Punkte setzen; zum Abschließen auf den ersten Punkt tippen oder **„Fertig"** |
+   | **Rechteck** | Erste Ecke setzen, dann die gegenüberliegende |
+   | **Kreis** | Mittelpunkt setzen, dann einen Punkt auf dem Rand |
+   | **Linie** | Punkte setzen; zum Abschließen **„Fertig"** |
+
+   **„Letzten Punkt entfernen"** nimmt einen falsch gesetzten Punkt zurück, **„Abbrechen"** verwirft die Zeichnung.
+
+2. Im Dialog **„Neue Form"** einen **Namen** (z. B. „Abschnitt Nord") und eine **Farbe** wählen. Der Name muss im Einsatz eindeutig sein.
+3. Optional unter **„Fahrzeuge"** die Fahrzeuge markieren, die diesem Bereich zugeordnet werden – sie erhalten den Tag des Bereichs sofort.
+4. **„Speichern"** – oder **„Speichern und Benutzer informieren"**, um die Beteiligten zusätzlich zu benachrichtigen.
+
+![Screenshot: Dialog „Neue Form" mit Name, Farbe und Fahrzeugauswahl](/images/einsatztablet/35_neue_form.png)
+
+### Form bearbeiten, Fahrzeuge zuweisen und löschen
+
+Ein Tipp auf eine Form öffnet ihr Menü:
+
+![Screenshot: Menü der Kartenform „Wasserentnahme" mit zugewiesenen Fahrzeugen](/images/einsatztablet/33_kartenform_menue.png)
+
+| Schaltfläche | Funktion |
+|---|---|
+| **Navigieren** | Startet die Navigation zum Mittelpunkt der Form (mit der unter [Setup → Darstellung → „Navigationstyp"](/einsatztablet/15_setup#darstellung) gewählten App) |
+| **Name/Farbe** | Name und Farbe der Form ändern |
+| **Form** | Form auf der Karte anpassen: Punkte ziehen, einen Zwischenpunkt ziehen fügt einen Punkt hinzu, Doppeltippen entfernt ihn. Der **blaue Punkt** verschiebt die ganze Form; beim Kreis ändert der Randpunkt den Radius |
+| **Löschen** | Entfernt die Form von der Karte und von allen damit markierten Fahrzeugen (nach Rückfrage) |
+
+Unter **„Zugewiesene Fahrzeuge"** stehen alle Fahrzeuge des Bereichs; **✕** nimmt ein Fahrzeug wieder heraus. Unter **„Hinzufügen"** werden die übrigen aktiven Fahrzeuge des Einsatzes angeboten – ein Tipp weist zu, über **„Fahrzeug suchen"** lässt sich die Liste filtern. Ist ein Fahrzeug bereits einem anderen Bereich zugeordnet, steht dessen Name in Farbe daneben.
+
+> Formen lassen sich nur in laufenden Einsätzen zeichnen und bearbeiten. Formen, die eine andere Organisation über [„Einsatzdaten teilen"](/connect/07_einsaetze#einsatzdaten-teilen) bereitstellt, sind mit **„Geteilt von …"** gekennzeichnet und können nur angesehen werden.
+
+### Hinweis bei Zuordnung des eigenen Fahrzeugs
+
+Wird das eigene Fahrzeug von anderer Stelle – z. B. im EinsatzManager oder an einem anderen Tablet – einem Bereich zugeordnet, erscheint groß in der Bildschirmmitte **„Unser Fahrzeug wurde einem Bereich zugeordnet"** mit Name und Farbe des Bereichs:
+
+![Screenshot: Hinweis „Unser Fahrzeug wurde einem Bereich zugeordnet" für den Bereich „Wasserentnahme"](/images/einsatztablet/38_bereich_zugeordnet.png)
+
+- **„Auf Karte anzeigen"** – öffnet die Einsatzkarte mit dem Bereich im Blick
+- **„Navigieren"** – startet die Navigation zum Mittelpunkt des Bereichs
+- **„Verstanden"** (oder ein Tipp irgendwohin) schließt den Hinweis; weitere Zuordnungen folgen nacheinander
+
+Zusätzlich sagt die [Sprachausgabe](/einsatztablet/15_setup#sprachausgabe) „Neuer Bereich für …" an. Im [Protokoll](/einsatztablet/08_protokoll) werden angelegte Kartenformen und geänderte Tags festgehalten.
 
 ---
 
