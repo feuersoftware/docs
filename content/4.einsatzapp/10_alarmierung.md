@@ -57,6 +57,21 @@ Mit dem Button **„Test-Alarm senden"** in den Alarmeinstellungen kannst du üb
 
 ---
 
+## Benachrichtigung bei Einsatzänderungen
+
+Wird ein Einsatz nach der Alarmierung geändert, z. B. durch die Leitstelle oder im EinsatzManager, erhältst du eine Benachrichtigung. Sie zeigt, **was sich geändert hat**:
+
+| Geändert | Beispiel für den Text |
+|---|---|
+| Adresse | `B3 - Brand Wohnung`<br>`Geändert: Adresse (Bahnhofstraße 1, 12345 Musterstadt)` |
+| Stichwort, Adresse und Sachverhalt | `Geändert: Stichwort (B4 - Brand MFH), Adresse (Bahnhofstraße 1, 12345 Musterstadt), Sachverhalt` |
+
+- Bei **Stichwort** und **Adresse** steht der neue Wert dabei. Andere Felder wie Sachverhalt, Priorität, Zusatzfelder oder Meldender werden nur genannt.
+- Es werden höchstens **drei Änderungen** aufgeführt, weitere werden gezählt (z. B. „und 2 weitere").
+- Genannt werden nur Felder, die du laut der [Sichtbarkeit deiner Gruppen](/connect/04_benutzerverwaltung#sichtbarkeit) sehen darfst. Darfst du z. B. die Adresse nicht sehen, enthält die Benachrichtigung wie bisher nur das Stichwort.
+
+---
+
 ## Berechtigungsübersicht
 
 Die **Berechtigungsübersicht** (in den Alarmeinstellungen) zeigt den Status aller für die Alarmierung benötigten Berechtigungen:
