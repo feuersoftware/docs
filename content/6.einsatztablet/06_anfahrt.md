@@ -15,11 +15,18 @@ Die Anfahrt bündelt alles, was auf dem Weg zum Einsatzort wichtig ist. Bei **St
 
 ## Karte und Navigation
 
-Die Karte zeigt Einsatzort, eigene Position und die Positionen der beteiligten Fahrzeuge. Darunter stehen Adresse und die Zusatzfelder der Leitstelle.
+Die Karte zeigt Einsatzort, eigene Position, die Positionen der beteiligten Fahrzeuge und die [Kartenformen](/einsatztablet/07_karte#kartenformen) des Einsatzes – so ist schon auf der Anfahrt zu sehen, wo z. B. der Bereitstellungsraum oder die Wasserentnahme liegt. Darunter stehen Adresse und die Zusatzfelder der Leitstelle.
 
-Der Navigations-Button (Pfeil-Symbol) neben der Adresse – bzw. **„Navigation starten"** auf der Karte – öffnet die Route zum Einsatzort in der Navi-App, die unter [Setup → Darstellung → „Navigationstyp"](/einsatztablet/15_setup#darstellung) gewählt ist: standardmäßig **Google Maps** auf Android-Tablets und **Apple Karten** auf dem iPad. Die Route wird für das **Auto** berechnet. Ist die gewählte App nicht installiert, öffnet sich die Route im Browser.
+![Screenshot: Anfahrt mit der Kartenform „Wasserentnahme" auf der Karte](/images/einsatztablet/36_anfahrt_kartenformen.png)
 
-Fehlen die Koordinaten des Einsatzorts, wird die Adresse an die Navi-App übergeben.
+Der Navigations-Button (Pfeil-Symbol) neben der Adresse – bzw. **„Navigation starten"** auf der Karte – öffnet die Route zum Einsatzort in der Navigations-App, die unter [Setup → Darstellung → „Navigationstyp"](/einsatztablet/15_setup#darstellung) gewählt ist:
+
+| Plattform | Auswahl | Standard |
+|---|---|---|
+| **iPad** | Apple Karten, Google Maps, Waze | Apple Karten |
+| **Android** | Google Maps, Waze, Andere App | Google Maps |
+
+Die Route wird immer **mit dem Auto** berechnet. Ist die gewählte App nicht installiert, öffnet sich die Route im Browser. Bei **„Andere App"** fragt Android beim ersten Mal, welche App die Route öffnen soll. Fehlen Koordinaten, wird die Adresse als Ziel übergeben; fehlt auch sie, meldet die App „Keine Koordinaten für die Navigation vorhanden."
 
 ---
 

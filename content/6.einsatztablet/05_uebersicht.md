@@ -31,7 +31,7 @@ Meldebild bzw. Lage und darunter die laufenden Einträge aus dem [Protokoll](/ei
 
 Die Rückmeldungen der Einsatzkräfte aus der EinsatzApp: **Komme**, **Komme später**, **Komme nicht** – jeweils mit Anzahl. Ein Tipp auf eine Kachel zeigt die Namen.
 
-Wer keine Rückmeldungen nutzt – z. B. eine Berufsfeuerwehr –, blendet sie unter [Setup → Anzeige & Filter → „Rückmeldungen in der Übersicht anzeigen"](/einsatztablet/15_setup#anzeige-filter) aus.
+Sollen die Rückmeldungen auf diesem Tablet nicht erscheinen, lässt sich die Karte unter [Setup → Anzeige & Filter → „Rückmeldungen in der Übersicht anzeigen"](/einsatztablet/15_setup#im-einsatz) ausschalten.
 
 ### Bekannte Mängel
 
@@ -46,7 +46,9 @@ Liegen bei **HomeResQ** Informationen zum Objekt und zu den Bewohnern an der Ein
 
 ### Dokumente
 
-Dokumente aus dem [Online-Speicher des Standorts](/connect/23_dateispeicher) (z. B. Objektpläne), die über die dynamischen Zusatzinformationen mit dem Einsatz verknüpft sind. Ein Tipp öffnet die Vorschau. Ist kein Online-Speicher verbunden, steht dort „Online-Speicher nicht verbunden".
+Dokumente aus dem [Online-Speicher](/connect/23_dateispeicher) (z. B. Objektpläne), die über die dynamischen Zusatzinformationen mit dem Einsatz verknüpft sind. Ein Tipp öffnet die Vorschau; verknüpfte Ordner lassen sich durchblättern.
+
+Connect gibt dabei vor, in welchem Speicher das Dokument liegt: Ist für die Organisation eine [Nextcloud der Organisation](/connect/schnittstellen/nextcloud#nextcloud-der-organisation) verbunden, öffnet das Tablet die Dokumente dort – sonst im Online-Speicher des Einsatz-Standorts. Damit funktionieren gemeinsame Objektpläne auch dann, wenn am eigenen Standort kein Online-Speicher verbunden ist. Ist der benötigte Speicher nicht verbunden, weist die App darauf hin (z. B. „Für die Organisation ist kein Online-Speicher verbunden. Bitte einen Administrator, ihn im Connect-Portal zu verbinden.").
 
 ### Einsatzdaten
 

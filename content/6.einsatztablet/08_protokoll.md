@@ -19,8 +19,8 @@ Das Protokoll zeigt alle **Protokolleinträge & Lagemeldungen** des Einsatzes in
 |---|---|
 | **Lagemeldungen** | Lagemeldungen vom Tablet, aus dem EinsatzManager oder von anderen Fahrzeugen |
 | **Protokolleintrag** | Manuelle Einträge |
-| **Einsatzdaten** | Änderungen an Stichwort, Sachverhalt oder Adresse, neue Anhänge |
-| **Fahrzeuge** | Statusänderungen, zugewiesene Fahrzeuge, geänderte Besatzung |
+| **Einsatzdaten** | Änderungen an Stichwort, Sachverhalt oder Adresse, neue Anhänge, angelegte [Kartenformen](/einsatztablet/07_karte#kartenformen) |
+| **Fahrzeuge** | Statusänderungen, zugewiesene Fahrzeuge, geänderte Besatzung, geänderte Tags (z. B. Zuordnung zu einem Bereich) und Notizen |
 | **Aufgaben** | Neue und geänderte Einsatzaufgaben |
 | **SDS-Nachrichten** | Kurznachrichten über den Digitalfunk |
 
@@ -30,7 +30,7 @@ Einträge, die über [Einsatzdaten teilen](/connect/07_einsaetze#einsatzdaten-te
 
 ## Filtern
 
-Über **„Filter"** öffnet sich **„Anzeige filtern"**: Einzelne Kategorien lassen sich aus- und einblenden. Ein aktiver Filter wird als „Filter: Aktiv" angezeigt. Der Filter gilt, solange der Einsatz geöffnet ist; beim nächsten Einsatz gilt wieder die Standardauswahl.
+Über **„Filter"** öffnet sich **„Anzeige filtern"**: Einzelne Kategorien lassen sich aus- und einblenden – auch die Einträge **„Kartenform angelegt"**, **„Tags geändert"** und **„Notiz geändert"** haben jeweils eine eigene Zeile. Der gleiche Filter steht in der Übersicht (Sachverhalt) und in der Anfahrt zur Verfügung. Ein aktiver Filter wird als „Filter: Aktiv" angezeigt. Der Filter gilt, solange der Einsatz geöffnet ist; beim nächsten Einsatz gilt wieder die Standardauswahl.
 
 ---
 

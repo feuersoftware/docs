@@ -37,8 +37,8 @@ Die Beta ist noch nicht für den Produktiveinsatz gedacht. Bitte nutzt für den 
 
 **Einsatz**
 - **Übersicht** – Einsatzort mit Karte und Wetter, Sachverhalt, Rückmeldungen, Einsatzdaten, HomeResQ-Objektinfos, Dokumente und Anhänge
-- **Anfahrt** – Navigation starten, Funkstatus setzen, Lagemeldungen der Ersteintreffenden, Stärke und alle beteiligten Einsatzmittel
-- **Karte** – OpenStreetMap oder Google Maps, Wasserversorgung (OpenStreetMap und wasserkarte.info), Waldwege (Navlog), Rettungspunkte, Fotos, what3words
+- **Anfahrt** – Navigation starten (Apple Karten, Google Maps oder Waze), Funkstatus setzen, Lagemeldungen der Ersteintreffenden, Stärke und alle beteiligten Einsatzmittel
+- **Karte** – OpenStreetMap oder Google Maps, Kartenformen zeichnen und Fahrzeuge Bereichen zuordnen, Wasserversorgung (OpenStreetMap und wasserkarte.info), Waldwege (Navlog), Rettungspunkte, Fotos, what3words
 - **Protokoll** – Protokolleinträge und Lagemeldungen lesen und schreiben
 - **Besatzung** – Stärkemeldung per Schnellzuweisung oder namentliche Besatzung mit Funktionen
 - **Aufgaben** – Einsatzaufgaben übernehmen und bearbeiten
@@ -47,7 +47,8 @@ Die Beta ist noch nicht für den Produktiveinsatz gedacht. Bitte nutzt für den 
 
 **Allgemein & Fahrzeug**
 - **Infoboard** und **Dateien** aus dem Online-Speicher des Standorts
-- **Fahrzeugdaten** – Funkstatus setzen und Fahrzeugwerte anzeigen
+- **Funkstatus** – jederzeit über die Kopfzeile setzen, mit den letzten Statusänderungen
+- **Fahrzeugdaten** – Fahrzeugwerte des Bordsystems anzeigen
 - **Mängel** – Mängelmeldungen mit Fotos erfassen und verfolgen
 - **Setup** – Sprachausgabe, Darstellung, Automatisierung, Anzeige-Optionen, Passwortschutz und Diagnose
 
