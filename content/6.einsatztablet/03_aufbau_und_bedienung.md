@@ -19,7 +19,7 @@ Die Navigationsleiste liegt standardmäßig am rechten Bildschirmrand (umstellba
 
 Ohne geöffneten Einsatz zeigt der Bereich „Einsatz" stattdessen **Einsatzliste**, **Karte** und **Fahrzeuge**.
 
-Einzelne Einträge lassen sich unter [Setup → Anzeige & Filter](/einsatztablet/15_setup#anzeige-filter) ausblenden, z. B. Aufgaben, Besatzung, Bericht, Alarmieren, Infoboard, Dateien oder Mängel. Ungelesene Protokolleinträge werden als Zähler am Eintrag **Protokoll** angezeigt.
+Einzelne Einträge lassen sich unter [Setup → Anzeige & Filter](/einsatztablet/15_setup#anzeige-filter) ausblenden, z. B. Aufgaben, Besatzung, Bericht, Alarmieren, Infoboard, Dateien, Foto, Fahrzeugdaten oder Mängel. Setup und „Fehler melden" bleiben immer sichtbar. Ungelesene Protokolleinträge werden als Zähler am Eintrag **Protokoll** angezeigt.
 
 > Auf schmalen Bildschirmen (z. B. im Hochformat oder bei geteiltem Bildschirm) erscheint die Navigation als Leiste am unteren Rand; weitere Bereiche sind dort über **„Mehr"** erreichbar.
 

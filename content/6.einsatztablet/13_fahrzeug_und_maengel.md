@@ -22,6 +22,8 @@ Ist das Fahrzeug mit einem Bordsystem verbunden, zeigt die Seite dessen Werte �
 - **„Warnregeln"** zeigt die in Connect hinterlegten [Regeln für Gerätewarnungen](/connect/06_fahrzeuge#regeln-für-gerätewarnungen) – liegt ein Wert außerhalb des Normalbereichs, wird automatisch eine Mängelmeldung erzeugt
 - **„Fahrzeugdaten neu laden"** aktualisiert die Anzeige
 
+Hat das Fahrzeug kein Bordsystem, lassen sich die Fahrzeugdaten unter [Setup → Anzeige & Filter → „Fahrzeugdaten anzeigen"](/einsatztablet/15_setup#fahrzeuge) ausblenden.
+
 ---
 
 ## Mängel

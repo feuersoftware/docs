@@ -61,11 +61,11 @@ Unter **„Automatisch vorlesen"** wird festgelegt, was angesagt wird:
 | **Navigationsleiste** | Links / Rechts |
 | **Schnellaktionen** | Position des Schnellaktionen-Buttons: Links / Mitte / Rechts / Aus |
 | **Kartentyp** | Standard für alle Karten: OSM / G-Straßen / G-Satellit / G-Hybrid |
+| **Navigationstyp** | Die App, mit der eine Navigation gestartet wird – iPad: **Apple Karten** (Standard) / Google Maps / Waze; Android: **Google Maps** (Standard) / Waze / Andere App. Gilt für [„Navigation starten"](/einsatztablet/06_anfahrt#karte-und-navigation), die Navigation zu [Kartenformen](/einsatztablet/07_karte#kartenformen) und zu Fahrzeugen auf der Karte. Die Route wird für das Auto berechnet; ist die App nicht installiert, öffnet sich die Route im Browser. Bei „Andere App" fragt Android beim ersten Mal, welche App die Route öffnen soll – diese App zeigt das Ziel, die Route startet mit einem weiteren Tippen |
 | **Karten-Design** | Standard für alle Karten (hell/dunkel), unabhängig vom Design der App |
 | **Verkehr auf Google Maps** | Zeigt die Verkehrslage auf den Google-Karten |
 | **iKAT-Schnellzugriff** | Button auf der Karte, um iKAT mit der Einsatzposition zu öffnen |
 | **ModiTech CRS (Rettungsdatenblätter)** | Button auf der Karte, um die CRS-App zu öffnen (muss installiert sein) |
-| **Navigationstyp** | Die App, mit der eine Navigation gestartet wird – iPad: **Apple Karten** (Standard) / Google Maps / Waze; Android: **Google Maps** (Standard) / Waze / Andere App. Gilt für [„Navigation starten"](/einsatztablet/06_anfahrt#karte-und-navigation) und die Navigation zu [Kartenformen](/einsatztablet/07_karte#kartenformen) |
 
 Eine Auswahl von Kartentyp oder Karten-Design direkt auf der Karte gilt nur bis zum nächsten Einsatz.
 
@@ -129,7 +129,7 @@ Die Einstellungen sind nach den Bereichen der App sortiert.
 
 | Einstellung | Beschreibung |
 |---|---|
-| **Rückmeldungen in der Übersicht anzeigen** | Karte [„Rückmeldungen"](/einsatztablet/05_uebersicht) (Komme / Komme später / Komme nicht) in der Übersicht – z. B. ausschalten, wenn die Rückmeldungen der Einsatzkräfte im Fahrzeug nicht angezeigt werden sollen |
+| **Rückmeldungen in der Übersicht anzeigen** | Karte [„Rückmeldungen"](/einsatztablet/05_uebersicht#rückmeldungen) (Komme / Komme später / Komme nicht) in der Übersicht – z. B. ausschalten, wenn die Rückmeldungen der Einsatzkräfte im Fahrzeug nicht angezeigt werden sollen |
 | **Einsätze bearbeiten erlauben** | Einsatzdaten in der Übersicht bearbeiten |
 | **Protokolleinträge & Lagemeldungen erlauben** | Schreiben im [Protokoll](/einsatztablet/08_protokoll) |
 | **Aufgaben verwalten erlauben** | Bereich [Aufgaben](/einsatztablet/10_aufgaben) |
@@ -144,7 +144,7 @@ Die Einstellungen sind nach den Bereichen der App sortiert.
 | Einstellung | Beschreibung |
 |---|---|
 | **Einsatz-Anhänge anzeigen** | Anhänge in Übersicht und Bericht |
-| **Anhänge hinzufügen erlauben** | Fotos und Dateien hochladen (auch Navigationspunkt „Foto") |
+| **Anhänge hinzufügen erlauben** | Fotos und Dateien hochladen – auch Navigationspunkt und Schnellaktion „Foto" |
 | **Dateien löschen erlauben** | Anhänge am Tablet löschen |
 | **Bildqualität beim Hochladen festlegen** | Eigene **„Bildqualität hochgeladener Fotos"** festlegen (Standard 80 %), z. B. um mobile Daten zu sparen |
 
