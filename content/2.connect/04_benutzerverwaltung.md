@@ -148,23 +148,24 @@ Rollen definieren, welche Bereiche und Aktionen ein Benutzer im Connect Portal n
 | Rolle | Beschreibung |
 |---|---|
 | **Organisationsadministrator** | Vollzugriff auf alle Einstellungen der Organisation |
-| **Organisation News-Administrator** | Kann News auf Organisationsebene erstellen und verwalten |
-| **Organisation Kalender-Administrator** | Kann Kalender und Termine auf Organisationsebene verwalten |
-| **Organisation Termin-Administrator** | Kann Termine auf Organisationsebene erstellen und verwalten |
+| **Organisation News-Administrator** | Kann News auf Organisationsebene erstellen und verwalten; liest Organisationskalender und Organisations-Mailinglisten |
+| **Organisation Kalender-Administrator** | Kann Kalender und Termine auf Organisationsebene verwalten; liest Organisations-News |
+| **Organisation Termin-Administrator** | Kann Termine auf Organisationsebene erstellen und verwalten; liest Organisationskalender und -News |
 
 ### Rollen auf Standortebene
 
 | Rolle | Beschreibung |
 |---|---|
-| **Standortadministrator** | Vollzugriff auf alle Einstellungen des Standorts |
-| **Moderator** | Kann News, Info-Board und Termine erstellen sowie Fahrzeugverfügbarkeit bearbeiten |
-| **Benutzeradministrator** | Kann Benutzer auf Standortebene verwalten (einladen, importieren, bearbeiten) |
-| **Gerätewart** | Kann Fahrzeuge und Fahrzeugverfügbarkeit bearbeiten |
+| **Standortadministrator** | Vollzugriff auf den Standort, u. a. Standorteinstellungen, Schnittstellen, Alarmmonitore und Geräte (inkl. Fernsteuerung des EinsatzMonitors per EinsatzApp), Einsätze, Verfügbarkeitsalarm und Ereignisprotokoll |
+| **Benutzeradministrator** | Verwaltet Benutzer (einladen, importieren, bearbeiten, löschen), Alarmgruppen, Gruppen, Standort-Mailinglisten und vergibt Standortrollen an Mitglieder – auch die Rolle Standortadministrator |
+| **Gerätewart** | Verwaltet Fahrzeuge (anlegen, bearbeiten, löschen), schaltet EinsatzTablets/Fahrzeug-App frei, pflegt GPS-Tracker, CVM-Module und Fahrzeugeigenschaften und bearbeitet Mängelmeldungen |
+| **Moderator** | Erstellt News, pflegt das Info-Board, trägt Termine ein, ändert Fahrzeugverfügbarkeit und Fahrzeugbild und kann Benutzer einladen (nicht bearbeiten) |
 | **Standort News-Administrator** | Kann News auf Standortebene erstellen und verwalten |
 | **Standort Kalender-Administrator** | Kann Kalender und Termine auf Standortebene verwalten |
 | **Standort Termin-Administrator** | Kann Termine auf Standortebene erstellen und verwalten |
+| **EinsatzManager** | Berechtigt zur Anmeldung am [EinsatzManager](/einsatzmanager/02_zugang_und_anmeldung) für diesen Standort; im Portal keine zusätzlichen Rechte |
 
-Benutzer ohne zugewiesene Rolle haben eingeschränkten Lesezugriff (Standardbenutzer).
+Jedes Standortmitglied ist automatisch **Standardbenutzer** und kann damit News, Kalender, Termine, Info-Board, Benutzer, Einsätze und Fahrzeuge des Standorts lesen sowie Mängelmeldungen erstellen.
 
 Werden mehrere Rollen zugewiesen, werden die Rechte addiert. Eine vollständige Übersicht aller Berechtigungen je Rolle findet sich im [Rechtekonzept](./20_rechtekonzept_connect).
 
